@@ -27,3 +27,6 @@ dist-ssr
 .claude/worktrees/
 .cursor/rules/
 !.cursor/rules/viteplus.mdc
+
+# Local environment variables
+yufan.me/
