@@ -1,0 +1,29 @@
+{
+  "name": "emdash-theme-kotoba",
+  "version": "0.1.0",
+  "description": "Kotoba theme based on emdash and astro",
+  "files": [
+    "src"
+  ],
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "build": "vp pack",
+    "dev": "vp pack --watch",
+    "test": "vp test",
+    "check": "vp check"
+  },
+  "dependencies": {
+    "emdash-theme-kotoba-plugin-email": "workspace:*",
+    "emdash-theme-kotoba-plugin-thumbhash": "workspace:*"
+  },
+  "devDependencies": {
+    "vite-plus": "catalog:"
+  },
+  "peerDependencies": {
+    "astro": "catalog:",
+    "emdash": "catalog:"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "emdash-theme-kotoba-plugin-thumbhash",
+  "version": "0.1.0",
+  "description": "Thumbhash plugin for the kotoba theme",
+  "files": [
+    "src"
+  ],
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "build": "vp pack",
+    "dev": "vp pack --watch",
+    "test": "vp test",
+    "check": "vp check"
+  },
+  "devDependencies": {
+    "vite-plus": "catalog:"
+  },
+  "peerDependencies": {
+    "astro": "catalog:",
+    "emdash": "catalog:"
+  }
+}

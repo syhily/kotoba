@@ -1,0 +1,36 @@
+{
+  "name": "demo",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "start": "node ./dist/server/entry.mjs",
+    "bootstrap": "emdash init && emdash seed",
+    "seed": "emdash seed",
+    "typecheck": "astro check"
+  },
+  "dependencies": {
+    "@astrojs/node": "^10.0.0",
+    "@astrojs/react": "^5.0.0",
+    "@emdash-cms/plugin-audit-log": "^0.1.0",
+    "astro": "catalog:",
+    "better-sqlite3": "^11.10.0",
+    "emdash": "catalog:",
+    "emdash-theme-kotoba": "workspace:*",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.7"
+  },
+  "peerDependencies": {},
+  "optionalDependencies": {},
+  "packageManager": "pnpm@10.33.0",
+  "emdash": {
+    "label": "Blog",
+    "seed": "seed/seed.json"
+  }
+}

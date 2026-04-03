@@ -1,0 +1,9 @@
+{
+  "extends": "astro/tsconfigs/base",
+  "compilerOptions": {
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "types": ["node"]
+  },
+  "include": ["src", ".astro/types.d.ts", "emdash-env.d.ts"]
+}
