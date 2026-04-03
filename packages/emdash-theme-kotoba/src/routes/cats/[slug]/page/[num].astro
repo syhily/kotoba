@@ -1,0 +1,8 @@
+---
+const slug = Astro.params.slug;
+const num = Astro.params.num;
+if (!slug) return Astro.redirect("/404");
+const base = `/cats/${encodeURIComponent(slug)}`;
+if (!num || num === "1") return Astro.redirect(base);
+return Astro.redirect(`${base}?page=${encodeURIComponent(num)}`);
+---

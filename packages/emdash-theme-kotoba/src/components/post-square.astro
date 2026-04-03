@@ -1,0 +1,36 @@
+---
+import type { ThemePostWithMetadata } from "../types/content.ts";
+
+interface Props {
+  post: ThemePostWithMetadata;
+  first?: boolean;
+}
+
+const { post, first = false } = Astro.props as Props;
+const dateText = post.publishedAt ? post.publishedAt.toLocaleDateString("zh-CN") : "unknown";
+---
+
+<div class={first ? "col-12 col-md-8 col-xl-6" : "col-6 col-md-4 col-xl-3"}>
+  <div class="list-item list-nice-overlay">
+    <div class={`media ${first ? "media-36x17" : ""}`}>
+      <a href={post.permalink} class="media-content">
+        <div class="overlay"></div>
+      </a>
+    </div>
+    <div class="list-content">
+      <a href={post.permalink} class="list-body">
+        <div class="list-title h6 h-2x">{post.title}</div>
+        <div class="list-meta font-number d-flex flex-fill text-muted text-sm">
+          <span class="d-inline-block">{dateText}</span>
+          <div class="flex-fill"></div>
+          <div class="list-like-square d-inline-block">
+            <span class="like-count">{post.meta.views}</span>
+          </div>
+          <div class="list-like-square d-inline-block">
+            <span class="like-count">{post.meta.likes}</span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>

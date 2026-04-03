@@ -1,0 +1,51 @@
+---
+import { getPosts } from "../../query/schema.ts";
+import { getPostsWithMetadata, getTags } from "../../query/schema.ts";
+import { defaultPagination } from "../../options/defaults.ts";
+import { paginate, readPage } from "../../query/pagination.ts";
+import Pagination from "../../components/pagination.astro";
+import PostSquare from "../../components/post-square.astro";
+import Sidebar from "../../components/sidebar.astro";
+import BaseLayout from "../../layouts/base-layout.astro";
+
+const posts = await getPosts();
+const pageResult = paginate(posts, readPage(Astro.url), defaultPagination.postsPerPage);
+const groups = new Map<string, typeof pageResult.items>();
+for (const post of pageResult.items) {
+  const year = post.publishedAt ? String(post.publishedAt.getFullYear()) : "unknown";
+  const list = groups.get(year) ?? [];
+  list.push(post);
+  groups.set(year, list);
+}
+const years = [...groups.keys()].sort((a, b) => Number(b) - Number(a));
+const metadataPosts = await getPostsWithMetadata(pageResult.items);
+const metadataMap = new Map(metadataPosts.map((p) => [p.id, p]));
+const tags = await getTags();
+---
+
+<BaseLayout title="归档 - 且听书吟" description="文章归档">
+  <main class="page-shell">
+    <div class="container">
+      <div class="mb-3 mb-lg-4">
+        <h1>共 {pageResult.total} 篇文章</h1>
+      </div>
+      <div class="row g-2 g-md-3 g-xxl-4 list-grouped">
+        <div class="content-wrapper col-12 col-xl-9">
+          {years.map((year) => (
+            <section class="mb-5">
+              <h2>{year}</h2>
+              <div class="row g-2 g-md-3 g-xxl-4 list-grouped">
+                {(groups.get(year) ?? [])
+                  .map((post) => metadataMap.get(post.id))
+                  .filter((post) => post !== undefined)
+                  .map((post, i) => <PostSquare post={post} first={i === 0} />)}
+              </div>
+            </section>
+          ))}
+          <Pagination page={pageResult.page} totalPages={pageResult.totalPages} basePath="/archives" />
+        </div>
+        <Sidebar posts={posts} tags={tags} />
+      </div>
+    </div>
+  </main>
+</BaseLayout>

@@ -1,0 +1,17 @@
+---
+interface Props {
+  page: number;
+  totalPages: number;
+  basePath: string;
+}
+const { page, totalPages, basePath } = Astro.props as Props;
+const pages = Array.from({ length: totalPages }, (_, i) => i + 1);
+---
+
+{pages.map((p) =>
+  p === page ? (
+    <span class="page-numbers current">{p}</span>
+  ) : (
+    <a class="page-numbers" href={`${basePath}?page=${p}`}>{p}</a>
+  ),
+)}

@@ -1,0 +1,17 @@
+---
+import type { ThemeTaxonomy } from "../types/content.ts";
+
+interface Props {
+  tags: ThemeTaxonomy[];
+}
+const { tags } = Astro.props as Props;
+---
+
+<section class="widget">
+  <h3>Tags</h3>
+  <ul>
+    {tags.slice(0, 16).map((tag) => (
+      <li><a href={tag.permalink}>{tag.label}</a></li>
+    ))}
+  </ul>
+</section>

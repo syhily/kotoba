@@ -1,0 +1,14 @@
+---
+interface Props {
+  page: number;
+  totalPages: number;
+  basePath: string;
+}
+const { page, totalPages, basePath } = Astro.props as Props;
+const prev = page > 1 ? `${basePath}?page=${page - 1}` : null;
+const next = page < totalPages ? `${basePath}?page=${page + 1}` : null;
+---
+
+{prev ? <a class="page-numbers prev" href={prev}>上一页</a> : <span class="page-numbers prev disabled">上一页</span>}
+<span class="page-numbers current">{page}</span>
+{next ? <a class="page-numbers next" href={next}>下一页</a> : <span class="page-numbers next disabled">下一页</span>}

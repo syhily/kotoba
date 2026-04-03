@@ -1,0 +1,19 @@
+---
+import BaseLayout from "../../layouts/base-layout.astro";
+---
+
+<BaseLayout title="搜索 - 且听书吟" description="站内搜索">
+  <main class="page-shell">
+    <div class="page-card">
+      <h1>Search</h1>
+      <form
+        action="/search/"
+        method="get"
+        onsubmit="event.preventDefault(); const q = (new FormData(this).get('q') || '').toString().trim(); if (q) window.location.href = '/search/' + encodeURIComponent(q);"
+      >
+        <input type="text" name="q" placeholder="Keyword" />
+        <button type="submit">Search</button>
+      </form>
+    </div>
+  </main>
+</BaseLayout>

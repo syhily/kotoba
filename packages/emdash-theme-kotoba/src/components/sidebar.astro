@@ -1,0 +1,18 @@
+---
+import type { ThemePost, ThemeTaxonomy } from "../types/content.ts";
+import SidebarRecentPosts from "./sidebar-recent-posts.astro";
+import SidebarRandomTags from "./sidebar-random-tags.astro";
+
+interface Props {
+  posts: ThemePost[];
+  tags: ThemeTaxonomy[];
+}
+const { posts, tags } = Astro.props as Props;
+---
+
+<aside class="sidebar col-12 col-xl-3 d-none d-xl-block">
+  <div class="sidebar-inner block">
+    <SidebarRecentPosts posts={posts} />
+    <SidebarRandomTags tags={tags} />
+  </div>
+</aside>

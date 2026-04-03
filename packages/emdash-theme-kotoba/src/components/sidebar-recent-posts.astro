@@ -1,0 +1,17 @@
+---
+import type { ThemePost } from "../types/content.ts";
+
+interface Props {
+  posts: ThemePost[];
+}
+const { posts } = Astro.props as Props;
+---
+
+<section class="widget">
+  <h3>Recent Posts</h3>
+  <ul>
+    {posts.slice(0, 8).map((post) => (
+      <li><a href={post.permalink}>{post.title}</a></li>
+    ))}
+  </ul>
+</section>

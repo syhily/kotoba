@@ -1,0 +1,30 @@
+---
+import { queryPosts } from "../query/content.ts";
+import BaseLayout from "../layouts/base-layout.astro";
+import FeaturePosts from "../components/feature-posts.astro";
+import PostSquare from "../components/post-square.astro";
+import Sidebar from "../components/sidebar.astro";
+import { getPostsWithMetadata, getPosts, getTags } from "../query/schema.ts";
+
+const posts = await queryPosts(20);
+const sidebarPosts = await getPosts();
+const sidebarTags = await getTags();
+const feedPosts = sidebarPosts.slice(0, 9);
+const metadata = await getPostsWithMetadata(feedPosts);
+---
+
+<BaseLayout title="且听书吟" description="诗与梦想的远方">
+  <div class="px-lg-2 px-xxl-5 py-3 py-md-4 py-xxl-5">
+    <FeaturePosts posts={sidebarPosts} />
+    <div class="container">
+      <div class="row">
+        <div class="content-wrapper col-12 col-xl-9">
+          <div class="row g-2 g-md-3 g-xxl-4 list-grouped">
+            {metadata.map((post, index) => <PostSquare post={post} first={index === 0} />)}
+          </div>
+        </div>
+        <Sidebar posts={sidebarPosts} tags={sidebarTags} />
+      </div>
+    </div>
+  </div>
+</BaseLayout>

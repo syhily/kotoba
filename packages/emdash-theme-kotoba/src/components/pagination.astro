@@ -1,0 +1,33 @@
+---
+import LargePagination from "./pagination-large.astro";
+import SmallPagination from "./pagination-small.astro";
+
+interface Props {
+  page: number;
+  totalPages: number;
+  basePath: string;
+}
+const { page, totalPages, basePath } = Astro.props as Props;
+---
+
+<nav class="pagination">
+  <div class="navigation pagination-nav" aria-label="文章">
+    <h2 class="screen-reader-text">文章导航</h2>
+    <div class="nav-links">
+      {totalPages <= 6 ? (
+        <SmallPagination page={page} totalPages={totalPages} basePath={basePath} />
+      ) : (
+        <LargePagination page={page} totalPages={totalPages} basePath={basePath} />
+      )}
+    </div>
+  </div>
+</nav>
+
+<style>
+  .pagination { margin-top: 14px; }
+  .screen-reader-text { position: absolute; left: -9999px; }
+  .nav-links { display: flex; gap: 10px; align-items: center; }
+  .page-numbers { text-decoration: none; color: #4b5563; }
+  .page-numbers.current { color: #111827; font-weight: 600; }
+  .disabled { color: #9ca3af; pointer-events: none; }
+</style>

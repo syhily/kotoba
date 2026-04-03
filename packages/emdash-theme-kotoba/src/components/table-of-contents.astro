@@ -1,0 +1,33 @@
+<a class="toggle-menu-tree">目录</a>
+<div class="post-menu">
+  <div class="toc-wrap">
+    <div class="toc-content">
+      <h2 class="post-menu-title">文章目录</h2>
+      <div class="index-menu" id="index-menu"></div>
+    </div>
+  </div>
+</div>
+<div class="post-menu-overlay"></div>
+
+<script is:inline>
+  (() => {
+    const container = document.getElementById("index-menu");
+    const article = document.querySelector(".post-content");
+    if (!container || !article) return;
+    const headings = Array.from(article.querySelectorAll("h2, h3"));
+    if (headings.length === 0) return;
+    const ul = document.createElement("ul");
+    for (const heading of headings) {
+      if (!heading.id) {
+        heading.id = `toc-${Math.random().toString(36).slice(2, 10)}`;
+      }
+      const li = document.createElement("li");
+      const a = document.createElement("a");
+      a.href = `#${heading.id}`;
+      a.textContent = heading.textContent || "";
+      li.appendChild(a);
+      ul.appendChild(li);
+    }
+    container.appendChild(ul);
+  })();
+</script>

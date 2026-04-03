@@ -1,0 +1,21 @@
+---
+import { PortableText } from "emdash/ui";
+import { queryPageBySlug } from "../query/content.ts";
+import BaseLayout from "../layouts/base-layout.astro";
+
+const { slug } = Astro.params;
+if (!slug) return Astro.redirect("/404");
+const page = await queryPageBySlug(slug);
+if (!page) return Astro.redirect("/404");
+---
+
+<BaseLayout title={`${String(page.data.title ?? slug)} - 且听书吟`}>
+  <main class="page-shell">
+    <div class="page-card">
+      <h1>{String(page.data.title ?? slug)}</h1>
+      <div class="post-content">
+        <PortableText value={page.data.content} />
+      </div>
+    </div>
+  </main>
+</BaseLayout>

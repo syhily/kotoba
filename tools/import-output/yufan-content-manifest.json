@@ -1,0 +1,3858 @@
+{
+  "generatedAt": "2026-04-03T13:41:24.700Z",
+  "sourceRoot": "/Users/YufanSheng/SourceCode/xiaoyu/kotoba/yufan.me/src/content",
+  "total": 228,
+  "items": [
+    {
+      "collection": "categories",
+      "id": "categories",
+      "sourcePath": "metas/categories.yml",
+      "frontmatter": {},
+      "bodyPreview": "- name: 文章\n  slug: article\n  description: |-\n    我在寻找一个声音，期待着它把书影里的音符唱给你们听。\n    记录一本书、一个作者、一部电影及其与生活之间丝丝缕缕的情。\n    我热爱书和电影，更热爱生活，希望我们都有着走不完的似水流年，说不完的逝水年华。\n  cover: https://cat.yufan.me/images/categorie"
+    },
+    {
+      "collection": "friends",
+      "id": "friends",
+      "sourcePath": "metas/friends.yml",
+      "frontmatter": {},
+      "bodyPreview": "- slug: 80go\n  website: 80后向前冲\n  description: 松鼠哥哥\n  homepage: https://www.80-go.com\n  poster: https://cat.yufan.me/images/links/80-go.com.jpg\n- slug: cynosura\n  website: Cynosura\n  description: Tryin"
+    },
+    {
+      "collection": "tags",
+      "id": "tags",
+      "sourcePath": "metas/tags.yml",
+      "frontmatter": {},
+      "bodyPreview": "- name: 装帧\n  slug: book-binding\n- name: 回忆\n  slug: recollection\n- name: 中年\n  slug: middle-age\n- name: 时光\n  slug: moment\n- name: 烟花\n  slug: fireworks\n- name: 思考\n  slug: thinking\n- name: 编码\n  slug: enco"
+    },
+    {
+      "collection": "pages",
+      "id": "about",
+      "sourcePath": "pages/about.mdx",
+      "frontmatter": {
+        "title": "关于",
+        "slug": "about",
+        "date": "2010-03-25 02:20:11+08:00",
+        "updated": "2024-04-08 19:27:27+08:00",
+        "summary": "雨帆，以及这个博客的故事。",
+        "cover": "https://cat.yufan.me/images/2024/11/2024112723215500.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![ライブペイント by mocha@新刊委託中](https://cat.yufan.me/images/2024/11/2024112723242700.jpg)\n\n<MusicPlayer id={722055} />\n\n2007 年，我开始写 QQ 空间。2011 年，我开始用 WordPress 写博客，使用网名“雨帆”。“雨帆”在我的字典里并没有特别的意义，它只是我的名字的缩影，是我"
+    },
+    {
+      "collection": "pages",
+      "id": "guestbook",
+      "sourcePath": "pages/guestbook.mdx",
+      "frontmatter": {
+        "title": "留言",
+        "slug": "guestbook",
+        "date": "2012-01-25 02:20:11+08:00",
+        "updated": "2024-04-08 12:27:27+08:00",
+        "summary": "匆匆的网络过客们啊，欢迎来此留下您的足迹。",
+        "cover": "https://cat.yufan.me/images/2024/11/2024112723314900.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![春の陽 by 防人](https://cat.yufan.me/images/2024/11/2024112723303500.jpg)\n\n<MusicPlayer id={2020156552} />\n\n耳机里，单曲循环着《水中花》。这首歌曾伴我甚久，每每听起，就像一条缓缓流淌的河，将往昔的光影从心头轻轻卷起。\n\n> “凄冷风雨中，多少繁华如梦。”\n\n开篇一句歌词，便道尽了人世的无常与飘渺"
+    },
+    {
+      "collection": "pages",
+      "id": "links",
+      "sourcePath": "pages/links.mdx",
+      "frontmatter": {
+        "title": "友链",
+        "slug": "links",
+        "date": "2012-01-25 02:20:11+08:00",
+        "updated": "2024-04-08 12:27:27+08:00",
+        "cover": "https://cat.yufan.me/images/2024/11/2024112723135900.jpg",
+        "summary": "这里展示了我的网上邻居们，欢迎前去串门。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![新作《天空的翅膀》 by 画师JW](https://cat.yufan.me/images/2024/11/2024112723183300.jpg)\n\n<MusicPlayer id={2132460283} />\n\n生活有许多面向：经历、遭遇、过去与未来；正发生的、曾经发生的，或即将发生的；感情的流转、心态的变化、容颜的成熟。这一切，都是生命的一部分。\n\n而在这些变化中，最频繁、最恒常"
+    },
+    {
+      "collection": "posts",
+      "id": "2009-10-29-phoenix-flowers",
+      "sourcePath": "posts/2009/2009-10-29-phoenix-flowers.mdx",
+      "frontmatter": {
+        "title": "凤凰花开",
+        "slug": "phoenix-flowers",
+        "date": "2009-10-29 04:56:30+08:00",
+        "updated": "2020-10-28 18:51:55+08:00",
+        "tags": "",
+        "category": "文章",
+        "cover": "https://cat.yufan.me/images/2019/05/2019051817144382.jpg",
+        "summary": "凤凰木，被誉为厦门的市树。当你漫步于厦门街头时，除了亚热带常见的棕榈，看得最多的树，怕就是它了。人行道上，放眼望去，一行行的都是凤凰树。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![凤凰花1](https://cat.yufan.me/images/2019/05/2019051817144382.jpg)\n\n<MusicPlayer id={109734} />\n\n凤凰木，被誉为厦门的市树。当你漫步于厦门街头时，除了亚热带常见的棕榈，看得最多的树，怕就是它了。人行道上，放眼望去，一行行的都是凤凰树。虽已是金秋十月，对于亚热带的厦门，只算是夏至未至。\n\n故那原本在盛夏开"
+    },
+    {
+      "collection": "posts",
+      "id": "2010-03-25-swan-of-thought",
+      "sourcePath": "posts/2010/2010-03-25-swan-of-thought.mdx",
+      "frontmatter": {
+        "title": "思想的天鹅",
+        "slug": "swan-of-thought",
+        "date": "2010-03-25 02:20:11+08:00",
+        "updated": "2019-05-18 19:27:27+08:00",
+        "tags": "",
+        "category": "文章",
+        "cover": "https://cat.yufan.me/images/2019/05/2019051819264475.jpg",
+        "summary": "天行健君子以自强不息。而对于思想，我则将它比做天鹅。不为其它，只因这思想太轻盈，有着一种如同天鹅翱翔般柔美。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![新時代へ by ★cheese](https://cat.yufan.me/images/2019/05/2019051819264475.jpg)\n\n<MusicPlayer id={268154} />\n\n天行健，君子以自强不息。而对于思想，我则将它比作天鹅。不为其它，只因这思想太轻盈，有着一种如同天鹅翱翔般的柔美。看似很近，却又是很远，是那么的不可触及。\n\n思想如同天鹅般轻舞、飞翔，最"
+    },
+    {
+      "collection": "posts",
+      "id": "2010-09-17-cherry-blossoms-withered",
+      "sourcePath": "posts/2010/2010-09-17-cherry-blossoms-withered.mdx",
+      "frontmatter": {
+        "title": "樱花谢了",
+        "slug": "cherry-blossoms-withered",
+        "date": "2010-09-17 10:50:41+08:00",
+        "updated": "2019-05-18 19:23:01+08:00",
+        "tags": "",
+        "category": "文章",
+        "cover": "https://cat.yufan.me/images/2019/05/2019051819204032.jpg",
+        "summary": "三月，该是樱花开放的季节。而三月之际开放的鲜花，却不止樱花一种。但凭心而论，真正能触动心弦的词，该是樱花。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![春の魔法 by のら](https://cat.yufan.me/images/2019/05/2019051819205590.jpg)\n\n<MusicPlayer id={489450} />\n\n三月，该是樱花开放的季节。而三月之际开放的鲜花，却不止樱花一种。但凭心而论，真正能触动心弦的，还是樱花。\n\n第一次接触樱花，是从小学的音乐课本中得来的。那首极具日本风格的歌曲也由此铭记于心。真正"
+    },
+    {
+      "collection": "posts",
+      "id": "2011-01-04-old-train-site",
+      "sourcePath": "posts/2011/2011-01-04-old-train-site.mdx",
+      "frontmatter": {
+        "title": "旧月台",
+        "slug": "old-train-site",
+        "date": "2011-01-04 05:22:43+08:00",
+        "updated": "2019-05-18 19:07:52+08:00",
+        "tags": "",
+        "category": "文章",
+        "cover": "https://cat.yufan.me/images/2019/05/2019051819045868.jpg",
+        "summary": "夏日傍晚的太阳已收敛了它一天的炎热，仅洒下点点余辉，投射在路面上。在这个略觉清爽的午后，我沿着屋后早已废弃的铁轨开始了随意的散步。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![甘い甘い by  nineo](https://cat.yufan.me/images/2019/05/2019051819045635.jpg)\n\n<MusicPlayer id={2017832132} />\n\n夏日傍晚的太阳已收敛了一天的炎热，仅洒下点点余辉，投射在路面上。在这个略觉清爽的午后，我沿着屋后早已废弃的铁轨开始了随意的散步。\n\n也许是因为将之废弃不用，更或许是时间的漫长，棕"
+    },
+    {
+      "collection": "posts",
+      "id": "2011-07-09-19-year-old",
+      "sourcePath": "posts/2011/2011-07-09-19-year-old.mdx",
+      "frontmatter": {
+        "title": "19岁的“雨季”",
+        "slug": "19-year-old",
+        "date": "2011-07-09 13:01:20+08:00",
+        "updated": "2019-05-18 19:40:45+08:00",
+        "tags": "",
+        "category": "文章",
+        "cover": "https://cat.yufan.me/images/2019/05/2019051819385367.jpg",
+        "summary": "这样的雨，实在是让人烦恼，接连数日，没有停的时候。这样的雨里，想做的事情实在很少。天空灰蒙蒙的，心情也仿佛蒙了灰尘，让人感觉整个世界变得忧郁而烦闷。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![雨宿り by  ハトリ](https://cat.yufan.me/images/2019/05/2019051819372187.jpg)\n\n<MusicPlayer id={114442} />\n\n这样的雨，实在是让人烦恼，接连数日，没有停的时候。\n\n这样的雨里，想做的事情实在很少。天空灰蒙蒙的，心情也仿佛蒙了灰尘，让人感觉整个世界变得忧郁而烦闷。\n\n对于雨天，从小就是心怀不平的。\n\n只"
+    },
+    {
+      "collection": "posts",
+      "id": "2011-08-23-drip-records",
+      "sourcePath": "posts/2011/2011-08-23-drip-records.mdx",
+      "frontmatter": {
+        "title": "杂思——点滴记录",
+        "slug": "drip-records",
+        "date": "2011-08-23 00:12:31+08:00",
+        "updated": "2019-05-18 19:45:35+08:00",
+        "tags": "",
+        "category": "文章",
+        "cover": "https://cat.yufan.me/images/2019/05/2019051819444155.jpg",
+        "summary": "今天下午的厦门下起了雨，闷热而又纷乱，似乎与闷热的午后不相协调。一切显得是那么的突兀，就像那杂乱不堪的思绪纷纷扰扰洒落。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![大人って by ゆづあ](https://cat.yufan.me/images/2019/05/2019051819432258.jpg)\n\n<MusicPlayer id={1426112587} />\n\n**（一）雨来**\n\n今天下午的厦门突然下起了雨，闷热的午后与纷乱的雨水形成了不协调的对比。一切显得格外突兀，仿佛与那杂乱不堪的思绪相呼应。豆大的雨珠不断洒落，不一会儿地面上便形成了一"
+    },
+    {
+      "collection": "posts",
+      "id": "2011-09-06-the-beginning-of-blog",
+      "sourcePath": "posts/2011/2011-09-06-the-beginning-of-blog.mdx",
+      "frontmatter": {
+        "title": "开始 · 起点 · 轮回",
+        "slug": "the-beginning-of-blog",
+        "date": "2011-09-05 16:04:27+08:00",
+        "updated": "2019-05-18 20:02:33+08:00",
+        "tags": "",
+        "category": "文章",
+        "cover": "https://cat.yufan.me/images/2019/05/2019051820015162.jpg",
+        "summary": "经历了无数次的选择无数次的徘徊，最终还是选择了独立博客，这亦或是起点亦或是轮回。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![Light Snow by Klegs](https://cat.yufan.me/images/2019/05/2019051819515850.jpg)\n\n<MusicPlayer id={1899950648} />\n\n经历了无数次选择与徘徊，最终还是决定创建独立博客，这或许是一个新的起点，也或许是一次轮回。\n\n<p style={{ textAlign: \"right\" }}>——题"
+    },
+    {
+      "collection": "posts",
+      "id": "2011-09-11-association-of-old-books",
+      "sourcePath": "posts/2011/2011-09-11-association-of-old-books.mdx",
+      "frontmatter": {
+        "title": "旧书之联想",
+        "slug": "association-of-old-books",
+        "date": "2011-09-11 08:07:38+08:00",
+        "updated": "2019-05-18 20:08:42+08:00",
+        "tags": "",
+        "category": "文章",
+        "cover": "https://cat.yufan.me/images/2019/05/2019051820064669.jpg",
+        "summary": "每本书都有属于自己的思想，亦可称之为灵魂。而这灵魂的载体便是纸张和文字。时间的流逝，可以令书本原本白皙的直面发黄、生霉。就像是少男少女的洁白的双手、粉嫩的面颊，在光阴的长河的洗涤下变得暗淡、起皱。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![昼寝 by yohan12](https://cat.yufan.me/images/2019/05/2019051820064137.jpg)\n\n<MusicPlayer id={4879351} />\n\n每本书都有属于自己的思想，亦可称之为灵魂。而这灵魂的载体便是纸张和文字。时间的流逝，可以使书本原本白皙的纸张发黄、生霉。就像少男少女的洁白双手、粉嫩面颊，在光阴的洗涤下变得暗淡、起皱。但"
+    },
+    {
+      "collection": "posts",
+      "id": "2011-09-14-hear-the-wind-sing",
+      "sourcePath": "posts/2011/2011-09-14-hear-the-wind-sing.mdx",
+      "frontmatter": {
+        "title": "且听风吟",
+        "slug": "hear-the-wind-sing",
+        "date": "2011-09-14 03:43:50+08:00",
+        "updated": "2019-05-18 20:25:18+08:00",
+        "tags": "",
+        "category": "文章",
+        "cover": "https://cat.yufan.me/images/2019/05/2019051820203620.jpg",
+        "summary": "午后的时光，阳光明媚，气温尚好。我喜欢于此时在学校教学楼后的树荫下面读书，看天上风云变幻。而今天，却有人先来了。那是一段长达45秒的爱恋。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![イルカの雲](https://cat.yufan.me/images/2019/05/2019051820203226.jpg)\n\n<MusicPlayer id={22705507} />\n\n午后的时光，阳光明媚，气温尚好。我喜欢在此时于学校教学楼后的树荫下读书，看天上风云变幻。而今天，却有人先来了。那是一段长达45秒的爱恋。\n\n<p style={{ textAlign: \"right\""
+    },
+    {
+      "collection": "posts",
+      "id": "2011-09-15-the-pain-of-lonely",
+      "sourcePath": "posts/2011/2011-09-15-the-pain-of-lonely.mdx",
+      "frontmatter": {
+        "title": "寂寞的疼痛",
+        "slug": "the-pain-of-lonely",
+        "date": "2011-09-15 08:42:13+08:00",
+        "updated": "2019-05-18 20:30:43+08:00",
+        "tags": "",
+        "category": "文章",
+        "cover": "https://cat.yufan.me/images/2019/05/2019051820293355.jpg",
+        "summary": "某个月明风高的深夜，我无意中打开学校的学生论坛。出奇的是，竟有2000多人在线，无聊的话题，纯表情的回复，似乎都在折射出一个词——“寂寞”。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![夏の日の昼下がり by K,Kanehira](https://cat.yufan.me/images/2019/05/2019051820293355.jpg)\n\n<MusicPlayer id={1867107328} />\n\n某个月明风高的深夜，我无意中打开学校的学生论坛。出奇的是，竟有2000多人在线。无聊的话题，纯表情的回复，似乎都在折射出一个词——“寂寞”。\n\n<p style="
+    },
+    {
+      "collection": "posts",
+      "id": "2011-09-16-bathe",
+      "sourcePath": "posts/2011/2011-09-16-bathe.mdx",
+      "frontmatter": {
+        "title": "记忆 · 洗澡",
+        "slug": "bathe",
+        "date": "2011-09-16 12:33:50+08:00",
+        "updated": "2019-05-18 21:01:17+08:00",
+        "tags": "",
+        "category": "文章",
+        "cover": "https://cat.yufan.me/images/2019/05/2019051820583532.jpg",
+        "summary": "不知什么时候起，澡堂这个词离我们越来越远了；也不知又是什么时候起，热水器步入大街小巷。而澡堂，只能成为记忆中的点滴碎片，点缀成串，交织成一幅幅似曾相识的画面。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![明かりの灯る街 by コーラ](https://cat.yufan.me/images/2019/05/2019051820583532.jpg)\n\n<MusicPlayer id={4879333} />\n\n不知从什么时候起，澡堂这个词离我们越来越远了；也不知又是什么时候起，热水器走进了大街小巷。而澡堂，只能成为记忆中的点滴碎片，点缀成串，交织成一幅幅似曾相识的画面。\n\n<p style="
+    },
+    {
+      "collection": "posts",
+      "id": "2011-09-18-ignorant-age",
+      "sourcePath": "posts/2011/2011-09-18-ignorant-age.mdx",
+      "frontmatter": {
+        "title": "懵懂的年华",
+        "slug": "ignorant-age",
+        "date": "2011-09-18 14:39:10+08:00",
+        "updated": "2019-05-18 21:18:49+08:00",
+        "tags": "",
+        "category": "文章",
+        "cover": "https://cat.yufan.me/images/2019/05/2019051821092623.jpg",
+        "summary": "记得当时年纪小，你爱谈天我爱笑。有一回我们并肩坐在桃树下，风在林梢鸟在叫。后来不知怎么我们睡着了，梦里花落知多少。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![chilling by ふすい@COMITIAね17a](https://cat.yufan.me/images/2019/05/2019051821154097.jpg)\n\n<MusicPlayer id={454182} />\n\n记得当时年纪小，你爱谈天我爱笑。有一回我们并肩坐在桃树下，风在林梢鸟在叫。后来不知怎么我们睡着了，梦里花落知多少。\n\n<p style={{ textAlign"
+    },
+    {
+      "collection": "posts",
+      "id": "2011-09-20-floral-sarong",
+      "sourcePath": "posts/2011/2011-09-20-floral-sarong.mdx",
+      "frontmatter": {
+        "title": "碎花布裙",
+        "slug": "floral-sarong",
+        "date": "2011-09-20 08:33:58+08:00",
+        "updated": "2019-05-18 21:24:18+08:00",
+        "tags": "",
+        "category": "文章",
+        "cover": "https://cat.yufan.me/images/2019/05/2019051821195094.jpg",
+        "summary": "儿时最喜欢做的事，就是傍晚同老妈的散步。漫步于夏日的傍晚，走过田野、小河，嗅着扑鼻的油菜花香，感受着迎面而来的略带凉爽的风。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![告白 by  アシマ](https://cat.yufan.me/images/2019/05/2019051821225466.jpg)\n\n<MusicPlayer id={420693} />\n\n时间的流逝总会带走些许旧事物，仅遗留下些许影子，投射于记忆之中。\n\n<p style={{ textAlign: \"right\" }}>——题记</p>\n\n儿时最喜欢做的事，就是傍晚同老妈的散步"
+    },
+    {
+      "collection": "posts",
+      "id": "2011-09-24-harry-potter",
+      "sourcePath": "posts/2011/2011-09-24-harry-potter.mdx",
+      "frontmatter": {
+        "title": "当青春不再魔法散场",
+        "slug": "harry-potter",
+        "date": "2011-09-24 05:07:26+08:00",
+        "updated": "2019-05-27 06:56:38+08:00",
+        "tags": "",
+        "category": "文章",
+        "cover": "https://cat.yufan.me/images/2019/05/2019051821474615.png",
+        "summary": "对于今年的7月7日来说，是个值得纪念的日子，伴随着我们童年长大的《哈利波特》系列终于落下了帷幕。那些美好，柔柔消散，竟让人忍不住落笔想念。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![ただいま、おかえり by C](https://cat.yufan.me/images/2019/05/2019051821474615.png)\n\n<MusicPlayer id={379785} />\n\n对于今年的7月7日来说，是个值得纪念的日子，伴随着我们童年长大的《哈利波特》系列终于落下了帷幕。那些美好，柔柔消散，竟让人忍不住落笔想念。\n\n曾记否，那部《哈利波特与魔法石》从童年时光进"
+    },
+    {
+      "collection": "posts",
+      "id": "2011-09-29-shallow-lonely-faint-miss",
+      "sourcePath": "posts/2011/2011-09-29-shallow-lonely-faint-miss.mdx",
+      "frontmatter": {
+        "title": "浅浅寂寞，淡淡想念",
+        "slug": "shallow-lonely-faint-miss",
+        "date": "2011-09-29 04:44:28+08:00",
+        "updated": "2019-05-27 09:34:50+08:00",
+        "tags": "",
+        "category": "文章",
+        "cover": "https://cat.yufan.me/images/2019/05/2019052708550328.jpg",
+        "summary": "夜 11:30，宿舍熄灯的瞬间，床头漆黑的夜色像某刻恬静的安详，心绪中无边无际的想念不觉纠缠。此刻，我想你了，好像此刻的孤单能有你相陪。将你们搂入怀中，轻嗅发丝间薰衣草的清香，心玄跟着挥舞懵懂。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![echo blue by なつ](https://cat.yufan.me/images/2019/05/2019052708543516.jpg)\n\n<MusicPlayer id={527799} />\n\n夜晚11:30，宿舍熄灯的瞬间，床头漆黑的夜色仿佛是某刻恬静的安详，心绪中无尽的想念纠缠着我。此刻，我想你了，好像这份孤单可以有你来陪伴。想象着将你搂入怀中，轻嗅发丝间薰衣草的清香，心"
+    },
+    {
+      "collection": "posts",
+      "id": "2011-10-02-the-losted-beautiful",
+      "sourcePath": "posts/2011/2011-10-02-the-losted-beautiful.mdx",
+      "frontmatter": {
+        "title": "遗失的美好",
+        "slug": "the-losted-beautiful",
+        "date": "2011-10-02 14:19:35+08:00",
+        "updated": "2019-06-05 12:10:07+08:00",
+        "tags": "",
+        "category": "文章",
+        "cover": "https://cat.yufan.me/images/2019/06/2019060512093940.jpg",
+        "summary": "如果海会说话/如果风爱上沙/如果有些想念/遗忘在漫长的长假/我会聆听浪花/任记忆里的爱情/在时间潮汐里喧哗，我会试着把那一年的故事/再接下去说完。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![遗失的美好](https://cat.yufan.me/images/2019/06/2019060512012051.jpg)\n\n<MusicPlayer id={1866489121} />\n\n如果海会说话/如果风爱上沙/如果有些想念/遗忘在漫长的长假/我会聆听浪花/让记忆里的爱情/在时间潮汐里喧哗，我会试着把那一年的故事/再接着说完。\n\n<p style={{ textAlign: \""
+    },
+    {
+      "collection": "posts",
+      "id": "2011-10-04-countercurrent-river",
+      "sourcePath": "posts/2011/2011-10-04-countercurrent-river.mdx",
+      "frontmatter": {
+        "title": "梦断逆流河",
+        "slug": "countercurrent-river",
+        "date": "2011-10-04 12:39:00+08:00",
+        "updated": "2019-06-05 12:17:11+08:00",
+        "tags": "",
+        "category": "文章",
+        "cover": "https://cat.yufan.me/images/2019/06/2019060512164612.jpg",
+        "summary": "也许这个世界上本身真的存在一条逆流河。起源于大海、终于巨峰之顶。传说中，如果有人能够达到它的尽头，便会获得幸福。而你我便是用一生来追寻幸福的青鸟。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![奈落の楽園 by ミア・スノーウィー](https://cat.yufan.me/images/2019/06/2019060512135888.jpg)\n\n<MusicPlayer id={1295704234} />\n\n也许这个世界上本身真的存在一条逆流河。起源于大海、终于巨峰之顶。传说中，如果有人能够达到它的尽头，便会获得幸福。而你我便是用一生来追寻幸福的青鸟。\n\n<p style={"
+    },
+    {
+      "collection": "posts",
+      "id": "2011-10-06-the-story-of-time",
+      "sourcePath": "posts/2011/2011-10-06-the-story-of-time.mdx",
+      "frontmatter": {
+        "title": "光阴的故事",
+        "slug": "the-story-of-time",
+        "date": "2011-10-05 19:03:48+08:00",
+        "updated": "2019-06-06 07:15:29+08:00",
+        "tags": "",
+        "category": "文章",
+        "cover": "https://cat.yufan.me/images/2019/06/2019060607035266.jpg",
+        "summary": "“流水它带走光阴的故事，改变了两个人……”，耳机里一直重复地放着罗大佑的“光阴的故事”。沙哑的嗓音配上那忧伤歌词令人不觉心萌伤感。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![orion by Nengoro(ネんごろぅ)](https://cat.yufan.me/images/2019/06/2019060607083452.jpg)\n\n<MusicPlayer id={26361010} />\n\n“流水它带走光阴的故事，改变了两个人……”，耳机里一直重复地放着罗大佑的“光阴的故事”。沙哑的嗓音配上那忧伤歌词令人不觉心萌伤感。对于罗大佑写的歌，不但别的女子唱，"
+    },
+    {
+      "collection": "posts",
+      "id": "2011-10-07-those-words-my-love",
+      "sourcePath": "posts/2011/2011-10-07-those-words-my-love.mdx",
+      "frontmatter": {
+        "title": "那些文字，那段情",
+        "slug": "those-words-my-love",
+        "date": "2011-10-06 21:36:39+08:00",
+        "updated": "2019-06-06 07:22:10+08:00",
+        "tags": "",
+        "category": "文章",
+        "cover": "https://cat.yufan.me/images/2019/06/2019060607210889.jpg",
+        "summary": "又一次整理桌上散乱的纸张，无意中竟发现昔日尝试写的第一本同人小说的草稿，不禁有些淡淡的感触。那些文字，那些情感原来一直都存在着，只是我们未曾去发掘，便一次次地错失某些回忆。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![](https://cat.yufan.me/images/2019/06/2019060607161615.jpg)\n\n<MusicPlayer id={2697656415} />\n\n又一次整理桌上散乱的纸张，无意中竟发现昔日尝试写的第一本同人小说的草稿，不禁有些淡淡的感触。那些文字，那些情感原来一直都存在着，只是我们未曾去发掘，便一次次地错失某些回忆。\n\n突然惊恐地发现自己距上次手写文"
+    },
+    {
+      "collection": "posts",
+      "id": "2011-10-11-past-memory",
+      "sourcePath": "posts/2011/2011-10-11-past-memory.mdx",
+      "frontmatter": {
+        "title": "回首的瞬间",
+        "slug": "past-memory",
+        "date": "2011-10-11 02:15:37+08:00",
+        "updated": "2019-06-06 07:29:35+08:00",
+        "tags": "",
+        "category": "文章",
+        "cover": "https://cat.yufan.me/images/2019/06/2019060607290148.jpg",
+        "summary": "喜欢一个人默默地伫立在窗口任清风袭来，带走心底的疲惫，仰望苍穹。闲看庭前花开花落，漫步窗外，静看云卷云舒。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![やがてくるすべての春へ by loundraw](https://cat.yufan.me/images/2019/06/2019060607242852.jpg)\n\n<MusicPlayer id={488388715} />\n\n喜欢一个人默默地伫立在窗口，任清风袭来，带走心底的疲惫，仰望苍穹。闲看庭前花开花落，漫步窗外，静看云卷云舒。在这种种神神秘秘、没有时间、没有怀疑的宁静中，闭目宁神"
+    },
+    {
+      "collection": "posts",
+      "id": "2011-10-13-memories-of-blossom",
+      "sourcePath": "posts/2011/2011-10-13-memories-of-blossom.mdx",
+      "frontmatter": {
+        "title": "花开的回忆",
+        "slug": "memories-of-blossom",
+        "date": "2011-10-12 17:56:23+08:00",
+        "updated": "2019-06-06 08:10:15+08:00",
+        "tags": "",
+        "category": "文章",
+        "cover": "https://cat.yufan.me/images/2019/06/2019060608094516.jpg",
+        "summary": "一些事物，总能给我无边的联想，这些联想似无逻辑，但我总是喜欢记下它们，也许是因为它们只属于我。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![ひまわり by gomzi](https://cat.yufan.me/images/2019/06/2019060608035798.jpg)\n\n<MusicPlayer id={32922790} />\n\n一些事物，总能给我无边的联想。这些联想似无逻辑，但我总是喜欢记下它们，也许是因为它们只属于我。\n\n<p style={{ textAlign: \"right\" }}>——题记</p>\n"
+    },
+    {
+      "collection": "posts",
+      "id": "2011-10-14-im-a-male-not-female",
+      "sourcePath": "posts/2011/2011-10-14-im-a-male-not-female.mdx",
+      "frontmatter": {
+        "title": "我是男生，不是女生",
+        "slug": "im-a-male-not-female",
+        "date": "2011-10-13 16:19:57+08:00",
+        "updated": "2019-06-10 04:40:15+08:00",
+        "tags": "",
+        "category": "文章",
+        "cover": "https://cat.yufan.me/images/2019/06/2019061004393184.jpg",
+        "summary": "也许是我的博客的名字太秀气，也许是我之前用的主题太婉约，更或许是那个留言的小女孩头像惹的祸，总是有人把我当做女孩子。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![初夏の青色 by せな茶](https://cat.yufan.me/images/2019/06/2019061004374698.jpg)\n\n<MusicPlayer id={1299981609} />\n\n也许是我的博客名字太秀气，也许是我之前用的主题太婉约，更或许是那个留言的小女孩头像惹的祸，总是有人把我当做女孩子。甚至，有人说我的真实姓名“雨帆”就是一个女孩子的名字。好吧，为了不再"
+    },
+    {
+      "collection": "posts",
+      "id": "2011-10-16-the-centenary-of-school-anniversary",
+      "sourcePath": "posts/2011/2011-10-16-the-centenary-of-school-anniversary.mdx",
+      "frontmatter": {
+        "title": "今天校庆",
+        "slug": "the-centenary-of-school-anniversary",
+        "date": "2011-10-16 07:09:37+08:00",
+        "updated": "2019-07-12 13:47:47+08:00",
+        "tags": "",
+        "category": "杂思",
+        "cover": "https://cat.yufan.me/images/2019/07/2019071213470131.jpg",
+        "summary": "今天是山大的110周年的校庆，作为一个山大人来说，应该是一个高兴的日子。可是，我却没有丝毫的欣喜，一个人坐在依旧空荡荡的自习室，耳机里听着“How to be alone”。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![](https://cat.yufan.me/images/2019/07/2019071213435191.jpg)\n\n<MusicPlayer id={1810227452} />\n\n今天是山大的 110 周年校庆，作为一个山大人来说，应该是一个高兴的日子。可是，我却没有丝毫的欣喜，一个人坐在依旧空荡荡的自习室，耳机里听着“How to be alone”。有些无聊，甚至还有些烦躁。\n\n"
+    },
+    {
+      "collection": "posts",
+      "id": "2011-10-20-loving-notebook",
+      "sourcePath": "posts/2011/2011-10-20-loving-notebook.mdx",
+      "frontmatter": {
+        "title": "恋恋笔记本",
+        "slug": "loving-notebook",
+        "date": "2011-10-20 07:14:32+08:00",
+        "updated": "2019-07-12 14:01:32+08:00",
+        "tags": "",
+        "category": "杂思",
+        "cover": "https://cat.yufan.me/images/2019/07/2019071214005288.jpg",
+        "summary": "前天买了一本新的笔记本，拿到手，看着光洁的纸面，总想写点什么。可是拿起笔又放下，脑袋昏沉沉的，感觉就像时喝醉酒了般写不出东西来。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![](https://cat.yufan.me/images/2019/07/2019071213590880.jpg)\n\n<MusicPlayer id={1091476} />\n\n前天买了一本新的笔记本，拿到手，看着光洁的纸面，总想写点什么。可是拿起笔又放下，脑袋昏沉沉的，感觉就像时喝醉酒了般写不出东西来。最后就写个类似书本的引语。现在贴出来，大家勿笑哦。\n\n一直有收藏笔记本的喜好，一直喜"
+    },
+    {
+      "collection": "posts",
+      "id": "2011-10-21-the-streets-where-wind-lives",
+      "sourcePath": "posts/2011/2011-10-21-the-streets-where-wind-lives.mdx",
+      "frontmatter": {
+        "title": "风居住的街道",
+        "slug": "the-streets-where-wind-lives",
+        "date": "2011-10-20 16:00:16+08:00",
+        "updated": "2021-02-27 18:14:08+08:00",
+        "tags": "",
+        "category": "文章",
+        "cover": "https://cat.yufan.me/images/2019/07/2019071214170923.jpg",
+        "summary": "傍晚时分，走出昏暗的教室，秋风乍起，阵阵寒风袭来，不禁打了一个寒战。看到路面上随风而起的梧桐叶，一如疲倦了的蝴蝶。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![](https://cat.yufan.me/images/2019/07/2019071214170923.jpg)\n\n<MusicPlayer id={29539350} />\n\n是风，拨动记忆的琴弦；是风，挑起心中的涟漪；是风，唤醒久违的思绪。\n\n<p style={{ textAlign: \"right\" }}>——题记</p>\n\n傍晚时分，走出昏暗的教室，秋风乍起，阵阵寒风袭来，不"
+    },
+    {
+      "collection": "posts",
+      "id": "2011-10-23-show-the-sword",
+      "sourcePath": "posts/2011/2011-10-23-show-the-sword.mdx",
+      "frontmatter": {
+        "title": "亮剑",
+        "slug": "show-the-sword",
+        "date": "2011-10-22 17:31:34+08:00",
+        "updated": "2019-07-13 10:59:53+08:00",
+        "tags": "",
+        "category": "文章",
+        "cover": "https://cat.yufan.me/images/2019/07/2019071310585310.jpg",
+        "summary": "两位剑客狭路相逢。对方身怀绝技、早已是风动江湖、举世皆知的青年才俊。而你，只是一个名不见经传、只有一本下品武学的小卒子。是该退避其芒，还是挺身向前？我答：“亮剑。”",
+        "published": "true"
+      },
+      "bodyPreview": "\n![坂田銀時](https://cat.yufan.me/images/2019/07/2019071310502777.jpg)\n\n<MusicPlayer id={26124988} />\n\n两位剑客狭路相逢。对方身怀绝技、早已是风动江湖、举世皆知的青年才俊。而你，只是一个名不见经传、只有一本下品武学的小卒子。是该退避其锋，还是挺身向前？我答：“亮剑。”\n\n<p style={{ textA"
+    },
+    {
+      "collection": "posts",
+      "id": "2011-10-26-face-the-fact",
+      "sourcePath": "posts/2011/2011-10-26-face-the-fact.mdx",
+      "frontmatter": {
+        "title": "坦然面对",
+        "slug": "face-the-fact",
+        "date": "2011-10-26 05:19:21+08:00",
+        "updated": "2020-09-04 21:16:30+08:00",
+        "tags": "",
+        "category": "文章",
+        "cover": "https://cat.yufan.me/images/2020/09/2020090421160773.jpg",
+        "summary": "生活中，我们要面对很多，有好的，有坏的，但无论好坏，都无需埋怨，人生的路途就是这样。抱怨没有用，逃避不可能，人生是现实的，现实的人生还需要现实的方法处理。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![GKN - 雪*](https://cat.yufan.me/images/2020/09/2020090421113833.jpg)\n\n<MusicPlayer id={276709} />\n\n无论你愿不愿意，我们必须面对生活呈现给我们的一切。\n\n<p style={{ textAlign: \"right\" }}>——题记</p>\n\n生活中，我们要面对很多，有好的，有坏的，但无论好坏，都无"
+    },
+    {
+      "collection": "posts",
+      "id": "2011-10-28-south-or-north",
+      "sourcePath": "posts/2011/2011-10-28-south-or-north.mdx",
+      "frontmatter": {
+        "title": "黄梅细雨",
+        "slug": "south-or-north",
+        "date": "2011-10-27 16:11:03+08:00",
+        "updated": "2020-09-04 22:09:29+08:00",
+        "tags": "",
+        "category": "文章",
+        "cover": "https://cat.yufan.me/images/2020/09/2020090422091233.jpg",
+        "summary": "白马秋风塞上，杏花春雨江南。塞上是空旷的、粗犷的，能与之相配的，只有那萧瑟的秋风，疾奔的白马。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![黄梅细雨 1](https://cat.yufan.me/images/2020/09/2020090422023879.jpg)\n\n<MusicPlayer id={1964055957} />\n\n## Part 1\n\n白马秋风塞上，杏花春雨江南。塞上是空旷的、粗犷的，能与之相配的，只有那萧瑟的秋风，疾奔的白马。而与之相对的江南，则是婉约的、柔美的，如同多情的女子。正如诗人所言，只有杏花、"
+    },
+    {
+      "collection": "posts",
+      "id": "2011-10-31-explorer-keyboard",
+      "sourcePath": "posts/2011/2011-10-31-explorer-keyboard.mdx",
+      "frontmatter": {
+        "title": "键盘的随想",
+        "slug": "explorer-keyboard",
+        "date": "2011-10-31 11:13:45+08:00",
+        "updated": "2020-09-04 22:19:16+08:00",
+        "tags": "",
+        "category": "杂思",
+        "toc": "true",
+        "cover": "https://cat.yufan.me/images/2020/09/2020090422185883.jpg",
+        "summary": "数字时代已经到来。伴随着网络的普及，人们的工作、学习、交流方式逐渐转移到了电子设备上。与之相伴而生的键盘输入方式也逐渐为大家所接受，成了一种格局，或者说是一种文化。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![打字机](https://cat.yufan.me/images/2020/09/2020090422164876.jpg)\n\n<MusicPlayer id={5101896} />\n\n数字时代已经到来。伴随着网络的普及，人们的工作、学习、交流方式逐渐转移到了电子设备上。与之相伴而生的键盘输入方式也逐渐为大家所接受，成了一种格局，或者说是一种文化。没有人可以确切地说触摸屏将能替代键盘，原因"
+    },
+    {
+      "collection": "posts",
+      "id": "2011-11-23-sunny-day-after-rain",
+      "sourcePath": "posts/2011/2011-11-23-sunny-day-after-rain.mdx",
+      "frontmatter": {
+        "title": "雨后便是晴天",
+        "slug": "sunny-day-after-rain",
+        "date": "2011-11-23 11:56:07+08:00",
+        "updated": "2020-09-04 21:53:12+08:00",
+        "tags": "",
+        "category": "文章",
+        "cover": "https://cat.yufan.me/images/2020/09/2020090421472732.jpg",
+        "summary": "最近一段时间济南阴雨连绵，窗外的天空中的雾气与那迷蒙的小雨掺杂在一起，到有一种不真切的烟雨江南之感。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![MyRockyS - 275](https://cat.yufan.me/images/2020/09/2020090421492124.jpg)\n\n<MusicPlayer id={441809} />\n\n最近一段时间济南阴雨连绵，窗外的天空中雾气与那迷蒙的小雨掺杂在一起，倒有一种不真切的烟雨江南之感。但是这里是北国，时至深秋，济南的天气却如书中所说的那样，一层秋雨一层凉。\n\n瑟瑟秋风刺痛"
+    },
+    {
+      "collection": "posts",
+      "id": "2011-11-25-the-amber-in-november",
+      "sourcePath": "posts/2011/2011-11-25-the-amber-in-november.mdx",
+      "frontmatter": {
+        "title": "十一月的琥珀",
+        "slug": "the-amber-in-november",
+        "date": "2011-11-25 04:28:08+08:00",
+        "updated": "2020-09-04 21:45:42+08:00",
+        "tags": "",
+        "category": "杂思",
+        "cover": "https://cat.yufan.me/images/2020/09/2020090421241938.jpg",
+        "summary": "琥珀，十一月的生日石之一。此时谈起，正当其时。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![Amber](https://cat.yufan.me/images/2020/09/2020092003563700.jpg)\n\n<MusicPlayer id={1697643} />\n\n琥珀，十一月的生日石之一。此时谈起，正当其时。\n\n相信我们小学的时候都学习过这样一篇课文，名为《奇异的琥珀》。讲的就是一万年前的某个夏天，一滴松脂将两只小虫包裹起来，历经沧海桑田的变迁，变成了化石。而后"
+    },
+    {
+      "collection": "posts",
+      "id": "2011-11-29-restart-the-blog",
+      "sourcePath": "posts/2011/2011-11-29-restart-the-blog.mdx",
+      "frontmatter": {
+        "title": "写在今天——记重开始写博",
+        "slug": "restart-the-blog",
+        "date": "2011-11-29 05:16:29+08:00",
+        "updated": "2020-09-04 22:29:54+08:00",
+        "tags": "",
+        "category": "杂思",
+        "cover": "https://cat.yufan.me/images/2020/09/2020090422270141.jpg",
+        "summary": "Today is the first day of the rest of my life, I wake as a child to see the world begin.",
+        "published": "true"
+      },
+      "bodyPreview": "\n![からなぎ - 梅雨晴の家路](https://cat.yufan.me/images/2020/09/2020090422290185.jpg)\n\n<MusicPlayer id={1345084315} />\n\n> Today is the first day of the rest of my life, I wake as a child to see the world begin."
+    },
+    {
+      "collection": "posts",
+      "id": "2011-11-30-the-first-snowing",
+      "sourcePath": "posts/2011/2011-11-30-the-first-snowing.mdx",
+      "frontmatter": {
+        "title": "2011年的第一场雪",
+        "slug": "the-first-snowing",
+        "date": "2011-11-30 01:37:31+08:00",
+        "updated": "2020-09-04 22:46:05+08:00",
+        "tags": "",
+        "category": "杂思",
+        "cover": "https://cat.yufan.me/images/2020/09/2020090422395473.jpg",
+        "summary": "角落里有一片暗雪/我猜它会是/一张被雨水冲着/想在那里休息的报纸/它的周身/被不大的印字布满/一天的新闻恰如历史的一粒微尘/曾经存在/却又慢慢的变得微不足道。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![black and white, winter, snow, New York City](https://cat.yufan.me/images/2020/09/2020090422361856.jpg)\n\n<MusicPlayer id={31446197} />\n\n> 角落里有一片暗雪\\\n> 我猜它会是\\\n> 一张被雨水冲着\\\n> 想在那里休息的报纸\\\n> 它的周身\\\n> 被不大的印字"
+    },
+    {
+      "collection": "posts",
+      "id": "2011-12-07-drink-the-tea",
+      "sourcePath": "posts/2011/2011-12-07-drink-the-tea.mdx",
+      "frontmatter": {
+        "title": "茶品 · 茶悟",
+        "slug": "drink-the-tea",
+        "date": "2011-12-07 01:12:58+08:00",
+        "updated": "2020-09-04 23:06:50+08:00",
+        "tags": "",
+        "category": "杂思",
+        "cover": "https://cat.yufan.me/images/2020/09/2020090423034580.jpg",
+        "summary": "翻开最新一期的山大周刊，页末的一篇关于茶的感悟吸引了我的目光。文章的作者说：其实茶有三次生命。一是茶的自然生命，是茶作为一种植物的自然生命过程。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![茶品 · 茶悟 2](https://cat.yufan.me/images/2020/09/2020090423035126.jpg)\n\n<MusicPlayer id={1461669613} />\n\n翻开最新一期的山大周刊，页末的一篇关于茶的感悟吸引了我的目光。文章的作者说：其实茶有三次生命。一是茶的自然生命，是茶作为一种植物的自然生命过程。而其二便是茶的制作生命，作为一种饮品的商品生"
+    },
+    {
+      "collection": "posts",
+      "id": "2011-12-09-you-are-the-apple-of-mine",
+      "sourcePath": "posts/2011/2011-12-09-you-are-the-apple-of-mine.mdx",
+      "frontmatter": {
+        "title": "那些年我们一起追过的女孩",
+        "slug": "you-are-the-apple-of-mine",
+        "date": "2011-12-09 01:43:49+08:00",
+        "updated": "2020-09-06 11:31:29+08:00",
+        "tags": "",
+        "category": "杂思",
+        "cover": "https://cat.yufan.me/images/2024/04/2024041519203200.jpg",
+        "summary": "夜里12点，耗尽笔记本里面的最后一格电量的我终于将这部电影看完，却怎么也睡不着。抬头看着桌前的墙壁，回想起已逝的青春经历，整个人便有了一种苍老的感觉。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![那些年剧照 01](https://cat.yufan.me/images/2024/04/2024041519194400.jpg)\n\n<MusicPlayer id={572912887} />\n\n夜里12点，耗尽笔记本里面的最后一格电量的我终于将这部电影看完，却怎么也睡不着。抬头看着桌前的墙壁，回想起已逝的青春经历，整个人便有了一种苍老的感觉。对于已逝的过去，突然觉得像梦一般漫长……\n"
+    },
+    {
+      "collection": "posts",
+      "id": "2011-12-11-sauvignon-blanc",
+      "sourcePath": "posts/2011/2011-12-11-sauvignon-blanc.mdx",
+      "frontmatter": {
+        "title": "最是一番长相思",
+        "slug": "sauvignon-blanc",
+        "date": "2011-12-11 01:58:34+08:00",
+        "updated": "2020-09-06 11:32:00+08:00",
+        "tags": "",
+        "category": "文章",
+        "cover": "https://cat.yufan.me/images/2024/04/2024041519325100.jpg",
+        "summary": "堇色年华，青春的下一个路口，再回首，却是多般支离破碎。毕业，然后各奔东西，聚了又散、离离合合。我们总会遇见一些人，然后在某一刻踏上开往南北的列车，就此不常相见。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![君を眺める3年間だった](https://cat.yufan.me/images/2024/04/2024041519362100.jpg)\n\n<MusicPlayer id={496869422} />\n\n与你擦肩而过的时候，蓦然回首，那人似曾相识……\n\n## 一、青春告别曲\n\n堇色年华，青春的下一个路口，再回首，却是多般支离破碎。\n\n毕业，然后各奔东西，聚了又散、离离合合。我们总会遇见一"
+    },
+    {
+      "collection": "posts",
+      "id": "2011-12-16-one-hundred-days",
+      "sourcePath": "posts/2011/2011-12-16-one-hundred-days.mdx",
+      "frontmatter": {
+        "title": "第几个100天——博客百日记录",
+        "slug": "one-hundred-days",
+        "date": "2011-12-16 11:23:12+08:00",
+        "updated": "2020-09-06 11:33:13+08:00",
+        "tags": "",
+        "category": "杂思",
+        "toc": "true",
+        "cover": "https://cat.yufan.me/images/2024/04/2024041519424200.jpg",
+        "summary": "时间终会一点一滴磨平我们青春的印迹，那散在记忆里的片段退去了华丽的色彩，留下的还有什么呢？",
+        "published": "true"
+      },
+      "bodyPreview": "\n![開夏宣言！](https://cat.yufan.me/images/2024/04/2024041519462300.jpg)\n\n<MusicPlayer id={413961275} />\n\n时间终会一点一滴磨平我们青春的印迹，那散在记忆里的片段退去了华丽的色彩，留下的还有什么呢？\n\n## 一、缘起\n\n就像张爱玲说的那样：“于千万人中遇见你所要遇见的人，在千万年之中，时间的无涯的荒野里，"
+    },
+    {
+      "collection": "posts",
+      "id": "2011-12-20-who-is-singing",
+      "sourcePath": "posts/2011/2011-12-20-who-is-singing.mdx",
+      "frontmatter": {
+        "title": "听是谁在唱歌",
+        "slug": "who-is-singing",
+        "date": "2011-12-20 06:38:49+08:00",
+        "updated": "2021-11-23 17:50:23+08:00",
+        "tags": "",
+        "category": "杂思",
+        "toc": "true",
+        "cover": "https://cat.yufan.me/images/2022/04/2022041519522100.jpg",
+        "summary": "听着奶茶的甜美的嗓音，便是一种恬静的享受。冬日里的午后，音箱里放着那首“听，是谁在唱歌”，像是有一种魔力般的感染，让人回忆许久。而仔细回想，都是种呼唤……",
+        "published": "true"
+      },
+      "bodyPreview": "\n![FRONTLINE - らず](https://cat.yufan.me/images/2022/04/2022042003433200.jpg)\n\n<MusicPlayer id={33861559} />\n\n听着奶茶的甜美的嗓音，便是一种恬静的享受。冬日里的午后，音箱里放着那首“听，是谁在唱歌”，像是有一种魔力般的感染，让人回忆许久。而仔细回想，都是种呼唤……\n\n## 音乐，生活的百味\n"
+    },
+    {
+      "collection": "posts",
+      "id": "2012-01-01-the-stopped-wheelchair",
+      "sourcePath": "posts/2012/2012-01-01-the-stopped-wheelchair.mdx",
+      "frontmatter": {
+        "title": "停止了一年的轮椅",
+        "slug": "the-stopped-wheelchair",
+        "date": "2012-01-01 15:20:43+08:00",
+        "updated": "2020-09-06 11:36:12+08:00",
+        "tags": "",
+        "category": "文章",
+        "cover": "https://cat.yufan.me/images/2024/04/2024041520022600.jpg",
+        "summary": "从生到死，这位病人因为瘫痪已经在轮椅上度过了38年，在2010年12月31日凌晨因为突发脑溢血逝世。从那时起，这只摇了38年的轮椅，停了。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![史铁生01](https://cat.yufan.me/images/2024/04/2024041520054100.jpg)\n\n<MusicPlayer id={28285910} />\n\n当时钟指向 2011 年的最后一天时，相信很多人都在庆祝新年的到来。这一天也是剧作家史铁生去世整整一年的时间。从生到死，这位病人因为瘫痪已经在轮椅上度过了 38 年，在 2010 年 12 月 31 "
+    },
+    {
+      "collection": "posts",
+      "id": "2012-01-26-visitant",
+      "sourcePath": "posts/2012/2012-01-26-visitant.mdx",
+      "frontmatter": {
+        "title": "候鸟",
+        "slug": "visitant",
+        "date": "2012-01-25 17:08:09+08:00",
+        "updated": "2020-09-06 11:37:25+08:00",
+        "tags": "",
+        "category": "文章",
+        "cover": "https://cat.yufan.me/images/2012/03/2012030819164800.jpg",
+        "summary": "放假回家前收拾了一个下午的东西，现在窗外天已经黑了，我重新坐下来。回身看到放在身旁的行李箱，大大的、满满的。原本杂乱无章的书桌也有些空荡荡的",
+        "published": "true"
+      },
+      "bodyPreview": "\n![掠れた情景](https://cat.yufan.me/images/2012/01/2012011819343900.jpg)\n\n<MusicPlayer id={1938687497} />\n\n放假回家前，我收拾了一个下午的东西，现在窗外天已经黑了，我重新坐了下来。\n\n回头看到放在身旁的行李箱，大大的、满满的。原本杂乱无章的书桌也显得有些空荡荡的。\n\n看来，时间并没有欺骗我，我真的要离开"
+    },
+    {
+      "collection": "posts",
+      "id": "2012-01-28-my-dear-kitty",
+      "sourcePath": "posts/2012/2012-01-28-my-dear-kitty.mdx",
+      "frontmatter": {
+        "title": "爷爷养过的猫",
+        "slug": "my-dear-kitty",
+        "date": "2012-01-28 15:41:26+08:00",
+        "updated": "2020-09-06 11:38:13+08:00",
+        "tags": "",
+        "category": "文章",
+        "cover": "https://cat.yufan.me/images/2012/02/2012020222465000.jpg",
+        "summary": "日子一天天过去，时间一天天流淌，故事也一天天的上演。有些记忆早就被忘记，而有些却像伤疤版附着于灵魂上，怎么也消散不去……",
+        "published": "true"
+      },
+      "bodyPreview": "\n![路地裏と猫](https://cat.yufan.me/images/2012/02/2012020922491700.jpg)\n\n<MusicPlayer id={2051746775} />\n\n日子一天天过去，时间一天天流淌，故事也一天天上演。有些记忆早就被忘记，而有些却像伤疤般附着于灵魂上，怎么也消散不去……\n\n那一年，3 月的午后降临了一场小雨，淅淅沥沥地湿润了整个午后。\n\n那一年，"
+    },
+    {
+      "collection": "posts",
+      "id": "2012-02-03-blue-turkey",
+      "sourcePath": "posts/2012/2012-02-03-blue-turkey.mdx",
+      "frontmatter": {
+        "title": "蓝色土耳其",
+        "slug": "blue-turkey",
+        "date": "2012-02-03 15:43:29+08:00",
+        "updated": "2020-09-06 11:38:47+08:00",
+        "tags": "",
+        "category": "文章",
+        "summary": "还贪恋着，你的风情，诱惑着，你的神秘。埋葬了，我的爱情，忧郁蓝色土耳其。紧跟随着，我的稚气；逃避着，我的宿命。徘徊在，你的淡淡哀愁灰色眼眸里。",
+        "cover": "https://cat.yufan.me/images/2012/03/2012031120464600.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![両手に夏](https://cat.yufan.me/images/2012/04/2012042820514100.jpg)\n\n<MusicPlayer id={1389742858} />\n\n还贪恋着，你的风情，诱惑着，你的神秘。埋葬了，我的爱情，忧郁蓝色土耳其。紧跟随着，我的稚气；逃避着，我的宿命。徘徊在，你的淡淡哀愁灰色眼眸里——《蓝色土耳其》\n\n耳机里面依旧放着《蓝色土耳其》的旋律"
+    },
+    {
+      "collection": "posts",
+      "id": "2012-02-17-image-times",
+      "sourcePath": "posts/2012/2012-02-17-image-times.mdx",
+      "frontmatter": {
+        "title": "图片时光",
+        "slug": "image-times",
+        "date": "2012-02-16 16:31:28+08:00",
+        "updated": "2020-09-06 11:40:37+08:00",
+        "tags": "",
+        "category": "文章",
+        "summary": "这些天在看书时偶然读到一句话：林花谢了春红，太匆匆。恍然有轻缓踏歌之声自时光的深处漾起，在读到此句的那一刹那，诗句中交融的时间之美、空间之美犹若一滴年久醇厚的烟墨点入碧清的水中，丝丝缕缕地舒卷散尽。",
+        "cover": "https://cat.yufan.me/images/2012/05/2012050221032900.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![桜包み](https://cat.yufan.me/images/2012/05/2012050320564300.jpg)\n\n<MusicPlayer id={730690} />\n\n这些天在看书时偶然读到一句话：林花谢了春红，太匆匆。\n\n恍然有轻缓踏歌之声自时光的深处漾起，在读到此句的那一刹那，诗句中交融的时间之美、空间之美犹若一滴年久醇厚的烟墨点入碧清的水中，丝丝缕缕地舒卷散尽。\n\n美"
+    },
+    {
+      "collection": "posts",
+      "id": "2012-02-23-spring-words",
+      "sourcePath": "posts/2012/2012-02-23-spring-words.mdx",
+      "frontmatter": {
+        "title": "春语",
+        "slug": "spring-words",
+        "date": "2012-02-23 04:14:05+08:00",
+        "updated": "2020-09-06 11:42:04+08:00",
+        "tags": "",
+        "category": "文章",
+        "summary": "喜欢春天，因为喜欢鸟语花开，欣欣向荣。阳光更暖了，风更暖了，心情也更暖了。期待中的春天就这样悄然而至，原心灵的春天也随之萌发。",
+        "cover": "https://cat.yufan.me/images/2012/05/2012050521120700.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![降り注ぐ春の光を浴びて](https://cat.yufan.me/images/2012/05/2012050521172300.jpg)\n\n<MusicPlayer id={2627944275} />\n\n喜欢春天，因为喜欢鸟语花开，欣欣向荣。\n\n阳光更暖了，风更暖了，心情也更暖了。期待中的春天就这样悄然而至，原本心灵的春天也随之萌发。\n\n二月的早上宁静安详，那份宁静和清新让人精神雀跃，"
+    },
+    {
+      "collection": "posts",
+      "id": "2012-02-24-intimate-in-mind",
+      "sourcePath": "posts/2012/2012-02-24-intimate-in-mind.mdx",
+      "frontmatter": {
+        "title": "相视一笑，莫逆于心",
+        "slug": "intimate-in-mind",
+        "date": "2012-02-24 14:20:13+08:00",
+        "updated": "2020-09-06 11:42:55+08:00",
+        "tags": "",
+        "category": "杂思",
+        "summary": "说话有时候耐人寻味。例如，如果我对一个远方一个朋友说：“我很想你啊”，她会体会到我当下的心情吗？我想很难。",
+        "cover": "https://cat.yufan.me/images/2012/02/2012020521241800.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![委托](https://cat.yufan.me/images/2012/02/2012020521304400.jpg)\n\n<MusicPlayer id={1430268793} />\n\n说话有时候耐人寻味。\n\n例如，如果我对一个远方的朋友说：“我很想你啊”，她会体会到我当下的心情吗？我想很难。或许，“想念”在由我那忧戚感伤的心情转变为硬生生的文字（或者话语）时就不再温润，就褪色了，或者"
+    },
+    {
+      "collection": "posts",
+      "id": "2012-02-26-take-the-train",
+      "sourcePath": "posts/2012/2012-02-26-take-the-train.mdx",
+      "frontmatter": {
+        "title": "爱我就请去搭火车",
+        "slug": "take-the-train",
+        "date": "2012-02-25 20:00:22+08:00",
+        "updated": "2020-09-06 11:43:41+08:00",
+        "tags": "",
+        "category": "文章",
+        "summary": "也许很少有人还记得1998年由法国电影导演帕特里斯 · 夏洛尔拍摄的电影《爱我就请去搭火车》。这部充溢着罗曼蒂克气息的电影故事取材自导演和他身边朋友的经历。",
+        "cover": "https://cat.yufan.me/images/2012/02/2012020821400300.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![習作　ぽっぽ猫](https://cat.yufan.me/images/2012/02/2012020821442400.jpg)\n\n<MusicPlayer id={408328757} />\n\n也许很少有人还记得 1998 年由法国电影导演帕特里斯 · 夏洛尔拍摄的电影《爱我就请去搭火车》。这部充满罗曼蒂克气息的电影故事取材自导演和他身边朋友的经历。片名就是他的朋友的原话——当时住在巴"
+    },
+    {
+      "collection": "posts",
+      "id": "2012-02-27-old-house",
+      "sourcePath": "posts/2012/2012-02-27-old-house.mdx",
+      "frontmatter": {
+        "title": "随想——老屋",
+        "slug": "old-house",
+        "date": "2012-02-27 10:25:56+08:00",
+        "updated": "2020-09-06 11:45:37+08:00",
+        "tags": "",
+        "category": "文章",
+        "summary": "在搬进新家前，我曾在一条老街上住了四年，那是一条真正的老街，几乎所有的房子都始建于20年代之前。有的房子还有人在住，有的屋顶已经坍塌，外面的墙壁上爬满了干枯的藤蔓。",
+        "cover": "https://cat.yufan.me/images/2012/02/2012022022154700.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![flickr e-info 日本老屋與空屋の對策 01](https://cat.yufan.me/images/2012/02/2012022122162200.jpg)\n\n<MusicPlayer id={37782782} />\n\n在搬进新家前，我曾在一条老街上住了四年，那是一条真正的老街，几乎所有的房子都始建于20年代之前。有的房子还有人在住，有的屋顶已经坍塌，外面的墙壁上爬满了干枯"
+    },
+    {
+      "collection": "posts",
+      "id": "2012-03-17-strangeness",
+      "sourcePath": "posts/2012/2012-03-17-strangeness.mdx",
+      "frontmatter": {
+        "title": "随想——陌生",
+        "slug": "strangeness",
+        "date": "2012-03-16 18:07:52+08:00",
+        "updated": "2020-09-06 11:47:35+08:00",
+        "tags": "",
+        "category": "文章",
+        "summary": "习惯了也是一种淡然，便习惯了一种生活，静静地思考，细细地品味，那人、那景、那事……缓缓流入心底，给自己一份淡然，心如止水。",
+        "cover": "https://cat.yufan.me/images/2012/02/2012021422120000.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![キラキラ眩しいあの子の世界 P2](https://cat.yufan.me/images/2012/02/2012021422134700.jpg)\n\n<MusicPlayer id={640866} />\n\n习惯了也是一种淡然，便习惯了一种生活，静静地思考，细细地品味，那人、那景、那事……缓缓流入心底，给自己一份淡然，心如止水。\n\n<p style={{ textAlign: \"righ"
+    },
+    {
+      "collection": "posts",
+      "id": "2012-03-25-walk-on-playground",
+      "sourcePath": "posts/2012/2012-03-25-walk-on-playground.mdx",
+      "frontmatter": {
+        "title": "随想——操场时光",
+        "slug": "walk-on-playground",
+        "date": "2012-03-24 16:38:33+08:00",
+        "updated": "2020-09-06 11:47:27+08:00",
+        "tags": "",
+        "category": "文章",
+        "summary": "高中住校时，我喜欢在被黑暗笼罩的时候走进操场，此时这里只有三三两两的人，不怕拥挤，不怕吵闹，是个放空自己的好地方。",
+        "cover": "https://cat.yufan.me/images/2012/02/2012021822255600.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![操场](https://cat.yufan.me/images/2012/02/2012021822273700.jpg)\n\n<MusicPlayer id={1387913820} />\n\n高中住校时，我喜欢在被黑暗笼罩的时候走进操场。此时这里只有三三两两的人，不怕拥挤，不怕吵闹，是个放空自己的好地方。沿着被黑夜吞噬了鲜红色彩的跑道慢慢地走，可以不用担心是否会吵到别人而肆无顾忌地调高手机音"
+    },
+    {
+      "collection": "posts",
+      "id": "2012-03-26-at-home",
+      "sourcePath": "posts/2012/2012-03-26-at-home.mdx",
+      "frontmatter": {
+        "title": "随想——在家",
+        "slug": "at-home",
+        "date": "2012-03-26 01:00:04+08:00",
+        "updated": "2020-09-06 11:47:08+08:00",
+        "tags": "",
+        "category": "文章",
+        "summary": "在家时，即使什么也不做也是快乐的。每天劳累后回到家，晚上泡一杯茉莉，淡淡的茶香溢满整个空间，使人微醉。",
+        "cover": "https://cat.yufan.me/images/2012/03/2012032502314500.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![夜のカフェ](https://cat.yufan.me/images/2012/03/2012032522505100.jpg)\n\n<MusicPlayer id={32803232} />\n\n在家时，即使什么也不做也是快乐的。\n\n每天劳累后回到家，晚上泡一杯茉莉，淡淡的茶香溢满整个空间，使人微醉。从小喜爱喝茶，有时候为了能呷一口极致的味道，夏日里不惜走上二十几公里，待满头大汗，嘴唇干裂，回"
+    },
+    {
+      "collection": "posts",
+      "id": "2012-04-02-the-wounds-of-the-tree",
+      "sourcePath": "posts/2012/2012-04-02-the-wounds-of-the-tree.mdx",
+      "frontmatter": {
+        "title": "随想——树的伤口",
+        "slug": "the-wounds-of-the-tree",
+        "date": "2012-04-01 16:31:50+08:00",
+        "updated": "2020-09-06 11:48:18+08:00",
+        "tags": "",
+        "category": "杂思",
+        "summary": "这世间，只有我一棵有着伤口的树吗？应该不是。也许我们每一个人都是一棵有着伤口的树，都在痛，只不过有轻有重。",
+        "cover": "https://cat.yufan.me/images/2012/04/2012040101152600.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![](https://cat.yufan.me/images/2012/04/2012040101152600.jpg)\n\n<MusicPlayer id={1489061392} />\n\n走在这条通向图书馆的靠山小路上，我无意于过往的事物，目光在周围的一棵棵树上游离。猛然间，我的目光停留在路边一棵树上。乍一看，它高大茂盛，但真正抓住我注意力的不是这些，而是树的主干。从中间往下都没有分枝，有的"
+    },
+    {
+      "collection": "posts",
+      "id": "2012-04-07-the-poem-of-nalansingde",
+      "sourcePath": "posts/2012/2012-04-07-the-poem-of-nalansingde.mdx",
+      "frontmatter": {
+        "title": "人间何处问多情？",
+        "slug": "the-poem-of-nalansingde",
+        "date": "2012-04-06 18:52:15+08:00",
+        "updated": "2020-09-06 11:49:16+08:00",
+        "tags": "",
+        "category": "杂思",
+        "summary": "这般流水一样清澈的字句，定然属于如同秋天一般忧郁的词人。轻轻拂开时光的厚重褶皱，一个名字展现在世人面前：纳兰容若。",
+        "cover": "https://cat.yufan.me/images/2012/04/2012040801480400.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![weibo - loli武士 - 01](https://cat.yufan.me/images/2012/04/2012040801511700.jpg)\n\n<MusicPlayer id={1407500990} />\n\n“漫惹炉烟双袖紫，空将酒晕一衫青，人间何处问多情。”\n\n<p style={{ textAlign: \"right\" }}>——题记</p>\n\n这般流水一样清澈的字句，"
+    },
+    {
+      "collection": "posts",
+      "id": "2012-04-09-when-u-were-young",
+      "sourcePath": "posts/2012/2012-04-09-when-u-were-young.mdx",
+      "frontmatter": {
+        "title": "轮回，苍白了年少轻狂",
+        "slug": "when-u-were-young",
+        "date": "2012-04-08 23:10:43+08:00",
+        "updated": "2020-09-06 11:49:53+08:00",
+        "tags": "",
+        "category": "文章",
+        "summary": "百日轮回，倏然一瞬，有的只是成长的记录和曾经的感悟。但，说不尽，道不完的，还是回忆。",
+        "cover": "https://cat.yufan.me/images/2012/04/2012040802235300.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![星渡り - Aちき@画集発売中](https://cat.yufan.me/images/2012/04/2012040802192000.jpg)\n\n<MusicPlayer id={1892046117} />\n\n无意间掐指算算，距上一次写下[第几个 100 天](/posts/one-hundred-days/)之后又过去了 100 天。百日轮回，说长不长，说短不短，只是不经意间回首，"
+    },
+    {
+      "collection": "posts",
+      "id": "2012-04-14-bougainvillea-spectabilis-willd",
+      "sourcePath": "posts/2012/2012-04-14-bougainvillea-spectabilis-willd.mdx",
+      "frontmatter": {
+        "title": "揽月楼前的三角梅开花了吗？",
+        "slug": "bougainvillea-spectabilis-willd",
+        "date": "2012-04-13 21:35:55+08:00",
+        "updated": "2020-09-06 11:51:51+08:00",
+        "tags": "",
+        "category": "文章",
+        "summary": "一场淅沥淅沥惹人心烦的清明小雨后，软件园教学楼旁的海棠花纷纷扬扬地开放了，粉色的花瓣映衬着来来往往的青春容貌，带来一份熟悉和喜悦，还有一段淡淡的回忆……",
+        "cover": "https://cat.yufan.me/images/2012/04/2012041301591600.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![bougainvillea-xiamen-gulangyu-2537574](https://cat.yufan.me/images/2012/04/2012041302022500.jpg)\n\n<MusicPlayer id={424060342} />\n\n一场淅沥淅沥惹人心烦的清明小雨后，软件园教学楼旁的海棠花纷纷扬扬地开放了，粉色的花瓣映衬着来来往往的青春容貌，带来一份熟悉和喜悦，还有"
+    },
+    {
+      "collection": "posts",
+      "id": "2012-04-20-left-time-right-live",
+      "sourcePath": "posts/2012/2012-04-20-left-time-right-live.mdx",
+      "frontmatter": {
+        "title": "光阴向左，生活向右",
+        "slug": "left-time-right-live",
+        "date": "2012-04-20 07:58:25+08:00",
+        "updated": "2020-09-06 11:52:13+08:00",
+        "tags": "",
+        "category": "杂思",
+        "summary": "周一时信誓旦旦地对松鼠哥哥说：“我要开始写博文了，准备好抢沙发。”然后，便没有了下文……似乎每天都有很多的事情要忙碌，前半个学期一直忙于数据结构的项目，刚做完，操作系统的实验又来了。",
+        "cover": "https://cat.yufan.me/images/2012/04/2012042002132500.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![ヨルゾラTreasure - 心象Sketcher](https://cat.yufan.me/images/2012/04/2012042002155800.jpg)\n\n<MusicPlayer id={874229} />\n\n周一时信誓旦旦地对松鼠哥哥说：“我要开始写博文了，准备好抢沙发。”然后，便没有了下文……似乎每天都有很多的事情要忙碌，前半个学期一直忙于数据结构的项目，刚做完，操作"
+    },
+    {
+      "collection": "posts",
+      "id": "2012-04-22-chirography-on-letter",
+      "sourcePath": "posts/2012/2012-04-22-chirography-on-letter.mdx",
+      "frontmatter": {
+        "title": "见字如唔",
+        "slug": "chirography-on-letter",
+        "date": "2012-04-21 19:19:11+08:00",
+        "updated": "2020-09-06 11:52:25+08:00",
+        "tags": "",
+        "category": "杂思",
+        "summary": "见字如唔，即见字如见人，看见写信的那一方熟悉的字体，心里面便会浮现出对方温暖的身影，仿若近在身边。而曾经的很长一段时间里都很喜欢这个词，或者说是怀念它所承载的一段记忆。",
+        "cover": "https://cat.yufan.me/images/2011/05/2011051521491300.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![distance - 小英俊](https://cat.yufan.me/images/2011/05/2011051421445100.jpg)\n\n<MusicPlayer id={668451} />\n\n见字如唔，即见字如见人。看见写信的那一方熟悉的字体，心里面便会浮现出对方温暖的身影，仿若近在身边。而曾经的很长一段时间里，我都很喜欢这个词，或者说是怀念它所承载的一段记忆。记得早年在外地"
+    },
+    {
+      "collection": "posts",
+      "id": "2012-04-23-dragon-nest",
+      "sourcePath": "posts/2012/2012-04-23-dragon-nest.mdx",
+      "frontmatter": {
+        "title": "我已经舍不得花一个小时",
+        "slug": "dragon-nest",
+        "date": "2012-04-23 11:52:33+08:00",
+        "updated": "2020-09-06 11:53:24+08:00",
+        "category": "文章",
+        "summary": "对于每个人而言，长大了，意味着不同的改变。但如果要我说自己有什么不同，我定然是想不出的。突发奇想问问旁边的人，都说没变啊，还是和以前一样挫。",
+        "cover": "https://cat.yufan.me/images/2011/04/2011041420484000.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![龙之谷 01](https://cat.yufan.me/images/2011/04/2011041520510800.jpg)\n\n<MusicPlayer id={440114051} />\n\n对于每个人而言，长大了，意味着不同的改变。但如果要我说自己有什么不同，我定然是想不出的。突发奇想问问旁边的人，都说没变啊，还是和以前一样挫。“靠！”寒假的同学聚会倒是让我吃了一惊，身边的同学都变化"
+    },
+    {
+      "collection": "posts",
+      "id": "2012-04-23-the-bns-cbt3",
+      "sourcePath": "posts/2012/2012-04-23-the-bns-cbt3.mdx",
+      "frontmatter": {
+        "title": "越来越近的CBT3",
+        "slug": "the-bns-cbt3",
+        "date": "2012-04-23 11:54:00+08:00",
+        "updated": "2020-09-06 11:54:33+08:00",
+        "category": "文章",
+        "summary": "在解说我所谓的CBT3是什么之前，我想继续上文来吐槽思密达棒子们的脑袋到底是怎么想的。",
+        "cover": "https://cat.yufan.me/images/2011/04/2011042321083500.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![剑灵 01](https://cat.yufan.me/images/2011/04/2011042321143500.jpg)\n\n<MusicPlayer id={28844150} />\n\n在解释我所谓的 CBT3 之前，我想继续上文来吐槽一下思密达棒子们的脑袋到底是怎么想的。如果你一直在抱怨小米手机的饥饿营销让人愤怒的话，那么我要说：比起 NC Software 来说，那些都是小孩子过"
+    },
+    {
+      "collection": "posts",
+      "id": "2012-04-25-the-first-day-of-bns-cbt3",
+      "sourcePath": "posts/2012/2012-04-25-the-first-day-of-bns-cbt3.mdx",
+      "frontmatter": {
+        "title": "剑灵 CBT3 第一天感言",
+        "slug": "the-first-day-of-bns-cbt3",
+        "date": "2012-04-25 11:55:22+08:00",
+        "updated": "2020-09-06 11:55:57+08:00",
+        "category": "文章",
+        "summary": "怎么说好呢？这个蛋疼的一天真的是悲喜交加，或者说让人无爱的Play NC让人郁闷。",
+        "cover": "https://cat.yufan.me/images/2011/04/2011042521393900.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![剑灵 - 火炮兰](https://cat.yufan.me/images/2011/04/2011042521293200.jpg)\n\n<MusicPlayer id={28844152} />\n\n怎么说呢？这个蛋疼的一天真的是悲喜交加，或者说让人无爱的 Play NC 让人郁闷。花了两天时间辛辛苦苦地通宵下载完庞大的客户端后（校园网标准 100k/s 的下载速度，还不定时抽风），便开始了"
+    },
+    {
+      "collection": "posts",
+      "id": "2012-04-26-your-second-home",
+      "sourcePath": "posts/2012/2012-04-26-your-second-home.mdx",
+      "frontmatter": {
+        "title": "给你一个家的感觉",
+        "slug": "your-second-home",
+        "date": "2012-04-25 17:06:44+08:00",
+        "updated": "2020-09-06 11:56:24+08:00",
+        "tags": "",
+        "category": "文章",
+        "summary": "傍晚，我和云儿携伴行走在校外的街道上。来来往往的人潮，每个人行色匆匆地与我擦肩而过，涌向远方……",
+        "cover": "https://cat.yufan.me/images/2011/05/2011052622280900.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![Flickr - Peter Lee - 01](https://cat.yufan.me/images/2011/05/2011052622282200.jpg)\n\n<MusicPlayer id={281530} />\n\n傍晚，我和云儿携伴行走在校外的街道上。来来往往的人潮，每个人行色匆匆地与我擦肩而过，涌向远方……\n\n我立身于人海之中，望着这些匆忙的人们，他们的脸上没有焦急的神色，每个"
+    },
+    {
+      "collection": "posts",
+      "id": "2012-05-03-the-flavour-of-sunshine",
+      "sourcePath": "posts/2012/2012-05-03-the-flavour-of-sunshine.mdx",
+      "frontmatter": {
+        "title": "阳光的味道",
+        "slug": "the-flavour-of-sunshine",
+        "date": "2012-05-03 14:34:24+08:00",
+        "updated": "2020-09-06 11:58:10+08:00",
+        "tags": "",
+        "category": "文章",
+        "summary": "4 月底的阵雨过后，久违的晴天终于来临。傍晚和舍友携伴去收被子，阳光漫漫扬扬地倾洒在身上。沐浴着金色的阳光，抱着晒得柔软温暖的被子，我的思绪却不知不觉飘到了很远……",
+        "cover": "https://cat.yufan.me/images/2011/06/2011062418273300.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![loundraw - 少女は夜を綴らない](https://cat.yufan.me/images/2011/06/2011062418383500.jpg)\n\n<MusicPlayer id={740530} />\n\n4 月底的阵雨过后，久违的晴天终于来临。傍晚和舍友携伴去收被子，阳光漫漫扬扬地倾洒在身上。沐浴着金色的阳光，抱着晒得柔软温暖的被子，我的思绪却不知不觉飘到了很远……\n\n两人高"
+    },
+    {
+      "collection": "posts",
+      "id": "2012-05-07-novel-story-0",
+      "sourcePath": "posts/2012/2012-05-07-novel-story-0.mdx",
+      "frontmatter": {
+        "title": "交织的羁绊 - 序章",
+        "slug": "novel-story-0",
+        "date": "2012-05-07 14:33:18+08:00",
+        "updated": "2020-09-06 12:04:17+08:00",
+        "tags": "",
+        "category": "小说",
+        "summary": "这是一个同人小说的开篇，也是一个故事的开始。在这里，我将写一篇短篇小说，名为《交织的羁绊》。故事的原型和人物完全是对动漫《悠久之翼》的改写。",
+        "cover": "https://cat.yufan.me/images/2011/07/2011070220190200.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![悠久之翼（1）](https://cat.yufan.me/images/2011/07/2011070220190200.jpg)\n\n<MusicPlayer id={527778} />\n\n这是一个同人小说的开篇，也是一个故事的开始。在这里，我将写一篇短篇小说，名为《交织的羁绊》。故事的原型和人物完全是对动漫《悠久之翼》的改写。昔日的我曾经想把它写下去，但一直没有坚持，不光是因为时间或者"
+    },
+    {
+      "collection": "posts",
+      "id": "2012-05-08-novel-story-1",
+      "sourcePath": "posts/2012/2012-05-08-novel-story-1.mdx",
+      "frontmatter": {
+        "title": "交织的羁绊 - 初遇与未来",
+        "slug": "novel-story-1",
+        "date": "2012-05-08 01:47:52+08:00",
+        "updated": "2020-09-06 12:05:07+08:00",
+        "tags": "",
+        "category": "小说",
+        "summary": "音羽小镇建立于地震后的废墟之上，在小镇的边缘有一个废弃已久的车站，是音羽镇在地震后存留下来并且保存完好的事物之一，对于几乎被地震完全毁坏的音羽小镇来说，不得不说是一个奇迹。",
+        "cover": "https://cat.yufan.me/images/2011/07/2011070220190200.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![悠久之翼（1）](https://cat.yufan.me/images/2011/07/2011070220320500.jpg)\n\n<MusicPlayer id={527794} />\n\n音羽小镇建立于地震后的废墟之上，在小镇的边缘有一个废弃已久的车站，是音羽镇在地震后存留下来并且保存完好的事物之一，对于几乎被地震完全毁坏的音羽小镇来说，不得不说是一个奇迹。由于早就没有列车从这里经过，"
+    },
+    {
+      "collection": "posts",
+      "id": "2012-05-10-novel-story-2",
+      "sourcePath": "posts/2012/2012-05-10-novel-story-2.mdx",
+      "frontmatter": {
+        "title": "交织的羁绊 - 明天再见",
+        "slug": "novel-story-2",
+        "date": "2012-05-09 17:40:08+08:00",
+        "updated": "2020-09-06 12:05:46+08:00",
+        "tags": "",
+        "category": "小说",
+        "summary": "走出教堂大门的莲洽“嗖”地抽了一下鼻子，深秋的季节要说冷也确实很冷，在空旷的教堂中尤为明显。仰望布满云丝的绯色澄空，在清风的吹拂下感觉尤为舒畅。",
+        "cover": "https://cat.yufan.me/images/2011/07/2011070220190200.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![悠久之翼（1）](https://cat.yufan.me/images/2011/07/2011070220330400.jpg)\n\n<MusicPlayer id={527785} />\n\n走出教堂大门的莲洽“嗖”地抽了一下鼻子，深秋的季节要说冷也确实很冷，在空旷的教堂中尤为明显。仰望布满云丝的绯色澄空，在清风的吹拂下感觉尤为舒畅。对于莲洽而言本来是为了理顺心情才来这里的，现在却感觉一直"
+    },
+    {
+      "collection": "posts",
+      "id": "2012-05-12-mothers-day",
+      "sourcePath": "posts/2012/2012-05-12-mothers-day.mdx",
+      "frontmatter": {
+        "title": "妈妈，母亲节快乐",
+        "slug": "mothers-day",
+        "date": "2012-05-11 17:06:31+08:00",
+        "updated": "2020-09-06 12:07:33+08:00",
+        "tags": "",
+        "category": "杂思",
+        "summary": "对于母亲总有一种深深的愧疚感。小时候记事还很模糊的时候，父亲便下海了。所以，童年的绝大多数时间，妈妈就是家里的顶梁柱，为我支撑着小小的半边天。",
+        "cover": "https://cat.yufan.me/images/2012/05/2012051121064800.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![狼的孩子雨和雪剧照 01](https://cat.yufan.me/images/2012/05/2012051121114900.jpg)\n\n<MusicPlayer id={459069} />\n\n亲情，是最不需要刻意修饰的词，简单的话语，却是最能表达心中的爱。\n\n<p style={{ textAlign: \"right\" }}>——题记</p>\n\n对于母亲，总有一种深深的愧疚感。小"
+    },
+    {
+      "collection": "posts",
+      "id": "2012-05-12-one-more-time",
+      "sourcePath": "posts/2012/2012-05-12-one-more-time.mdx",
+      "frontmatter": {
+        "title": "樱花般的记忆——秒速5厘米",
+        "slug": "one-more-time",
+        "date": "2012-05-12 13:37:01+08:00",
+        "updated": "2020-09-06 12:10:20+08:00",
+        "tags": "",
+        "category": "杂思",
+        "summary": "“呐，你知道吗？听说樱花飘落的速度是秒速五厘米哦。”秒速 5 厘米，那是樱花飘落的速度。那么怎样的速度，才能走完我与你之间的距离？",
+        "cover": "https://cat.yufan.me/images/2012/05/2012051221344000.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![秒速五厘米剧照 01](https://cat.yufan.me/images/2012/05/2012051221344500.jpg)\n\n<MusicPlayer id={1310906134} />\n\n“呐，你知道吗？听说樱花飘落的速度是秒速五厘米哦。”\n\n秒速 5 厘米，那是樱花飘落的速度。那么怎样的速度，才能走完我与你之间的距离？\n\n每个男孩都会有一个暗恋着自己却婉言拒绝的女孩，也"
+    },
+    {
+      "collection": "posts",
+      "id": "2012-05-13-essay-of-spring",
+      "sourcePath": "posts/2012/2012-05-13-essay-of-spring.mdx",
+      "frontmatter": {
+        "title": "怀旧，春之随笔",
+        "slug": "essay-of-spring",
+        "date": "2012-05-13 07:29:38+08:00",
+        "updated": "2020-09-06 12:10:28+08:00",
+        "tags": "",
+        "category": "文章",
+        "summary": "夏日的炎热让我不由得怀念才过去的暖春，那个欣欣向荣的季节，无意中翻出一篇关于春天的“记忆”，发在这里，仅作回忆……",
+        "cover": "https://cat.yufan.me/images/2012/05/2012051421440600.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![阿飄 - 春日午後](https://cat.yufan.me/images/2012/05/2012051422003500.jpg)\n\n<MusicPlayer id={28411043} />\n\n> 夏日的炎热让我不由得怀念才过去的暖春，那个欣欣向荣的季节。无意中翻出一篇关于春天的“记忆”，发在这里，仅作回忆……\n\n再一次回到温暖的午后，我打开窗户，一阵春风拂面而过，带着淡淡的花香，清"
+    },
+    {
+      "collection": "posts",
+      "id": "2012-05-14-my-grandpa",
+      "sourcePath": "posts/2012/2012-05-14-my-grandpa.mdx",
+      "frontmatter": {
+        "title": "斯人已去",
+        "slug": "my-grandpa",
+        "date": "2012-05-14 12:54:52+08:00",
+        "updated": "2020-09-06 12:11:01+08:00",
+        "tags": "",
+        "category": "文章",
+        "summary": "写下这个题目的时候，脑海中突然浮现出小时候看《狮子王》时印象很深的一句台词：“当你孤独的时候，就看天上的星星，每颗星星都是离开我们的国王，这些国王都在看着你。”那么，爷爷，今夜天空中的那颗最大最亮的星星是您吗？",
+        "cover": "https://cat.yufan.me/images/2013/09/2013092121155300.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![](https://cat.yufan.me/images/2013/01/2013011017463500.jpg)\n\n<MusicPlayer id={27538413} />\n\n写下这个题目的时候，脑海中突然浮现出小时候看《狮子王》时印象很深的一句台词：“当你孤独的时候，就看天上的星星，每颗星星都是离开我们的国王，这些国王都在看着你。”那么，爷爷，今夜天空中的那颗最大最亮的星星是您吗？"
+    },
+    {
+      "collection": "posts",
+      "id": "2012-05-16-your-city-my-dream",
+      "sourcePath": "posts/2012/2012-05-16-your-city-my-dream.mdx",
+      "frontmatter": {
+        "title": "他的城，我的梦",
+        "slug": "your-city-my-dream",
+        "date": "2012-05-16 08:06:53+08:00",
+        "updated": "2020-09-06 12:11:38+08:00",
+        "tags": "",
+        "category": "文章",
+        "summary": "像梦一般短暂的 4 天上海之行结束了，我不知道应该以怎样的心情来回望这一段时光。就像是一只旅行的蜗牛，满怀欣喜抑或安之若素。颠簸的火车、匆匆的旅程、各色的面孔，这一切的一切扩宽了我生命的轮廓……",
+        "cover": "https://cat.yufan.me/images/2012/05/2012051622352100.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![Journey - 幻像黒兎](https://cat.yufan.me/images/2012/05/2012051622362800.jpg)\n\n<MusicPlayer id={26348051} />\n\n像梦一般短暂的 4 天上海之行结束了，我不知道应该以怎样的心情来回望这一段时光。就像是一只旅行的蜗牛，满怀欣喜抑或安之若素。颠簸的火车、匆匆的旅程、各色的面孔，这一切的一切扩宽了我生"
+    },
+    {
+      "collection": "posts",
+      "id": "2012-05-19-summer-air",
+      "sourcePath": "posts/2012/2012-05-19-summer-air.mdx",
+      "frontmatter": {
+        "title": "夏语，夏影",
+        "slug": "summer-air",
+        "date": "2012-05-18 19:48:51+08:00",
+        "updated": "2020-09-06 12:14:15+08:00",
+        "tags": "",
+        "category": "文章",
+        "summary": "夏天，是什么样的感觉？喜欢夏天，因为喜欢酣畅淋漓的大雨，绿意盎然的草木，还有那热火朝天的空气。",
+        "cover": "https://cat.yufan.me/images/2012/05/2012051822452400.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![Air BD 背景](https://cat.yufan.me/images/2012/05/2012051622403100.jpg)\n\n夏天，是什么样的感觉？\n\n喜欢夏天，因为喜欢酣畅淋漓的大雨，绿意盎然的草木，还有那热火朝天的空气。\n\n我喜欢夏日的雨，如同喜欢冬日里鹅毛般无拘无束的大雪。大雨将春夏间生机勃勃的亮丽世界洗刷的绿意盎然，雨后的空气里透着清新的凉爽，本来的燥热沉闷一齐被驱赶得"
+    },
+    {
+      "collection": "posts",
+      "id": "2012-05-27-graduation-season-farewell-season",
+      "sourcePath": "posts/2012/2012-05-27-graduation-season-farewell-season.mdx",
+      "frontmatter": {
+        "title": "毕业季 · 离别季",
+        "slug": "graduation-season-farewell-season",
+        "date": "2012-05-26 20:04:36+08:00",
+        "updated": "2020-09-06 12:14:41+08:00",
+        "tags": "",
+        "category": "文章",
+        "summary": "绿荫满地，踩着 5 月的尾巴，离意愈浓。走在傍晚通向食堂的大路上，看见身旁一排排学长卖书的身影。恍然间觉得自己也成了其中一员，扑朔如梦……",
+        "cover": "https://cat.yufan.me/images/2012/05/2012052618262000.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![三月の佳き日に。 - 橘こもろ。](https://cat.yufan.me/images/2012/05/2012052618260900.jpg)\n\n<MusicPlayer id={1330348068} />\n\n绿荫满地，踩着 5 月的尾巴，离意愈浓。走在傍晚通向食堂的大路上，看见身旁一排排学长卖书的身影。恍然间觉得自己也成了其中一员，扑朔如梦……\n\n<p style={{ text"
+    },
+    {
+      "collection": "posts",
+      "id": "2012-06-03-anonaha",
+      "sourcePath": "posts/2012/2012-06-03-anonaha.mdx",
+      "frontmatter": {
+        "title": "未闻花名——那朵花",
+        "slug": "anonaha",
+        "date": "2012-06-03 00:09:42+08:00",
+        "updated": "2020-09-06 12:15:05+08:00",
+        "tags": "",
+        "category": "杂思",
+        "summary": "彼时花名未闻。昔日一起玩耍的伙伴们，随着年龄的增大，彼此间也渐渐变得陌生。但那仿佛已经快要忘记的儿时记忆，仍是连接我们的羁绊。",
+        "cover": "https://cat.yufan.me/images/2012/06/2012060318520600.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![那朵花剧场版 - 海报](https://cat.yufan.me/images/2012/06/2012060319082400.jpg)\n\n<MusicPlayer id={22817150} />\n\n彼时花名未闻。\n\n昔日一起玩耍的伙伴们，随着年龄的增大，彼此间也渐渐变得陌生。但那仿佛已经快要忘记的儿时记忆，仍是连接我们的羁绊。\n\n<p style={{ textAlign: \"rig"
+    },
+    {
+      "collection": "posts",
+      "id": "2012-06-07-growing-pains",
+      "sourcePath": "posts/2012/2012-06-07-growing-pains.mdx",
+      "frontmatter": {
+        "title": "成长的烦恼",
+        "slug": "growing-pains",
+        "date": "2012-06-07 15:26:25+08:00",
+        "updated": "2020-09-06 12:15:24+08:00",
+        "tags": "",
+        "category": "杂思",
+        "summary": "越来越觉得无病呻吟是那些没长大的孩子们的特权，而我却总要时不时地卖萌来装一下嫩。",
+        "cover": "https://cat.yufan.me/images/2012/06/2012060719153400.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![苦い春 - banishment](https://cat.yufan.me/images/2012/06/2012060719205200.jpg)\n\n<MusicPlayer id={368800} />\n\n越来越觉得无病呻吟是那些没长大的孩子们的特权，而我却总要时不时地卖萌来装一下嫩。\n\n说自己长大了吧，却一点都不成熟，心理还是那么脆弱。说自己还没长大吧，却也没有了孩时的兴致，也变得越"
+    },
+    {
+      "collection": "posts",
+      "id": "2012-06-10-nocturne",
+      "sourcePath": "posts/2012/2012-06-10-nocturne.mdx",
+      "frontmatter": {
+        "title": "夜の思考",
+        "slug": "nocturne",
+        "date": "2012-06-10 03:46:08+08:00",
+        "updated": "2020-09-06 12:16:10+08:00",
+        "tags": "",
+        "category": "文章",
+        "summary": "不知从何时起，我爱上了那深藏不露的黑色。只因为夜。每至深夜时，我总是习惯性地关上灯，静静地立在窗前，任凭月光如瀑般倾泻全身，以及随之而来的纷涌思绪。",
+        "cover": "https://cat.yufan.me/images/2012/06/2012061019245600.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![Alca - あの日の答え](https://cat.yufan.me/images/2012/06/2012061019294700.jpg)\n\n<MusicPlayer id={1942146932} />\n\n不知从何时起，我爱上了那深藏不露的黑色。\n\n只因为夜。\n\n每至深夜时，我总是习惯性地关上灯，静静地立在窗前，任凭月光如瀑般倾泻全身，以及随之而来的纷涌思绪。\n\n也许，只有当俗世的一"
+    },
+    {
+      "collection": "posts",
+      "id": "2012-06-11-my-darling",
+      "sourcePath": "posts/2012/2012-06-11-my-darling.mdx",
+      "frontmatter": {
+        "title": "亲爱的，你怎么不在身边",
+        "slug": "my-darling",
+        "date": "2012-06-11 06:17:35+08:00",
+        "updated": "2020-09-06 12:16:51+08:00",
+        "tags": "",
+        "category": "杂思",
+        "summary": "其实不想哭的，其实只是很小很小的事，可是自己还是忍不住了。好像很久都没有哭过了。有人问，如果郁闷了应该怎么做？我说，吃东西，睡觉，看郭敬明。看着别人的故事，自己就不那么难过了。",
+        "cover": "https://cat.yufan.me/images/2012/06/2012061119343300.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![上の空 - AI](https://cat.yufan.me/images/2012/06/2012061119414600.jpg)\n\n<MusicPlayer id={1909962184} />\n\n其实不想哭的，其实只是很小很小的事，可是自己还是忍不住了。好像很久都没有哭过了。\n\n有人问，如果郁闷了应该怎么做？我说，吃东西，睡觉，看郭敬明。看着别人的故事，自己就不那么难过了。这是我一直"
+    },
+    {
+      "collection": "posts",
+      "id": "2012-06-13-our-mtimes",
+      "sourcePath": "posts/2012/2012-06-13-our-mtimes.mdx",
+      "frontmatter": {
+        "title": "我们的时代——《小时代》读后感",
+        "slug": "our-mtimes",
+        "date": "2012-06-13 06:05:20+08:00",
+        "updated": "2020-09-06 12:17:14+08:00",
+        "tags": "",
+        "category": "杂思",
+        "summary": "不怎么喜欢看郭敬明的小说，总觉得那些文字应该是小女生才会去看的东西。也总受不了扭扭捏捏的剧情，故事的结局，每次总是悲剧，一定要到最后将你的眼泪完全骗干才罢。但是，他的这部小说却真真切切的感动了我。",
+        "cover": "https://cat.yufan.me/images/2012/06/2012061321240400.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![小时代剧照 01](https://cat.yufan.me/images/2012/06/2012061321255600.jpg)\n\n<MusicPlayer id={27090046} />\n\n> 每一天都有无数的人涌入这个飞快旋转的城市——带着他们的梦想；\\\n> 每一天也有无数的人离开这个生硬冷漠的城市的摩天大楼组成的森林——留下他们的眼泪。\\\n> 这是一个浩瀚的巨大时代。\\\n> 这"
+    },
+    {
+      "collection": "posts",
+      "id": "2012-06-15-evening-caprice",
+      "sourcePath": "posts/2012/2012-06-15-evening-caprice.mdx",
+      "frontmatter": {
+        "title": "傍晚随想",
+        "slug": "evening-caprice",
+        "date": "2012-06-14 20:59:42+08:00",
+        "updated": "2020-09-06 13:15:56+08:00",
+        "tags": "",
+        "category": "杂思",
+        "summary": "我曾经在某个闲适的傍晚，走过校区南边的操场。远处渐落的夕阳斜斜地投射着美丽的光芒，整个世界都被镀上了温暖的金色。我沿着足球场的草坪边缘缓慢地前行，连呼吸都放轻，仿佛不忍心打扰眼前的伊甸园。",
+        "cover": "https://cat.yufan.me/images/2012/06/2012061421301300.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![画师JW - 夜明けの水田](https://cat.yufan.me/images/2012/06/2012061421342000.jpg)\n\n<MusicPlayer id={406173} />\n\n我曾经在某个闲适的傍晚，走过校区南边的操场。远处渐落的夕阳斜斜地投射着美丽的光芒，整个世界都被镀上了温暖的金色。我沿着足球场的草坪边缘缓慢地前行，连呼吸都放轻，仿佛不忍心打扰眼前的伊甸园。"
+    },
+    {
+      "collection": "posts",
+      "id": "2012-06-18-happiness-caprice",
+      "sourcePath": "posts/2012/2012-06-18-happiness-caprice.mdx",
+      "frontmatter": {
+        "title": "与幸福",
+        "slug": "happiness-caprice",
+        "date": "2012-06-18 01:34:44+08:00",
+        "updated": "2020-09-06 12:19:49+08:00",
+        "tags": "",
+        "category": "杂思",
+        "summary": "其实幸福看似很远，却又很近。这些天不知怎么的情绪一直很低落，弥漫了整个六月初。忧伤、愤懑、百无聊赖、偏激、肆意、任性与自我放逐。",
+        "cover": "https://cat.yufan.me/images/2012/06/2012061822004800.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![桃色Time - 岡虎次郎/Oka Kojiro](https://cat.yufan.me/images/2012/06/2012061822023600.jpg)\n\n<MusicPlayer id={1908267808} />\n\n其实幸福看似很远，却又很近。\n\n这些天不知怎么的情绪一直很低落，弥漫了整个六月初。忧伤、愤懑、百无聊赖、偏激、肆意、任性与自我放逐。也许是期末考试即将来临的压"
+    },
+    {
+      "collection": "posts",
+      "id": "2012-06-22-the-misspelled-word",
+      "sourcePath": "posts/2012/2012-06-22-the-misspelled-word.mdx",
+      "frontmatter": {
+        "title": "那个拼错的单词",
+        "slug": "the-misspelled-word",
+        "date": "2012-06-22 06:25:43+08:00",
+        "updated": "2020-09-06 12:20:15+08:00",
+        "tags": "",
+        "category": "文章",
+        "summary": "在我读初中的时候，我还没有属于自己的电脑，阅读的来源只有书本和杂志。所以下课的时候，最喜欢去逛的地方便是学校二楼的图书馆，而我现在将要讲的故事也是从这而来。",
+        "cover": "https://cat.yufan.me/images/2012/06/2012062122492500.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![雪丸ぬん@絵仕事募集中 - 「拝啓、」](https://cat.yufan.me/images/2012/06/2012062122522200.jpg)\n\n<MusicPlayer id={544175479} />\n\n在我读初中的时候，我还没有属于自己的电脑，阅读的来源只有书本和杂志。所以下课的时候，最喜欢去逛的地方便是学校二楼的图书馆，而我现在将要讲的故事也是从这而来。\n\n图书馆的书"
+    },
+    {
+      "collection": "posts",
+      "id": "2012-06-23-sunset",
+      "sourcePath": "posts/2012/2012-06-23-sunset.mdx",
+      "frontmatter": {
+        "title": "汐阳",
+        "slug": "sunset",
+        "date": "2012-06-23 01:22:59+08:00",
+        "updated": "2020-09-06 12:20:22+08:00",
+        "tags": "",
+        "category": "杂思",
+        "summary": "夜晚，因为未知而神秘。将一切都笼罩在浓浓黑暗下面，显得那么单纯。深不可测的海如夜般未知、神秘。夜幕笼罩下的海没有都市里华灯与喧嚣的魅惑，那么的令人向往而又敬畏。",
+        "cover": "https://cat.yufan.me/images/2012/06/2012062222340200.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![深海剧照 01](https://cat.yufan.me/images/2012/06/2012062222380700.jpg)\n\n<MusicPlayer id={2154850028} />\n\n夕阳是一朵晚开的花。而最美是海上的日光——汐阳。\n\n<p style={{ textAlign: \"right\" }}>——题记</p>\n\n夜晚，因为未知而神秘，将一切都笼罩在浓浓的黑暗下面，"
+    },
+    {
+      "collection": "posts",
+      "id": "2012-06-24-fathers-love",
+      "sourcePath": "posts/2012/2012-06-24-fathers-love.mdx",
+      "frontmatter": {
+        "title": "那个角落里的父亲",
+        "slug": "fathers-love",
+        "date": "2012-06-24 07:47:48+08:00",
+        "updated": "2020-09-06 12:21:31+08:00",
+        "tags": "",
+        "category": "文章",
+        "summary": "人总是在成长中学习生活，积累经验。有时候我们敬畏老人，就是因为他们有着比我们更加丰富的人生阅历。",
+        "cover": "https://cat.yufan.me/images/2012/06/2012062423151000.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![我与狗狗的十个约定剧照 01](https://cat.yufan.me/images/2012/06/2012062423110400.jpg)\n\n<MusicPlayer id={4880631} />\n\n人总是在成长中学习生活，积累经验。有时候我们敬畏老人，就是因为他们有着比我们更加丰富的人生阅历。\n\n<p style={{ textAlign: \"right\" }}>——题记</p>"
+    },
+    {
+      "collection": "posts",
+      "id": "2012-06-26-goodbye-youth",
+      "sourcePath": "posts/2012/2012-06-26-goodbye-youth.mdx",
+      "frontmatter": {
+        "title": "再见，青春",
+        "slug": "goodbye-youth",
+        "date": "2012-06-26 15:11:05+08:00",
+        "updated": "2020-09-06 12:21:48+08:00",
+        "tags": "",
+        "category": "杂思",
+        "summary": "传说，鱼的记忆只有七秒，七秒之后，它所游过的每一个地方都将是一个新的起点。在这个新的起点，它将会有一个新的梦想，这个梦想让它即使是禁锢在鱼缸中也能依旧保持活力。",
+        "cover": "https://cat.yufan.me/images/2012/06/2012062623222100.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![夏の見送り - コタチユウ](https://cat.yufan.me/images/2012/06/2012062623233900.jpg)\n\n<MusicPlayer id={435307128} />\n\n传说，鱼的记忆只有七秒，七秒之后，它所游过的每一个地方都将是一个新的起点。在这个新的起点，它将会有一个新的梦想，这个梦想让它即使是禁锢在鱼缸中也能依旧保持活力。对于青春而言，青春不是"
+    },
+    {
+      "collection": "posts",
+      "id": "2012-06-29-philosophy-and-thinking",
+      "sourcePath": "posts/2012/2012-06-29-philosophy-and-thinking.mdx",
+      "frontmatter": {
+        "title": "哲学与思考",
+        "slug": "philosophy-and-thinking",
+        "date": "2012-06-28 18:55:39+08:00",
+        "updated": "2020-09-06 12:22:17+08:00",
+        "tags": "",
+        "category": "杂思",
+        "summary": "有句话说得好，哲学，出自一群无聊的闲人手里。苏格拉底的妻子苏珊娜就曾经如此自白：“我是苏格拉底的妻子苏珊娜，我的丈夫苏格拉底是一个著名的懒汉。",
+        "cover": "https://cat.yufan.me/images/2012/06/2012062823283400.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![空の研究 - 杉87](https://cat.yufan.me/images/2012/06/2012062823295700.jpg)\n\n<MusicPlayer id={740189} />\n\n有句话说得好，哲学，出自一群无聊的闲人手里。苏格拉底的妻子苏珊娜就曾经如此自白：“我是苏格拉底的妻子苏珊娜，我的丈夫苏格拉底是一个著名的懒汉。他每天一大早就起床，吃完早饭就出门了，他没有工作，我"
+    },
+    {
+      "collection": "posts",
+      "id": "2012-07-07-novel-story-3",
+      "sourcePath": "posts/2012/2012-07-07-novel-story-3.mdx",
+      "frontmatter": {
+        "title": "交织的羁绊 - 圣诞夜",
+        "slug": "novel-story-3",
+        "date": "2012-07-07 07:05:02+08:00",
+        "updated": "2020-09-06 12:23:43+08:00",
+        "tags": "",
+        "category": "小说",
+        "summary": "有两个名唤「音羽」的小镇，在焦土和废墟上建起的真正的小镇和映在安详而美丽的大地上的虚幻的小镇。咀嚼着痛苦的过往，践踏着无数的不幸。",
+        "cover": "https://cat.yufan.me/images/2011/07/2011070220190200.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![悠久之翼（1）](https://cat.yufan.me/images/2011/07/2011070220544000.jpg)\n\n<MusicPlayer id={527797} />\n\n有两个名唤「音羽」的小镇，在焦土和废墟上建起的真正的小镇和映在安详而美丽的大地上的虚幻的小镇。咀嚼着痛苦的过往，践踏着无数的不幸。日复一日的生息中，小镇点缀着名叫「人」的光芒。记忆中的小镇的虚幻的影子"
+    },
+    {
+      "collection": "posts",
+      "id": "2012-07-12-greedy-children",
+      "sourcePath": "posts/2012/2012-07-12-greedy-children.mdx",
+      "frontmatter": {
+        "title": "贪婪的小孩子",
+        "slug": "greedy-children",
+        "date": "2012-07-12 13:10:03+08:00",
+        "updated": "2020-09-06 12:23:39+08:00",
+        "tags": "",
+        "category": "文章",
+        "summary": "现在和云儿逛超市的时候，总喜欢去儿童用品区逛逛，看看身边那些精致的小衣服、小玩具，我就忍不住说将来要是生个女娃，衣服什么的我全包了！",
+        "cover": "https://cat.yufan.me/images/2012/07/2012071223421000.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![ちまめ隊！ - わき](https://cat.yufan.me/images/2012/07/2012071223421600.jpg)\n\n<MusicPlayer id={1361378050} />\n\n现在和云儿逛超市的时候，总喜欢去儿童用品区逛逛，看看身边那些精致的小衣服、小玩具，我就忍不住说将来要是生个女娃，衣服什么的我全包了！可是，每次看到那么多漂亮的童装，总会想起自己当年穿过的"
+    },
+    {
+      "collection": "posts",
+      "id": "2012-07-21-koto-no-ha-no-niwa",
+      "sourcePath": "posts/2012/2012-07-21-koto-no-ha-no-niwa.mdx",
+      "frontmatter": {
+        "title": "雨朦胧",
+        "slug": "koto-no-ha-no-niwa",
+        "date": "2012-07-20 23:17:04+08:00",
+        "updated": "2020-09-06 12:23:29+08:00",
+        "tags": "",
+        "category": "文章",
+        "summary": "景泰蓝的天空，略带一丝阴沉，花坛里的君子兰也没有了往日的娇艳。炎热的午后，沉闷的季节，让人心中总是憋着一股气想要吐露出来。",
+        "cover": "https://cat.yufan.me/images/2012/07/2012072022533700.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![雨宿りのぼくら - 清水](https://cat.yufan.me/images/2012/07/2012072022545900.jpg)\n\n<MusicPlayer id={2144244541} />\n\n景泰蓝的天空，略带一丝阴沉，花坛里的君子兰也没有了往日的娇艳。炎热的午后，沉闷的季节，让人心中总是憋着一股气想要吐露出来。\n\n独自坐在图书馆一角看书，窗外的天空低垂如灰色的雾幕，渐渐"
+    },
+    {
+      "collection": "posts",
+      "id": "2012-07-25-the-first-year-of-blogging",
+      "sourcePath": "posts/2012/2012-07-25-the-first-year-of-blogging.mdx",
+      "frontmatter": {
+        "title": "写博的第一年",
+        "slug": "the-first-year-of-blogging",
+        "date": "2012-07-25 01:26:18+08:00",
+        "updated": "2020-09-06 12:25:40+08:00",
+        "tags": "",
+        "category": "文章",
+        "toc": "true",
+        "summary": "有一天晚上，在 QQ 上和一个准备写博的人聊了很久。那个人问我，写博客会不会很累？我想了想，也不知道该如何回答这个问题。",
+        "cover": "https://cat.yufan.me/images/2012/07/2012072523060500.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![雷鳴 - mocha@新刊委託中](https://cat.yufan.me/images/2012/07/2012072523090800.jpg)\n\n<MusicPlayer id={1995231785} />\n\n## 零：常\n\n有一天晚上，在 QQ 上和一个准备写博的人聊了很久。那个人问我，写博客会不会很累？我想了想，也不知道该如何回答这个问题。因为世界上没有什么事情是不劳而获的，即"
+    },
+    {
+      "collection": "posts",
+      "id": "2012-08-08-scattered-fireworks",
+      "sourcePath": "posts/2012/2012-08-08-scattered-fireworks.mdx",
+      "frontmatter": {
+        "title": "烟花散",
+        "slug": "scattered-fireworks",
+        "date": "2012-08-08 00:30:25+08:00",
+        "updated": "2020-09-06 12:25:50+08:00",
+        "tags": "",
+        "category": "文章",
+        "summary": "总有一些东西，没有谁能准确地捕捉或描绘，例如爱情和回忆。浅念里，回忆中，悠然升起对你的思念。就像江心飘摇的水榕，遥不可及；就好像其实烟花也有最灿烂的微笑，而你们谁也不知道。",
+        "cover": "https://cat.yufan.me/images/2012/08/2012080819554000.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![花火 - pona](https://cat.yufan.me/images/2012/08/2012080819561600.jpg)\n\n<MusicPlayer id={496869422} />\n\n总有一些东西，没有谁能准确地捕捉或描绘，例如爱情和回忆。浅念里，回忆中，悠然升起对你的思念。就像江心飘摇的水榕，遥不可及；就好像其实烟花也有最灿烂的微笑，而你们谁也不知道。\n\n又一次参加大学"
+    },
+    {
+      "collection": "posts",
+      "id": "2012-08-28-the-forgotten-accent",
+      "sourcePath": "posts/2012/2012-08-28-the-forgotten-accent.mdx",
+      "frontmatter": {
+        "title": "遗忘的乡音",
+        "slug": "the-forgotten-accent",
+        "date": "2012-08-28 15:06:44+08:00",
+        "updated": "2020-09-06 12:28:53+08:00",
+        "tags": "",
+        "category": "文章",
+        "summary": "似乎随着时代的发展、普通话的普及，我们越来越少听到儿时常用的方言、俗语。但是我相信，乡音已经融于我们的血脉之中，代代相传，无法忘记。",
+        "cover": "https://cat.yufan.me/images/2012/08/2012082820070400.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![云兮与璃悦-儿时的乡下时光 - 花铭](https://cat.yufan.me/images/2012/08/2012082820071600.jpg)\n\n<MusicPlayer id={119429} />\n\n似乎随着时代的发展、普通话的普及，我们越来越少听到儿时常用的方言、俗语。但是我相信，乡音已经融于我们的血脉之中，代代相传，无法忘记。\n\n<p style={{ textAlign"
+    },
+    {
+      "collection": "posts",
+      "id": "2012-09-02-the-season-of-walking",
+      "sourcePath": "posts/2012/2012-09-02-the-season-of-walking.mdx",
+      "frontmatter": {
+        "title": "行走的季节",
+        "slug": "the-season-of-walking",
+        "date": "2012-09-02 00:51:18+08:00",
+        "updated": "2020-09-06 12:29:00+08:00",
+        "tags": "",
+        "category": "文章",
+        "summary": "济南的夏天似乎没有了昔日的炎热。一个人坐列车回学校的时候，看着车窗外飞速变换的风景，心情却愈发地烦躁。有时四处想找人说话，但看着周围陌生的面孔，便会有一种疏离的味道。",
+        "cover": "https://cat.yufan.me/images/2012/09/2012090220180700.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![铁路少女 01](https://cat.yufan.me/images/2012/09/2012090220242000.jpg)\n\n<MusicPlayer id={1901728522} />\n\n济南的夏天似乎没有了昔日的炎热。\n\n一个人坐列车回学校的时候，看着车窗外飞速变换的风景，心情却愈发地烦躁。有时四处想找人说话，但看着周围陌生的面孔，便会有一种疏离的味道。\n\n列车停停走走，终点"
+    },
+    {
+      "collection": "posts",
+      "id": "2012-09-07-where-is-my-dream",
+      "sourcePath": "posts/2012/2012-09-07-where-is-my-dream.mdx",
+      "frontmatter": {
+        "title": "最初的梦想在哪里？",
+        "slug": "where-is-my-dream",
+        "date": "2012-09-07 13:31:14+08:00",
+        "updated": "2020-09-06 12:30:46+08:00",
+        "tags": "",
+        "category": "文章",
+        "summary": "最初，算起来应该还是在小时候，我喜欢涂鸦，曾暗自想：以后要当个画家哦！安静地记录下所有美好。后来，由于一些原因，画没学成。",
+        "cover": "https://cat.yufan.me/images/2012/09/2012090720304800.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![她是光 - 画师JW](https://cat.yufan.me/images/2012/09/2012090720323100.jpg)\n\n<MusicPlayer id={28892385} />\n\n最初，算起来应该还是在小时候，我喜欢涂鸦，曾暗自想：以后要当个画家哦！安静地记录下所有美好。后来，由于一些原因，画没学成。于是就想：那当个服装设计师喽！让自己的设计成为流行。\n\n再后来，服装"
+    },
+    {
+      "collection": "posts",
+      "id": "2012-09-14-two-miscellany",
+      "sourcePath": "posts/2012/2012-09-14-two-miscellany.mdx",
+      "frontmatter": {
+        "title": "二人杂记",
+        "slug": "two-miscellany",
+        "date": "2012-09-14 11:00:22+08:00",
+        "updated": "2020-09-06 12:30:08+08:00",
+        "tags": "",
+        "category": "文章",
+        "summary": "巧合其实无处不在，只要留个心眼。上午的时候，我想今天的文章就写“那些花儿”吧。下午的时候，校广播台就在放范玮琪的“那些花儿”",
+        "cover": "https://cat.yufan.me/images/2012/09/2012091420462600.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![忘却 - 芦屋マキ](https://cat.yufan.me/images/2012/09/2012091420414300.jpg)\n\n<MusicPlayer id={1876460058} />\n\n## 那些花儿\n\n巧合其实无处不在，只要留个心眼。上午的时候，我想今天的文章就写“那些花儿”吧。下午的时候，校广播台就在放范玮琪的“那些花儿”——“那片笑声让我想起我的那些花儿，在我生命每"
+    },
+    {
+      "collection": "posts",
+      "id": "2012-09-18-hello-tomorrow",
+      "sourcePath": "posts/2012/2012-09-18-hello-tomorrow.mdx",
+      "frontmatter": {
+        "title": "明天，你好",
+        "slug": "hello-tomorrow",
+        "date": "2012-09-18 12:37:11+08:00",
+        "updated": "2020-09-06 12:30:37+08:00",
+        "tags": "",
+        "category": "文章",
+        "summary": "忘不了我们俩的那次奔跑。这是我记忆中的画面，炎热的午后，我和雨帆一起追着刚刚离站的 119 路公交车奔跑在城市的街角。",
+        "cover": "https://cat.yufan.me/images/2012/09/2012091821131300.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![Gabrielle Pike - Late night bus ride](https://cat.yufan.me/images/2012/09/2012091821015000.jpg)\n\n<MusicPlayer id={1917191859} />\n\n忘不了我们俩的那次奔跑。\n\n这是我记忆中的画面，炎热的午后，我和雨帆一起追着刚刚离站的 119 路公交车奔跑在城市的街角。幸亏红灯，让"
+    },
+    {
+      "collection": "posts",
+      "id": "2012-09-27-the-feeling-of-love",
+      "sourcePath": "posts/2012/2012-09-27-the-feeling-of-love.mdx",
+      "frontmatter": {
+        "title": "喜欢的感觉",
+        "slug": "the-feeling-of-love",
+        "date": "2012-09-27 10:39:05+08:00",
+        "updated": "2020-09-06 12:30:49+08:00",
+        "tags": "",
+        "category": "文章",
+        "summary": "人活着是不是会有很多来不及。比如，说一句未说出口的话对一个来不及的人。",
+        "cover": "https://cat.yufan.me/images/2012/09/2012092721182400.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![春名残 - 荻pote](https://cat.yufan.me/images/2012/09/2012092721395300.jpg)\n\n<MusicPlayer id={406232} />\n\n人活着是不是会有很多来不及。比如，说一句未说出口的话对一个来不及的人。\n\n有一次约你出来，然后你问我找你干嘛。我……我半天说不出来。其实我只是突然觉得，如果明天是世界末日的话怎么办，然后就把你"
+    },
+    {
+      "collection": "posts",
+      "id": "2012-09-30-i-love-you-forever",
+      "sourcePath": "posts/2012/2012-09-30-i-love-you-forever.mdx",
+      "frontmatter": {
+        "title": "最喜欢的人，是你",
+        "slug": "i-love-you-forever",
+        "date": "2012-09-30 03:17:59+08:00",
+        "updated": "2020-09-06 12:31:09+08:00",
+        "tags": "",
+        "category": "文章",
+        "summary": "当天空出现太阳的时候，就不可能再有月亮的存在。人生就是一部不可复制的电影，没有后退也没有快进，我最期待的那个结局就在这里，所以我没有任何遗憾。",
+        "cover": "https://cat.yufan.me/images/2012/09/2012093021252300.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![青 - ふーにょん](https://cat.yufan.me/images/2012/09/2012093021302700.jpg)\n\n<MusicPlayer id={1852070279} />\n\n当天空出现太阳的时候，就不可能再有月亮的存在。\n\n人生就是一部不可复制的电影，没有后退也没有快进，我最期待的那个结局就在这里，所以我没有任何遗憾。\n\n你指间的温柔流过我寒冷的心沟，温暖舒适"
+    },
+    {
+      "collection": "posts",
+      "id": "2012-10-28-the-memory-of-smell",
+      "sourcePath": "posts/2012/2012-10-28-the-memory-of-smell.mdx",
+      "frontmatter": {
+        "title": "香味的记忆",
+        "slug": "the-memory-of-smell",
+        "date": "2012-10-27 21:00:16+08:00",
+        "updated": "2020-09-06 12:31:29+08:00",
+        "tags": "",
+        "category": "文章",
+        "summary": "前些日子在淘宝上买了一块手工香皂，洗衣服时无意间弄错了香皂，以至于这些天衣服上总带着股淡香，干净纯洁而又温柔的味道。秋雨初晴的午后，我和云儿携手行走在校园里，甜韵的檀香混杂着泥土特有的芬芳，空气凉凉的，紧握的手暖暖的。",
+        "cover": "https://cat.yufan.me/images/2012/10/2012102720033500.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![fleurir - アシマ / Ashima](https://cat.yufan.me/images/2012/10/2012102720131600.jpg)\n\n<MusicPlayer id={1385796196} />\n\n前些日子在淘宝上买了一块手工香皂，洗衣服时无意间弄错了香皂，以至于这些天衣服上总带着股淡香，干净纯洁而又温柔的味道。秋雨初晴的午后，我和云儿携手行走在校园里，甜韵"
+    },
+    {
+      "collection": "posts",
+      "id": "2012-11-07-ccf-meeting",
+      "sourcePath": "posts/2012/2012-11-07-ccf-meeting.mdx",
+      "frontmatter": {
+        "title": "亦行亦走",
+        "slug": "ccf-meeting",
+        "date": "2012-11-07 14:33:22+08:00",
+        "updated": "2020-09-06 12:35:01+08:00",
+        "tags": "",
+        "category": "文章",
+        "summary": "开始读余秋雨的《出走十五年》时还在上高中，学习的枯燥、束缚让我对于旅行有一种近乎本能的渴望。于是大学填志愿时我选择了与厦门相隔大半个中国的济南，从遥远的南海之城远行千里来到这北国之都。",
+        "cover": "https://cat.yufan.me/images/2012/11/2012110720214400.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![东软旅途 01](https://cat.yufan.me/images/2012/11/2012110720214400.jpg)\n\n<MusicPlayer id={1475737587} />\n\n开始读余秋雨的《出走十五年》时，我还在上高中。学习的枯燥和束缚让我对旅行有一种近乎本能的渴望。于是大学填志愿时，我选择了与厦门相隔大半个中国的济南，从遥远的南海之城远行千里来到这北国之都。\n\n"
+    },
+    {
+      "collection": "posts",
+      "id": "2012-11-11-cherry-blossoms",
+      "sourcePath": "posts/2012/2012-11-11-cherry-blossoms.mdx",
+      "frontmatter": {
+        "title": "樱花烂漫",
+        "slug": "cherry-blossoms",
+        "date": "2012-11-11 03:20:26+08:00",
+        "updated": "2020-09-06 12:35:13+08:00",
+        "tags": "",
+        "category": "文章",
+        "summary": "总有很多事情是我们所不知道的，或早已经忘记的。也许它们并没有被忘记，只是遗留在记忆深处罢了。",
+        "cover": "https://cat.yufan.me/images/2012/11/2012111120345400.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![苏翼丶 - さくらちゃん](https://cat.yufan.me/images/2012/11/2012111121163300.jpg)\n\n<MusicPlayer id={1847207207} />\n\n总有很多事情是我们所不知道的，或早已经忘记的。也许它们并没有被忘记，只是遗留在记忆深处罢了。\n\n就像我这个 90 年代初生的人，关于童年的动漫记忆，不过就是寥寥几部而已。然而，就是这"
+    },
+    {
+      "collection": "posts",
+      "id": "2012-11-15-the-elegant-past",
+      "sourcePath": "posts/2012/2012-11-15-the-elegant-past.mdx",
+      "frontmatter": {
+        "title": "优雅的旧时光",
+        "slug": "the-elegant-past",
+        "date": "2012-11-15 02:18:45+08:00",
+        "updated": "2020-09-06 12:35:19+08:00",
+        "tags": "",
+        "category": "文章",
+        "summary": "周一晚上，考完经济双学位考试后，我在回软件园的公交车上睡着了。被雨帆的电话吵醒时，正好眼睁睁地看着错过了要下车的站点，坐到了齐鲁软件园站。想来长达半个小时的车程，怎么每次都睡得这么深沉呢？",
+        "cover": "https://cat.yufan.me/images/2012/11/2012111521361400.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![届け - mocha@新刊委託中](https://cat.yufan.me/images/2012/11/2012111521361800.jpg)\n\n<MusicPlayer id={1904723155} />\n\n周一晚上，考完经济双学位考试后，我在回软件园的公交车上睡着了。\n\n被雨帆的电话吵醒时，正好眼睁睁地看着错过了要下车的站点，坐到了齐鲁软件园站。想来长达半个小时的车程，怎么每次"
+    },
+    {
+      "collection": "posts",
+      "id": "2012-11-28-the-third-year-of-loney",
+      "sourcePath": "posts/2012/2012-11-28-the-third-year-of-loney.mdx",
+      "frontmatter": {
+        "title": "一个人的第三年",
+        "slug": "the-third-year-of-loney",
+        "date": "2012-11-28 14:39:40+08:00",
+        "updated": "2020-09-06 12:35:42+08:00",
+        "tags": "",
+        "category": "杂思",
+        "summary": "听风者，不听风，只为繁花一落尽，君辞去。望星者，不望星，只为明月一思乡，君欲归。",
+        "cover": "https://cat.yufan.me/images/2012/11/2012112821464700.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![創作 - ウミ乃](https://cat.yufan.me/images/2012/11/2012112821482100.jpg)\n\n<MusicPlayer id={2134293836} />\n\n> 听风者，不听风，只为繁花一落尽，君辞去。\\\n> 望星者，不望星，只为明月一思乡，君欲归。\n\n偶然间收到高中前女友的 QQ 消息：“好久不见。”\n\n此时正好是下午，冬日的阳光不是很充足，依"
+    },
+    {
+      "collection": "posts",
+      "id": "2012-12-10-the-meaning-of-independency",
+      "sourcePath": "posts/2012/2012-12-10-the-meaning-of-independency.mdx",
+      "frontmatter": {
+        "title": "“独立”的意义",
+        "slug": "the-meaning-of-independency",
+        "date": "2012-12-10 14:49:28+08:00",
+        "updated": "2020-09-06 13:14:58+08:00",
+        "tags": "",
+        "category": "杂思",
+        "summary": "无意中看到陌生人的几句话，短短的几句话，总结的及其到位。我无法再进行简单的转移，顺着他的精辟，繁琐的回味一下好了。",
+        "cover": "https://cat.yufan.me/images/2012/12/2012121021594300.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![春、風 - パチ](https://cat.yufan.me/images/2012/12/2012121021594300.jpg)\n\n<MusicPlayer id={1961264446} />\n\n无意中看到陌生人的几句话，短短的几句话，总结得极其到位。我无法再进行简单的转述，只能顺着他的精辟，细细地品味一下。\n\n我们这一代人。\n\n因为是独生子女，生活上便缺少同代人的交流。与父母之间又"
+    },
+    {
+      "collection": "posts",
+      "id": "2012-12-11-lend-me-more-time",
+      "sourcePath": "posts/2012/2012-12-11-lend-me-more-time.mdx",
+      "frontmatter": {
+        "title": "能不能给我一首歌的时间？",
+        "slug": "lend-me-more-time",
+        "date": "2012-12-11 14:36:41+08:00",
+        "updated": "2020-09-06 12:38:47+08:00",
+        "tags": "",
+        "category": "文章",
+        "summary": "每个人心里，都有着一架钢琴，弹奏着属于自己的乐章。这部乐章，叫做生命。雪霁，天晴，清晨的校园里朦胧地散发着昨夜的雾气，轻轻走过微湿的路面，看着久违的朝阳，茫然间有了种心痛的体悟。",
+        "cover": "https://cat.yufan.me/images/2012/12/2012121122120900.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![世界寿命と最後の一日 - 赤身ふみお](https://cat.yufan.me/images/2012/12/2012121122144500.jpg)\n\n<MusicPlayer id={2066670550} />\n\n每个人心里，都有着一架钢琴，弹奏着属于自己的乐章。这部乐章，叫做生命。\n\n雪霁，天晴，清晨的校园里朦胧地散发着昨夜的雾气，轻轻走过微湿的路面，看着久违的朝阳，茫然间有了种"
+    },
+    {
+      "collection": "posts",
+      "id": "2012-12-14-secret-of-boys-mind",
+      "sourcePath": "posts/2012/2012-12-14-secret-of-boys-mind.mdx",
+      "frontmatter": {
+        "title": "男孩子的秘密心事",
+        "slug": "secret-of-boys-mind",
+        "date": "2012-12-14 14:53:58+08:00",
+        "updated": "2026-01-20 22:48:51+08:00",
+        "tags": "",
+        "category": "文章",
+        "summary": "当我再一次触及那些少年心事时，却没有疯狂的伤感，没有想哭的冲动，就像是听邻家女孩讲故事般平静。作为朋友，似乎微微遗憾；作成恋人，却默默地怯然了。",
+        "cover": "https://cat.yufan.me/images/2012/12/2012121422380800.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![六月三日 - ぶーた](https://cat.yufan.me/images/2012/12/2012121422380800.jpg)\n\n我来不及认真地年轻，待明白过来时，只能选择认真地老去。年轻时总觉得来日方长，可年岁渐长，却越懂得了生命来来往往，来日并不方长。\n\n<p style={{ textAlign: \"right\" }}>——三毛</p>\n\n<MusicPlayer id={"
+    },
+    {
+      "collection": "posts",
+      "id": "2013-01-01-never-stop-writing",
+      "sourcePath": "posts/2013/2013-01-01-never-stop-writing.mdx",
+      "frontmatter": {
+        "title": "笔耕不辍",
+        "slug": "never-stop-writing",
+        "date": "2013-01-01 15:02:31+08:00",
+        "updated": "2020-09-06 12:39:22+08:00",
+        "tags": "",
+        "category": "文章",
+        "summary": "从来没有奢望过自己写的东西能有多少人来阅读。年末的济南的天空依旧那么干冷，路面上还残留着4天前下了未化的厚厚积雪，透着股寒气直逼心底。",
+        "cover": "https://cat.yufan.me/images/2013/01/2013010123033300.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![Gale - Re°](https://cat.yufan.me/images/2013/01/2013010123020800.jpg)\n\n<MusicPlayer id={570391} />\n\n## Part 1\n\n从来没有奢望过自己写的东西能有多少人来阅读。\n\n年末的济南的天空依旧那么干冷，路面上还残留着 4 天前下了未化的厚厚积雪，透着股寒气直逼心底。住在温暖如春的厦门多年，突然在"
+    },
+    {
+      "collection": "posts",
+      "id": "2013-01-09-sad-melody",
+      "sourcePath": "posts/2013/2013-01-09-sad-melody.mdx",
+      "frontmatter": {
+        "title": "忧伤的旋律",
+        "slug": "sad-melody",
+        "date": "2013-01-09 12:48:26+08:00",
+        "updated": "2020-09-06 12:39:54+08:00",
+        "tags": "",
+        "category": "杂思",
+        "summary": "青春是什么？小四说：“青春，是一道明媚的忧伤。”歌德说：“无酒而醉才是青春。”不管怎么说，似乎花季的年龄总有点伤春悲秋。",
+        "cover": "https://cat.yufan.me/images/2013/01/2013010923141500.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![幻を思い出して - よしか](https://cat.yufan.me/images/2013/01/2013010923203400.jpg)\n\n<MusicPlayer id={2149019981} />\n\n青春是什么？小四说：“青春，是一道明媚的忧伤。”歌德说：“无酒而醉才是青春。”不管怎么说，似乎花季的年龄总有点伤春悲秋。\n\n于是，从初中开始喜欢上了那种忧伤的感觉，手抄本里写满的是"
+    },
+    {
+      "collection": "posts",
+      "id": "2013-01-13-when-i-was-young",
+      "sourcePath": "posts/2013/2013-01-13-when-i-was-young.mdx",
+      "frontmatter": {
+        "title": "与青春有关的日子",
+        "slug": "when-i-was-young",
+        "date": "2013-01-13 10:13:57+08:00",
+        "updated": "2020-09-06 12:40:24+08:00",
+        "tags": "",
+        "category": "杂思",
+        "summary": "简单地重温了一遍《与青春有关的日子》，停不住的思绪逐渐泛滥。还记得大一的时候，没有电脑的我们在床上疯狂地听着晚间电台入眠。回想起来，那时候是我大学期间接触音乐最多的时候。",
+        "cover": "https://cat.yufan.me/images/2013/01/2013011323292300.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![我只是漫无目的地跑着 - まかろんＫ](https://cat.yufan.me/images/2013/01/2013011323391300.jpg)\n\n<MusicPlayer id={29292454} />\n\n简单地重温了一遍《与青春有关的日子》，停不住的思绪逐渐泛滥。\n\n还记得大一的时候，没有电脑的我们在床上疯狂地听着晚间电台入眠。回想起来，那时候是我大学期间接触音乐最多的时候。"
+    },
+    {
+      "collection": "posts",
+      "id": "2013-01-29-choices",
+      "sourcePath": "posts/2013/2013-01-29-choices.mdx",
+      "frontmatter": {
+        "title": "抉择",
+        "slug": "choices",
+        "date": "2013-01-29 15:45:13+08:00",
+        "updated": "2020-09-06 12:41:08+08:00",
+        "tags": "",
+        "category": "文章",
+        "summary": "才上大学时和高中的老同学聊天，他问我：“你现在读哪个大学，什么专业？”我告诉他我现在在山大软院。他倒是惊讶了，“当年高中时你的化学读得那么好，为什么就放弃了呢？”",
+        "cover": "https://cat.yufan.me/images/2013/01/2013012920023000.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![无题 - fjsmu（ふじしむ）](https://cat.yufan.me/images/2013/01/2013012920123600.jpg)\n\n<MusicPlayer id={22679062} />\n\n才上大学时和高中的老同学聊天，他问我：“你现在读哪个大学，什么专业？”我告诉他我现在在山大软院。他倒是惊讶了，“当年高中时你的化学读得那么好，为什么就放弃了呢？”我想了又想，却不"
+    },
+    {
+      "collection": "posts",
+      "id": "2013-01-31-tender-feeling",
+      "sourcePath": "posts/2013/2013-01-31-tender-feeling.mdx",
+      "frontmatter": {
+        "title": "温情",
+        "slug": "tender-feeling",
+        "date": "2013-01-31 16:00:42+08:00",
+        "updated": "2020-09-06 12:41:29+08:00",
+        "tags": "",
+        "category": "文章",
+        "summary": "“你出生的时候才这么大，不足一尺。”老爸在那里形象地比划着，“当时没有保温箱，你的身体冰凉的，我一手把你夹在胳肢窝里，拿被子捂着。",
+        "cover": "https://cat.yufan.me/images/2013/01/2013013120175200.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![无名 - 父女](https://cat.yufan.me/images/2013/01/2013013120222500.jpg)\n\n<MusicPlayer id={2026358799} />\n\n“你出生的时候才这么大，不足一尺。”老爸在那里形象地比划着，“当时没有保温箱，你的身体冰凉的，我一手把你夹在胳肢窝里，拿被子捂着。怕给你闷坏了，过一会儿还凑过去听听，嗯，还有呼吸，继续捂着，这"
+    },
+    {
+      "collection": "posts",
+      "id": "2013-03-02-gray-avatar",
+      "sourcePath": "posts/2013/2013-03-02-gray-avatar.mdx",
+      "frontmatter": {
+        "title": "灰色头像",
+        "slug": "gray-avatar",
+        "date": "2013-03-02 08:25:07+08:00",
+        "updated": "2020-09-06 12:41:59+08:00",
+        "tags": "",
+        "category": "文章",
+        "summary": "这些天一个人在家时，总是有些寂寞。不知道是由于不准备考研和云儿闹翻后的自责，还是放假分别后的孤单，不由自主地开始想起一些人，怀念起一些事。",
+        "cover": "https://cat.yufan.me/images/2013/03/2013030220520400.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![mery - 冰菓](https://cat.yufan.me/images/2013/03/2013030220535900.jpg)\n\n<MusicPlayer id={2022348787} />\n\n爱情，对于雨帆来说，一直是难以企及的奢侈品。\n\n这些天一个人在家时，总是有些寂寞。不知道是由于不准备考研和云儿闹翻后的自责，还是放假分别后的孤单，不由自主地开始想起一些人，怀念起一些事。一"
+    },
+    {
+      "collection": "posts",
+      "id": "2013-03-08-pushu-and-his-flower",
+      "sourcePath": "posts/2013/2013-03-08-pushu-and-his-flower.mdx",
+      "frontmatter": {
+        "title": "朴树与花",
+        "slug": "pushu-and-his-flower",
+        "date": "2013-03-08 15:15:11+08:00",
+        "updated": "2020-09-06 12:42:14+08:00",
+        "tags": "",
+        "category": "文章",
+        "summary": "不知怎么的，这几天听起朴树的《那些花儿》时，总会有一种熟悉的孤独感。3 月的济南天渐渐回暖，一个人在宿舍整理文件时发现此曲，思绪不禁回到很久以前……",
+        "cover": "https://cat.yufan.me/images/2013/03/2013030821022700.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![朴树 01](https://cat.yufan.me/images/2013/03/2013030821042700.jpg)\n\n<MusicPlayer id={139392} />\n\n不知怎么的，这几天听起朴树的《那些花儿》时，总会有一种熟悉的孤独感。3 月的济南天渐渐回暖，一个人在宿舍整理文件时发现此曲，思绪不禁回到很久以前……\n\n在虾米上查查时间，《那些花儿》在 98 年发行，那年"
+    },
+    {
+      "collection": "posts",
+      "id": "2013-03-17-trivial-thought",
+      "sourcePath": "posts/2013/2013-03-17-trivial-thought.mdx",
+      "frontmatter": {
+        "title": "琐碎",
+        "slug": "trivial-thought",
+        "date": "2013-03-16 18:04:33+08:00",
+        "updated": "2020-09-06 12:43:05+08:00",
+        "tags": "",
+        "category": "文章",
+        "summary": "留了大半年的长发，实在是忍受不了每日的梳洗，年初回家后便决定去剪掉。街角的理发师大爷打理着我的头发，絮絮叨叨地抱怨着：“都这么长了剪掉多可惜啊。”一如一年前你那一脸惋惜抱怨的眼神。",
+        "cover": "https://cat.yufan.me/images/2013/03/2013031621245200.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![晴れ间 - アマガイタロー](https://cat.yufan.me/images/2013/03/2013031621203200.jpg)\n\n<MusicPlayer id={2098472572} />\n\n## 任性的我\n\n留了大半年的长发，实在是忍受不了每日的梳洗，年初回家后便决定去剪掉。街角的理发师大爷打理着我的头发，絮絮叨叨地抱怨着：“都这么长了剪掉多可惜啊。”一如一年前你那一"
+    },
+    {
+      "collection": "posts",
+      "id": "2013-04-06-spring-essay",
+      "sourcePath": "posts/2013/2013-04-06-spring-essay.mdx",
+      "frontmatter": {
+        "title": "春日随笔",
+        "slug": "spring-essay",
+        "date": "2013-04-06 13:49:27+08:00",
+        "updated": "2020-09-06 12:43:41+08:00",
+        "tags": "",
+        "category": "杂思",
+        "summary": "许多年前，当我还在读老舍的《济南的冬天》时，着实被其中的描写所吸引。古老的济南城配上半点烟雪的“水墨画”成了我的一种向往，我在想象着，这，就是济南。",
+        "cover": "https://cat.yufan.me/images/2013/04/2013040621410400.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![時の流れに身をまかせ - 心象Sketcher](https://cat.yufan.me/images/2013/04/2013040621452600.jpg)\n\n<MusicPlayer id={2014036735} />\n\n许多年前，当我还在读老舍的《济南的冬天》时，着实被其中的描写所吸引。古老的济南城配上半点烟雪的“水墨画”成了我的一种向往，我在想象着，这，就是济南。\n\n伴随着动"
+    },
+    {
+      "collection": "posts",
+      "id": "2013-04-27-the-best-way-to-learn-css",
+      "sourcePath": "posts/2013/2013-04-27-the-best-way-to-learn-css.mdx",
+      "frontmatter": {
+        "title": "学习CSS的最佳途径",
+        "slug": "the-best-way-to-learn-css",
+        "date": "2013-04-27 12:47:55+08:00",
+        "updated": "2020-09-06 12:49:28+08:00",
+        "tags": "",
+        "category": "编程",
+        "toc": "true",
+        "summary": "CSS 与 HTML 相结合地进行工作；HTML 整理出页面的结构，CSS 使它们看起来更加漂亮并且加入了细节上的交互。作为一个网站设计者你应该认真地学习这些语言。",
+        "cover": "https://cat.yufan.me/images/2013/04/2013042823510900.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![](https://cat.yufan.me/images/2013/04/2013042722324600.jpg)\n\nCSS 与 HTML 相结合地进行工作；HTML 整理出页面的结构，CSS 使它们看起来更加漂亮并且加入了细节上的交互。作为一个网站设计者你应该认真地学习这些语言。即使你并不需要自己来编程，理解它们如何工作将有助于你设计页面。\n\n# 一、掌握基础：什么是CSS？\n\nC.S"
+    },
+    {
+      "collection": "posts",
+      "id": "2013-04-30-whose-youth-do-not-have-a-shallow-bruising",
+      "sourcePath": "posts/2013/2013-04-30-whose-youth-do-not-have-a-shallow-bruising.mdx",
+      "frontmatter": {
+        "title": "谁的青春没有浅浅的淤青",
+        "slug": "whose-youth-do-not-have-a-shallow-bruising",
+        "date": "2013-04-30 12:49:51+08:00",
+        "updated": "2020-09-06 12:50:44+08:00",
+        "tags": "",
+        "category": "杂思",
+        "summary": "夜晚临近子夜，我看完了整部电影《致我们终将逝去的青春》，现在坐在桌前细细回味，感触颇丰。",
+        "cover": "https://cat.yufan.me/images/2013/04/2013043022435500.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![致青春 01](https://cat.yufan.me/images/2013/04/2013043022492800.jpg)\n\n<MusicPlayer id={4872578} />\n\n夜晚临近子夜，我看完了整部电影《致我们终将逝去的青春》，现在坐在桌前细细回味，感触颇丰。去看的时候，同学说时光网上的评分太低了，还是去看《钢铁侠》吧。我说不看，就算是烂片我也要去看，因为我相信赵薇，相"
+    },
+    {
+      "collection": "posts",
+      "id": "2013-05-17-the-girl-who-leave-you",
+      "sourcePath": "posts/2013/2013-05-17-the-girl-who-leave-you.mdx",
+      "frontmatter": {
+        "title": "那个离你而去的女孩",
+        "slug": "the-girl-who-leave-you",
+        "date": "2013-05-17 12:52:59+08:00",
+        "updated": "2020-09-06 12:59:48+08:00",
+        "tags": "",
+        "category": "文章",
+        "summary": "雨，漫天漫地的雨，清澈透亮，不含一丝杂质。初看此片的第一眼，仿若置身于漫无止境的五月雨季。雨天潮湿的心情，凉亭下的不期而遇，那人似曾相识。",
+        "cover": "https://cat.yufan.me/images/2013/05/2013051722351900.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![言叶之庭 01](https://cat.yufan.me/images/2013/05/2013051722363500.jpg)\n\n<MusicPlayer id={1950516520} />\n\n雨，漫天漫地的雨，清澈透亮，不含一丝杂质。初看此片的第一眼，仿若置身于漫无止境的五月雨季。雨天潮湿的心情，凉亭下的不期而遇，那人似曾相识。\n\n“我们，是不是以前见过？”\n\n小时候，天空仿若触手"
+    },
+    {
+      "collection": "posts",
+      "id": "2013-05-20-lost-myself-in-may-day",
+      "sourcePath": "posts/2013/2013-05-20-lost-myself-in-may-day.mdx",
+      "frontmatter": {
+        "title": "五月迷失记",
+        "slug": "lost-myself-in-may-day",
+        "date": "2013-05-20 12:51:21+08:00",
+        "updated": "2020-09-06 12:52:01+08:00",
+        "category": "文章",
+        "summary": "五月的济南生活有点错乱，天气忽冷忽热地延续了 3 周，才想着是不是已经算作夏天时，昨夜又下雨降温到 18℃。搞得我现在的床上还放着毛毯、棉被、空调被，按照温度随时选取。",
+        "cover": "https://cat.yufan.me/images/2013/05/2013052022592400.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![Ame - Hiten｜初画集](https://cat.yufan.me/images/2013/05/2013052023095200.jpg)\n\n<MusicPlayer id={22651783} />\n\n五月的济南生活有点错乱，天气忽冷忽热地延续了 3 周，才想着是不是已经算作夏天时，昨夜又下雨降温到 18℃。搞得我现在的床上还放着毛毯、棉被、空调被，按照温度随时选取。╮(╯▽╰)"
+    },
+    {
+      "collection": "posts",
+      "id": "2013-06-21-those-people",
+      "sourcePath": "posts/2013/2013-06-21-those-people.mdx",
+      "frontmatter": {
+        "title": "那些人儿",
+        "slug": "those-people",
+        "date": "2013-06-20 18:24:04+08:00",
+        "updated": "2020-09-06 12:49:51+08:00",
+        "tags": "",
+        "category": "杂思",
+        "summary": "闲了两个月后，我又把原本打算停笔不写的博客重新搭建起来，这算不算是个人的又一次纠结呢？掐指一算，写博已经有两年之久，这期间建博的来来去去，有些人走了，有些人还在继续。",
+        "cover": "https://cat.yufan.me/images/2013/06/2013062023165500.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![在你心里我也许只是你欣赏的风景 - 邦乔彦](https://cat.yufan.me/images/2013/06/2013062023222900.jpg)\n\n<MusicPlayer id={1955583148} />\n\n闲了两个月后，我又把原本打算停笔不写的博客重新搭建起来，这算不算是个人的又一次纠结呢？掐指一算，写博已经有两年之久，这期间建博的来来去去，有些人走了，有些人还在继续"
+    },
+    {
+      "collection": "posts",
+      "id": "2013-06-30-unwilling-to-grow-old",
+      "sourcePath": "posts/2013/2013-06-30-unwilling-to-grow-old.mdx",
+      "frontmatter": {
+        "title": "我不想，我不想，不想变老",
+        "slug": "unwilling-to-grow-old",
+        "date": "2013-06-29 17:29:55+08:00",
+        "updated": "2020-09-06 12:54:20+08:00",
+        "tags": "",
+        "category": "杂思",
+        "summary": "“为了看看阳光，我来到世上。”第一次读到巴尔蒙特的这句诗后，就几乎再也没有忘记过。那种内心的纯净、光明与温暖，在读此诗时铺面而来，简单地仿佛看不到忧伤的痕迹，一如你我十八年华。",
+        "cover": "https://cat.yufan.me/images/2013/06/2013062923260700.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![青 - Sottan](https://cat.yufan.me/images/2013/06/2013062923304000.jpg)\n\n<MusicPlayer id={2109677054} />\n\n“为了看看阳光，我来到世上。”第一次读到巴尔蒙特的这句诗后，就几乎再也没有忘记过。那种内心的纯净、光明与温暖，在读此诗时铺面而来，简单地仿佛看不到忧伤的痕迹，一如你我十八年华。\n\n<p "
+    },
+    {
+      "collection": "posts",
+      "id": "2013-07-18-summer-training-record",
+      "sourcePath": "posts/2013/2013-07-18-summer-training-record.mdx",
+      "frontmatter": {
+        "title": "大三暑期实训记",
+        "slug": "summer-training-record",
+        "date": "2013-07-18 14:31:28+08:00",
+        "updated": "2020-09-06 12:54:40+08:00",
+        "tags": "",
+        "category": "编程",
+        "summary": "大概是很久没有提笔的缘故，一直找不到什么可以拿出来写的话题。七月的济南打破了一如既往的干旱，这一阵子阴雨连绵，恍然间有种已经回到厦门的错乱感。",
+        "cover": "https://cat.yufan.me/images/2013/07/2013071823431400.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![LUNCH TIME - wacca〇わっか](https://cat.yufan.me/images/2013/07/2013071823450900.jpg)\n\n<MusicPlayer id={571336152} />\n\n大概是很久没有提笔的缘故，一直找不到什么可以拿出来写的话题。七月的济南打破了一如既往的干旱，这一阵子阴雨连绵，恍然间有种已经回到厦门的错乱感。只是现在的我依旧坐在实"
+    },
+    {
+      "collection": "posts",
+      "id": "2013-07-27-afternoon-nap",
+      "sourcePath": "posts/2013/2013-07-27-afternoon-nap.mdx",
+      "frontmatter": {
+        "title": "难得的午后",
+        "slug": "afternoon-nap",
+        "date": "2013-07-27 14:26:33+08:00",
+        "updated": "2020-09-10 06:23:46+08:00",
+        "tags": "",
+        "category": "杂思",
+        "summary": "时常会望着天空，周遭的喧嚣便会变得平静。我并不明白存在的意义，就像我们追逐着的世界。若是我们能忘记目的地，你说，会是平淡的快乐，还是空洞的烦恼？",
+        "cover": "https://cat.yufan.me/images/2013/07/2013072700011200.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![町枝 - 花铭](https://cat.yufan.me/images/2013/07/2013072723570200.jpg)\n\n<MusicPlayer id={28524471} />\n\n时常会望着天空，周遭的喧嚣便会变得平静。我并不明白存在的意义，就像我们追逐着的世界。若是我们能忘记目的地，你说，会是平淡的快乐，还是空洞的烦恼？\n\n<p style={{ textAlign: \""
+    },
+    {
+      "collection": "posts",
+      "id": "2013-08-02-the-moonlight-in-city",
+      "sourcePath": "posts/2013/2013-08-02-the-moonlight-in-city.mdx",
+      "frontmatter": {
+        "title": "城里的月光",
+        "slug": "the-moonlight-in-city",
+        "date": "2013-08-02 07:51:26+08:00",
+        "updated": "2020-09-06 13:01:25+08:00",
+        "tags": "",
+        "category": "杂思",
+        "summary": "听着许美静的《城里的月光》，不由得想起童年读过的一句小诗：梦中每迷还乡路，愈知晚途念桑梓。",
+        "cover": "https://cat.yufan.me/images/2013/08/2013080200113300.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![月夜 - ねね](https://cat.yufan.me/images/2013/08/2013080200132700.jpg)\n\n<MusicPlayer id={5252268} />\n\n听着许美静的《城里的月光》，不由得想起童年读过的一句小诗：梦中每迷还乡路，愈知晚途念桑梓。\n\n对于家乡，思念的情感是难以割断的，而且会越来越萦绕在脑海的深处，形成可以称之为追忆的东西。每颗心上某一个"
+    },
+    {
+      "collection": "posts",
+      "id": "2013-08-07-fear-of-death",
+      "sourcePath": "posts/2013/2013-08-07-fear-of-death.mdx",
+      "frontmatter": {
+        "title": "害怕死亡",
+        "slug": "fear-of-death",
+        "date": "2013-08-07 00:52:58+08:00",
+        "updated": "2020-09-06 13:02:04+08:00",
+        "tags": "",
+        "category": "文章",
+        "summary": "此刻有谁在世上某处走，无缘无故在世上走，走向我。此刻有谁在世上某处死，无缘无故在世上死，望着我。",
+        "cover": "https://cat.yufan.me/images/2013/08/2013080700214600.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![4월은 너의 거짓말 - 음하하](https://cat.yufan.me/images/2013/08/2013080700242200.jpg)\n\n<MusicPlayer id={411259267} />\n\n> 此刻有谁在世上某处走，无缘无故在世上走，走向我。\\\n> 此刻有谁在世上某处死，无缘无故在世上死，望着我。\n>\n> <p style={{ textAlign: \"right"
+    },
+    {
+      "collection": "posts",
+      "id": "2013-09-21-mid-autumn-festival",
+      "sourcePath": "posts/2013/2013-09-21-mid-autumn-festival.mdx",
+      "frontmatter": {
+        "title": "皓魄当空宝镜升，云间仙籁寂无声。",
+        "slug": "mid-autumn-festival",
+        "date": "2013-09-21 13:16:57+08:00",
+        "updated": "2020-09-06 13:02:26+08:00",
+        "tags": "",
+        "category": "杂思",
+        "summary": "今晚的月光像从天堂里飘出的祈祷曲，安宁静谧，洒下一地慈悲。若不是身边的几个人正谈笑生风，真会让人觉得这清越微凉的月色有几分挽歌的意味，却不是将遁逝于无形的凄淡，而是禅意的透着一种繁华落幕，过眼无憾的泰然。",
+        "cover": "https://cat.yufan.me/images/2013/09/2013092100390300.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![中秋节快乐！ - zcing](https://cat.yufan.me/images/2013/09/2013092100464200.jpg)\n\n<MusicPlayer id={453003622} />\n\n往日思绪缱绻，起舞于静夜暗自妖娆，清风徐来芳草荡，酣梦恰此时光。\n\n今晚的月光像从天堂里飘出的祈祷曲，安宁静谧，洒下一地慈悲。若不是身边的几个人正谈笑生风，真会让人觉得这清越微凉的"
+    },
+    {
+      "collection": "posts",
+      "id": "2013-10-05-change-it-or-not",
+      "sourcePath": "posts/2013/2013-10-05-change-it-or-not.mdx",
+      "frontmatter": {
+        "title": "变与不变",
+        "slug": "change-it-or-not",
+        "date": "2013-10-05 11:33:12+08:00",
+        "updated": "2020-09-06 13:02:52+08:00",
+        "tags": "",
+        "category": "文章",
+        "summary": "开始写博，怀揣着思维变成文章的激动，心存着与人交流的憧憬。沐风栉雨，日复一日，更新、留言，方知写博不易。",
+        "cover": "https://cat.yufan.me/images/2013/10/2013100501035200.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![四月是你的谎言 by 入梦的太阳](https://cat.yufan.me/images/2013/10/2013100501103300.jpg)\n\n<MusicPlayer id={2064724623} />\n\n10 年，《[雨帆](https://yufan.me)》呱呱落地。带着青春式的忧郁，一个人、一本写得满满的手抄本，一间写满喜怒哀乐的个人网站悄然面世。\n\n开始写博，怀揣着思"
+    },
+    {
+      "collection": "posts",
+      "id": "2013-11-04-see-it-or-not",
+      "sourcePath": "posts/2013/2013-11-04-see-it-or-not.mdx",
+      "frontmatter": {
+        "title": "见与不见",
+        "slug": "see-it-or-not",
+        "date": "2013-11-04 04:39:28+08:00",
+        "updated": "2020-09-06 13:02:58+08:00",
+        "tags": "",
+        "category": "杂思",
+        "summary": "这段时间才入了 Kindle，看见贴吧里的人都在推荐《看见》，我是这两天才看。看完之后印象最深的不是柴静本人，而是她所描写的身边的林林总总。",
+        "cover": "https://cat.yufan.me/images/2013/11/2013110400534500.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![柴静 01](https://cat.yufan.me/images/2013/11/2013110400564500.jpg)\n\n<MusicPlayer id={444979} />\n\n这段时间才入了 Kindle，看见贴吧里的人都在推荐《看见》，我是这两天才看。看完之后印象最深的不是柴静本人，而是她所描写的身边的林林总总。书里废话很少，都是朴实的文字但有重量。毕竟作为一个新闻人，你能看"
+    },
+    {
+      "collection": "posts",
+      "id": "2013-11-18-wretched-history-of-my-childhood",
+      "sourcePath": "posts/2013/2013-11-18-wretched-history-of-my-childhood.mdx",
+      "frontmatter": {
+        "title": "扒一扒当年的猥琐事",
+        "slug": "wretched-history-of-my-childhood",
+        "date": "2013-11-18 15:00:49+08:00",
+        "updated": "2020-09-06 13:03:33+08:00",
+        "tags": "",
+        "category": "杂谈",
+        "summary": "有道是人不猥琐枉少年，所谓宅男，鲜有不猥琐的。自古风流出少年，已然成为定理。作为即将大学毕业的大龄伪少年，我就来扒一扒当年自己做过的那些黑历史吧。",
+        "cover": "https://cat.yufan.me/images/2013/11/2013111801235800.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![つちの - 桐谷直叶](https://cat.yufan.me/images/2013/11/2013111801261300.jpg)\n\n<MusicPlayer id={29822085} />\n\n有道是人不猥琐枉少年，所谓宅男，鲜有不猥琐的。自古风流出少年，已然成为定理。作为即将大学毕业的大龄伪少年，我就来扒一扒当年自己做过的那些黑历史吧。\n\n故事还得从大一才进大学开始说起，所谓“大"
+    },
+    {
+      "collection": "posts",
+      "id": "2013-11-25-the-poor-efficiency-of-android-program",
+      "sourcePath": "posts/2013/2013-11-25-the-poor-efficiency-of-android-program.mdx",
+      "frontmatter": {
+        "title": "胡侃Android程序的效率",
+        "slug": "the-poor-efficiency-of-android-program",
+        "date": "2013-11-25 13:03:59+08:00",
+        "updated": "2020-09-06 13:05:05+08:00",
+        "tags": "",
+        "category": "编程",
+        "summary": "这天群里面大家都闲的时候，某君开始吐槽 Android 上的 UC 游览器，说以前版本的有多么快，现在的内存占用多大、多卡。一看到这个话题我就十分感兴趣，于是我就来胡扯一下 Android 上的程序效率问题，非专业文章，不喜勿看。",
+        "cover": "https://cat.yufan.me/images/2013/11/2013112501343300.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![Broken Android](https://cat.yufan.me/images/2013/11/2013112501353300.jpg)\n\n这天群里面大家都闲的时候，某君开始吐槽 Android 上的 UC 游览器，说以前版本的有多么快，现在的内存占用多大、多卡。一看到这个话题我就十分感兴趣，于是我就来胡扯一下 Android 上的程序效率问题，非专业文章，不喜勿看。\n\n说起 An"
+    },
+    {
+      "collection": "posts",
+      "id": "2013-12-02-meeting",
+      "sourcePath": "posts/2013/2013-12-02-meeting.mdx",
+      "frontmatter": {
+        "title": "遇见",
+        "slug": "meeting",
+        "date": "2013-12-02 07:36:59+08:00",
+        "updated": "2020-09-06 13:08:55+08:00",
+        "tags": "",
+        "category": "文章",
+        "summary": "写博客的时候最期待的就是遇见形形色色的人了，有时候能遇见这样一个可以聊得开的人，然后能交个朋友，其实真是一件非常舒心的事。",
+        "cover": "https://cat.yufan.me/images/2013/12/2013120201424100.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![嘈杂 - あすぱら](https://cat.yufan.me/images/2013/12/2013120201503000.jpg)\n\n<MusicPlayer id={2014849468} />\n\n写博客的时候最期待的就是遇见形形色色的人了，有时候能遇见这样一个可以聊得开的人，然后能交个朋友，其实真是一件非常舒心的事。下面节选了我和一位博友的来信，期待能遇见一个未知的你，和你交个知心"
+    },
+    {
+      "collection": "posts",
+      "id": "2014-01-01-grown-old-with-a-age",
+      "sourcePath": "posts/2014/2014-01-01-grown-old-with-a-age.mdx",
+      "frontmatter": {
+        "title": "同一个时代一起老去",
+        "slug": "grown-old-with-a-age",
+        "date": "2014-01-01 05:44:37+08:00",
+        "updated": "2020-09-06 13:19:34+08:00",
+        "tags": "",
+        "category": "文章",
+        "summary": "过去到底有什么呢？为什么会让这么多人怀念，甚至是想回到过去？本想一点点梳理、细说那些难忘的点点滴滴，却总记不起曾经的刻骨铭心，只剩下些支离破碎的片段可以回忆。",
+        "cover": "https://cat.yufan.me/images/2013/12/2013123101375300.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![青 - ばなこ武丸](https://cat.yufan.me/images/2013/12/2013123101553100.jpg)\n\n<MusicPlayer id={2082220640} />\n\n过去到底有什么呢？为什么会让这么多人怀念，甚至是想回到过去？本想一点点梳理、细说那些难忘的点点滴滴，却总记不起曾经的刻骨铭心，只剩下些支离破碎的片段可以回忆。日本有句谚语：“三岁时眼睛里看"
+    },
+    {
+      "collection": "posts",
+      "id": "2014-02-18-the-things-you-dont-know",
+      "sourcePath": "posts/2014/2014-02-18-the-things-you-dont-know.mdx",
+      "frontmatter": {
+        "title": "那些你不知道的事",
+        "slug": "the-things-you-dont-know",
+        "date": "2014-02-18 15:33:36+08:00",
+        "updated": "2020-09-06 13:11:41+08:00",
+        "tags": "",
+        "category": "杂谈",
+        "cover": "https://cat.yufan.me/images/2024/04/2024041620404500.jpg",
+        "summary": "有道是活到老学到老，用通俗的话说就是，“你丫永远不可能什么都懂”。因此每每因为不懂被人笑话时候，我常常用这样的话来安慰自己。也就是阿Q精神，所谓的精神安慰法。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![きみらしく生きて](https://cat.yufan.me/images/2024/04/2024041620434200.jpg)\n\n<MusicPlayer id={22821014} />\n\n这是一篇胡言乱语的文章。\n\n有道是活到老学到老，用通俗的话说就是，“你丫永远不可能什么都懂”。因此每每因为不懂被人笑话时候，我常常用这样的话来安慰自己。也就是阿 Q 精神，所谓的精神安慰法。\n\n"
+    },
+    {
+      "collection": "posts",
+      "id": "2014-02-20-black-history-of-my-childhood",
+      "sourcePath": "posts/2014/2014-02-20-black-history-of-my-childhood.mdx",
+      "frontmatter": {
+        "title": "扒一扒当年与父母斗智斗勇的日子",
+        "slug": "black-history-of-my-childhood",
+        "date": "2014-02-20 06:22:07+08:00",
+        "updated": "2023-12-03 10:34:58+08:00",
+        "tags": "",
+        "category": "杂谈",
+        "cover": "https://cat.yufan.me/images/2023/12/2023120310325235.jpg",
+        "summary": "如果有人和我说小孩子什么都不懂，阻止他们玩电脑、看电视很容易的话，那么我的经历绝对会告诉你，你丫太天真了。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![甘々と稲妻](https://cat.yufan.me/images/2023/12/2023120310270529.jpg)\n\n<MusicPlayer id={34509840} />\n\n如果有人和我说小孩子什么都不懂，阻止他们玩电脑、看电视很容易的话，那么我的经历绝对会告诉你，你丫太天真了。\n\n这不是我的血泪史，严格意义上说是我爸妈的。\n\n我的童年那个时候没什么娱乐设备或者是节目，家"
+    },
+    {
+      "collection": "posts",
+      "id": "2014-03-15-the-poem-of-forget",
+      "sourcePath": "posts/2014/2014-03-15-the-poem-of-forget.mdx",
+      "frontmatter": {
+        "title": "忘却之诗",
+        "slug": "the-poem-of-forget",
+        "date": "2014-03-15 12:41:24+08:00",
+        "updated": "2020-09-06 13:09:12+08:00",
+        "tags": "",
+        "category": "文章",
+        "toc": "true",
+        "cover": "https://cat.yufan.me/images/2024/04/2024041620281800.jpg",
+        "summary": "有人说，记忆就像一首歌，你记不得它的词，却忘不了熟悉的曲调。香香姐姐说，记忆就像是陈年的女儿红，时间愈久才弥香。而我说：记忆，就是已经结痂的疤，每一次被迫想起，都扯得血肉模糊。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![孤寂少女01](https://cat.yufan.me/images/2024/04/2024041620352400.jpg)\n\n有人说，记忆就像一首歌，你记不得它的词，却忘不了熟悉的曲调。香香姐姐说，记忆就像是陈年的女儿红，时间愈久才弥香。而我说：记忆，就是已经结痂的疤，每一次被迫想起，都扯得血肉模糊。\n\n这不是一首忘记了的诗，而是一首由忘记组成的诗，它被我选择遗忘了八年。\n\n<p s"
+    },
+    {
+      "collection": "posts",
+      "id": "2014-06-09-my-university-life",
+      "sourcePath": "posts/2014/2014-06-09-my-university-life.mdx",
+      "frontmatter": {
+        "title": "凡我在处，便是山大",
+        "slug": "my-university-life",
+        "date": "2014-06-09 13:19:55+08:00",
+        "updated": "2023-12-03 07:01:05+08:00",
+        "tags": "",
+        "category": "文章",
+        "cover": "https://cat.yufan.me/images/2023/12/2023120306435871.jpg",
+        "summary": "从忙碌的四月大补考到现在准备离校，一晃两个月过去了。停更的博客、塞满百封未读邮件的邮箱，似乎暗示的不仅仅是忙碌，还有某些道不出名的情绪。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![?](https://cat.yufan.me/images/2023/12/2023120306565488.jpg)\n\n<MusicPlayer id={1959716226} />\n\n## 一、回忆\n\n从忙碌的四月大补考到现在准备离校，一晃两个月过去了。停更的博客、塞满百封未读邮件的邮箱，似乎暗示的不仅仅是忙碌，还有某些道不出名的情绪。\n\n忙碌的日子里，感觉时间飞逝，怎么也抓不住。就像"
+    },
+    {
+      "collection": "posts",
+      "id": "2014-07-14-the-first-week-of-accession",
+      "sourcePath": "posts/2014/2014-07-14-the-first-week-of-accession.mdx",
+      "frontmatter": {
+        "title": "工作一周记",
+        "slug": "the-first-week-of-accession",
+        "date": "2014-07-14 13:22:59+08:00",
+        "updated": "2023-12-03 06:39:31+08:00",
+        "tags": "",
+        "category": "文章",
+        "cover": "https://cat.yufan.me/images/2023/12/2023120306382895.jpg",
+        "summary": "有时候，伴着6点的闹钟声醒来，大抵会有种回到高中的感觉。习惯了大学里一觉睡到上午9点的感觉，现在突然要早起，一开始还真有点不适应。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![朝露](https://cat.yufan.me/images/2023/12/2023120306305570.jpg)\n\n<MusicPlayer id={27646205} />\n\n## 一、适应早起\n\n有时候，伴着 6 点的闹钟声醒来，大抵会有种回到高中的感觉。习惯了大学里一觉睡到上午 9 点的生活，现在突然要早起，一开始还真有点不适应。\n\n读高中的时候，早上都是靠着爸爸把我叫醒，有"
+    },
+    {
+      "collection": "posts",
+      "id": "2014-08-09-this-is-the-linux",
+      "sourcePath": "posts/2014/2014-08-09-this-is-the-linux.mdx",
+      "frontmatter": {
+        "title": "我的Linux学习历程：那些我看过的Linux书籍们",
+        "slug": "this-is-the-linux",
+        "date": "2014-08-09 13:24:49+08:00",
+        "updated": "2020-09-06 13:26:51+08:00",
+        "tags": "",
+        "category": "编程",
+        "cover": "https://cat.yufan.me/images/2024/04/2024041520520400.jpg",
+        "summary": "来北京工作已经一个多月，大都市的生活比起读大学要忙碌得多，尤其是出行，基本以小时为计时单位。有时茫然看着窗外车水马龙，会有些迷茫自己选择的是对还是错。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![Linux Books](https://cat.yufan.me/images/2024/04/2024041520534000.jpg)\n\n来北京工作已经一个多月，大都市的生活比起读大学要忙碌得多，尤其是出行，基本以小时为计时单位。有时茫然看着窗外车水马龙，会有些迷茫自己选择的是对还是错。\n\n题外话不多说，回归这次的主题，扒一扒我看过的那些 Linux 相关的书籍。\n\n对于 Linux "
+    },
+    {
+      "collection": "posts",
+      "id": "2015-03-09-the-better-way-to-make-objects",
+      "sourcePath": "posts/2015/2015-03-09-the-better-way-to-make-objects.mdx",
+      "frontmatter": {
+        "title": "如何更好地创建对象",
+        "slug": "the-better-way-to-make-objects",
+        "date": "2015-03-09 13:27:15+08:00",
+        "updated": "2020-09-06 13:29:04+08:00",
+        "tags": "",
+        "category": "编程",
+        "cover": "https://cat.yufan.me/images/2024/04/2024041520472600.jpg",
+        "summary": "写Java一类的面相对象语言的程序员常常会遇到这么一个冷笑话：我今年都30了，还没找到对象，怎么办？简单啊，new 一个对象就好。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![Java](https://cat.yufan.me/images/2024/04/2024041520494100.jpg)\n\n写 Java 一类的面相对象语言的程序员常常会遇到这么一个冷笑话：我今年都30了，还没找到对象，怎么办？简单啊，new 一个对象就好。\n\n当然这只是一个冷笑话，所谓的 new 一个对象，无非不就是调用这个类的构造方法去创建对象。乍一看也没什么问题，写个类 ABC，"
+    },
+    {
+      "collection": "posts",
+      "id": "2015-05-09-lets-married",
+      "sourcePath": "posts/2015/2015-05-09-lets-married.mdx",
+      "frontmatter": {
+        "title": "纵使生活平淡，爱情仍有万千期待",
+        "slug": "lets-married",
+        "date": "2015-05-09 13:29:16+08:00",
+        "updated": "2023-12-03 06:25:45+08:00",
+        "tags": "",
+        "category": "文章",
+        "cover": "https://cat.yufan.me/images/2023/12/2023120305291357.jpg",
+        "summary": "速度与激情7这一阵子很风靡，我却没有赶潮流看零点首映，上周末因为公司机房断电没法加班，便买了张票去看看，也算是我对保罗的致敬。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![ライラックの花かんむり - 成瀬ちさと](https://cat.yufan.me/images/2023/12/2023120901275200.jpg)\n\n<MusicPlayer id={2109617828} />\n\n速度与激情 7 这一阵子很风靡，我却没有赶潮流看零点首映。上周末因为公司机房断电没法加班，便买了张票去看看，也算是我对保罗的致敬。\n\n只是不知道为什么看完速 7，突然间"
+    },
+    {
+      "collection": "posts",
+      "id": "2015-05-10-having-a-lomo-life",
+      "sourcePath": "posts/2015/2015-05-10-having-a-lomo-life.mdx",
+      "frontmatter": {
+        "title": "放慢，快乐",
+        "slug": "having-a-lomo-life",
+        "date": "2015-05-10 13:30:51+08:00",
+        "updated": "2023-12-02 14:29:41+08:00",
+        "tags": "",
+        "category": "杂思",
+        "cover": "https://cat.yufan.me/images/2023/12/2023120214235774.jpg",
+        "summary": "因为工作的缘故，自己可控的闲暇时间越来越少，每日的加班，紧张得要死的工期。组长的口号就是：最短的时间，做出更多的事情。自然地，那种大学时的自由阅读时光愈发遥不可及。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![一期一会](https://cat.yufan.me/images/2023/12/2023120214271365.jpg)\n\n<MusicPlayer id={1805939548} />\n\n因为工作的缘故，自己可控的闲暇时间越来越少。每日的加班，紧张得要死的工期，组长的口号就是：最短的时间，做出更多的事情。自然地，那种大学时的自由阅读时光愈发遥不可及。也就过年时难得有空看看格言，开篇第"
+    },
+    {
+      "collection": "posts",
+      "id": "2015-05-12-i-am-right-here",
+      "sourcePath": "posts/2015/2015-05-12-i-am-right-here.mdx",
+      "frontmatter": {
+        "title": "你在哪里？我在这里",
+        "slug": "i-am-right-here",
+        "date": "2015-05-12 13:32:07+08:00",
+        "updated": "2023-12-02 14:20:24+08:00",
+        "tags": "",
+        "category": "文章",
+        "cover": "https://cat.yufan.me/images/2023/12/2023120214181317.jpg",
+        "summary": "浑浑噩噩熬过了一周，又是一个月的月底。书架上的《言叶之庭》，还只翻了两页。记得去年看完新海诚的同名动画的时候，就被动画里面爱情感动得落泪。跨越了年龄的距离，爱情，可以那么朴实。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![言叶之庭 - 1](https://cat.yufan.me/images/2023/12/2023120214134645.png)\n\n<MusicPlayer id={1956712935} />\n\n浑浑噩噩熬过了一周，又是一个月的月底。书架上的《言叶之庭》，还只翻了两页。记得去年看完新海诚的同名动画的时候，就被动画里面的爱情感动得落泪。跨越了年龄的距离，爱情，可以那么朴实。\n\n一直想着"
+    },
+    {
+      "collection": "posts",
+      "id": "2015-05-31-how-to-choose-your-tools",
+      "sourcePath": "posts/2015/2015-05-31-how-to-choose-your-tools.mdx",
+      "frontmatter": {
+        "title": "如何找到适合你的软件",
+        "slug": "how-to-choose-your-tools",
+        "date": "2015-05-31 13:33:34+08:00",
+        "updated": "2020-09-06 14:10:21+08:00",
+        "tags": "",
+        "category": "杂谈",
+        "toc": "true",
+        "cover": "https://cat.yufan.me/images/2024/04/2024041520204000.jpg",
+        "summary": "我一向不喜欢做一名所谓的“传教者”，向你推荐哪个软件好用，哪个软件比哪个软件好用，做什么事有什么好的软件可以实现。很多时候别人问我类似的软件推荐需求时，我都尽量避免回答。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![桌面](https://cat.yufan.me/images/2024/04/2024041520232700.jpg)\n\n<MusicPlayer id={2146700508} />\n\n我一向不喜欢做一名所谓的“传教者”，向你推荐哪个软件好用，哪个软件比哪个软件好用，做什么事有什么好的软件可以实现。很多时候别人问我类似的软件推荐需求时，我都尽量避免回答。\n\n当然，造成这样的结果还是因为"
+    },
+    {
+      "collection": "posts",
+      "id": "2015-07-04-gossip-on-profligate-spending",
+      "sourcePath": "posts/2015/2015-07-04-gossip-on-profligate-spending.mdx",
+      "frontmatter": {
+        "title": "扒一扒毕业后的败家记",
+        "slug": "gossip-on-profligate-spending",
+        "date": "2015-07-04 14:19:27+08:00",
+        "updated": "2023-12-02 15:14:44+08:00",
+        "tags": "",
+        "category": "杂谈",
+        "toc": "true",
+        "cover": "https://cat.yufan.me/images/2023/12/2023120213463189.png",
+        "summary": "当年玩基三的时候流行着这么一句话：一入基三深似海，从此节操是路人。对于我这个用惯了Apple的人而言，可能感触最深的话就是，一入苹果深似海，从此金钱不够买。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![ネオンライト](https://cat.yufan.me/images/2023/12/2023120214030421.jpg)\n\n<MusicPlayer id={2013048243} />\n\n当年玩基三的时候流行着这么一句话：一入基三深似海，从此节操是路人。对于我这个用惯了 Apple 的人而言，可能感触最深的话就是，一入苹果深似海，从此金钱不够买。\n\n今天，我就来扒一扒毕业后的败家"
+    },
+    {
+      "collection": "posts",
+      "id": "2015-09-06-we-are-stranger",
+      "sourcePath": "posts/2015/2015-09-06-we-are-stranger.mdx",
+      "frontmatter": {
+        "title": "我们都是陌生人",
+        "slug": "we-are-stranger",
+        "date": "2015-09-06 14:24:39+08:00",
+        "updated": "2023-12-02 13:42:04+08:00",
+        "category": "杂思",
+        "cover": "https://cat.yufan.me/images/2023/12/2023120213404421.jpg",
+        "summary": "还未从忙碌中回神，八月就这么不知不觉地过去，周遭的人事变换，认识了些陌生的新面孔，也少了些熟悉的旧面孔。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![mocha - Cross](https://cat.yufan.me/images/2023/12/2023120213055451.jpg)\n\n<MusicPlayer id={818118} />\n\n还未从忙碌中回神，八月就这么不知不觉地过去，周遭的人事变换，认识了些陌生的新面孔，也少了些熟悉的旧面孔。\n\n<p style={{ textAlign: \"right\" }}>——题记</"
+    },
+    {
+      "collection": "posts",
+      "id": "2015-12-08-rest-api-desgin",
+      "sourcePath": "posts/2015/2015-12-08-rest-api-desgin.mdx",
+      "frontmatter": {
+        "title": "Rest API 的那些事儿",
+        "slug": "rest-api-design",
+        "date": "2015-12-08 14:30:45+08:00",
+        "updated": "2020-09-10 06:26:16+08:00",
+        "category": "编程",
+        "toc": "true",
+        "cover": "https://cat.yufan.me/images/2024/04/2024041520433700.jpg",
+        "summary": "在软件行业快速发展的今天，传统的软件授权已经不能足以满足一个IT类的公司的发展。虽然在大部分公司里，它还是现金池的直接源头。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![](https://cat.yufan.me/images/2024/04/2024041520451500.jpg)\n\n# 一、前言\n\n在软件行业快速发展的今天，传统的软件授权已经不能足以满足一个 IT 类的公司的发展。虽然在大部分公司里，它还是现金池的直接源头。但是在可遇见的未来，受摩尔根理论的失效、物联网的发展等影响，应用的架构会越来越趋于简单化，架构越来越倾向于分布式水平扩展，对外的"
+    },
+    {
+      "collection": "posts",
+      "id": "2016-02-04-dumplings-in-winter-solstice",
+      "sourcePath": "posts/2016/2016-02-04-dumplings-in-winter-solstice.mdx",
+      "frontmatter": {
+        "title": "冬至的水饺",
+        "slug": "dumplings-in-winter-solstice",
+        "date": "2016-02-04 06:55:33+08:00",
+        "updated": "2020-09-04 21:05:07+08:00",
+        "tags": "",
+        "category": "文章",
+        "cover": "https://cat.yufan.me/images/2020/09/2020090420592363.jpg",
+        "summary": "昨天冬至，大家都吃水饺了么？事实上，当我昨晚下班兴匆匆地打电话给老家的爸妈时，他们是茫然的。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![水饺 1](https://cat.yufan.me/images/2020/09/2020090421041838.jpg)\n\n<MusicPlayer id={1298515818} />\n\n昨天冬至，大家都吃水饺了么？\n\n事实上，当我昨晚下班兴冲冲地打电话给老家的爸妈时，他们是茫然的。\n\n> “什么，吃水饺？儿呀，咱这没这习俗呀？”\\\n> “（°ω°〃）なに，老妈，我见识少，你可别骗我"
+    },
+    {
+      "collection": "posts",
+      "id": "2016-02-04-oauth-on-kong",
+      "sourcePath": "posts/2016/2016-02-04-oauth-on-kong.mdx",
+      "frontmatter": {
+        "title": "基于 Kong 的 OAuth2.0 的使用",
+        "slug": "oauth-on-kong",
+        "date": "2016-02-04 09:21:00+08:00",
+        "updated": "2020-09-04 20:29:36+08:00",
+        "tags": "",
+        "category": "编程",
+        "toc": "true",
+        "cover": "https://cat.yufan.me/images/2020/09/2020090420223787.jpg",
+        "summary": "一个完整的 OAuth 2.0 认证需要好几步，然而，Kong只完成最后几步，实际使用时需要开发上层的服务。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![もりちか - フレンドリーな猫に出会って、写真を撮りたくなっている女の子](https://cat.yufan.me/images/2020/09/2020090420290983.jpg)\n\n## 1. Kong OAuth 2.0 认证流程\n\n### 1.1 相关角色\n\n1. **第三方应用：** 实际想要访问API的应用，需要在Kong上注册，定义自己的访问口令和回调地址。\n2. **"
+    },
+    {
+      "collection": "posts",
+      "id": "2016-03-24-work-summary",
+      "sourcePath": "posts/2016/2016-03-24-work-summary.mdx",
+      "frontmatter": {
+        "title": "工作心得总结",
+        "slug": "work-summary",
+        "date": "2016-03-24 05:25:42+08:00",
+        "updated": "2020-09-04 20:20:03+08:00",
+        "tags": "",
+        "category": "编程",
+        "cover": "https://cat.yufan.me/images/2020/09/2020090420111684.jpg",
+        "summary": "去任何一家公司都会遇到很多新鲜的知识，很多新鲜的内容，所以日常的学习过程中需要及时总结笔记，作为备忘。每个人都不可能纯凭记忆记住很多东西，所以日常的学习中，需要及时总结，也方便未来的梳理。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![456 - その白が](https://cat.yufan.me/images/2020/09/2020090420094090.jpg)\n\n## 注意总结与反馈\n\n去任何一家公司都会遇到很多新鲜的知识，很多新鲜的内容，所以日常的学习过程中需要及时总结笔记，作为备忘。每个人都不可能纯凭记忆记住很多东西，所以日常的学习中，需要及时总结，也方便未来的梳理。\n\n所谓的反馈，也就是展示自我，你要清楚"
+    },
+    {
+      "collection": "posts",
+      "id": "2016-04-04-just-try",
+      "sourcePath": "posts/2016/2016-04-04-just-try.mdx",
+      "frontmatter": {
+        "title": "不要总是走在准备的路上",
+        "slug": "just-try",
+        "date": "2016-04-04 12:45:43+08:00",
+        "updated": "2020-09-04 19:54:37+08:00",
+        "tags": "",
+        "category": "编程",
+        "cover": "https://cat.yufan.me/images/2020/09/2020090419532852.jpg",
+        "summary": "上周和一个即将毕业的大学生聊天，他很厉害，学了很多，抱怨到很多人学了很多编程语言，但最后都只是会写一个“Hello World”的程度。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![9692 - 「中身が無い」](https://cat.yufan.me/images/2020/09/2020090419493263.jpg)\n\n<MusicPlayer id={5047858} />\n\n上周和一位即将毕业的大学生聊天。他很厉害，学了很多东西，却感叹道：“很多人学了好多编程语言，但最后也只停留在能写一个 ‘Hello World’[^1] 的程度。”\n我笑了笑，说：“那"
+    },
+    {
+      "collection": "posts",
+      "id": "2016-04-30-forget-past",
+      "sourcePath": "posts/2016/2016-04-30-forget-past.mdx",
+      "frontmatter": {
+        "title": "忘记时间",
+        "slug": "forget-past",
+        "date": "2016-04-30 12:09:53+08:00",
+        "updated": "2020-09-06 19:12:27+08:00",
+        "tags": "",
+        "category": "杂思",
+        "cover": "https://cat.yufan.me/images/2020/09/2020090419362643.jpg",
+        "summary": "最近一次登录快盘，忽然发现登录界面上出现了 “6 月 30 日后关闭” 的字样。我想，那些存在网盘上的数据终究会被我遗忘吧，但这并不要紧。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![長乃 - さらばの春](https://cat.yufan.me/images/2020/09/2020090419384411.jpg)\n\n<MusicPlayer id={2124115505} />\n\n最近一次登录快盘，忽然发现登录界面上出现了 “6 月 30 日后关闭” 的字样。\n\n不知道你的家乡是否也有这样的店，天天喊着“最后三天歇业”，总是一副破落不堪、即将被扫地出门的模样。但总"
+    },
+    {
+      "collection": "posts",
+      "id": "2016-05-06-introduction-to-webpack-part-1",
+      "sourcePath": "posts/2016/2016-05-06-introduction-to-webpack-part-1.mdx",
+      "frontmatter": {
+        "title": "Webpack 介绍：第一部分",
+        "slug": "introduction-to-webpack-part-1",
+        "date": "2016-05-05 18:15:29+08:00",
+        "updated": "2020-09-04 19:31:49+08:00",
+        "tags": "",
+        "category": "编程",
+        "toc": "true",
+        "cover": "https://cat.yufan.me/images/2020/09/2020090419260539.png",
+        "summary": "Webpack 是近段时间非常流行的前端流程处理工具，用于实时执行构建任务和预处理你的文件。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![せばすちゃ - 座って聴く東方文化帳　CDジャケットイラスト](https://cat.yufan.me/images/2020/09/2020090419305167.jpg)\n\nWebpack 是近段时间非常流行的前端流程处理工具，用于实时执行构建任务和预处理你的文件。\n\n你也许会使用 [Grunt](http://gruntjs.com/) 或者 [Gulp](http://gulpj"
+    },
+    {
+      "collection": "posts",
+      "id": "2016-05-23-primary-school-student",
+      "sourcePath": "posts/2016/2016-05-23-primary-school-student.mdx",
+      "frontmatter": {
+        "title": "好羡慕，你还是学生",
+        "slug": "primary-school-student",
+        "date": "2016-05-23 15:23:42+08:00",
+        "updated": "2021-08-26 22:58:13+08:00",
+        "tags": "",
+        "category": "杂思",
+        "cover": "https://cat.yufan.me/images/2020/09/2020090419142440.jpg",
+        "summary": "上周日在图灵读者群看见一个小学生在图灵社区写古典音乐的点点滴滴，不由得觉得现在的小学生真的好厉害。那个时候像他们那般大的我们，究竟在做什么呢？",
+        "published": "true"
+      },
+      "bodyPreview": "\n![イサイシズカ - 習作―雨の日の街灯](https://cat.yufan.me/images/2020/09/2020090419171074.jpg)\n\n<MusicPlayer id={555959} />\n\n上周日在图灵读者群看见一个小学生在图灵社区写古典音乐的点点滴滴，不由得觉得现在的小学生真的好厉害。那个时候像他们那般大的我们，究竟在做什么呢？\n\n前些日子刷 Facebook，看"
+    },
+    {
+      "collection": "posts",
+      "id": "2016-07-01-how-to-read-a-technology-book",
+      "sourcePath": "posts/2016/2016-07-01-how-to-read-a-technology-book.mdx",
+      "frontmatter": {
+        "title": "如何阅读一本技术书",
+        "slug": "how-to-read-a-technology-book",
+        "date": "2016-07-01 14:22:12+08:00",
+        "updated": "2020-09-04 19:11:07+08:00",
+        "category": "文章",
+        "cover": "https://cat.yufan.me/images/2020/09/2020090419102255.jpg",
+        "summary": "读技术书籍分为三步，第一步，扫读，不用弄懂，就是那么读过去，可以称为囫囵吞枣的状态，直到读完。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![イサイシズカ - アニメ―ションの習作](https://cat.yufan.me/images/2020/09/2020090419083649.jpg)\n\n<MusicPlayer id={817880} />\n\n# 技术书籍阅读指南：三步法\n\n读技术书籍并不是简单的“从头读到尾”，而是有方法可循。我总结为三步：**扫读 → 精读 → 查漏补缺**。\n\n---\n\n## 第一步：扫读 ——"
+    },
+    {
+      "collection": "posts",
+      "id": "2016-08-09-my-fickleness-life",
+      "sourcePath": "posts/2016/2016-08-09-my-fickleness-life.mdx",
+      "frontmatter": {
+        "title": "重看08奥运会开幕式有感",
+        "slug": "my-fickleness-life",
+        "date": "2016-08-09 14:04:59+08:00",
+        "updated": "2020-09-04 13:37:13+08:00",
+        "tags": "",
+        "category": "文章",
+        "cover": "https://cat.yufan.me/images/2020/09/2020090413365426.jpg",
+        "summary": "这些天被里约热内卢的奥运新闻刷屏。看了好几篇长篇累赘的报道，基本都集中在几点上：环境差，房间烂，场馆没建好，社会乱……",
+        "published": "true"
+      },
+      "bodyPreview": "\n![北京奥运会开幕式](https://cat.yufan.me/images/2020/09/2020090413160041.jpg)\n\n<MusicPlayer id={1830190033} />\n\n这些天被里约热内卢的奥运新闻刷屏。看了好几篇长篇累赘的报道，基本都集中在几点上：环境差，房间烂，场馆没建好，社会乱……微博上也是一堆“不求奥运健儿拿金牌，只求平安回家”云云的评论。更有意思的"
+    },
+    {
+      "collection": "posts",
+      "id": "2016-08-10-summer-dream",
+      "sourcePath": "posts/2016/2016-08-10-summer-dream.mdx",
+      "frontmatter": {
+        "title": "盛夏的记忆",
+        "slug": "summer-dream",
+        "date": "2016-08-10 00:28:59+08:00",
+        "updated": "2020-09-04 13:06:18+08:00",
+        "category": "文章",
+        "cover": "https://cat.yufan.me/images/2020/09/2020090412582748.jpg",
+        "summary": "恍然间已经在北京度过第三个夏季。明明阳光明媚，却突然下起了瓢泼大雨，这在北京的夏天算不得什么奇事，但也着实让我感到一些不高兴。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![mocha - 空鏡](https://cat.yufan.me/images/2020/09/2020090412582582.jpg)\n\n<MusicPlayer id={1915515491} />\n\n恍然间，已经在北京度过第三个夏季。\n\n明明阳光明媚，却突然下起了瓢泼大雨，这在北京的夏天算不得什么奇事，但也着实让我感到一些不高兴。毕竟作为一个男生，我又不可能像女生一样总是随身带把伞，"
+    },
+    {
+      "collection": "posts",
+      "id": "2016-08-15-future-plan-on-kids",
+      "sourcePath": "posts/2016/2016-08-15-future-plan-on-kids.mdx",
+      "frontmatter": {
+        "title": "未来鬼父计划 - 萝莉养成",
+        "slug": "future-plan-on-kids",
+        "date": "2016-08-14 23:15:57+08:00",
+        "updated": "2020-09-04 12:44:48+08:00",
+        "category": "文章",
+        "cover": "https://cat.yufan.me/images/2020/09/2020090412370067.jpg",
+        "toc": "true",
+        "summary": "按照中国目前的计划生育策略，在不考虑交高额罚金的情况下，我能被允许养育的最高子女数量为两个。按照未来生活水平的提高和自我对于生活品质的追求，我不可能也没有精力抚养过多的孩子。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![はなまる幼稚園壁纸](https://cat.yufan.me/images/2020/09/2020090412432012.jpg)\n\n<MusicPlayer id={36492782} />\n\n按照中国目前的计划生育策略，在不考虑交高额罚金的情况下，我能被允许养育的最高子女数量为两个。按照未来生活水平的提高和自我对于生活品质的追求，我不可能也没有精力抚养过多的孩子。所以，现阶段来看，"
+    },
+    {
+      "collection": "posts",
+      "id": "2016-11-16-a-scala-exercise-a-day-1",
+      "sourcePath": "posts/2016/2016-11-16-a-scala-exercise-a-day-1.mdx",
+      "frontmatter": {
+        "title": "A scala exercise a day 1",
+        "slug": "a-scala-exercise-a-day-1",
+        "date": "2016-11-16 10:44:41+08:00",
+        "updated": "2020-09-04 12:44:34+08:00",
+        "tags": "",
+        "category": "编程",
+        "cover": "https://cat.yufan.me/images/2020/09/2020090412164155.jpg",
+        "summary": "编写一段代码，将 a 设置为一个 n 个随机整数的数组，要求随机数介于 [0, n) 之间。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![mocha ドラム水槽](https://cat.yufan.me/images/2020/09/2020090412291981.jpg)\n\n1、编写一段代码，将 a 设置为一个 n 个随机整数的数组，要求随机数介于 `[0, n)` 之间。\n\n```scala\ndef randomArray(n: Int) : Array[Int] = {\n  (for (i <- 0 until n)"
+    },
+    {
+      "collection": "posts",
+      "id": "2017-03-06-rewrite-your-logic",
+      "sourcePath": "posts/2017/2017-03-06-rewrite-your-logic.mdx",
+      "frontmatter": {
+        "title": "在编程中思考，简化你的判断逻辑",
+        "slug": "rewrite-your-logic",
+        "date": "2017-03-06 12:31:33+08:00",
+        "updated": "2019-05-18 18:24:08+08:00",
+        "tags": "",
+        "category": "编程",
+        "cover": "https://cat.yufan.me/images/2019/05/2019051407531632.jpg",
+        "summary": "之前看 Linus Toward 在去年的某次采访中说到的好代码坏代码，当中提到了逻辑的精简，能用更通用的逻辑减少 if else 的判断在某种程度上可以使你的代码变得更好。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![在编程中思考，简化你的判断逻辑](https://cat.yufan.me/images/2019/05/2019051818210131.jpg)\n\n之前看 Linus Toward 在去年的[某次采访](https://www.youtube.com/watch?v=o8NPllzkFhE&feature=youtu.be&t=890)中说到的好代码坏代码，当中提到了逻辑的精简，能用更通"
+    },
+    {
+      "collection": "posts",
+      "id": "2017-03-13-yume",
+      "sourcePath": "posts/2017/2017-03-13-yume.mdx",
+      "frontmatter": {
+        "title": "夢",
+        "slug": "yume",
+        "date": "2017-03-13 14:46:57+08:00",
+        "updated": "2019-05-18 18:46:18+08:00",
+        "tags": "",
+        "category": "杂思",
+        "cover": "https://cat.yufan.me/images/2019/05/2019051408062596.jpg",
+        "summary": "「あなたの夢は何ですか？」この質問はよく聞かれている。違うときに、同じ人は違う夢を追う。いくつになっても夢を持ち続けているとハッピーですよね。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![](https://cat.yufan.me/images/2019/05/2019051408021050.jpg)\n\n<MusicPlayer id={2006436346} />\n\n「あなたの夢は何ですか？」この質問は、よく聞かれることですよね。時期や状況によって、同じ人でも追いかける夢は変わります。年齢を重ねても夢を持ち続けることは、本当に幸せなことだと思います。そして、その夢に向か"
+    },
+    {
+      "collection": "posts",
+      "id": "2017-05-13-springboot-brief-intro",
+      "sourcePath": "posts/2017/2017-05-13-springboot-brief-intro.mdx",
+      "frontmatter": {
+        "title": "Spring Boot 简介",
+        "slug": "springboot-brief-intro",
+        "date": "2017-05-13 12:51:59+08:00",
+        "updated": "2020-03-01 18:05:31+08:00",
+        "tags": "",
+        "category": "编程",
+        "cover": "https://cat.yufan.me/images/2019/05/2019050913525690.jpg",
+        "summary": "第一次使用 Springboot 应该是15年年底，当时就被这种约定大于配置的设计惊呆了。那个时候才从上一家公司跳槽，用的是 Spring  3。",
+        "published": "true"
+      },
+      "bodyPreview": "\n第一次使用 Springboot 应该是15年年底，当时就被这种约定大于配置的设计惊呆了。那个时候才从上一家公司跳槽，用的是 Spring 3。所以每次开发新项目的时候，配置起来都让我十分痛苦，也因此喜欢上了 Springboot 的种种便利。\n\n众观 Springboot 的发展，可以发现，其在简化开发上不断地进步。很多常见的组件框架也有了 Springboot 版本。我想，作为 Java 程"
+    },
+    {
+      "collection": "posts",
+      "id": "2017-06-28-atelier-firis-first-year-walk-through",
+      "sourcePath": "posts/2017/2017-06-28-atelier-firis-first-year-walk-through.mdx",
+      "frontmatter": {
+        "title": "《菲莉丝的工作室》一年期主线任务流程攻略",
+        "slug": "atelier-firis-first-year-walk-through",
+        "date": "2017-06-27 23:52:42+08:00",
+        "updated": "2020-03-01 18:03:52+08:00",
+        "tags": "",
+        "category": "文章",
+        "toc": "true",
+        "cover": "https://cat.yufan.me/images/2019/05/2019050909531558.jpg",
+        "summary": "这作不知道是不是因为变革太大，还是 BUG 太多，日版销量暴死，本人买完繁中后才看到要出 PC 的新闻。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![Atelier Firis](https://cat.yufan.me/images/2019/05/2019050909495525.jpg)\n\n这作不知道是不是因为变革太大，还是 BUG 太多，日版销量暴死，本人买完繁中后才看到要出 PC 的新闻。果然，这很暗荣。不过到现在也没有找到很好的攻略，A9上，该板块虽然升区，但是帖子也多为日文版讨论。本着照顾像我这样的手残玩家的想法，我准备重新"
+    },
+    {
+      "collection": "posts",
+      "id": "2017-08-12-rain-in-august",
+      "sourcePath": "posts/2017/2017-08-12-rain-in-august.mdx",
+      "frontmatter": {
+        "title": "8月的雨",
+        "slug": "rain-in-august",
+        "date": "2017-08-12 06:24:40+08:00",
+        "updated": "2019-05-18 18:19:45+08:00",
+        "tags": "",
+        "category": "杂思",
+        "cover": "https://cat.yufan.me/images/2019/05/2019051818191979.jpg",
+        "summary": "昨日下班，从园区走出来，傍晚的天空乌云密布，伴随着闪电，但却不知道为何，想要走路回家。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![The girl with unbrella](https://cat.yufan.me/images/2019/05/2019050908302180.jpg)\n\n<MusicPlayer id={34509092} />\n\n昨日下班，从园区走出来，傍晚的天空乌云密布，伴随着闪电，但却不知道为何，想要走路回家。\n\n大雨如期而至，湿黏的皮肤在雨中疾跑，一如那个[没带伞的小孩](/i-am-r"
+    },
+    {
+      "collection": "posts",
+      "id": "2017-09-30-evolution-of-data-structures-in-yandexmetrica",
+      "sourcePath": "posts/2017/2017-09-30-evolution-of-data-structures-in-yandexmetrica.mdx",
+      "frontmatter": {
+        "title": "Yandex.Metrica 的革命性的数据存储结构",
+        "slug": "evolution-of-data-structures-in-yandex-metrica",
+        "date": "2017-09-30 02:51:53+08:00",
+        "updated": "2019-05-18 18:29:19+08:00",
+        "tags": "",
+        "category": "编程",
+        "toc": "true",
+        "cover": "https://cat.yufan.me/images/2019/05/2019051818284917.jpg",
+        "summary": "Yandex.Metrica 是世界第二大的线上分析系统，Metrica 处理来自网站或者应用的数据流，将它解析成可分析的格式。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![2017-10-03-metrica-600](https://cat.yufan.me/images/2019/05/2019051818284917.jpg)\n\nYandex.Metrica 是世界[第二大](https://w3techs.com/technologies/overview/traffic_analysis/all)的线上分析系统，Metrica 处理来自网站或者应用的"
+    },
+    {
+      "collection": "posts",
+      "id": "2017-10-18-two-years-in-oneapm",
+      "sourcePath": "posts/2017/2017-10-18-two-years-in-oneapm.mdx",
+      "frontmatter": {
+        "title": "OneAPM 工作两年总结",
+        "slug": "two-years-in-oneapm",
+        "date": "2017-10-17 20:52:36+08:00",
+        "updated": "2020-03-01 18:05:26+08:00",
+        "tags": "",
+        "category": "编程",
+        "cover": "https://cat.yufan.me/images/2019/05/2019050908152192.jpg",
+        "summary": "掐指一算，从 OneAPM 离职也快一个月了，在 OneAPM 工作的种种，仿佛还像是在昨天。细数两年的工作经历，我很庆幸在恰当的时间点和这么一群有激情有活力的人共事。那么，是时候总结一下我在 OneAPM 做的牛（cai）逼（ji）事情了。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![南小鸟](https://cat.yufan.me/images/2019/05/2019051818253816.jpg)\n\n掐指一算，从 OneAPM 离职也快一个月了，在 OneAPM 工作的种种，仿佛还像是在昨天。细数两年的工作经历，我很庆幸在恰当的时间点和这么一群有激情有活力的人共事。那么，是时候总结一下我在 OneAPM 做的牛（cai）逼（ji）事情了。\n\n[PPT 下载](h"
+    },
+    {
+      "collection": "posts",
+      "id": "2017-11-13-first-three-month-in-oneapm",
+      "sourcePath": "posts/2017/2017-11-13-first-three-month-in-oneapm.mdx",
+      "frontmatter": {
+        "title": "OneAPM 试用期工作小结（2015年）",
+        "slug": "first-three-month-in-oneapm",
+        "date": "2017-11-12 18:52:46+08:00",
+        "updated": "2020-03-01 17:56:43+08:00",
+        "tags": "",
+        "category": "编程",
+        "cover": "https://cat.yufan.me/images/2019/05/2019050902371572.jpg",
+        "summary": "最近整理文档，突然看到这份当年写的试用期述职PPT。当时才加入 OneAPM 什么都不知道，姜宁老师带着我步入微服务的大门，知道了 Gateway，了解了 Openresty。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![大鲸鱼](https://cat.yufan.me/images/2019/05/2019050902371572.jpg)\n\n最近整理文档，突然看到这份当年写的试用期述职PPT。当时才加入 OneAPM 什么都不知道，姜宁老师带着我步入微服务的大门，知道了 Gateway，了解了 Openresty。\n\n那个时候是 15 年年底，任何一个东西对我来说都是全新的领域。也借此认识了春哥，认识了"
+    },
+    {
+      "collection": "posts",
+      "id": "2017-11-13-watashitachi-ha-mokuzaidesu",
+      "sourcePath": "posts/2017/2017-11-13-watashitachi-ha-mokuzaidesu.mdx",
+      "frontmatter": {
+        "title": "我们都是木头人",
+        "slug": "watashitachi-ha-mokuzaidesu",
+        "date": "2017-11-13 01:52:05+08:00",
+        "updated": "2019-05-18 18:41:21+08:00",
+        "tags": "",
+        "category": "杂思",
+        "cover": "https://cat.yufan.me/images/2019/05/2019051818392913.jpg",
+        "summary": "“唉，你还真是一个不安分的家伙啊！”电话那头的老妈无可奈何地宠溺道。此时还是八月初，火辣辣的太阳炙烤着大地，北京西小口软件园东边的花坛边开满了月季等鲜花。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![东升科技园的鸭子](https://cat.yufan.me/images/2019/05/2019050902442970.jpg)\n\n<MusicPlayer id={482633580} />\n\n“唉，你还真是一个不安分的家伙啊！”电话那头的老妈无可奈何地宠溺道。\n\n此时还是八月初，火辣辣的太阳炙烤着大地，北京西小口软件园东边的花坛边开满了月季等鲜花。池塘里，一群鸭子正在争抢午休员工投"
+    },
+    {
+      "collection": "posts",
+      "id": "2017-12-14-leave-some-by-myself",
+      "sourcePath": "posts/2017/2017-12-14-leave-some-by-myself.mdx",
+      "frontmatter": {
+        "title": "总得给自己留下点什么",
+        "slug": "leave-some-by-myself",
+        "date": "2017-12-13 18:41:55+08:00",
+        "updated": "2021-11-23 18:15:12+08:00",
+        "tags": "",
+        "category": "杂思",
+        "cover": "https://cat.yufan.me/images/2019/05/2019050902332168.jpg",
+        "summary": "总得给自己留下点什么。我希望留下的，是那些有意思的设计思路，而不是那些「垃圾代码」。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![黄昏少女](https://cat.yufan.me/images/2019/05/2019050902252161.jpg)\n\n<MusicPlayer id={1958458344} />\n\n网易云音乐一直是一个值得吐槽的地方，比如，它常常认为你懂五国语言，动不动给你日推一些稀奇古怪的歌曲。因为我会日语，所以日推的大部分都是日文歌，还可以接受。但最近网易云音乐开始变本加厉，给我日推俄文歌"
+    },
+    {
+      "collection": "posts",
+      "id": "2017-12-24-teruteru-1",
+      "sourcePath": "posts/2017/2017-12-24-teruteru-1.mdx",
+      "frontmatter": {
+        "title": "晴天娃娃（第一话）",
+        "slug": "teruteru-1",
+        "date": "2017-12-24 10:42:47+08:00",
+        "updated": "2019-05-18 18:16:47+08:00",
+        "tags": "",
+        "category": "小说",
+        "toc": "true",
+        "cover": "https://cat.yufan.me/images/2019/05/2019051818154567.jpg",
+        "summary": "送你一个晴天娃娃，你若安好，便是晴天。记忆太散，故事太杂，我无法把那么多细枝末节串成一串，只能略带总结地回想。就好比花间十二声，你看着四季的风云变化，记述着个个回味的故事……",
+        "published": "true"
+      },
+      "bodyPreview": "\n![晴天娃娃](https://cat.yufan.me/images/2019/05/2019050902175888.jpg)\n\n<MusicPlayer id={167870} />\n\n送你一个晴天娃娃，你若安好，便是晴天。\n\n记忆太散，故事太杂，我无法把那么多细枝末节串成一串，只能略带总结地回想。就好比花间十二声，你看着四季的风云变化，记述着一个个回味的故事……\n\n## 零、缘，起\n\n故"
+    },
+    {
+      "collection": "posts",
+      "id": "2018-01-13-teruteru-2",
+      "sourcePath": "posts/2018/2018-01-13-teruteru-2.mdx",
+      "frontmatter": {
+        "title": "晴天娃娃（第二话）",
+        "slug": "teruteru-2",
+        "date": "2018-01-13 11:42:41+08:00",
+        "updated": "2019-12-06 15:06:29+08:00",
+        "tags": "",
+        "category": "小说",
+        "toc": "true",
+        "cover": "https://cat.yufan.me/images/2019/05/2019050902101874.jpg",
+        "summary": "小雨曾在笔记本的扉页上写道：“樱花不及樱桃，相见不如想念。”彼时大明湖畔的春天，似乎在下着一场樱花雪，小雨在电话这头跟小简说，本来想在今天去见你的",
+        "published": "true"
+      },
+      "bodyPreview": "\n![桜ちゃん](https://cat.yufan.me/images/2019/05/2019050902101874.jpg)\n\n<MusicPlayer id={167879} />\n\n## 拾贰、樱花开了——小简\n\n小雨曾在笔记本的扉页上写道：“樱花不及樱桃，相见不如想念。”彼时，大明湖畔的春天，似乎在下着一场樱花雪。小雨在电话这头对小简说，本来想在今天去见你。而两人相处的十九公里的距离"
+    },
+    {
+      "collection": "posts",
+      "id": "2018-01-19-three-stage-of-programming",
+      "sourcePath": "posts/2018/2018-01-19-three-stage-of-programming.mdx",
+      "frontmatter": {
+        "title": "編碼三境界",
+        "slug": "three-stage-of-programming",
+        "date": "2018-01-19 09:20:12+08:00",
+        "updated": "2019-05-18 18:13:36+08:00",
+        "tags": "",
+        "category": "编程",
+        "cover": "https://cat.yufan.me/images/2019/05/2019051818123745.jpg",
+        "summary": "很多人停留在第一階段，也就是能寫出來，能用。但是代碼邏輯不精簡，質量一般，同時雜亂無章。典型的特點是寫之前毫無想法，隨想隨寫。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![Working Girl](https://cat.yufan.me/images/2019/05/2019051818123745.jpg)\n\n# 编码的三重境界\n\n在程序员的成长过程中，写代码的能力通常会经历三个阶段：\n\n### 1. 由少写多 —— 开始懂得写代码\n\n这个阶段的特点是“能写出来，能用”。很多人停留在这里，写的代码逻辑不够精简，质量一般，而且往往杂乱无章。典型表现是：写之"
+    },
+    {
+      "collection": "posts",
+      "id": "2018-12-22-hanabi-ga-hana-jyanai",
+      "sourcePath": "posts/2018/2018-12-22-hanabi-ga-hana-jyanai.mdx",
+      "frontmatter": {
+        "title": "烟花散 · 花非花",
+        "slug": "hanabi-ga-hana-jyanai",
+        "date": "2018-12-22 13:15:51+08:00",
+        "updated": "2019-05-18 18:13:56+08:00",
+        "tags": "",
+        "category": "文章",
+        "cover": "https://cat.yufan.me/images/2019/05/2019051818094781.jpg",
+        "summary": "花非花，雾非雾。夜半来，天明去，来如春梦几多时，去似朝云无觅处。最难解的的确是闲愁，才去春花，落红满径，便有月照窗纱，倦理琵琶的愁情。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![烟花散](https://cat.yufan.me/images/2019/05/2019050901494935.jpg)\n\n<MusicPlayer id={2731040094} />\n\n花非花，雾非雾。夜半来，天明去，来如春梦几多时，去似朝云无觅处。\n\n最难解的的确是闲愁，才去春花，落红满径，便有月照窗纱，倦理琵琶的愁情。\n\n自古愁情如一江春水，流不尽。黛玉惜花、葬花，叹花无觅处。花"
+    },
+    {
+      "collection": "posts",
+      "id": "2019-07-05-wagahaihanekodearu",
+      "sourcePath": "posts/2019/2019-07-05-wagahaihanekodearu.mdx",
+      "frontmatter": {
+        "title": "吾輩は猫である",
+        "slug": "wagahaihanekodearu",
+        "date": "2019-07-05 06:29:06+08:00",
+        "updated": "2020-09-06 16:20:40+08:00",
+        "category": "文章",
+        "cover": "https://cat.yufan.me/images/2019/07/2019070506303116.jpg",
+        "summary": "初次看到《我是猫》这本书应是5月下旬的一个周末，在芜湖西西弗书店有关于它的预售活动，买一本送一套日式清酒杯。可惜当时忙着赶回杭州，只能作罢。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![](https://cat.yufan.me/images/2019/07/2019070506303116.jpg)\n\n<MusicPlayer id={22644099} />\n\n初次看到《我是猫》这本书，应是 5 月下旬的一个周末，在芜湖西西弗书店有关于它的预售活动：买一本送一套日式清酒杯。可惜当时忙着赶回杭州，只能作罢。再次看到此书，是和女朋友一起逛书店的时候，见她喜欢，便买了一本赠"
+    },
+    {
+      "collection": "posts",
+      "id": "2019-08-12-blind-date-review",
+      "sourcePath": "posts/2019/2019-08-12-blind-date-review.mdx",
+      "frontmatter": {
+        "title": "内网相亲帖观感",
+        "slug": "blind-date-review",
+        "date": "2019-08-12 09:09:02+08:00",
+        "updated": "2019-08-12 09:09:47+08:00",
+        "category": "文章",
+        "cover": "https://cat.yufan.me/images/2019/08/2019081209080689.jpg",
+        "summary": "常看内网相亲帖，看的目的是什么呢？不是为了找姑娘，因为我已经订婚。看的目的更多是思考，思考什么呢？",
+        "published": "true"
+      },
+      "bodyPreview": "\n![](https://cat.yufan.me/images/2019/08/2019081209080360.jpg)\n\n<MusicPlayer id={1428278494} />\n\n常看内网相亲帖，看的目的是什么呢？不是为了找姑娘，因为我已经订婚。看的目的更多是思考，思考什么呢？\n\n思考当下女生对男生需要什么，思考这样的女生为何还是单身，思考如何让自己更加有竞争力（大雾）。\n\n其实说点"
+    },
+    {
+      "collection": "posts",
+      "id": "2019-11-29-gossing-on-winter",
+      "sourcePath": "posts/2019/2019-11-29-gossing-on-winter.mdx",
+      "frontmatter": {
+        "title": "冬日碎碎念",
+        "slug": "gossiping-on-winter",
+        "date": "2019-11-28 18:44:49+08:00",
+        "updated": "2020-11-19 19:20:40+08:00",
+        "category": "杂思",
+        "cover": "https://cat.yufan.me/images/2020/11/2020111918513875.jpg",
+        "summary": "今年的雨好像特别多，就比如前天半夜，突然间就电闪雷鸣，窗帘没有拉好，于是就可以清楚地看见一道闪电以及随之而来的巨大的雷声",
+        "published": "true"
+      },
+      "bodyPreview": "\n![From mocha](https://cat.yufan.me/images/2020/11/2020111918513562.jpg)\n\n<MusicPlayer id={38019747} />\n\n不知什么时候，冬天悄然登场。\n\n今年的雨好像特别多，比如前天半夜，突然间电闪雷鸣，窗帘没有拉好，于是可以清楚地看到一道闪电以及随之而来的巨大的雷声。我尽力不去想一些可怕的故事或者电影桥段，把"
+    },
+    {
+      "collection": "posts",
+      "id": "2020-03-07-the-sun-in-march",
+      "sourcePath": "posts/2020/2020-03-07-the-sun-in-march.mdx",
+      "frontmatter": {
+        "title": "三月的阳光",
+        "slug": "the-sun-in-march",
+        "date": "2020-03-07 05:54:22+08:00",
+        "updated": "2020-11-22 11:25:25+08:00",
+        "category": "杂思",
+        "cover": "https://cat.yufan.me/images/2020/11/2020111919163265.jpg",
+        "summary": "今天又是阴天，我怎么觉得我好久都没看见阳光了呢。三月已经到来了，早就春天了吧。我怎么感觉我还没看到小区里的花开呢？",
+        "published": "true"
+      },
+      "bodyPreview": "\n![院内凉亭 Moonslan Studio](https://cat.yufan.me/images/2020/11/2020111919141549.jpg)\n\n<MusicPlayer id={28283406} />\n\n今天又是阴天，我怎么觉得好久都没看见阳光了呢？\n\n三月已经到来了，早就春天了吧？我怎么感觉还没看到小区里的花开呢？\n\n去年的这个时候，早就换上春装了吧？怎么今年我还在老家"
+    },
+    {
+      "collection": "posts",
+      "id": "2020-10-15-round-bowl",
+      "sourcePath": "posts/2020/2020-10-15-round-bowl.mdx",
+      "frontmatter": {
+        "title": "碗",
+        "slug": "round-bowl",
+        "date": "2020-10-15 10:23:02+08:00",
+        "updated": "2020-11-19 19:31:44+08:00",
+        "category": "文章",
+        "cover": "https://cat.yufan.me/images/2020/11/2020111616333446.jpg",
+        "summary": "传统的中国人有一种，可称之为“碗筷崇拜”的习惯。比如过年，讲究给家里添加碗筷，寓意增人进口，祈祷家道兴旺。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![百岁碗](https://cat.yufan.me/images/2020/11/2020111616102568.jpg)\n\n<MusicPlayer id={1901623638} />\n\n传统的中国人有一种，可以称之为“碗筷崇拜”的习惯。\n\n比如过年，讲究给家里添置碗筷，寓意增人入口，祈祷家道兴旺。\n\n比如碗碟磕破不能用，不会简单丢弃，而是裹上红纸或缠上红布条，再放在外面，一是表达对器"
+    },
+    {
+      "collection": "posts",
+      "id": "2020-11-17-could-educate-make-us-better",
+      "sourcePath": "posts/2020/2020-11-17-could-educate-make-us-better.mdx",
+      "frontmatter": {
+        "title": "教育能让我们变得更好么？",
+        "slug": "could-educate-make-us-better",
+        "date": "2020-11-16 17:08:41+08:00",
+        "updated": "2020-11-16 17:29:30+08:00",
+        "category": "杂谈",
+        "cover": "https://cat.yufan.me/images/2020/11/2020111617282542.jpg",
+        "summary": "在世间众多确定性不断被摧毁的情况下，坚信教育能让人变好、笃信人无论处于哪个阶段都需要折节进学，几乎是我们无名之辈改变人生的最后希望。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![教室 ArseniXC](https://cat.yufan.me/images/2020/11/2020111617164786.jpg)\n\n<MusicPlayer id={2613859203} />\n\n孔子一向被中国人视为至圣先师，不仅才能广大，在道德上更是完人，但这样一位圣人所教的弟子中，却出现了帮助鲁国贵族季氏聚敛民财的冉有、恶意低毁同门的公伯寮。\n\n东汉大儒郑玄，也是学问与道德"
+    },
+    {
+      "collection": "posts",
+      "id": "2020-11-17-peter-pan-in-my-heart",
+      "sourcePath": "posts/2020/2020-11-17-peter-pan-in-my-heart.mdx",
+      "frontmatter": {
+        "title": "每个人的心里都住着一个彼得·潘",
+        "slug": "peter-pan-in-my-heart",
+        "date": "2020-11-17 06:03:10+08:00",
+        "updated": "2020-11-19 18:58:31+08:00",
+        "category": "杂谈",
+        "cover": "https://cat.yufan.me/images/2020/11/2020111917590021.jpg",
+        "summary": "我们每个人都会渐渐长大，不管我们有多么的不情愿。我们不再是没心没肺，无忧无虑的孩子，我们只能在心里保存着关于儿时的记忆。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![你是深海里唯一的光。 画师JW](https://cat.yufan.me/images/2020/11/2020111918021296.jpg)\n\n<MusicPlayer id={26348156} />\n\n你有没有过这样的时刻？\n\n曾经经常哼唱的一首歌，却突然忘了旋律；曾经喜欢的一部电影，却记不起情节；曾经心爱的衣服，却被遗忘在衣柜最底层；曾经常玩的游戏，却模糊了规则；曾经默默喜欢的"
+    },
+    {
+      "collection": "posts",
+      "id": "2020-11-19-afternoon-rhapsody",
+      "sourcePath": "posts/2020/2020-11-19-afternoon-rhapsody.mdx",
+      "frontmatter": {
+        "title": "午后随想曲",
+        "slug": "afternoon-rhapsody",
+        "date": "2020-11-19 07:14:35+08:00",
+        "updated": "2020-11-22 07:19:31+08:00",
+        "category": "杂思",
+        "cover": "https://cat.yufan.me/images/2020/11/2020111918235219.jpg",
+        "summary": "真想一个人，就这样一直静静地，静静地坐着，慢慢地想，慢慢地写……",
+        "published": "true"
+      },
+      "bodyPreview": "\n![城市 洛子roko](https://cat.yufan.me/images/2020/11/2020111918235837.jpg)\n\n<MusicPlayer id={26629688} />\n\n此刻是一个很平常的秋日午后，不一样的是，睡沉沉的办公室里只我一个人醒着。\n\n今天进入十一月下旬，终于到了月末，总觉得这个十一月似乎过得很慢。早已过了立冬，可在深圳仍像盛夏般炎热。我坐在靠窗的位"
+    },
+    {
+      "collection": "posts",
+      "id": "2020-11-19-memory-of-diary-letter-and-notes",
+      "sourcePath": "posts/2020/2020-11-19-memory-of-diary-letter-and-notes.mdx",
+      "frontmatter": {
+        "title": "日记、信以及小纸条",
+        "slug": "memory-of-diary-letter-and-notes",
+        "date": "2020-11-18 16:32:18+08:00",
+        "updated": "2020-11-22 07:26:32+08:00",
+        "category": "杂思",
+        "cover": "https://cat.yufan.me/images/2020/11/2020111816301059.jpg",
+        "summary": "你记得某年某月的某一天，你在哪里，做过什么吗？你记得你曾经喜欢过什么，讨厌过什么，心里想些什么吗？你记得你的朋友在你失落或生病的时候，对你说过什么，做过什么吗？",
+        "published": "true"
+      },
+      "bodyPreview": "\n![ひかりに、とける。 藤原](https://cat.yufan.me/images/2020/11/2020111816314240.jpg)\n\n<MusicPlayer id={2737410750} />\n\n你记得某年某月的某一天，你在哪里，做过什么吗？\n\n你记得你曾经喜欢过什么，讨厌过什么，心里想些什么吗？\n\n你记得你的朋友在你失落或生病的时候，对你说过什么，做过什么吗？\n\n![まるた"
+    },
+    {
+      "collection": "posts",
+      "id": "2020-12-14-the-middle-age",
+      "sourcePath": "posts/2020/2020-12-14-the-middle-age.mdx",
+      "frontmatter": {
+        "title": "中年的世界",
+        "slug": "the-middle-age",
+        "date": "2020-12-14 15:23:20+08:00",
+        "updated": "2020-12-14 18:24:05+08:00",
+        "tags": "",
+        "category": "杂谈",
+        "cover": "https://cat.yufan.me/images/2020/12/2020121415223435.jpg",
+        "summary": "中年以后的人常有这种寂寞之感，觉得睁开眼来，全是依靠他的人，而没有一个人是可以依靠的，连一个可以商量商量的人都没有。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![写真 まかろんＫ](https://cat.yufan.me/images/2020/12/2020121415154130.jpg)\n\n<MusicPlayer id={2637737556} />\n\n十一月中旬，正值老友结婚，大学的一帮朋友难得地聚在一起。\n\n酒后聊天，大都是面临“30 岁危机”的人，工作不上不下，家庭有上有下，平常时节压力难以排解。就如张爱玲所言：“中年以后的人常有这种"
+    },
+    {
+      "collection": "posts",
+      "id": "2021-02-28-a-letter-for-myself-after-ten-years",
+      "sourcePath": "posts/2021/2021-02-28-a-letter-for-myself-after-ten-years.mdx",
+      "frontmatter": {
+        "title": "写给十年后的自己",
+        "slug": "a-letter-for-myself-after-ten-years",
+        "date": "2021-02-28 05:37:01+08:00",
+        "updated": "2026-01-07 11:08:34+08:00",
+        "comments": "true",
+        "tags": "",
+        "category": "杂思",
+        "summary": "现在的我是永远回不到过去了……倘若有机会，我更愿意在这么一个场景中写一封寄给18岁的我的信，告诫那时的我不要荒废青春，好好学习。",
+        "cover": "https://cat.yufan.me/images/2022/02/2022022821542418.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![静の空  画师JW](https://cat.yufan.me/images/2022/02/2022022821353669.jpg)\n\n<MusicPlayer id={27571001} />\n\n现在的我是永远回不到过去了……\n\n倘若有机会，我更愿意在这么一个场景中写一封寄给18岁的我的信，告诫那时的我不要荒废青春，好好学习。好想身处于《星际穿越》中的黑洞空间，周围环绕的是我的种种过去"
+    },
+    {
+      "collection": "posts",
+      "id": "2021-12-25-flink-forward-asia-2021",
+      "sourcePath": "posts/2021/2021-12-25-flink-forward-asia-2021.mdx",
+      "frontmatter": {
+        "title": "Flink Forward Asia 2021 北京之旅",
+        "slug": "flink-forward-asia-2021",
+        "date": "2021-12-25 15:13:41+08:00",
+        "updated": "2026-01-07 11:08:58+08:00",
+        "comments": "true",
+        "tags": "",
+        "category": "编程",
+        "summary": "2021 年对我来说，是个极其不寻常的一年，12 月更是最为重要的一个月。这个月里，我的女儿桃桃出生，同时有幸前往北京参与 Flink Forward Asia 2021 线上大会的视频录制。",
+        "cover": "https://cat.yufan.me/images/recaps/flink-forward-asia-2021/IMG_4321.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n2021 年对我来说，是个极其不寻常的一年，12 月更是最为重要的一个月。这个月里，我的女儿桃桃出生，同时有幸前往北京参与 Flink Forward Asia 2021 线上大会的视频录制。\n\n因为疫情的原因，原来计划年底在杭州举办的 Flink Forward Asia 2021 大会只能被迫改为线上举办。当时我原来计划在大会上讲刚刚合并到 Flink 主分支的 `flink-connect"
+    },
+    {
+      "collection": "posts",
+      "id": "2023-11-28-basic-terms-in-book-binding",
+      "sourcePath": "posts/2023/2023-11-28-basic-terms-in-book-binding.mdx",
+      "frontmatter": {
+        "title": "不可不知的图书装帧术语",
+        "slug": "basic-terms-in-book-binding",
+        "date": "2023-11-28 06:29:09+08:00",
+        "updated": "2023-12-01 16:31:00+08:00",
+        "tags": "",
+        "category": "杂谈",
+        "summary": "本文不过是强调一下有关精装本和特装本的一些术语，比如书籍各部分的名称，以及怎么来保养这些已经处于书籍手工装帧天花板的宝物。",
+        "cover": "https://cat.yufan.me/images/2023/12/2023120116264095.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![团叽叽 - 画个书店](https://cat.yufan.me/images/2023/11/2023112805523272.jpg)\n\n<MusicPlayer id={484249940} />\n\n很多爱买书的小伙伴对于西式装帧的精装本或特装本（以下简称精装本或特装书）的一些特点和其收藏价值已然烂熟于胸。本文不过是强调一下有关精装本和特装本的一些术语，比如书籍各部分的名称，以及怎么来"
+    },
+    {
+      "collection": "posts",
+      "id": "2024-04-07-switch-blog-to-nextjs",
+      "sourcePath": "posts/2024/2024-04-07-switch-blog-to-nextjs.mdx",
+      "frontmatter": {
+        "title": "弃用 WordPress 了，但我相当“后悔”",
+        "slug": "switch-blog-to-nextjs",
+        "date": "2024-04-07 16:09:09+08:00",
+        "updated": "2024-10-16 00:25:05+08:00",
+        "tags": "",
+        "category": "编程",
+        "summary": "如你所见，当你访问这篇文章的时候，我已经把写了 13 年的博客程序从 WordPress 迁移到了自己用 Next.js 写的程序，这可能是我第 N 次尝试使用其他的方式写博客，但我想绝对不会是最后一次。",
+        "toc": "true",
+        "cover": "https://cat.yufan.me/images/2024/04/2024040719182310.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![あんよ - crossroads](https://cat.yufan.me/images/2024/04/2024040719182344.jpg)\n\n<MusicPlayer id={28468918} />\n\n如你所见，当你访问这篇文章的时候，我已经把写了 13 年的博客程序从 WordPress 迁移到了自己用 Next.js 写的程序。这可能是我第 N 次尝试使用其他的方式写博客，"
+    },
+    {
+      "collection": "posts",
+      "id": "2024-04-11-about-hefei",
+      "sourcePath": "posts/2024/2024-04-11-about-hefei.mdx",
+      "frontmatter": {
+        "title": "关于合肥这个“依壁雕凿”的城市",
+        "slug": "about-hefei",
+        "date": "2024-04-11 22:58:55+08:00",
+        "updated": "2024-04-11 23:15:12+08:00",
+        "tags": "",
+        "category": "杂谈",
+        "summary": "不知不觉已经在合肥生活了快一年了，记得才来合肥工作时还是绵长又琐碎的雨季，天空总是阴沉沉的。",
+        "cover": "https://cat.yufan.me/images/2024/04/2024041123031132.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![湿った公園の香り](https://cat.yufan.me/images/2024/04/2024041123031232.jpg)\n\n<MusicPlayer id={26209670} />\n\n## 缘起\n\n不知不觉已经在合肥生活了快一年了，记得才来合肥工作时还是绵长又琐碎的雨季，天空总是阴沉沉的。那时虽已是六月，但合肥还下着淅淅沥沥的小雨，我一边撑着伞，一边按照导航去寻找可以租房的地"
+    },
+    {
+      "collection": "posts",
+      "id": "2024-04-12-algo-find-the-lowest-costs",
+      "sourcePath": "posts/2024/2024-04-12-algo-find-the-lowest-costs.mdx",
+      "frontmatter": {
+        "title": "一道无趣的面试编程题",
+        "slug": "algo-find-the-lowest-costs",
+        "date": "2024-04-13 15:42:12+08:00",
+        "updated": "2024-04-13 23:15:12+08:00",
+        "tags": "",
+        "category": "编程",
+        "summary": "最近经济大环境依旧没能从疫情中走出来，身边有不少小伙伴被裁员或者是公司倒闭失业。好友群里讨论最多的话题就是面试，自然少不了讨论面试题。",
+        "cover": "https://cat.yufan.me/images/2024/04/2024041405050511.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![羨望](https://cat.yufan.me/images/2024/04/2024041513050511.jpg)\n\n最近经济大环境依旧没能从疫情中走出来，身边有不少小伙伴被裁员或者是公司倒闭失业。好友群里讨论最多的话题就是面试，自然少不了讨论面试题。昨天一位相识多年的好友向我求助，他当时正好在面试，需要现场编程。\n\n当时刚好不忙就看了一下题目，感觉很无趣，但还是耐着性子文字给他讲了"
+    },
+    {
+      "collection": "posts",
+      "id": "2024-05-29-gossip-on-reading",
+      "sourcePath": "posts/2024/2024-05-29-gossip-on-reading.mdx",
+      "frontmatter": {
+        "title": "谈读书",
+        "slug": "gossip-on-reading",
+        "date": "2024-05-29 22:42:12+08:00",
+        "updated": "2024-05-29 23:15:12+08:00",
+        "tags": "",
+        "category": "杂谈",
+        "summary": "藏书如山积，读书如水流。山形有限度，水流无时休。",
+        "cover": "https://cat.yufan.me/images/2024/05/2024052912190600.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![丰子愷一九三五年画赠钱君匋](https://cat.yufan.me/images/2024/05/2024052911583500.jpg)\n\n<MusicPlayer id={465409} />\n\n“藏书如山积，读书如水流。山形有限度，水流无时休。”这幅画是丰子恺一九三五年画赠钱君匋的，我非常喜欢，遂借花献佛与同好分享。\n\n有人说读书是人世间第一等美事，是精神生活的不二首选，我深以为"
+    },
+    {
+      "collection": "posts",
+      "id": "2024-06-30-pre-sale-housing",
+      "sourcePath": "posts/2024/2024-06-30-pre-sale-housing.mdx",
+      "frontmatter": {
+        "title": "金融视角下的期房销售",
+        "slug": "pre-sale-housing",
+        "date": "2024-06-30 14:42:12+08:00",
+        "updated": "2024-06-30 14:50:12+08:00",
+        "tags": "",
+        "category": "杂谈",
+        "summary": "这篇文章试图从金融视角来期房销售的问题，也希望能回答相关投资理财遇到资损的问题。",
+        "toc": "true",
+        "cover": "https://cat.yufan.me/images/2024/06/2024063015135000.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![金融背景 01](https://cat.yufan.me/images/2024/06/2024063015145800.jpg)\n\n<MusicPlayer id={33469247} />\n\n最近所在的微信群的小伙伴为当前的购房问题产生了激烈的讨论，其中核心的问题就两个。\n\n1. 购买自住期房到底算不算投资？\n2. 因为房屋预售而导致在交房前的房价下降是否应该获得赔偿？\n\n这篇文章试图"
+    },
+    {
+      "collection": "posts",
+      "id": "2024-09-04-third-bloom-in-sex",
+      "sourcePath": "posts/2024/2024-09-04-third-bloom-in-sex.mdx",
+      "frontmatter": {
+        "title": "梅开三度 - 莲动妙处",
+        "slug": "third-bloom-in-sex",
+        "alias": "",
+        "date": "2024-09-04 15:42:12+08:00",
+        "updated": "2024-09-04 15:50:12+08:00",
+        "tags": "",
+        "category": "文章",
+        "summary": "在古书中，“金莲”即指女人的私密处，幽谷若兰，暗香浮动，有小泉也。莲动，妙处之所在。",
+        "cover": "https://cat.yufan.me/images/2024/09/2024090415411900.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![莲花摄影 - 小欣欣](https://cat.yufan.me/images/2024/09/2024090415531900.jpg)\n\n<MusicPlayer id={2066327450} />\n\n> 在古书中，“金莲”即指女人的私密处，幽谷若兰，暗香浮动，有小泉也。\n>\n> 莲动，妙处之所在。\n\n和言希来绍兴游玩，住在听雨轩客栈，刚刚落脚，想小息一下。\n\n意外地，听见隔壁声响不断"
+    },
+    {
+      "collection": "posts",
+      "id": "2024-10-16-english-in-use",
+      "sourcePath": "posts/2024/2024-10-16-english-in-use.mdx",
+      "frontmatter": {
+        "title": "英语是活的——答网友英语学习提问",
+        "slug": "english-in-use",
+        "date": "2024-10-16 20:47:12+08:00",
+        "updated": "2024-10-16 20:56:24+08:00",
+        "tags": "",
+        "category": "杂谈",
+        "summary": "于我们成年人而言，虽已不能像儿童一样掌握一门外语，但是我们可通过“使用”的方式来习得英语。",
+        "toc": "true",
+        "cover": "https://cat.yufan.me/images/2024/10/2024101621070600.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![司書のお姉さん - 空鐘](https://cat.yufan.me/images/2024/10/2024101621015100.jpg)\n\n<MusicPlayer id={22641970} />\n\n## 网友来信\n\n> 你好，我是你的粉丝，我有一个问题很痛苦，就是我的英语问题。我的英语很差，甚至水平只停留在 26 个英文字母和少量常见的简单词汇。我无法记住这些长的单词和繁琐的语法，"
+    },
+    {
+      "collection": "posts",
+      "id": "2024-11-06-i-will-never-regret-loving-you",
+      "sourcePath": "posts/2024/2024-11-06-i-will-never-regret-loving-you.mdx",
+      "frontmatter": {
+        "title": "我已不再执着于十七岁爱的人",
+        "slug": "i-will-never-regret-loving-you",
+        "date": "2024-11-06 18:06:12+08:00",
+        "updated": "2024-11-06 19:15:06+08:00",
+        "tags": "",
+        "category": "杂思",
+        "summary": "认识她的时候我十四岁，都刚刚上高中。今年我三十二岁，她三十三岁，都已经结婚。",
+        "cover": "https://cat.yufan.me/images/2024/11/2024110618312000.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![席２つ分縮めたい恋 - inika](https://cat.yufan.me/images/2024/11/2024110618351500.jpg)\n\n<MusicPlayer id={2623119248} />\n\n认识她时我十四岁，都刚上高中。今年我三十二岁，她三十三岁，都已经结婚。\n\n刚刚认识她的时候我是新高一生，她是从学校初三直升上来的高一生，除了都是学生和读的是同一个高中以外没"
+    },
+    {
+      "collection": "posts",
+      "id": "2024-12-31-the-lost-appointment",
+      "sourcePath": "posts/2024/2024-12-31-the-lost-appointment.mdx",
+      "frontmatter": {
+        "title": "消失的“她”",
+        "slug": "the-lost-appointment",
+        "date": "2024-12-31 14:46:12+08:00",
+        "updated": "2024-12-31 15:05:06+08:00",
+        "tags": "",
+        "category": "杂思",
+        "summary": "时代的浪潮滚滚向前，互联网的发展瞬息万变。我立于茫茫信息流之间，却难找昔日“网上冲浪”的痕迹。",
+        "cover": "https://cat.yufan.me/images/2024/12/2024123115024600.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![いつか - いつの日か](https://cat.yufan.me/images/2024/12/2024123114275500.jpg)\n\n<MusicPlayer id={2032635462} />\n\n时代的浪潮滚滚向前，互联网的发展瞬息万变。我立于茫茫信息流之间，却难找昔日“网上冲浪”的痕迹。\n\n<p style={{ textAlign: \"right\" }}>——题记</p>\n"
+    },
+    {
+      "collection": "posts",
+      "id": "2025-01-04-stop-publication-of-hard-copy-journal",
+      "sourcePath": "posts/2025/2025-01-04-stop-publication-of-hard-copy-journal.mdx",
+      "frontmatter": {
+        "title": "消失的文学杂志",
+        "slug": "stop-publication-of-hard-copy-journal",
+        "date": "2025-01-04 21:49:32+08:00",
+        "updated": "2025-01-04 21:57:21+08:00",
+        "tags": "",
+        "category": "文章",
+        "summary": "悼念这一报两刊的停刊，缅怀它们曾带来的愉悦与思考，但文学本身不会“停刊”。愿文学继续照亮我们的生命与灵魂。",
+        "cover": "https://cat.yufan.me/images/2025/01/2025010422014800.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![海へ、ふたたび - やじるし](https://cat.yufan.me/images/2025/01/2025010422201000.jpg)\n\n<MusicPlayer id={401646} />\n\n继《文学报》停刊之后，《书城》杂志也宣布休刊，而《上海文化》也已无法订阅。这一报两刊作为上海文学的重镇，自创刊至今已逾四十年，遗憾未能挺过 2025 年的新年钟声。我是它们的读者，21 "
+    },
+    {
+      "collection": "posts",
+      "id": "2025-01-05-steady-grow-up",
+      "sourcePath": "posts/2025/2025-01-05-steady-grow-up.mdx",
+      "frontmatter": {
+        "title": "走着走着，就到了",
+        "slug": "steady-grow-up",
+        "date": "2025-01-05 15:20:32+08:00",
+        "updated": "2025-01-05 15:47:49+08:00",
+        "tags": "",
+        "category": "杂思",
+        "summary": "人生是一场即兴表演，哪有什么主题可言呢，走着走着，就到了。",
+        "cover": "https://cat.yufan.me/images/2025/01/2025010516353000.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![SPY×FAMILY - 昆布](https://cat.yufan.me/images/2025/01/2025010516402400.jpg)\n\n<MusicPlayer id={759983} />\n\n去年年底，我和老婆一起参加了她好友的婚礼，同席的都是女方的朋友，其中有两对夫妻刚刚有了孩子，大家在讨论宝宝怎么还不会抬头翻身。此时，我和老婆相视一笑，眼角里满是默契。\n\n当有女儿时，我"
+    },
+    {
+      "collection": "posts",
+      "id": "2025-03-29-amoy-datong-middle-school",
+      "sourcePath": "posts/2025/2025-03-29-amoy-datong-middle-school.mdx",
+      "frontmatter": {
+        "title": "百年大同，两年情深",
+        "slug": "datong-a-century-of-teaching-with-love",
+        "date": "2025-03-29 09:16:21+08:00",
+        "updated": "2025-03-29 10:18:46+08:00",
+        "tags": "",
+        "category": "文章",
+        "summary": "维此大同，靖山之麓，岩有虎溪，洞有白鹿。百年树人，十年树木。发扬踔厉，振我民族。",
+        "cover": "https://cat.yufan.me/images/2025/04/2025041010132200.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![厦门大同中学老校门](https://cat.yufan.me/images/2025/04/2025041010132200.jpg)\n\n我的初中大同中学占地仅20余亩，是厦门市规模最小的中学之一。然而，这所小小的学校却带给我们家庭作坊般的温暖，更教会我们何谓\"大爱\"。正如新校歌所唱：\"诞生在1925年，与祖国一同历经战火洗礼\"。如今，大同中学已迎来建校百年华诞。在这跨越新旧中国的办学历程"
+    },
+    {
+      "collection": "posts",
+      "id": "2025-04-08-blue-period",
+      "sourcePath": "posts/2025/2025-04-08-blue-period.mdx",
+      "frontmatter": {
+        "title": "蓝色时期",
+        "slug": "blue-period",
+        "date": "2025-04-08 14:13:32+08:00",
+        "updated": "2025-04-08 16:18:49+08:00",
+        "tags": "",
+        "category": "杂思",
+        "summary": "《蓝色时期》讲述的是八虎这位从未考虑过以绘画为人生方向，却因美术课用纯蓝色绘制了清晨的涩谷而喜欢上画画，并以此为契机成为一名艺考生考上东艺的故事。",
+        "cover": "https://cat.yufan.me/images/2025/04/2025040816170900.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![蓝色时期 01](https://cat.yufan.me/images/2025/04/2025040816241200.jpg)\n\n<MusicPlayer id={1905684042} />\n\n对美术史和毕加索略有了解的朋友，想必都知道“蓝色时期”指的是毕加索在 1900 年至 1904 年间，以蓝色和绿色为主色调创作的近乎单色的作品。这部漫画以此为标题，讲述的是主角八虎——一个从未"
+    },
+    {
+      "collection": "posts",
+      "id": "2025-09-22-life-is-like-a-boat",
+      "sourcePath": "posts/2025/2025-09-22-life-is-like-a-boat.mdx",
+      "frontmatter": {
+        "title": "人生，很短也很长",
+        "slug": "life-is-like-a-boat",
+        "date": "2025-09-22 09:45:28+08:00",
+        "updated": "2025-09-22 09:47:12+08:00",
+        "tags": "",
+        "category": "杂思",
+        "summary": "人生从不是一场孤单的奔赴，而是一场带着爱与牵挂的接力。那些离开的人，会变成记忆里的光；那些陪伴在身边的人，会成为前行的力量。",
+        "cover": "https://cat.yufan.me/images/2025/09/2025092210131500.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![RIZ3 - なにこれ幸せ](https://cat.yufan.me/images/2025/09/2025092210143100.jpg)\n\n<MusicPlayer id={640565} />\n\n2021 年年底，我的大女儿桃桃出生了，而我也多了一个新的角色——父亲。次年新年，我专门带着刚满百天的桃桃回老家见外祖母，四世同堂，其乐融融。可惜宝宝太小，天气寒冷，吃了顿饭便回了芜湖。本"
+    },
+    {
+      "collection": "posts",
+      "id": "2025-09-28-living-with-noise",
+      "sourcePath": "posts/2025/2025-09-28-living-with-noise.mdx",
+      "frontmatter": {
+        "title": "学会向这个世界妥协",
+        "slug": "living-with-noise",
+        "date": "2025-09-28 23:58:28+08:00",
+        "updated": "2025-09-29 00:09:41+08:00",
+        "tags": "",
+        "category": "杂谈",
+        "summary": "学会妥协，并不是承认错误，而是承认世界不会完全如你所愿。与世界相处的方式，往往不是“打败”，而是“放下”。",
+        "cover": "https://cat.yufan.me/images/2025/09/2025092900171400.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![藍切 健さんオリジナル２曲描き下ろし！！ - inika](https://cat.yufan.me/images/2025/09/2025092900210300.jpg)\n\n<MusicPlayer id={34964460} />\n\n9 月初，我发了一个关于《围城》的段子。评论区毫不意外地迎来了一阵骂声，言辞犀利，仿佛和我有不共戴天之仇。一如年初我提到京台高速时，解释“台”指的是台湾，"
+    },
+    {
+      "collection": "posts",
+      "id": "2025-10-01-book-review-in-go",
+      "sourcePath": "posts/2025/2025-10-01-book-review-in-go.mdx",
+      "frontmatter": {
+        "title": "《Go 语言设计与实现》书评",
+        "slug": "book-review-in-go",
+        "date": "2025-10-01 20:57:19+08:00",
+        "updated": "2025-10-01 22:04:25+08:00",
+        "tags": "",
+        "category": "编程",
+        "summary": "我觉得这本书更像是写给作者自己看的。如果想要让更多人看懂，或许还需要更多的努力。",
+        "cover": "https://cat.yufan.me/images/2025/10/2025100121020200.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![Go 语言设计与实现](https://cat.yufan.me/images/2025/10/2025100121055700.jpg)\n\n第一次接触左老师的博客《面向信仰编程》应该是在 2020 年，那时候我在腾讯云工作，内部要求统一转 Go。作为一个 Java，在寻找学习资料时，我找到了左老师的博客，被里面关于 Go 语言的细节文章和插图惊艳到。后来在和熟悉的图灵编辑英子老师聊天时，才"
+    },
+    {
+      "collection": "posts",
+      "id": "2025-10-11-2025-casio-ex-word",
+      "sourcePath": "posts/2025/2025-10-11-2025-casio-ex-word.mdx",
+      "frontmatter": {
+        "title": "巴别塔终曲：最后一代卡西欧电子词典",
+        "slug": "2025-casio-ex-word",
+        "date": "2025-10-11 14:04:21+08:00",
+        "updated": "2025-10-11 14:08:45+08:00",
+        "tags": "",
+        "category": "笔记",
+        "summary": "卡西欧电子辞典曾经是学生时代的梦想，现在却成了过气产品的挣扎象征。",
+        "cover": "https://cat.yufan.me/images/2025/10/2025101114332200.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![Casio Ex-word](https://cat.yufan.me/images/2025/10/2025101114093100.jpg)\n\n2025 年 2 月，日本卡西欧宣布将在下个财年停止电子辞典的研发。但令人意外的是，今年仍先后推出了最新的日版与中国版电子辞典。以下是对两者的使用报告。\n\n## 日版：极致的成本控制\n\n日版此次仅推出 7 个型号，统一使用相同的模具与外观。过去 "
+    },
+    {
+      "collection": "posts",
+      "id": "2025-10-12-book-review-in-chemistry-elements",
+      "sourcePath": "posts/2025/2025-10-12-book-review-in-chemistry-elements.mdx",
+      "frontmatter": {
+        "title": "《美丽的化学元素》书评",
+        "slug": "book-review-in-chemistry-elements",
+        "date": "2025-10-12 19:20:19+08:00",
+        "updated": "2025-10-12 14:21:31+08:00",
+        "tags": "",
+        "category": "笔记",
+        "summary": "我们是否还需要这样一本化学元素科普书？",
+        "cover": "https://cat.yufan.me/images/2025/10/2025101219241600.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![化学元素书籍](https://cat.yufan.me/images/2025/10/2025101219241600.jpg)\n\n> 2023 年在人邮天猫店刷到此书，乍一看从装帧设计到内容上都与《视觉之旅》颇为相似，当时便武断地将其定义为“模仿前人的拙劣之作”。如今实体书到手，我想，是时候给予它一个更为客观、公允的评价了。\n\n关于化学元素类的科普书，市面上早已不乏佳作，且各有侧重，对读"
+    },
+    {
+      "collection": "posts",
+      "id": "2025-10-13-book-review-in-how-things-work",
+      "sourcePath": "posts/2025/2025-10-13-book-review-in-how-things-work.mdx",
+      "frontmatter": {
+        "title": "《视觉之旅——神秘的机器世界》书评",
+        "slug": "book-review-in-how-things-work",
+        "date": "2025-10-13 00:25:28+08:00",
+        "updated": "2025-10-13 00:28:31+08:00",
+        "tags": "",
+        "category": "笔记",
+        "summary": "本书可以说是《视觉之旅》的新篇章，与机械制造相关的第一本书。",
+        "cover": "https://cat.yufan.me/images/2025/10/2025101300303800.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![Mechanical Series by Theodore Gray](https://cat.yufan.me/images/2025/10/2025101300303800.jpg)\n\n格雷的书已经引进出版了许多本。除了持续畅销、并刚刚推出少儿版的《化学元素》系列，另一套较为知名的便是《疯狂科学》系列。可惜，“在家做实验”并不见得是个有意思的话题，所以我对《疯狂科学》的几本书并不感冒。而"
+    },
+    {
+      "collection": "posts",
+      "id": "2025-10-13-first-glimpse-through-time",
+      "sourcePath": "posts/2025/2025-10-13-first-glimpse-through-time.mdx",
+      "frontmatter": {
+        "title": "时光里的初见",
+        "slug": "first-glimpse-through-time",
+        "date": "2025-10-13 04:07:12+08:00",
+        "updated": "2025-10-13 04:42:34+08:00",
+        "tags": "",
+        "category": "文章",
+        "summary": "人生若只如初见，何事秋风悲画扇。等闲变却故人心，却道故人心易变。",
+        "cover": "https://cat.yufan.me/images/2025/10/2025101304563300.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![花铭 汉服同学13—惬意的阳光与宁静的小院](https://cat.yufan.me/images/2025/10/2025101304554600.jpg)\n\n<MusicPlayer id={533450520} />\n\n> 人生若只如初见，何事秋风悲画扇。\\\n> 等闲变却故人心，却道故人心易变。\n>\n> 骊山语罢清宵半，泪雨霖铃终不怨。\\\n> 何如薄幸锦衣郎，比翼连枝当日愿。\n>\n>"
+    },
+    {
+      "collection": "posts",
+      "id": "2025-10-14-a-breeze-two-rains",
+      "sourcePath": "posts/2025/2025-10-14-a-breeze-two-rains.mdx",
+      "frontmatter": {
+        "title": "一阵风，两场雨",
+        "slug": "a-breeze-two-rains",
+        "date": "2025-10-14 09:12:28+08:00",
+        "updated": "2025-10-14 09:21:43+08:00",
+        "tags": "",
+        "category": "杂思",
+        "summary": "一阵风，两场雨，几点思绪，不过如此。",
+        "cover": "https://cat.yufan.me/images/2025/10/2025101308260200.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![むじ - いろいろ202301](https://cat.yufan.me/images/2025/10/2025101308353800.jpg)\n\n<MusicPlayer id={30373825} />\n\n一阵风，两场雨，三四天，几层衣服，数片落叶，仿佛转瞬之间，世界便悄然步入了下一个季节。这变换来得太匆忙了，匆忙得让人还未来得及准备。\n\n又是连着几天的阴天，天空灰蒙蒙的，看不见一丝"
+    },
+    {
+      "collection": "posts",
+      "id": "2025-10-14-the-day-i-met-you",
+      "sourcePath": "posts/2025/2025-10-14-the-day-i-met-you.mdx",
+      "frontmatter": {
+        "title": "遇见你的那一天",
+        "slug": "the-day-i-met-you",
+        "date": "2025-10-14 17:26:28+08:00",
+        "updated": "2025-10-14 19:18:13+08:00",
+        "tags": "",
+        "category": "杂思",
+        "summary": "有些失去是注定的，有些缘分终究没有结果。有时候我会想，如果能重来该有多好。可是真的能重来，也未必能尽如人意。",
+        "cover": "https://cat.yufan.me/images/2025/10/2025101319280300.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![佳奈 - タイムカプセル](https://cat.yufan.me/images/2025/10/2025101319285800.jpg)\n\n<MusicPlayer id={2654774730} />\n\n> 人生总有许多巧合，两条平行线也会在某一天悄然相交。\\\n> 人生也有许多意外，原本握在手中的风筝，也可能在风中忽然断了线。\n\n还好，在某年某月的某个时刻，我遇见了你。于是，平淡的生"
+    },
+    {
+      "collection": "posts",
+      "id": "2025-10-22-sun-in-autumn",
+      "sourcePath": "posts/2025/2025-10-22-sun-in-autumn.mdx",
+      "frontmatter": {
+        "title": "秋日暖阳",
+        "slug": "sun-in-autumn",
+        "date": "2025-10-22 02:15:23+08:00",
+        "updated": "2025-10-14 03:52:51+08:00",
+        "tags": "",
+        "category": "杂思",
+        "summary": "炎热的夏天仿佛被人突然按下了暂停键。十一一过，绵绵的秋雨便接踵而至，天气也一层一层地转凉。",
+        "cover": "https://cat.yufan.me/images/2025/10/2025102202411900.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![花铭 - 银杏街道走过的爱吃零食的女生](https://cat.yufan.me/images/2025/10/2025102202464100.jpg)\n\n<MusicPlayer id={30590331} />\n\n炎热的夏天仿佛被人突然按下了暂停键。十一一过，绵绵的秋雨便接踵而至，天气也一层一层地转凉。街头的风带着几分清爽，空气中弥漫着潮湿的桂香，像是提醒人们：秋天，真的来了。\n\n依"
+    },
+    {
+      "collection": "posts",
+      "id": "2025-11-05-simple-happiness",
+      "sourcePath": "posts/2025/2025-11-05-simple-happiness.mdx",
+      "frontmatter": {
+        "title": "简单的幸福",
+        "slug": "simple-happiness",
+        "date": "2025-11-06 00:01:32+08:00",
+        "updated": "2025-11-06 00:09:53+08:00",
+        "tags": "",
+        "category": "杂思",
+        "summary": "我能感受到心里那份柔软和温暖，像你和孩子们在身边时一样，让我相信，无论现实多忙碌，生活依然可以轻盈而美好。",
+        "cover": "https://cat.yufan.me/images/2025/11/2025110600242100.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![makoroデザフェスB-99 - 月が綺麗🐇🌟](https://cat.yufan.me/images/2025/11/2025110600183700.jpg)\n\n<MusicPlayer id={865861122} />\n\n今天晚上，星星很多，很亮，月亮是未来十二年里最大、最圆的一次。你一定猜不到吧，此时的我正站在阳台上，看着这片安静的夜空。风有些凉，城市的灯光在远处闪烁。我也"
+    },
+    {
+      "collection": "posts",
+      "id": "2025-11-06-tranquil-times",
+      "sourcePath": "posts/2025/2025-11-06-tranquil-times.mdx",
+      "frontmatter": {
+        "title": "时光里的安然",
+        "slug": "tranquil-times",
+        "date": "2025-11-06 14:01:05+08:00",
+        "updated": "2025-11-06 14:39:08+08:00",
+        "tags": "",
+        "category": "杂思",
+        "summary": "窗外小雨已歇，桂花香却仍旧停在记忆深处——像一场迟来的温柔，悄悄包裹着记忆，也包裹着那段安静的时光。",
+        "cover": "https://cat.yufan.me/images/2025/11/2025110614264700.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![mocha@新刊委託中 - 涙雨](https://cat.yufan.me/images/2025/11/2025110621371400.jpg)\n\n<MusicPlayer id={2986849} />\n\n十月的安徽阳光很少，大部分时间整天都是阴天，偶尔飘着细细的小雨。空气里带着凉意，也夹着一点潮湿的香气。\n\n十月底的周末，我去了安信工看书。走在去图书馆的路上，忽然闻到一阵甜香，抬头"
+    },
+    {
+      "collection": "posts",
+      "id": "2025-11-07-perhaps-love",
+      "sourcePath": "posts/2025/2025-11-07-perhaps-love.mdx",
+      "frontmatter": {
+        "title": "如果・爱",
+        "slug": "perhaps-love",
+        "date": "2025-11-07 00:11:34+08:00",
+        "updated": "2025-11-07 00:15:27+08:00",
+        "tags": "",
+        "category": "文章",
+        "summary": "如果这就是爱，为什么要等到十年后才明白？",
+        "cover": "https://cat.yufan.me/images/2025/11/2025110621244800.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![画师JW - 太阳雨の黎明。](https://cat.yufan.me/images/2025/11/2025110621490100.jpg)\n\n<MusicPlayer id={4875060} />\n\n早上八点左右，淅淅沥沥地下起了小雨。我申请了居家办公，安静地躺在床上，闭上眼睛感受着雨，静静地听着雨滴敲击玻璃的声音。此刻的世界仿佛脱离了喧嚣与繁杂，万事万物都沐浴在雨中，一切显得简单"
+    },
+    {
+      "collection": "posts",
+      "id": "2025-11-15-never-say-goodbye-to-childhood",
+      "sourcePath": "posts/2025/2025-11-15-never-say-goodbye-to-childhood.mdx",
+      "frontmatter": {
+        "title": "再见，小时候",
+        "slug": "never-say-goodbye-to-childhood",
+        "date": "2025-11-15 17:36:31+08:00",
+        "updated": "2025-11-15 18:57:41+08:00",
+        "tags": "",
+        "category": "文章",
+        "summary": "无论如何，我都要和小时候告别了。但属于我的童年、我的趣事，我会一直记得。",
+        "cover": "https://cat.yufan.me/images/2025/11/2025111501331500.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![夏祭り - fjsmu（ふじしむ）](https://cat.yufan.me/images/2025/11/2025111502081200.jpg)\n\n<MusicPlayer id={22704194} />\n\n今天周六，我在家宅了一整天。除了老妈因为眼神不好，叫我帮她穿针引线，其余时间都是自己度过的。下午躺下睡觉时，阳光还很明亮，睡梦里隐约听见微信的提示音，但没有力气睁眼。醒来的时候"
+    },
+    {
+      "collection": "posts",
+      "id": "2025-11-24-the-blossoms-of-yesteryears",
+      "sourcePath": "posts/2025/2025-11-24-the-blossoms-of-yesteryears.mdx",
+      "frontmatter": {
+        "title": "时光不负往昔",
+        "slug": "the-blossoms-of-yesteryears",
+        "date": "2025-11-24 23:13:43+08:00",
+        "updated": "2025-11-24 23:36:12+08:00",
+        "tags": "",
+        "category": "杂思",
+        "summary": "那些零散而琐碎的往事，在时间的尘埃里沉睡，却仍不时在心底闪出微光。你呢？你还记得多少？",
+        "cover": "https://cat.yufan.me/images/2025/11/2025112423543100.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![あめのじゃく - きっと変わらないよ](https://cat.yufan.me/images/2025/11/2025112500121400.jpg)\n\n<MusicPlayer id={22197007} />\n\n> 会不会，有一天，时间真的能倒退。\\\n> 退回你的、我的、回不去的悠悠的岁月。\\\n> 也许会，有一天，世界真的有终点。\\\n> 也要和你举起回忆酿的甜，和你再干一杯。\n>\n>"
+    },
+    {
+      "collection": "posts",
+      "id": "2025-11-28-the-breath-of-the-city",
+      "sourcePath": "posts/2025/2025-11-28-the-breath-of-the-city.mdx",
+      "frontmatter": {
+        "title": "城市的呼吸",
+        "slug": "the-breath-of-the-city",
+        "date": "2025-11-28 10:35:15+08:00",
+        "updated": "2025-11-28 10:37:43+08:00",
+        "tags": "",
+        "category": "文章",
+        "summary": "我最迷恋的现代都市美学，是那些立在大楼顶端的红灯——航空障碍灯。",
+        "cover": "https://cat.yufan.me/images/2025/11/2025112811314200.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![写真加工 by ぱたぱた](https://cat.yufan.me/images/2025/11/2025112811483800.jpg)\n\n<MusicPlayer id={29751583} />\n\n我最迷恋的现代都市美学，是那些立在大楼顶端的红灯——航空障碍灯。\n\n白天，城市喧嚣而混乱；到了深夜，万籁俱寂，只有这些红灯，一明一灭，像心跳般悠然起伏。钢筋水泥的庞然大物，在黑夜中仿佛突"
+    },
+    {
+      "collection": "posts",
+      "id": "2025-12-07-the-old-english-textbooks",
+      "sourcePath": "posts/2025/2025-12-07-the-old-english-textbooks.mdx",
+      "frontmatter": {
+        "title": "那些我用过的英语书 - 课本篇",
+        "slug": "the-old-english-textbooks",
+        "date": "2025-12-07 01:05:38+08:00",
+        "updated": "2025-12-07 02:13:23+08:00",
+        "tags": "",
+        "category": "笔记",
+        "toc": "true",
+        "summary": "因为父亲的务工，我辗转于厦门、济南、芜湖老家等多个城市，也因此体验了多套教材。这其中最让我印象深刻的，便是我用过的那些英语教材。",
+        "cover": "https://cat.yufan.me/images/2025/12/2025120701485600.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n我的受教育经历相比很多人来说比较复杂，因为父亲的务工，我辗转于厦门、济南、芜湖等多个城市，也因此体验了多套教材。而在这些教材中，除了各个城市自编的[“乡土教材”](https://baike.baidu.com/item/%E4%B9%A1%E5%9C%9F%E6%95%99%E6%9D%90/9607907)外，最让我印象深刻的便是我学过的那些英语教材。\n\n## 九年义务教育小学教科书（实验本"
+    },
+    {
+      "collection": "posts",
+      "id": "2025-12-22-the-new-concept-english",
+      "sourcePath": "posts/2025/2025-12-22-the-new-concept-english.mdx",
+      "frontmatter": {
+        "title": "那些我用过的英语书 - 新概念英语篇",
+        "slug": "the-new-concept-english",
+        "date": "2025-12-22 21:20:43+08:00",
+        "updated": "2026-01-07 04:21:43+08:00",
+        "tags": "",
+        "category": "笔记",
+        "toc": "true",
+        "summary": "很多人以为《新概念英语》是从第一册一路写到第四册的，其实真正的核心是第二册。它靠反复、递进的课文来训练句法，重点不在背单词，而在“把句子用顺”。这套方法直到今天依然很有价值。",
+        "cover": "https://cat.yufan.me/images/2025/12/2025122301381100.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![新概念英语](https://cat.yufan.me/images/2025/12/2025122301381100.jpg)\n\n<MusicPlayer id={1937780679} />\n\n## 新概念英语，其实是“从第二册开始”的\n\n提到《新概念英语》，一共四册，很多人会下意识地以为：作者亚历山大是按顺序，从第一册一路写到第四册的。但如果真正去了解这套教材的成书背景，就会发现事实并"
+    },
+    {
+      "collection": "posts",
+      "id": "2025-12-29-book-errors-as-the-norm",
+      "sourcePath": "posts/2025/2025-12-29-book-errors-as-the-norm.mdx",
+      "frontmatter": {
+        "title": "当图书差错成为常态",
+        "slug": "book-errors-as-the-norm",
+        "date": "2025-12-29 20:12:42+08:00",
+        "updated": "2025-12-29 20:19:16+08:00",
+        "tags": "",
+        "category": "杂谈",
+        "summary": "当下的出版业基本已经可以定性为夕阳产业，图书编辑长期被视为成本部门，对他们的要求其实只有一项：只要符合质量标准即可。",
+        "cover": "https://cat.yufan.me/images/2025/12/2025122302110200.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![书房一隅](https://cat.yufan.me/images/2025/12/2025122302110200.jpg)\n\n<MusicPlayer id={34999023} />\n\n最近在 B 站刷到一位北京语文老师抨击上海古籍出版社《西厢记》存在数百处错误的视频。随后，又陆续看到多位 UP 主针对上海古籍出版社某些书籍中的个别差错进行“逐条批评”的内容。对此，我的看法是：**大可"
+    },
+    {
+      "collection": "posts",
+      "id": "2025-12-31-the-pursuit-of-happiness",
+      "sourcePath": "posts/2025/2025-12-31-the-pursuit-of-happiness.mdx",
+      "frontmatter": {
+        "title": "追寻幸福",
+        "slug": "the-pursuit-of-happiness",
+        "date": "2025-12-31 22:22:49+08:00",
+        "updated": "2025-12-31 22:31:34+08:00",
+        "tags": "",
+        "category": "文章",
+        "summary": "幸福不再是遥不可及的梦，而是藏匿在日常的点滴之中。它是妈妈的摇扇、朋友的关怀，是每一个平凡瞬间中的温暖与充实。",
+        "cover": "https://cat.yufan.me/images/2025/12/2025123122401700.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![](https://cat.yufan.me/images/2025/12/2025123122500100.jpg)\n\n<MusicPlayer id={569214247} />\n\n不要总是一次次地追问，幸福在哪里。\\\n其实它有时离你很近，有时却又远得不可及。\\\n不要以为，只有恋人之间才有幸福的感觉，\\\n其实，幸福的含义是广泛而深远的。\n\n![](https://cat.yufan.me"
+    },
+    {
+      "collection": "posts",
+      "id": "2026-01-06-blog-is-my-past",
+      "sourcePath": "posts/2026/2026-01-06-blog-is-my-past.mdx",
+      "frontmatter": {
+        "title": "博客，青春的坟墓",
+        "slug": "youth-buried-in-blogs",
+        "date": "2026-01-06 02:35:16+08:00",
+        "updated": "2026-01-06 02:49:32+08:00",
+        "tags": "",
+        "category": "杂思",
+        "summary": "那些静静躺在博客里的文字，早已承载了我大部分的青春。",
+        "cover": "https://cat.yufan.me/images/2026/01/2026010602470000.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![新作《黄昏时刻》 - 画师JW](https://cat.yufan.me/images/2026/01/2026010602491700.jpg)\n\n<MusicPlayer id={1834793736} />\n\n今晚不知怎么地失眠了，于是把积攒了一阵子的 2025 年 10 月番，一口气追完。\n\n以前，每当我看完一部动画、读完一本书，总会忍不住在博客里写点什么。偶尔偏激，经常肤浅，却也"
+    },
+    {
+      "collection": "posts",
+      "id": "2026-01-20-back-at-eighteen",
+      "sourcePath": "posts/2026/2026-01-20-back-at-eighteen.mdx",
+      "frontmatter": {
+        "title": "重返十八岁",
+        "slug": "back-at-eighteen",
+        "date": "2026-01-20 23:16:44+08:00",
+        "updated": "2026-01-21 00:22:59+08:00",
+        "tags": "",
+        "category": "杂思",
+        "cover": "https://cat.yufan.me/images/2026/01/2026012101133200.jpg",
+        "summary": "一张积灰的毕业照，一场反复回到过去的梦。窗外是雨，桌上是书，时间在记忆中失去边界。那些关于成长、焦虑与出身的片段，并未远去，只是换了一种方式，继续存在。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![As one... - 紺屋](https://cat.yufan.me/images/2026/01/2026012101133200.jpg)\n\n<MusicPlayer id={5047863} />\n\n不知什么时候开始，我已经沉醉在那个世界里不能自拔，虽然我害怕，我矛盾。但我却说不出对那种快感的依恋。夜以继日的，我逃避，我也寻找，我知道，我已经和它溶为一体了。\n\n<p style={"
+    },
+    {
+      "collection": "posts",
+      "id": "2026-02-09-father",
+      "sourcePath": "posts/2026/2026-02-09-father.mdx",
+      "frontmatter": {
+        "title": "父亲",
+        "slug": "father",
+        "alias": "",
+        "date": "2026-02-09 20:36:23+08:00",
+        "updated": "2026-02-09 23:06:01+08:00",
+        "tags": "",
+        "category": "杂谈",
+        "cover": "https://cat.yufan.me/images/2026/02/2026020920471600.jpg",
+        "summary": "谈起父亲，我始终找不到合适的开头。也许是复杂，也许只是无措。这究竟是一种怎样的感情，我很难用三言两语说清楚。又或者，我从未真正理解过他。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![SPY x FAMILY - YUNAK](https://cat.yufan.me/images/2026/02/2026020920503000.jpg)\n\n<MusicPlayer id={2607716396} />\n\n谈起父亲，我始终找不到合适的开头。也许是复杂，也许只是无措。这究竟是一种怎样的感情，我很难用三言两语说清楚。又或者，我从未真正理解过他。\n\n<p style={{ t"
+    },
+    {
+      "collection": "posts",
+      "id": "2026-03-23-punched-and-cut-books",
+      "sourcePath": "posts/2026/2026-03-23-punched-and-cut-books.mdx",
+      "frontmatter": {
+        "title": "打孔书与切割书",
+        "slug": "punched-and-cut-books",
+        "date": "2026-03-23 11:56:11+08:00",
+        "updated": "2026-03-23 11:56:53+08:00",
+        "tags": "",
+        "category": "杂谈",
+        "cover": "https://cat.yufan.me/images/2026/03/2026032311561100.jpg",
+        "summary": "某种程度上说，这些带孔的书、被切割的书，既是出版行业库存压力的见证，也在无意之间，成为了二手书世界里独特而耐人寻味的存在。",
+        "published": "true"
+      },
+      "bodyPreview": "\n![切割了的《管锥编》](https://cat.yufan.me/images/2026/03/2026032311561100.jpg)\n\n我常在孔网上买二手书。有一类书虽然不常见，但一旦遇到，就会让人印象深刻：有的在封面边缘被打了几个孔，有的封面被刀划开，甚至还有一些更“惨烈”的，书脊或侧边被硬生生切出几道口子。乍一看，仿佛这本书的主人与它有着不共戴天之仇。\n\n然而，做出这些“毁书”之举的"
+    },
+    {
+      "collection": "posts",
+      "id": "2026-03-27-drinking-tea",
+      "sourcePath": "posts/2026/2026-03-27-drinking-tea.mdx",
+      "frontmatter": {
+        "title": "喝茶记",
+        "slug": "drinking-tea",
+        "date": "2026-03-27 12:16:32+08:00",
+        "updated": "2026-03-27 13:01:02+08:00",
+        "tags": "",
+        "category": "杂谈",
+        "cover": "https://cat.yufan.me/images/2026/03/2026032713145000.jpg",
+        "summary": "四年前的恐惧，直至今天，依旧未曾消散。",
+        "published": "true"
+      },
+      "bodyPreview": "\n想起四年前的一段经历。\n\n那时候我很爱囤书，而且已经到了有点“执念”的程度。自己写了一个爬虫，叫 BookHunter，从各类盗版书网站抓取资源、自动去重。那段时间几乎是着了魔一样地收集，前前后后攒了 12 万本中文 EPUB 电子书。连当时 Anna Archive 里的中文书，我也尽可能地全量抓了下来。\n\n后来，我把这些书整理了一下，搭了一个电子书网站，对外开放免费下载。一开始其实没想那么多"
+    },
+    {
+      "collection": "posts",
+      "id": "1.1",
+      "sourcePath": "posts/notes/analysis-lecture-i-answers/1.1.mdx",
+      "frontmatter": {
+        "title": "数学分析讲义（第一册）习题答案 - 1.1 实数",
+        "slug": "analysis-lecture-i-answers-1.1",
+        "date": "2025-04-29 13:30:13+08:00",
+        "updated": "2025-04-29 13:36:32+08:00",
+        "tags": "",
+        "toc": "true",
+        "category": "笔记",
+        "summary": "尝试对程艺老师编写的《数学分析讲义（第一册）》的习题进行解答，属于作者雨帆的学习笔记，其中的答案不具备任何可参考性。",
+        "visible": "false",
+        "og": "https://cat.yufan.me/images/posters/analysis-lecture-i.jpg",
+        "cover": "https://cat.yufan.me/images/posters/analysis-lecture-i.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n1、设 $a$ 是有理数，$b$ 是无理数. 求证：$a + b$ 和 $a - b$ 都是无理数；当 $a \\neq 0$ 时，$ab$ 和 $b/a$ 也都是无理数.\n\n<Solution>\n此题可使用反证法进行证明.\n\n假定 $a + b$ 为有理数，则 $\\displaystyle a + b = \\frac{m}{n}$，其中 $m, n \\in \\mathbb{Z}$.\n\n因为 $a"
+    },
+    {
+      "collection": "posts",
+      "id": "vector-db-research",
+      "sourcePath": "posts/notes/programming/vector-db-research.mdx",
+      "frontmatter": {
+        "title": "Compare the Milvus with Elasticsearch",
+        "slug": "vector-db-research",
+        "date": "2025-01-16 00:13:32+08:00",
+        "updated": "2025-01-16 00:18:49+08:00",
+        "tags": "",
+        "toc": "true",
+        "category": "笔记",
+        "summary": "This article explains through relevant technical research whether splitting data on Elasticsearch will affect query results in AI search scenarios.",
+        "cover": "https://cat.yufan.me/images/2025/01/2025011601423200.jpg",
+        "published": "true"
+      },
+      "bodyPreview": "\n![](https://cat.yufan.me/images/2025/01/2025011601423200.jpg)\n\n## Background\n\nIn the application scenarios of Elasticsearch, the storage of large amounts of data may significantly impact the read and"
+    }
+  ]
+}

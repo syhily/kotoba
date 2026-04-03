@@ -1,0 +1,46 @@
+---
+interface Props {
+  contentId: string;
+}
+const { contentId } = Astro.props as Props;
+---
+
+<div class="post-action text-center mt-5">
+  <button class="post-like btn btn-secondary btn-lg btn-rounded" title="Do you like me?" type="button" id="post-like-btn">
+    <span class="like-count" id="post-like-count">0</span>
+  </button>
+</div>
+
+<script is:inline>
+  (() => {
+    const key = `posts:${JSON.stringify(contentId)}`;
+    const sessionKey = "kotoba_metrics_session";
+    let sessionId = localStorage.getItem(sessionKey);
+    if (!sessionId) {
+      sessionId = crypto.randomUUID();
+      localStorage.setItem(sessionKey, sessionId);
+    }
+    const likeBtn = document.getElementById("post-like-btn");
+    const likeCount = document.getElementById("post-like-count");
+
+    fetch(`/_kotoba/api/metrics/like?key=${encodeURIComponent(key)}`)
+      .then((r) => r.json())
+      .then((r) => {
+        if (likeCount) likeCount.textContent = String(r.likes ?? 0);
+      })
+      .catch(() => {});
+
+    likeBtn?.addEventListener("click", () => {
+      fetch("/_kotoba/api/metrics/like", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ key, sessionId }),
+      })
+        .then((r) => r.json())
+        .then((r) => {
+          if (likeCount) likeCount.textContent = String(r.likes ?? 0);
+        })
+        .catch(() => {});
+    });
+  })();
+</script>

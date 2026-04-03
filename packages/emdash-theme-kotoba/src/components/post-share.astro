@@ -1,0 +1,32 @@
+---
+interface Props {
+  title: string;
+  summary?: string;
+  permalink: string;
+}
+const { title, summary = "", permalink } = Astro.props as Props;
+const postURL = permalink;
+const encodedURL = encodeURIComponent(postURL);
+const encodedTitle = encodeURIComponent(`【${title}】${summary}`);
+---
+
+<div class="post-share text-center mt-4">
+  <a
+    href={`https://service.weibo.com/share/share.php?url=${encodedURL}&title=${encodedTitle}`}
+    class="btn btn-light btn-icon btn-circle btn-md mx-1 weibo"
+    target="_blank"
+    rel="noreferrer"
+    title="分享到微博"
+  >
+    微博
+  </a>
+  <a
+    href={`https://connect.qq.com/widget/shareqq/index.html?url=${encodedURL}`}
+    class="btn btn-light btn-icon btn-md btn-circle mx-1 qq"
+    target="_blank"
+    rel="noreferrer"
+    title="分享到 QQ 空间"
+  >
+    QQ
+  </a>
+</div>

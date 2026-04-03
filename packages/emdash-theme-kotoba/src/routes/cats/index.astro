@@ -1,0 +1,25 @@
+---
+import { queryCategories } from "../../query/content.ts";
+import { defaultPagination } from "../../options/defaults.ts";
+import { paginate, readPage } from "../../query/pagination.ts";
+import Pagination from "../../components/pagination.astro";
+import BaseLayout from "../../layouts/base-layout.astro";
+
+const categories = await queryCategories();
+const pageResult = paginate(categories, readPage(Astro.url), defaultPagination.categoriesPerPage);
+---
+
+<BaseLayout title="分类 - 且听书吟" description="文章分类">
+  <main class="page-shell">
+    <div class="page-card">
+      <h1>Categories</h1>
+      <p>{pageResult.total} categories</p>
+      <ul class="post-list">
+        {pageResult.items.map((category) => (
+          <li><a href={`/cats/${category.slug}`}>{category.label}</a> ({category.count})</li>
+        ))}
+      </ul>
+      <Pagination page={pageResult.page} totalPages={pageResult.totalPages} basePath="/cats" />
+    </div>
+  </main>
+</BaseLayout>

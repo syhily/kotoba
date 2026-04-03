@@ -1,0 +1,46 @@
+---
+import type { ThemePost } from "../types/content.ts";
+
+interface Props {
+  posts: ThemePost[];
+}
+
+const { posts } = Astro.props as Props;
+const metas = posts.slice(0, 3);
+---
+
+{
+  metas.length === 3 && (
+    <div class="list-top-pushes mb-3 mb-md-4 mb-lg-5">
+      <div class="container">
+        <div class="row gx-2 gx-md-3 list-grouped">
+          <div class="col-lg-8">
+            <a href={metas[0].permalink} class="feature-main">{metas[0].title}</a>
+          </div>
+          <div class="col-lg-4 d-flex flex-column mt-2 mt-md-3 mt-lg-0">
+            <div class="row g-2 g-md-3">
+              <div class="col-6 col-lg-12">
+                <a href={metas[1].permalink} class="feature-sub">{metas[1].title}</a>
+              </div>
+              <div class="col-6 col-lg-12">
+                <a href={metas[2].permalink} class="feature-sub">{metas[2].title}</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+<style>
+  .feature-main, .feature-sub {
+    display: block;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    background: #fff;
+    padding: 14px;
+    text-decoration: none;
+    color: #111827;
+  }
+</style>

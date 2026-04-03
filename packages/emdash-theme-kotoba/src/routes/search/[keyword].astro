@@ -1,0 +1,49 @@
+---
+import { searchPostsByKeyword } from "../../query/content.ts";
+import { getPostsWithMetadata, getPosts, getTags } from "../../query/schema.ts";
+import { defaultPagination } from "../../options/defaults.ts";
+import { paginate, readPage } from "../../query/pagination.ts";
+import Pagination from "../../components/pagination.astro";
+import PostSquare from "../../components/post-square.astro";
+import Sidebar from "../../components/sidebar.astro";
+import BaseLayout from "../../layouts/base-layout.astro";
+
+const keyword = Astro.params.keyword?.trim() ?? "";
+if (!keyword) return Astro.redirect("/");
+const posts = await searchPostsByKeyword(keyword);
+const pageResult = paginate(posts, readPage(Astro.url), defaultPagination.searchPerPage);
+const items = await getPostsWithMetadata(
+  pageResult.items.map((post) => ({
+    id: post.id,
+    contentId: post.data.id,
+    title: typeof post.data.title === "string" ? post.data.title : post.id,
+    excerpt: typeof post.data.excerpt === "string" ? post.data.excerpt : "",
+    content: post.data.content,
+    slug: post.id,
+    permalink: `/posts/${post.id}`,
+    publishedAt: post.data.publishedAt instanceof Date ? post.data.publishedAt : null,
+    updatedAt: post.data.updatedAt instanceof Date ? post.data.updatedAt : null,
+    visible: true,
+    tags: [],
+  })),
+);
+const sidebarPosts = await getPosts();
+const sidebarTags = await getTags();
+---
+
+<BaseLayout title={`搜索 ${keyword} - 且听书吟`} description={`搜索 ${keyword} 的结果`}>
+  <main class="page-shell">
+    <div class="container">
+      <div class="mb-3 mb-lg-4">
+        <h1>搜索：{keyword}</h1>
+      </div>
+      <div class="row g-2 g-md-3 g-xxl-4 list-grouped">
+        <div class="content-wrapper col-12 col-xl-9">
+          {items.map((post, index) => <PostSquare post={post} first={index === 0} />)}
+          <Pagination page={pageResult.page} totalPages={pageResult.totalPages} basePath={`/search/${keyword}`} />
+        </div>
+        <Sidebar posts={sidebarPosts} tags={sidebarTags} />
+      </div>
+    </div>
+  </main>
+</BaseLayout>

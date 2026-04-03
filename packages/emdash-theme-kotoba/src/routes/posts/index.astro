@@ -1,0 +1,30 @@
+---
+import { getPosts, getPostsWithMetadata, getTags } from "../../query/schema.ts";
+import { defaultPagination } from "../../options/defaults.ts";
+import { paginate, readPage } from "../../query/pagination.ts";
+import Pagination from "../../components/pagination.astro";
+import PostSquare from "../../components/post-square.astro";
+import Sidebar from "../../components/sidebar.astro";
+import BaseLayout from "../../layouts/base-layout.astro";
+
+const posts = await getPosts();
+const pageResult = paginate(posts, readPage(Astro.url), defaultPagination.postsPerPage);
+const metadataPosts = await getPostsWithMetadata(pageResult.items);
+const tags = await getTags();
+---
+
+<BaseLayout title="文章 - 且听书吟" description="文章列表">
+  <main class="page-shell">
+    <div class="container">
+      <div class="row g-2 g-md-3 g-xxl-4 list-grouped">
+        <div class="content-wrapper col-12 col-xl-9">
+          <div class="row g-2 g-md-3 g-xxl-4 list-grouped">
+            {metadataPosts.map((post, index) => <PostSquare post={post} first={index === 0} />)}
+          </div>
+          <Pagination page={pageResult.page} totalPages={pageResult.totalPages} basePath="/posts" />
+        </div>
+        <Sidebar posts={posts} tags={tags} />
+      </div>
+    </div>
+  </main>
+</BaseLayout>

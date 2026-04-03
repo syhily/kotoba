@@ -1,0 +1,5 @@
+---
+const num = Astro.params.num;
+if (!num || num === "1") return Astro.redirect("/");
+return Astro.redirect(`/?page=${encodeURIComponent(num)}`);
+---

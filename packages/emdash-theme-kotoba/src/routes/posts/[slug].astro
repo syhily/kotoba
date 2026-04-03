@@ -1,0 +1,100 @@
+---
+import { getEntryTerms } from "emdash";
+import { PortableText, Comments, CommentForm } from "emdash/ui";
+import { queryPostBySlug } from "../../query/content.ts";
+import BaseLayout from "../../layouts/base-layout.astro";
+import TableOfContents from "../../components/table-of-contents.astro";
+import PostLikeButton from "../../components/post-like-button.astro";
+import PostShare from "../../components/post-share.astro";
+
+const { slug } = Astro.params;
+if (!slug) return Astro.redirect("/404");
+const post = await queryPostBySlug(slug);
+if (!post) return Astro.redirect("/404");
+
+const tags = await getEntryTerms("posts", post.data.id, "tag");
+const publishedText =
+  post.data.publishedAt instanceof Date ? post.data.publishedAt.toLocaleDateString("zh-CN") : "unknown";
+---
+
+<BaseLayout
+  title={`${String(post.data.title ?? slug)} - 且听书吟`}
+  description={typeof post.data.excerpt === "string" ? post.data.excerpt : "文章详情"}
+>
+  <div class="page-shell">
+    <div class="page-card post card card-md">
+      <h1 class="post-title">{String(post.data.title ?? slug)}</h1>
+      <div class="post-meta text-sm text-muted mt-3 mb-4">
+        <time>{publishedText}</time>
+        {tags.length > 0 && (
+          <span class="tag-row">
+            {tags.map((tag) => (
+              <a class="badge badge-light badge-pill" href={`/tags/${tag.slug}`}>{tag.label}</a>
+            ))}
+          </span>
+        )}
+      </div>
+      <p class="metric-row">
+        <span id="views-count">0</span> views ·
+        <button id="like-btn" type="button">Like</button>
+        <span id="likes-count">0</span>
+      </p>
+      <TableOfContents />
+      <div class="post-content"><PortableText value={post.data.content} /></div>
+      <PostLikeButton contentId={post.data.id} />
+      <PostShare
+        title={typeof post.data.title === "string" ? post.data.title : slug}
+        summary={typeof post.data.excerpt === "string" ? post.data.excerpt : ""}
+        permalink={`/posts/${slug}`}
+      />
+      <section class="comment-box">
+        <Comments collection="posts" contentId={post.data.id} threaded />
+        <CommentForm collection="posts" contentId={post.data.id} />
+      </section>
+    </div>
+  </div>
+  <script is:inline>
+    (() => {
+      const key = `posts:${JSON.stringify(post.data.id)}`;
+      const views = document.getElementById("views-count");
+      const likes = document.getElementById("likes-count");
+      const likeBtn = document.getElementById("like-btn");
+      const sessionKey = "kotoba_metrics_session";
+      let sessionId = localStorage.getItem(sessionKey);
+      if (!sessionId) {
+        sessionId = crypto.randomUUID();
+        localStorage.setItem(sessionKey, sessionId);
+      }
+
+      fetch("/_kotoba/api/metrics/view", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ key, sessionId }),
+      }).then((r) => r.json()).then((r) => {
+        if (views) views.textContent = String(r.views ?? 0);
+        if (likes) likes.textContent = String(r.likes ?? 0);
+      }).catch(() => {});
+
+      likeBtn?.addEventListener("click", () => {
+        fetch("/_kotoba/api/metrics/like", {
+          method: "POST",
+          headers: { "content-type": "application/json" },
+          body: JSON.stringify({ key, sessionId }),
+        }).then((r) => r.json()).then((r) => {
+          if (likes) likes.textContent = String(r.likes ?? 0);
+          if (likeBtn) likeBtn.textContent = r.liked ? "Liked" : "Like";
+        }).catch(() => {});
+      });
+    })();
+  </script>
+</BaseLayout>
+
+<style>
+  .post-title { margin: 0; }
+  .tag-row { margin-left: 8px; display: inline-flex; gap: 8px; }
+  .badge { border: 1px solid #e5e7eb; background: #f9fafb; border-radius: 999px; padding: 2px 10px; text-decoration: none; color: #374151; font-size: 12px; }
+  .metric-row { margin-top: 12px; color: #6b7280; }
+  .metric-row button { margin: 0 8px; }
+  .post-content { margin-top: 12px; }
+  .comment-box { margin-top: 20px; }
+</style>
