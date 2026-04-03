@@ -1,6 +1,6 @@
-import { emailPlugin } from "../../emdash-theme-kotoba-plugin-email/src/index.ts";
-import { metricsPlugin } from "../../emdash-theme-kotoba-plugin-metrics/src/index.ts";
-import { thumbhashPlugin } from "../../emdash-theme-kotoba-plugin-thumbhash/src/index.ts";
+import { emailPlugin } from "emdash-theme-kotoba-plugin-email";
+import { metricsPlugin } from "emdash-theme-kotoba-plugin-metrics";
+import { thumbhashPlugin } from "emdash-theme-kotoba-plugin-thumbhash";
 import { kotobaAstroIntegration } from "./integration/astro.ts";
 import type { KotobaThemeOptions } from "./options/types.ts";
 

@@ -20,6 +20,9 @@
     "better-sqlite3": "^11.10.0",
     "emdash": "catalog:",
     "emdash-theme-kotoba": "workspace:*",
+    "emdash-theme-kotoba-plugin-email": "workspace:*",
+    "emdash-theme-kotoba-plugin-metrics": "workspace:*",
+    "emdash-theme-kotoba-plugin-thumbhash": "workspace:*",
     "react": "^19.2.4",
     "react-dom": "^19.2.4"
   },

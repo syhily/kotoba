@@ -51,6 +51,15 @@ importers:
       emdash-theme-kotoba:
         specifier: workspace:*
         version: link:../../packages/emdash-theme-kotoba
+      emdash-theme-kotoba-plugin-email:
+        specifier: workspace:*
+        version: link:../../packages/emdash-theme-kotoba-plugin-email
+      emdash-theme-kotoba-plugin-metrics:
+        specifier: workspace:*
+        version: link:../../packages/emdash-theme-kotoba-plugin-metrics
+      emdash-theme-kotoba-plugin-thumbhash:
+        specifier: workspace:*
+        version: link:../../packages/emdash-theme-kotoba-plugin-thumbhash
       react:
         specifier: ^19.2.4
         version: 19.2.4
@@ -115,10 +124,10 @@ importers:
       astro:
         specifier: 'catalog:'
         version: 6.1.3(@types/node@25.5.0)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.1)(typescript@5.9.3)(yaml@2.8.3)
+    devDependencies:
       emdash:
         specifier: 'catalog:'
         version: 0.1.0(e4f876003564a82c64ec036e1d013ddc)
-    devDependencies:
       vite-plus:
         specifier: 'catalog:'
         version: 0.1.15(@types/node@25.5.0)(esbuild@0.27.7)(jiti@2.6.1)(typescript@5.9.3)(vite@8.0.3(@emnapi/core@1.9.2)(@emnapi/runtime@1.9.2)(@types/node@25.5.0)(esbuild@0.27.7)(jiti@2.6.1)(yaml@2.8.3))(yaml@2.8.3)

@@ -5,7 +5,7 @@ import {
   buildZeaburPayload,
   isDeliveryConfirmed,
   shouldRetry,
-} from "./zeabur.js";
+} from "./zeabur.ts";
 
 type StringMap = Record<string, unknown>;
 
