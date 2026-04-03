@@ -1,25 +1,20 @@
-import type {
-  KotobaFeatureFlags,
-  KotobaPaginationOptions,
-  KotobaRouteOptions,
-  KotobaThemeOptions,
-} from "./types.ts";
+import type { KotobaFeatureFlags, KotobaPaginationOptions, KotobaRouteOptions, KotobaThemeOptions } from './types.ts'
 
 export type ResolvedKotobaThemeOptions = {
-  siteTitle: string;
-  siteDescription: string;
-  basePath: string;
-  pagination: KotobaPaginationOptions;
-  features: KotobaFeatureFlags;
-  routes: KotobaRouteOptions;
-};
+  siteTitle: string
+  siteDescription: string
+  basePath: string
+  pagination: KotobaPaginationOptions
+  features: KotobaFeatureFlags
+  routes: KotobaRouteOptions
+}
 
 export const defaultPagination: KotobaPaginationOptions = {
   postsPerPage: 10,
   tagsPerPage: 20,
   categoriesPerPage: 20,
   searchPerPage: 10,
-};
+}
 
 export const defaultFeatures: KotobaFeatureFlags = {
   search: true,
@@ -27,25 +22,25 @@ export const defaultFeatures: KotobaFeatureFlags = {
   sitemap: true,
   metrics: true,
   comments: true,
-};
+}
 
 export const defaultRoutes: KotobaRouteOptions = {
-  home: "/",
-  posts: "/posts",
-  pages: "/",
-  categories: "/cats",
-  tags: "/tags",
-  archives: "/archives",
-  search: "/search",
-  feed: "/feed",
-  sitemap: "/sitemap.xml",
-};
+  home: '/',
+  posts: '/posts',
+  pages: '/',
+  categories: '/cats',
+  tags: '/tags',
+  archives: '/archives',
+  search: '/search',
+  feed: '/feed',
+  sitemap: '/sitemap.xml',
+}
 
 export function resolveKotobaOptions(options: KotobaThemeOptions = {}): ResolvedKotobaThemeOptions {
   return {
-    siteTitle: options.siteTitle ?? "Kotoba",
-    siteDescription: options.siteDescription ?? "Built with Emdash and Astro",
-    basePath: options.basePath ?? "",
+    siteTitle: options.siteTitle ?? 'Kotoba',
+    siteDescription: options.siteDescription ?? 'Built with Emdash and Astro',
+    basePath: options.basePath ?? '',
     pagination: {
       ...defaultPagination,
       ...options.pagination,
@@ -58,5 +53,5 @@ export function resolveKotobaOptions(options: KotobaThemeOptions = {}): Resolved
       ...defaultRoutes,
       ...options.routes,
     },
-  };
+  }
 }

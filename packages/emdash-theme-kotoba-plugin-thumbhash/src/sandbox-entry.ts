@@ -1,5 +1,5 @@
-import { definePlugin } from "emdash";
+import { definePlugin } from 'emdash'
 
 export default definePlugin({
   hooks: {},
-});
+})

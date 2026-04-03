@@ -3,37 +3,37 @@
 
 /// <reference types="emdash/locals" />
 
-import type { ContentBylineCredit, PortableTextBlock } from "emdash";
+import type { ContentBylineCredit, PortableTextBlock } from 'emdash'
 
 export interface Page {
-  id: string;
-  slug: string | null;
-  status: string;
-  title: string;
-  content?: PortableTextBlock[];
-  createdAt: Date;
-  updatedAt: Date;
-  publishedAt: Date | null;
-  bylines?: ContentBylineCredit[];
+  id: string
+  slug: string | null
+  status: string
+  title: string
+  content?: PortableTextBlock[]
+  createdAt: Date
+  updatedAt: Date
+  publishedAt: Date | null
+  bylines?: ContentBylineCredit[]
 }
 
 export interface Post {
-  id: string;
-  slug: string | null;
-  status: string;
-  title: string;
-  featured_image?: { id: string; src?: string; alt?: string; width?: number; height?: number };
-  content?: PortableTextBlock[];
-  excerpt?: string;
-  createdAt: Date;
-  updatedAt: Date;
-  publishedAt: Date | null;
-  bylines?: ContentBylineCredit[];
+  id: string
+  slug: string | null
+  status: string
+  title: string
+  featured_image?: { id: string; src?: string; alt?: string; width?: number; height?: number }
+  content?: PortableTextBlock[]
+  excerpt?: string
+  createdAt: Date
+  updatedAt: Date
+  publishedAt: Date | null
+  bylines?: ContentBylineCredit[]
 }
 
-declare module "emdash" {
+declare module 'emdash' {
   interface EmDashCollections {
-    pages: Page;
-    posts: Post;
+    pages: Page
+    posts: Post
   }
 }

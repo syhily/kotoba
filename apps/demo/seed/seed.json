@@ -340,10 +340,7 @@
             }
           ]
         },
-        "bylines": [
-          { "byline": "byline-editorial" },
-          { "byline": "byline-guest", "roleLabel": "Guest essay" }
-        ],
+        "bylines": [{ "byline": "byline-editorial" }, { "byline": "byline-guest", "roleLabel": "Guest essay" }],
         "taxonomies": {
           "category": ["development"],
           "tag": ["opinion"]
