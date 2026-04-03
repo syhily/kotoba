@@ -1,9 +1,8 @@
 import type { PluginDescriptor } from 'emdash'
 
 export type EmailPluginOptions = {
-  provider?: 'Zeabur'
   endpoint?: string
-  apiKeyEnvVar?: string
+  apiKey: string
   defaultFrom?: string
   subjectPrefix?: string
 }
@@ -18,9 +17,8 @@ export function emailPlugin(options: EmailPluginOptions): PluginDescriptor {
     format: 'standard',
     entrypoint: 'emdash-theme-kotoba-plugin-email/sandbox',
     options: {
-      provider: options.provider ?? 'Zeabur',
       endpoint,
-      apiKeyEnvVar: options.apiKeyEnvVar,
+      apiKey: options.apiKey,
       defaultFrom: options.defaultFrom,
       subjectPrefix: options.subjectPrefix,
     },

@@ -22,7 +22,11 @@ export function createKotobaTheme(options: ThemeOptions = {}) {
     name: 'emdash-theme-kotoba',
     framework: 'astro',
     base: 'emdash',
-    plugins: [emailPlugin(options.email ?? {}), metricsPlugin(options.metrics), thumbhashPlugin(options.thumbhash)],
+    plugins: [
+      options.email && emailPlugin(options.email),
+      options.metrics && metricsPlugin(options.metrics),
+      options.thumbhash && thumbhashPlugin(options.thumbhash),
+    ].filter((plugin) => plugin !== undefined),
     integrations: [kotobaAstroIntegration(options.astro)],
   }
 }

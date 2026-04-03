@@ -29,9 +29,8 @@ This example follows the same style as `apps/demo/astro.config.ts`.
      emdash({
        plugins: [
 +        emailPlugin({
-+          provider: "generic-http",
 +          endpoint: "https://api.zeabur.com/api/v1/zsend/emails",
-+          apiKeyEnvVar: "KOTOBA_EMAIL_API_KEY",
++          apiKey: "zs_your_api_key_here",
 +          defaultFrom: "no-reply@example.com",
 +          subjectPrefix: "[Kotoba] ",
 +        }),
@@ -39,12 +38,6 @@ This example follows the same style as `apps/demo/astro.config.ts`.
      }),
    ],
  });
-```
-
-## Environment variables
-
-```bash
-export KOTOBA_EMAIL_API_KEY="zs_your_api_key_here"
 ```
 
 `endpoint` is optional. If omitted, plugin default is:

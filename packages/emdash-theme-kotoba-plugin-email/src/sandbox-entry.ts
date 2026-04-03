@@ -44,7 +44,7 @@ type ProviderEmailMessage = EmailBaseMessage & {
 
 type EmailPluginRuntimeOptions = {
   endpoint?: string
-  apiKeyEnvVar?: string
+  apiKey?: string
   defaultFrom?: string
   subjectPrefix?: string
 }
@@ -84,7 +84,7 @@ export default definePlugin({
         const http = ctx.http
 
         const endpoint = options.endpoint || DEFAULT_ZEABUR_ENDPOINT
-        const apiKey = readApiKey(options.apiKeyEnvVar)
+        const apiKey = readApiKey(options.apiKey)
         if (!apiKey) {
           throw new Error('Email API key is required')
         }
@@ -125,7 +125,7 @@ export default definePlugin({
         const options = readOptions(ctx)
         if (!ctx.http) return
 
-        const apiKey = readApiKey(options.apiKeyEnvVar)
+        const apiKey = readApiKey(options.apiKey)
         if (!apiKey) return
 
         const zeaburId =
@@ -172,9 +172,8 @@ function readOptions(ctx: PluginContext): EmailPluginRuntimeOptions {
   return options
 }
 
-function readApiKey(envVarName = 'KOTOBA_EMAIL_API_KEY'): string | undefined {
-  if (!envVarName) return undefined
-  const value = globalThis.process?.env?.[envVarName] ?? undefined
+function readApiKey(apiKey?: string): string | undefined {
+  const value = apiKey?.trim()
   if (!value) return undefined
   return value
 }

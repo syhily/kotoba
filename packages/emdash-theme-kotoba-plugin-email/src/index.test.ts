@@ -7,7 +7,7 @@ describe('emailPlugin', () => {
   it('builds a standard descriptor with endpoint host allowlist', () => {
     const descriptor = emailPlugin({
       endpoint: 'https://api.example.com/send',
-      provider: 'Zeabur',
+      apiKey: 'zs_test_key',
     })
 
     expect(descriptor.id).toBe('kotoba-email')

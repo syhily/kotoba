@@ -8,8 +8,7 @@ import { sqlite } from 'emdash/db'
 
 const kotobaTheme = createKotobaTheme({
   email: {
-    provider: 'Zeabur',
-    apiKeyEnvVar: 'KOTOBA_EMAIL_API_KEY',
+    apiKey: process.env.KOTOBA_EMAIL_API_KEY!,
     subjectPrefix: '[Kotoba] ',
   },
   metrics: {
