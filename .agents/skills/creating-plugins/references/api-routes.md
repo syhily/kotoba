@@ -94,19 +94,19 @@ Use Zod schemas. Invalid input returns 400.
 
 ```typescript
 routes: {
-	create: {
-		input: z.object({
-			title: z.string().min(1).max(200),
-			email: z.string().email(),
-			priority: z.enum(["low", "medium", "high"]).default("medium"),
-			tags: z.array(z.string()).optional(),
-		}),
-		handler: async (ctx) => {
-			// ctx.input is typed and validated
-			const { title, email, priority } = ctx.input;
-			// ...
-		},
-	},
+    create: {
+        input: z.object({
+            title: z.string().min(1).max(200),
+            email: z.string().email(),
+            priority: z.enum(["low", "medium", "high"]).default("medium"),
+            tags: z.array(z.string()).optional(),
+        }),
+        handler: async (ctx) => {
+            // ctx.input is typed and validated
+            const { title, email, priority } = ctx.input;
+            // ...
+        },
+    },
 }
 ```
 
@@ -163,25 +163,25 @@ handler: async (ctx) => {
 
 ```typescript
 routes: {
-	settings: {
-		handler: async (ctx) => {
-			const settings = await ctx.kv.list("settings:");
-			const result: Record<string, unknown> = {};
-			for (const entry of settings) {
-				result[entry.key.replace("settings:", "")] = entry.value;
-			}
-			return result;
-		},
-	},
-	"settings/save": {
-		handler: async (ctx) => {
-			const input = await ctx.request.json();
-			for (const [key, value] of Object.entries(input)) {
-				if (value !== undefined) await ctx.kv.set(`settings:${key}`, value);
-			}
-			return { success: true };
-		},
-	},
+    settings: {
+        handler: async (ctx) => {
+            const settings = await ctx.kv.list("settings:");
+            const result: Record<string, unknown> = {};
+            for (const entry of settings) {
+                result[entry.key.replace("settings:", "")] = entry.value;
+            }
+            return result;
+        },
+    },
+    "settings/save": {
+        handler: async (ctx) => {
+            const input = await ctx.request.json();
+            for (const [key, value] of Object.entries(input)) {
+                if (value !== undefined) await ctx.kv.set(`settings:${key}`, value);
+            }
+            return { success: true };
+        },
+    },
 }
 ```
 
@@ -189,27 +189,27 @@ routes: {
 
 ```typescript
 routes: {
-	list: {
-		input: z.object({
-			limit: z.number().min(1).max(100).default(50),
-			cursor: z.string().optional(),
-			status: z.string().optional(),
-		}),
-		handler: async (ctx) => {
-			const { limit, cursor, status } = ctx.input;
-			const result = await ctx.storage.items!.query({
-				where: status ? { status } : undefined,
-				orderBy: { createdAt: "desc" },
-				limit,
-				cursor,
-			});
-			return {
-				items: result.items.map((item) => ({ id: item.id, ...item.data })),
-				cursor: result.cursor,
-				hasMore: result.hasMore,
-			};
-		},
-	},
+    list: {
+        input: z.object({
+            limit: z.number().min(1).max(100).default(50),
+            cursor: z.string().optional(),
+            status: z.string().optional(),
+        }),
+        handler: async (ctx) => {
+            const { limit, cursor, status } = ctx.input;
+            const result = await ctx.storage.items!.query({
+                where: status ? { status } : undefined,
+                orderBy: { createdAt: "desc" },
+                limit,
+                cursor,
+            });
+            return {
+                items: result.items.map((item) => ({ id: item.id, ...item.data })),
+                cursor: result.cursor,
+                hasMore: result.hasMore,
+            };
+        },
+    },
 }
 ```
 

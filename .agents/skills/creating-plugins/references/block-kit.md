@@ -17,36 +17,36 @@ Block Kit elements are also used for [Portable Text block editing fields](./port
 
 ```typescript
 routes: {
-	admin: {
-		handler: async (ctx) => {
-			const interaction = await ctx.request.json();
+    admin: {
+        handler: async (ctx) => {
+            const interaction = await ctx.request.json();
 
-			if (interaction.type === "page_load") {
-				return {
-					blocks: [
-						{ type: "header", text: "My Plugin Settings" },
-						{
-							type: "form",
-							block_id: "settings",
-							fields: [
-								{ type: "text_input", action_id: "api_url", label: "API URL" },
-								{ type: "toggle", action_id: "enabled", label: "Enabled", initial_value: true },
-							],
-							submit: { label: "Save", action_id: "save" },
-						},
-					],
-				};
-			}
+            if (interaction.type === "page_load") {
+                return {
+                    blocks: [
+                        { type: "header", text: "My Plugin Settings" },
+                        {
+                            type: "form",
+                            block_id: "settings",
+                            fields: [
+                                { type: "text_input", action_id: "api_url", label: "API URL" },
+                                { type: "toggle", action_id: "enabled", label: "Enabled", initial_value: true },
+                            ],
+                            submit: { label: "Save", action_id: "save" },
+                        },
+                    ],
+                };
+            }
 
-			if (interaction.type === "form_submit" && interaction.action_id === "save") {
-				await ctx.kv.set("settings", interaction.values);
-				return {
-					blocks: [/* updated blocks */],
-					toast: { message: "Settings saved", type: "success" },
-				};
-			}
-		},
-	},
+            if (interaction.type === "form_submit" && interaction.action_id === "save") {
+                await ctx.kv.set("settings", interaction.values);
+                return {
+                    blocks: [/* updated blocks */],
+                    toast: { message: "Settings saved", type: "success" },
+                };
+            }
+        },
+    },
 }
 ```
 

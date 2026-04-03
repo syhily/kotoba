@@ -40,9 +40,9 @@ import { getMenu } from "emdash";
 const primaryMenu = await getMenu("primary");
 ---
 <nav>
-	{primaryMenu?.items.map(item => (
-		<a href={item.url} target={item.target}>{item.label}</a>
-	))}
+    {primaryMenu?.items.map(item => (
+        <a href={item.url} target={item.target}>{item.label}</a>
+    ))}
 </nav>
 ```
 
@@ -50,16 +50,16 @@ const primaryMenu = await getMenu("primary");
 
 ```astro
 {primaryMenu?.items.map(item => (
-	<li>
-		<a href={item.url}>{item.label}</a>
-		{item.children.length > 0 && (
-			<ul class="submenu">
-				{item.children.map(child => (
-					<li><a href={child.url}>{child.label}</a></li>
-				))}
-			</ul>
-		)}
-	</li>
+    <li>
+        <a href={item.url}>{item.label}</a>
+        {item.children.length > 0 && (
+            <ul class="submenu">
+                {item.children.map(child => (
+                    <li><a href={child.url}>{child.label}</a></li>
+                ))}
+            </ul>
+        )}
+    </li>
 ))}
 ```
 
@@ -107,7 +107,7 @@ const newsPosts = await getEntriesByTerm("posts", "category", "news");
 const tags = await getEntryTerms("posts", post.data.id, "tag");
 ---
 {tags.map(t => (
-	<a href={`/tag/${t.slug}`}>{t.label}</a>
+    <a href={`/tag/${t.slug}`}>{t.label}</a>
 ))}
 ```
 
@@ -116,8 +116,8 @@ const tags = await getEntryTerms("posts", post.data.id, "tag");
 ```astro
 ---
 const { entries: posts } = await getEmDashCollection("posts", {
-	where: { category: term.slug },
-	orderBy: { published_at: "desc" },
+    where: { category: term.slug },
+    orderBy: { published_at: "desc" },
 });
 ---
 ```
@@ -131,7 +131,7 @@ Render a named widget area:
 import { WidgetArea } from "emdash/ui";
 ---
 <aside>
-	<WidgetArea name="sidebar" />
+    <WidgetArea name="sidebar" />
 </aside>
 ```
 
@@ -149,12 +149,12 @@ import { PortableText } from "emdash/ui";
 const sidebar = await getWidgetArea("sidebar");
 ---
 {sidebar?.widgets.map(widget => (
-	<div class="widget">
-		{widget.title && <h3>{widget.title}</h3>}
-		{widget.type === "content" && widget.content && (
-			<PortableText value={widget.content} />
-		)}
-	</div>
+    <div class="widget">
+        {widget.title && <h3>{widget.title}</h3>}
+        {widget.type === "content" && widget.content && (
+            <PortableText value={widget.content} />
+        )}
+    </div>
 ))}
 ```
 
@@ -167,8 +167,8 @@ const sidebar = await getWidgetArea("sidebar");
 import LiveSearch from "emdash/ui/search";
 ---
 <LiveSearch
-	placeholder="Search..."
-	collections={["posts", "pages"]}
+    placeholder="Search..."
+    collections={["posts", "pages"]}
 />
 ```
 
@@ -176,13 +176,13 @@ Customizable CSS classes:
 
 ```astro
 <LiveSearch
-	placeholder="Search..."
-	class="site-search"
-	inputClass="site-search-input"
-	resultsClass="site-search-results"
-	resultClass="site-search-result"
-	collections={["posts", "pages"]}
-	expandOnFocus={{ collapsed: "180px", expanded: "280px" }}
+    placeholder="Search..."
+    class="site-search"
+    inputClass="site-search-input"
+    resultsClass="site-search-results"
+    resultClass="site-search-result"
+    collections={["posts", "pages"]}
+    expandOnFocus={{ collapsed: "180px", expanded: "280px" }}
 />
 ```
 
@@ -224,11 +224,11 @@ import Base from "../layouts/Base.astro";
 const query = Astro.url.searchParams.get("q") || "";
 ---
 <Base title="Search">
-	<h1>Search</h1>
-	<LiveSearch
-		placeholder="Search posts..."
-		collections={["posts", "pages"]}
-	/>
+    <h1>Search</h1>
+    <LiveSearch
+        placeholder="Search posts..."
+        collections={["posts", "pages"]}
+    />
 </Base>
 ```
 
@@ -306,26 +306,26 @@ import { EmDashHead, EmDashBodyStart, EmDashBodyEnd } from "emdash/ui";
 import { createPublicPageContext } from "emdash/page";
 
 const pageCtx = createPublicPageContext({
-	Astro,
-	kind: content ? "content" : "custom",
-	pageType: "article",
-	title: fullTitle,
-	description,
-	canonical,
-	image,
-	content: { collection: "posts", id: post.data.id, slug },
+    Astro,
+    kind: content ? "content" : "custom",
+    pageType: "article",
+    title: fullTitle,
+    description,
+    canonical,
+    image,
+    content: { collection: "posts", id: post.data.id, slug },
 });
 ---
 <html>
-	<head>
-		<!-- your meta tags -->
-		<EmDashHead page={pageCtx} />
-	</head>
-	<body>
-		<EmDashBodyStart page={pageCtx} />
-		<!-- your content -->
-		<EmDashBodyEnd page={pageCtx} />
-	</body>
+    <head>
+        <!-- your meta tags -->
+        <EmDashHead page={pageCtx} />
+    </head>
+    <body>
+        <EmDashBodyStart page={pageCtx} />
+        <!-- your content -->
+        <EmDashBodyEnd page={pageCtx} />
+    </body>
 </html>
 ```
 
@@ -342,15 +342,15 @@ Bylines are automatically attached to every entry by the query layer:
 ```astro
 {/* Primary author */}
 {post.data.byline && (
-	<span>{post.data.byline.displayName}</span>
+    <span>{post.data.byline.displayName}</span>
 )}
 
 {/* All credits (includes roleLabel for co-authors, guest essays, etc.) */}
 {post.data.bylines?.map(credit => (
-	<span>
-		{credit.byline.displayName}
-		{credit.roleLabel && <em> ({credit.roleLabel})</em>}
-	</span>
+    <span>
+        {credit.byline.displayName}
+        {credit.roleLabel && <em> ({credit.roleLabel})</em>}
+    </span>
 ))}
 ```
 
@@ -444,52 +444,52 @@ import { createPublicPageContext } from "emdash/page";
 import LiveSearch from "emdash/ui/search";
 
 interface Props {
-	title: string;
-	description?: string | null;
-	image?: string | null;
-	content?: { collection: string; id: string; slug?: string | null };
+    title: string;
+    description?: string | null;
+    image?: string | null;
+    content?: { collection: string; id: string; slug?: string | null };
 }
 
 const { title, description, image, content } = Astro.props;
 const menu = await getMenu("primary");
 
 const pageCtx = createPublicPageContext({
-	Astro,
-	kind: content ? "content" : "custom",
-	pageType: "website",
-	title,
-	description,
-	image,
-	content,
+    Astro,
+    kind: content ? "content" : "custom",
+    pageType: "website",
+    title,
+    description,
+    image,
+    content,
 });
 ---
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>{title}</title>
-		{description && <meta name="description" content={description} />}
-		<EmDashHead page={pageCtx} />
-	</head>
-	<body>
-		<EmDashBodyStart page={pageCtx} />
-		<header>
-			<nav>
-				<a href="/">My Site</a>
-				<LiveSearch placeholder="Search..." collections={["posts", "pages"]} />
-				{menu?.items.map(item => (
-					<a href={item.url}>{item.label}</a>
-				))}
-			</nav>
-		</header>
-		<main>
-			<slot />
-		</main>
-		<footer>
-			<WidgetArea name="footer" />
-		</footer>
-		<EmDashBodyEnd page={pageCtx} />
-	</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>{title}</title>
+        {description && <meta name="description" content={description} />}
+        <EmDashHead page={pageCtx} />
+    </head>
+    <body>
+        <EmDashBodyStart page={pageCtx} />
+        <header>
+            <nav>
+                <a href="/">My Site</a>
+                <LiveSearch placeholder="Search..." collections={["posts", "pages"]} />
+                {menu?.items.map(item => (
+                    <a href={item.url}>{item.label}</a>
+                ))}
+            </nav>
+        </header>
+        <main>
+            <slot />
+        </main>
+        <footer>
+            <WidgetArea name="footer" />
+        </footer>
+        <EmDashBodyEnd page={pageCtx} />
+    </body>
 </html>
 ```

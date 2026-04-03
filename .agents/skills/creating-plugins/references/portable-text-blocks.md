@@ -10,25 +10,25 @@ In `definePlugin()`, declare blocks under `admin.portableTextBlocks`:
 
 ```typescript
 admin: {
-	portableTextBlocks: [
-		{
-			type: "youtube",
-			label: "YouTube Video",
-			icon: "video",
-			placeholder: "Paste YouTube URL...",
-			fields: [
-				{ type: "text_input", action_id: "id", label: "YouTube URL" },
-				{ type: "text_input", action_id: "title", label: "Title" },
-				{ type: "text_input", action_id: "poster", label: "Poster Image URL" },
-			],
-		},
-		{
-			type: "codepen",
-			label: "CodePen",
-			icon: "code",
-			placeholder: "Paste CodePen URL...",
-		},
-	],
+    portableTextBlocks: [
+        {
+            type: "youtube",
+            label: "YouTube Video",
+            icon: "video",
+            placeholder: "Paste YouTube URL...",
+            fields: [
+                { type: "text_input", action_id: "id", label: "YouTube URL" },
+                { type: "text_input", action_id: "title", label: "Title" },
+                { type: "text_input", action_id: "poster", label: "Poster Image URL" },
+            ],
+        },
+        {
+            type: "codepen",
+            label: "CodePen",
+            icon: "code",
+            placeholder: "Paste CodePen URL...",
+        },
+    ],
 }
 ```
 
@@ -132,12 +132,12 @@ const videoId = id?.match(/(?:v=|youtu\.be\/)([^&]+)/)?.[1] ?? id;
 ---
 
 <div class="youtube-embed">
-	<iframe
-		src={`https://www.youtube-nocookie.com/embed/${videoId}`}
-		title={title || "YouTube Video"}
-		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-		allowfullscreen
-	></iframe>
+    <iframe
+        src={`https://www.youtube-nocookie.com/embed/${videoId}`}
+        title={title || "YouTube Video"}
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+    ></iframe>
 </div>
 ```
 

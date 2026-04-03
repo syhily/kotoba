@@ -54,36 +54,36 @@ import { useState, useEffect } from "react";
 import { usePluginAPI } from "@emdash-cms/admin";
 
 export function SettingsPage() {
-	const api = usePluginAPI();
-	const [settings, setSettings] = useState<Record<string, unknown>>({});
-	const [saving, setSaving] = useState(false);
+    const api = usePluginAPI();
+    const [settings, setSettings] = useState<Record<string, unknown>>({});
+    const [saving, setSaving] = useState(false);
 
-	useEffect(() => {
-		api.get("settings").then(setSettings);
-	}, []);
+    useEffect(() => {
+        api.get("settings").then(setSettings);
+    }, []);
 
-	const handleSave = async () => {
-		setSaving(true);
-		await api.post("settings/save", settings);
-		setSaving(false);
-	};
+    const handleSave = async () => {
+        setSaving(true);
+        await api.post("settings/save", settings);
+        setSaving(false);
+    };
 
-	return (
-		<div>
-			<h1>Settings</h1>
-			<label>
-				Site Title
-				<input
-					type="text"
-					value={settings.siteTitle || ""}
-					onChange={(e) => setSettings({ ...settings, siteTitle: e.target.value })}
-				/>
-			</label>
-			<button onClick={handleSave} disabled={saving}>
-				{saving ? "Saving..." : "Save"}
-			</button>
-		</div>
-	);
+    return (
+        <div>
+            <h1>Settings</h1>
+            <label>
+                Site Title
+                <input
+                    type="text"
+                    value={settings.siteTitle || ""}
+                    onChange={(e) => setSettings({ ...settings, siteTitle: e.target.value })}
+                />
+            </label>
+            <button onClick={handleSave} disabled={saving}>
+                {saving ? "Saving..." : "Save"}
+            </button>
+        </div>
+    );
 }
 ```
 
@@ -97,18 +97,18 @@ import { useState, useEffect } from "react";
 import { usePluginAPI } from "@emdash-cms/admin";
 
 export function StatusWidget() {
-	const api = usePluginAPI();
-	const [data, setData] = useState({ count: 0 });
+    const api = usePluginAPI();
+    const [data, setData] = useState({ count: 0 });
 
-	useEffect(() => {
-		api.get("status").then(setData);
-	}, []);
+    useEffect(() => {
+        api.get("status").then(setData);
+    }, []);
 
-	return (
-		<div className="widget-content">
-			<div className="score">{data.count}</div>
-		</div>
-	);
+    return (
+        <div className="widget-content">
+            <div className="score">{data.count}</div>
+        </div>
+    );
 }
 ```
 
@@ -146,10 +146,10 @@ If your plugin only needs settings, skip custom pages — use `settingsSchema` a
 
 ```typescript
 admin: {
-	settingsSchema: {
-		apiKey: { type: "secret", label: "API Key" },
-		enabled: { type: "boolean", label: "Enabled", default: true },
-	}
+    settingsSchema: {
+        apiKey: { type: "secret", label: "API Key" },
+        enabled: { type: "boolean", label: "Enabled", default: true },
+    }
 }
 ```
 

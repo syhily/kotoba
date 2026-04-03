@@ -1,6 +1,6 @@
 # Configuration
 
-## astro.config.mjs
+## astro.config.ts
 
 ### Node.js (local development / self-hosted)
 
@@ -85,15 +85,15 @@ Requires a `wrangler.jsonc` with D1 and R2 bindings:
 
 ### Plugins
 
-Register plugins in `astro.config.mjs`:
+Register plugins in `astro.config.ts`:
 
 ```javascript
 import { auditLogPlugin } from "@emdash-cms/plugin-audit-log";
 
 emdash({
-	database: sqlite({ url: "file:./data.db" }),
-	storage: local({ directory: "./uploads", baseUrl: "/_emdash/api/media/file" }),
-	plugins: [auditLogPlugin()],
+    database: sqlite({ url: "file:./data.db" }),
+    storage: local({ directory: "./uploads", baseUrl: "/_emdash/api/media/file" }),
+    plugins: [auditLogPlugin()],
 }),
 ```
 

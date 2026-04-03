@@ -118,8 +118,8 @@ import Hero from "./blocks/Hero.astro";
 import Features from "./blocks/Features.astro";
 
 const customTypes = {
-	"marketing.hero": Hero,
-	"marketing.features": Features,
+    "marketing.hero": Hero,
+    "marketing.features": Features,
 };
 ---
 <PortableText value={page.data.content} components={{ type: customTypes }} />
@@ -141,7 +141,7 @@ import { Image } from "emdash/ui";
 
 {/* Also works with explicit props */}
 {post.data.featured_image?.src && (
-	<img src={post.data.featured_image.src} alt={post.data.featured_image.alt || ""} />
+    <img src={post.data.featured_image.src} alt={post.data.featured_image.alt || ""} />
 )}
 ```
 
@@ -160,7 +160,7 @@ Entries include `edit` attributes for inline editing. Spread them onto the eleme
 <h1 {...post.edit.title}>{post.data.title}</h1>
 <p {...post.edit.excerpt}>{post.data.excerpt}</p>
 <div {...post.edit.featured_image}>
-	<Image image={post.data.featured_image} />
+    <Image image={post.data.featured_image} />
 </div>
 ```
 
@@ -177,24 +177,24 @@ import { Image } from "emdash/ui";
 import Base from "../../layouts/Base.astro";
 
 const { entries: posts, cacheHint } = await getEmDashCollection("posts", {
-	orderBy: { published_at: "desc" },
+    orderBy: { published_at: "desc" },
 });
 Astro.cache.set(cacheHint);
 
 const sortedPosts = posts.toSorted((a, b) => {
-	const dateA = a.data.publishedAt?.getTime() ?? 0;
-	const dateB = b.data.publishedAt?.getTime() ?? 0;
-	return dateB - dateA;
+    const dateA = a.data.publishedAt?.getTime() ?? 0;
+    const dateB = b.data.publishedAt?.getTime() ?? 0;
+    return dateB - dateA;
 });
 ---
 <Base title="Posts">
-	{sortedPosts.map(post => (
-		<article>
-			{post.data.featured_image && <Image image={post.data.featured_image} />}
-			<a href={`/posts/${post.id}`}>{post.data.title}</a>
-			{post.data.excerpt && <p>{post.data.excerpt}</p>}
-		</article>
-	))}
+    {sortedPosts.map(post => (
+        <article>
+            {post.data.featured_image && <Image image={post.data.featured_image} />}
+            <a href={`/posts/${post.id}`}>{post.data.title}</a>
+            {post.data.excerpt && <p>{post.data.excerpt}</p>}
+        </article>
+    ))}
 </Base>
 ```
 
@@ -215,28 +215,28 @@ if (!post) return Astro.redirect("/404");
 Astro.cache.set(cacheHint);
 
 const seo = getSeoMeta(post, {
-	siteTitle: "My Blog",
-	siteUrl: Astro.url.origin,
-	path: `/posts/${slug}`,
+    siteTitle: "My Blog",
+    siteUrl: Astro.url.origin,
+    path: `/posts/${slug}`,
 });
 
 const tags = await getEntryTerms("posts", post.data.id, "tag");
 ---
 <Base title={seo.title} description={seo.description}>
-	<article>
-		{post.data.featured_image && (
-			<div {...post.edit.featured_image}>
-				<Image image={post.data.featured_image} />
-			</div>
-		)}
-		<h1 {...post.edit.title}>{post.data.title}</h1>
-		<PortableText value={post.data.content} />
-		{tags.length > 0 && (
-			<div>
-				{tags.map(t => <a href={`/tag/${t.slug}`}>{t.label}</a>)}
-			</div>
-		)}
-	</article>
+    <article>
+        {post.data.featured_image && (
+            <div {...post.edit.featured_image}>
+                <Image image={post.data.featured_image} />
+            </div>
+        )}
+        <h1 {...post.edit.title}>{post.data.title}</h1>
+        <PortableText value={post.data.content} />
+        {tags.length > 0 && (
+            <div>
+                {tags.map(t => <a href={`/tag/${t.slug}`}>{t.label}</a>)}
+            </div>
+        )}
+    </article>
 </Base>
 ```
 
@@ -252,15 +252,15 @@ const term = slug ? await getTerm("category", slug) : null;
 if (!term) return Astro.redirect("/404");
 
 const { entries: posts } = await getEmDashCollection("posts", {
-	where: { category: term.slug },
-	orderBy: { published_at: "desc" },
+    where: { category: term.slug },
+    orderBy: { published_at: "desc" },
 });
 ---
 <Base title={`${term.label} posts`}>
-	<h1>{term.label}</h1>
-	{posts.map(post => (
-		<a href={`/posts/${post.id}`}>{post.data.title}</a>
-	))}
+    <h1>{term.label}</h1>
+    {posts.map(post => (
+        <a href={`/posts/${post.id}`}>{post.data.title}</a>
+    ))}
 </Base>
 ```
 
@@ -331,9 +331,9 @@ function escapeXml(s: string): string {
 import Base from "../layouts/Base.astro";
 ---
 <Base title="Not Found">
-	<h1>Page not found</h1>
-	<p>The page you're looking for doesn't exist.</p>
-	<a href="/">Go home</a>
+    <h1>Page not found</h1>
+    <p>The page you're looking for doesn't exist.</p>
+    <a href="/">Go home</a>
 </Base>
 ```
 
@@ -343,13 +343,13 @@ When a collection has no content, show a helpful empty state:
 
 ```astro
 {posts.length === 0 ? (
-	<section>
-		<h2>No posts yet</h2>
-		<p>Create your first post in the admin panel.</p>
-		<a href="/_emdash/admin/content/posts/new">Create a post</a>
-	</section>
+    <section>
+        <h2>No posts yet</h2>
+        <p>Create your first post in the admin panel.</p>
+        <a href="/_emdash/admin/content/posts/new">Create a post</a>
+    </section>
 ) : (
-	/* ... render posts ... */
+    /* ... render posts ... */
 )}
 ```
 
@@ -361,14 +361,14 @@ When a collection has no content, show a helpful empty state:
 ---
 const cursor = Astro.url.searchParams.get("cursor") ?? undefined;
 const { entries, nextCursor, cacheHint } = await getEmDashCollection("posts", {
-	limit: 10,
-	cursor,
-	orderBy: { published_at: "desc" },
+    limit: 10,
+    cursor,
+    orderBy: { published_at: "desc" },
 });
 Astro.cache.set(cacheHint);
 ---
 {entries.map(post => (
-	<a href={`/posts/${post.id}`}>{post.data.title}</a>
+    <a href={`/posts/${post.id}`}>{post.data.title}</a>
 ))}
 {nextCursor && <a href={`?cursor=${nextCursor}`}>Next page</a>}
 ```

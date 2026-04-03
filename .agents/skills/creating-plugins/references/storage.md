@@ -189,40 +189,40 @@ Declare `admin.settingsSchema` to auto-generate a settings form in the admin UI:
 
 ```typescript
 admin: {
-	settingsSchema: {
-		siteTitle: {
-			type: "string",
-			label: "Site Title",
-			description: "Used in title tags",
-			default: "",
-		},
-		maxItems: {
-			type: "number",
-			label: "Max Items",
-			default: 100,
-			min: 1,
-			max: 1000,
-		},
-		enabled: {
-			type: "boolean",
-			label: "Enabled",
-			default: true,
-		},
-		theme: {
-			type: "select",
-			label: "Theme",
-			options: [
-				{ value: "light", label: "Light" },
-				{ value: "dark", label: "Dark" },
-			],
-			default: "light",
-		},
-		apiKey: {
-			type: "secret",
-			label: "API Key",
-			description: "Encrypted at rest",
-		},
-	},
+    settingsSchema: {
+        siteTitle: {
+            type: "string",
+            label: "Site Title",
+            description: "Used in title tags",
+            default: "",
+        },
+        maxItems: {
+            type: "number",
+            label: "Max Items",
+            default: 100,
+            min: 1,
+            max: 1000,
+        },
+        enabled: {
+            type: "boolean",
+            label: "Enabled",
+            default: true,
+        },
+        theme: {
+            type: "select",
+            label: "Theme",
+            options: [
+                { value: "light", label: "Light" },
+                { value: "dark", label: "Dark" },
+            ],
+            default: "light",
+        },
+        apiKey: {
+            type: "secret",
+            label: "API Key",
+            description: "Encrypted at rest",
+        },
+    },
 }
 ```
 
@@ -249,8 +249,8 @@ Schema defaults are UI defaults only — not auto-persisted. Handle missing valu
 
 ```typescript
 "plugin:install": async (_event, ctx) => {
-	await ctx.kv.set("settings:enabled", true);
-	await ctx.kv.set("settings:maxItems", 100);
+    await ctx.kv.set("settings:enabled", true);
+    await ctx.kv.set("settings:maxItems", 100);
 }
 ```
 

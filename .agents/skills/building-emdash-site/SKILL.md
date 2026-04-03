@@ -19,7 +19,7 @@ These are the things that silently break sites. Know them before you start.
 
 4. **Always pass `cacheHint` to `Astro.cache.set()`.** Every query returns a `cacheHint`. Call `Astro.cache.set(cacheHint)` on every page that queries content, or cache invalidation won't work when editors publish changes.
 
-5. **No `getStaticPaths` for CMS content.** EmDash content is dynamic. Pages must be server-rendered (`output: "server"` in `astro.config.mjs`).
+5. **No `getStaticPaths` for CMS content.** EmDash content is dynamic. Pages must be server-rendered (`output: "server"` in `astro.config.ts`).
 
 ## File Structure
 
@@ -27,7 +27,7 @@ Every EmDash site has these key files:
 
 ```
 my-site/
-├── astro.config.mjs          # Astro config with emdash() integration
+├── astro.config.ts            # Astro config with emdash() integration
 ├── src/
 │   ├── live.config.ts         # EmDash loader registration (boilerplate)
 │   ├── pages/                 # Astro pages (all server-rendered)
@@ -43,7 +43,7 @@ my-site/
 
 ### 1. Configure the project
 
-Read **[references/configuration.md](references/configuration.md)** for `astro.config.mjs`, `live.config.ts`, deployment targets (Node vs Cloudflare), and type generation.
+Read **[references/configuration.md](references/configuration.md)** for `astro.config.ts`, `live.config.ts`, deployment targets (Node vs Cloudflare), and type generation.
 
 ### 2. Design the schema
 
@@ -128,13 +128,13 @@ EmDash supports plugins for extending the CMS with hooks, storage, settings, adm
 - Add custom block types to the Portable Text editor (e.g., embedded maps, code playgrounds, CTAs)
 - Provide a reusable service (e.g., analytics, forms, comments via a third-party provider)
 
-Plugins are registered in `astro.config.mjs`:
+Plugins are registered in `astro.config.ts`:
 
 ```javascript
 emdash({
-	database: sqlite({ url: "file:./data.db" }),
-	storage: local({ directory: "./uploads", baseUrl: "/_emdash/api/media/file" }),
-	plugins: [myPlugin()],
+    database: sqlite({ url: "file:./data.db" }),
+    storage: local({ directory: "./uploads", baseUrl: "/_emdash/api/media/file" }),
+    plugins: [myPlugin()],
 }),
 ```
 

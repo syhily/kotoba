@@ -24,7 +24,7 @@ EmDash has two plugin formats:
 
 Every plugin has two parts that **run in different contexts**:
 
-1. **Plugin descriptor** (`PluginDescriptor`) — returned by the factory function in `index.ts`. Declares metadata (id, version, capabilities, storage). **Runs at build time in Vite** (imported in `astro.config.mjs`). Must be side-effect-free.
+1. **Plugin descriptor** (`PluginDescriptor`) — returned by the factory function in `index.ts`. Declares metadata (id, version, capabilities, storage). **Runs at build time in Vite** (imported in `astro.config.ts`). Must be side-effect-free.
 2. **Plugin definition** (`definePlugin()`) — contains the runtime logic (hooks, routes). **Runs at request time on the deployed server.** Has access to the full plugin context (`ctx`). Lives in a separate file (typically `sandbox-entry.ts`).
 
 These must be in **separate entrypoints** because they execute in completely different environments:
@@ -76,7 +76,7 @@ export default definePlugin({
 });
 ```
 
-The descriptor is what gets imported in `astro.config.mjs`. The `entrypoint` field points to the module containing the `definePlugin()` default export. For standard plugins, this is the `./sandbox` export from `package.json`.
+The descriptor is what gets imported in `astro.config.ts`. The `entrypoint` field points to the module containing the `definePlugin()` default export. For standard plugins, this is the `./sandbox` export from `package.json`.
 
 Key differences from native format:
 
@@ -94,7 +94,7 @@ Key differences from native format:
 
 ## Registration
 
-The descriptor is imported in `astro.config.mjs` (Vite context):
+The descriptor is imported in `astro.config.ts` (Vite context):
 
 ```typescript
 import { myPlugin } from "@my-org/my-plugin";
@@ -116,21 +116,21 @@ Standard plugins work in either array. Native plugins only work in `plugins: []`
 
 EmDash has two execution modes. Plugin code is identical in both — only the enforcement changes.
 
-|                     | Trusted                                   | Sandboxed                                              |
-| ------------------- | ----------------------------------------- | ------------------------------------------------------ |
-| **Runs in**         | Main process                              | Isolated V8 isolate (Dynamic Worker Loader)            |
-| **Install method**  | `astro.config.mjs` (code change + deploy) | Admin UI (one-click from marketplace)                  |
-| **Capabilities**    | Advisory (not enforced)                   | Enforced at runtime via RPC bridge                     |
-| **Resource limits** | None                                      | CPU 50ms, 10 subrequests, 30s wall-time, ~128MB memory |
-| **Network access**  | Unrestricted                              | Blocked; only via `ctx.http` with `allowedHosts`       |
-| **Data access**     | Full database access                      | Scoped to declared capabilities                        |
-| **Node.js APIs**    | Full access                               | Not available (V8 isolate only)                        |
-| **Available on**    | All platforms                             | Cloudflare Workers only                                |
-| **Best for**        | First-party code, reviewed npm packages   | Third-party extensions, marketplace plugins            |
+|                     | Trusted                                  | Sandboxed                                              |
+| ------------------- | ---------------------------------------- | ------------------------------------------------------ |
+| **Runs in**         | Main process                             | Isolated V8 isolate (Dynamic Worker Loader)            |
+| **Install method**  | `astro.config.ts` (code change + deploy) | Admin UI (one-click from marketplace)                  |
+| **Capabilities**    | Advisory (not enforced)                  | Enforced at runtime via RPC bridge                     |
+| **Resource limits** | None                                     | CPU 50ms, 10 subrequests, 30s wall-time, ~128MB memory |
+| **Network access**  | Unrestricted                             | Blocked; only via `ctx.http` with `allowedHosts`       |
+| **Data access**     | Full database access                     | Scoped to declared capabilities                        |
+| **Node.js APIs**    | Full access                              | Not available (V8 isolate only)                        |
+| **Available on**    | All platforms                            | Cloudflare Workers only                                |
+| **Best for**        | First-party code, reviewed npm packages  | Third-party extensions, marketplace plugins            |
 
 ### Trusted Mode
 
-Trusted plugins are npm packages or local files added in `astro.config.mjs`. They run in-process with your Astro site.
+Trusted plugins are npm packages or local files added in `astro.config.ts`. They run in-process with your Astro site.
 
 - **Capabilities are documentation only.** Declaring `["read:content"]` documents intent but isn't enforced — the plugin has full process access.
 - Only install from sources you trust. A malicious trusted plugin has the same access as your application code.
@@ -250,7 +250,7 @@ Configure `package.json` exports so EmDash can load each entry point:
 
 | Export        | Context           | Purpose                                                                |
 | ------------- | ----------------- | ---------------------------------------------------------------------- |
-| `"."`         | Vite (build time) | Descriptor factory -- imported in `astro.config.mjs`                   |
+| `"."`         | Vite (build time) | Descriptor factory -- imported in `astro.config.ts`                    |
 | `"./sandbox"` | Server (runtime)  | `definePlugin({ hooks, routes })` -- loaded by `entrypoint` at runtime |
 | `"./admin"`   | Browser           | React components for admin pages/widgets (native plugins only)         |
 | `"./astro"`   | Server (SSR)      | Astro components for site-side block rendering (native plugins only)   |

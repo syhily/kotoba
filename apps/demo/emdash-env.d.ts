@@ -5,11 +5,33 @@
 
 import type { ContentBylineCredit, PortableTextBlock } from 'emdash'
 
+export interface Friend {
+  id: string
+  slug: string | null
+  status: string
+  website: string
+  description?: string
+  homepage: string
+  poster: string
+  createdAt: Date
+  updatedAt: Date
+  publishedAt: Date | null
+  bylines?: ContentBylineCredit[]
+}
+
 export interface Page {
   id: string
   slug: string | null
   status: string
   title: string
+  date: string
+  updated?: string
+  comments?: boolean
+  cover: string
+  og?: string
+  published?: boolean
+  summary?: string
+  toc?: boolean
   content?: PortableTextBlock[]
   createdAt: Date
   updatedAt: Date
@@ -22,9 +44,17 @@ export interface Post {
   slug: string | null
   status: string
   title: string
-  featured_image?: { id: string; src?: string; alt?: string; width?: number; height?: number }
+  date: string
+  updated?: string
+  comments?: boolean
+  alias?: unknown
+  summary?: string
+  cover?: string
+  og?: string
+  published?: boolean
+  visible?: boolean
+  toc?: boolean
   content?: PortableTextBlock[]
-  excerpt?: string
   createdAt: Date
   updatedAt: Date
   publishedAt: Date | null
@@ -33,6 +63,7 @@ export interface Post {
 
 declare module 'emdash' {
   interface EmDashCollections {
+    friends: Friend
     pages: Page
     posts: Post
   }

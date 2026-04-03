@@ -2,16 +2,14 @@
   "$schema": "https://emdashcms.com/seed.schema.json",
   "version": "1",
   "meta": {
-    "name": "Blog Starter",
-    "description": "A blog with posts and pages",
-    "author": "EmDash"
+    "name": "yufan.me",
+    "description": "Migrated schema from Astro content collections",
+    "author": "yufan.me"
   },
-
   "settings": {
-    "title": "My Blog",
-    "tagline": "Thoughts on building for the web"
+    "title": "yufan.me",
+    "tagline": "A personal blog migrated from Astro content collections"
   },
-
   "collections": [
     {
       "slug": "posts",
@@ -28,20 +26,62 @@
           "searchable": true
         },
         {
-          "slug": "featured_image",
-          "label": "Featured Image",
-          "type": "image"
+          "slug": "date",
+          "label": "Date",
+          "type": "datetime",
+          "required": true
+        },
+        {
+          "slug": "updated",
+          "label": "Updated",
+          "type": "datetime"
+        },
+        {
+          "slug": "comments",
+          "label": "Comments Enabled",
+          "type": "boolean"
+        },
+        {
+          "slug": "alias",
+          "label": "Alias",
+          "type": "json"
+        },
+        {
+          "slug": "summary",
+          "label": "Summary",
+          "type": "text",
+          "searchable": true
+        },
+        {
+          "slug": "cover",
+          "label": "Cover URL",
+          "type": "string"
+        },
+        {
+          "slug": "og",
+          "label": "Open Graph",
+          "type": "string"
+        },
+        {
+          "slug": "published",
+          "label": "Published",
+          "type": "boolean"
+        },
+        {
+          "slug": "visible",
+          "label": "Visible",
+          "type": "boolean"
+        },
+        {
+          "slug": "toc",
+          "label": "Table of Contents",
+          "type": "boolean"
         },
         {
           "slug": "content",
           "label": "Content",
           "type": "portableText",
           "searchable": true
-        },
-        {
-          "slug": "excerpt",
-          "label": "Excerpt",
-          "type": "text"
         }
       ]
     },
@@ -49,7 +89,8 @@
       "slug": "pages",
       "label": "Pages",
       "labelSingular": "Page",
-      "supports": ["drafts", "revisions", "search"],
+      "supports": ["drafts", "revisions", "search", "seo"],
+      "commentsEnabled": true,
       "fields": [
         {
           "slug": "title",
@@ -59,15 +100,90 @@
           "searchable": true
         },
         {
+          "slug": "date",
+          "label": "Date",
+          "type": "datetime",
+          "required": true
+        },
+        {
+          "slug": "updated",
+          "label": "Updated",
+          "type": "datetime"
+        },
+        {
+          "slug": "comments",
+          "label": "Comments Enabled",
+          "type": "boolean"
+        },
+        {
+          "slug": "cover",
+          "label": "Cover URL",
+          "type": "string",
+          "required": true
+        },
+        {
+          "slug": "og",
+          "label": "Open Graph",
+          "type": "string"
+        },
+        {
+          "slug": "published",
+          "label": "Published",
+          "type": "boolean"
+        },
+        {
+          "slug": "summary",
+          "label": "Summary",
+          "type": "text",
+          "searchable": true
+        },
+        {
+          "slug": "toc",
+          "label": "Table of Contents",
+          "type": "boolean"
+        },
+        {
           "slug": "content",
           "label": "Content",
           "type": "portableText",
           "searchable": true
         }
       ]
+    },
+    {
+      "slug": "friends",
+      "label": "Friends",
+      "labelSingular": "Friend",
+      "supports": ["drafts", "revisions", "search"],
+      "fields": [
+        {
+          "slug": "website",
+          "label": "Website",
+          "type": "string",
+          "required": true,
+          "searchable": true
+        },
+        {
+          "slug": "description",
+          "label": "Description",
+          "type": "text",
+          "searchable": true
+        },
+        {
+          "slug": "homepage",
+          "label": "Homepage",
+          "type": "string",
+          "required": true
+        },
+        {
+          "slug": "poster",
+          "label": "Poster URL",
+          "type": "string",
+          "required": true
+        }
+      ]
     }
   ],
-
   "taxonomies": [
     {
       "name": "category",
@@ -76,9 +192,36 @@
       "hierarchical": true,
       "collections": ["posts"],
       "terms": [
-        { "slug": "development", "label": "Development" },
-        { "slug": "design", "label": "Design" },
-        { "slug": "notes", "label": "Notes" }
+        {
+          "slug": "article",
+          "label": "文章",
+          "description": "我在寻找一个声音，期待着它把书影里的音符唱给你们听。\n记录一本书、一个作者、一部电影及其与生活之间丝丝缕缕的情。\n我热爱书和电影，更热爱生活，希望我们都有着走不完的似水流年，说不完的逝水年华。"
+        },
+        {
+          "slug": "gossip",
+          "label": "杂谈",
+          "description": "我读书不过为消遣，偶至有趣处，便欣然记下。不敢说集腋成裘，但聊作敝帚自珍。\n有伟人说，科学的世界像是海洋，他像在海边玩耍的孩子，偶尔捡拾到几只贝壳，他就很高兴。\n海洋的比喻也可用作浩瀚的文史，行走在文史的典籍里，偶尔捡到一些边角料，也同样令人兴奋。"
+        },
+        {
+          "slug": "think",
+          "label": "杂思",
+          "description": "听一听素乐，品一品素茶，读一读素书，写一写素心。即使是清贫过一生，也安之若素。\n只想在这滚滚红尘深处，留一抹清淡。只愿在这茫茫人海之中，寻一个会心。\n爱读几句书，常听几支曲，闲品几盏茶，偶插几朵花。此生无所求，闲看花开落。"
+        },
+        {
+          "slug": "coding",
+          "label": "编程",
+          "description": "冒泡排序，选择排序，插入排序，快速排序，堆排序，归并排序，希尔排序，桶排序，基数排序。\n有向图，无向图，有环图，无环图，完全图，稠密图，稀疏图，拓扑图。\n二叉树，红黑树，van Emde Boas树，最小生成树。"
+        },
+        {
+          "slug": "novel",
+          "label": "小说",
+          "description": "在这个世界里，没有朝霞的红，没有苔藓的绿，没有夜来香的黄，没有橡木的棕，也没有深海的蓝。\n有的只是孩子们张惶不安地丈量世界，换来一声叹息。"
+        },
+        {
+          "slug": "notes",
+          "label": "笔记",
+          "description": "风萧萧，天寥寥。山隐隐，木叶凋。小楼坐定，理书罢了。\n灯青茶酽花静声悄，添几行斜书歪字，懒寻甚金缕玉箫。"
+        }
       ]
     },
     {
@@ -88,160 +231,1260 @@
       "hierarchical": false,
       "collections": ["posts"],
       "terms": [
-        { "slug": "webdev", "label": "Web Development" },
-        { "slug": "opinion", "label": "Opinion" },
-        { "slug": "tools", "label": "Tools" },
-        { "slug": "creativity", "label": "Creativity" }
+        {
+          "slug": "book-binding",
+          "label": "装帧"
+        },
+        {
+          "slug": "recollection",
+          "label": "回忆"
+        },
+        {
+          "slug": "middle-age",
+          "label": "中年"
+        },
+        {
+          "slug": "moment",
+          "label": "时光"
+        },
+        {
+          "slug": "fireworks",
+          "label": "烟花"
+        },
+        {
+          "slug": "thinking",
+          "label": "思考"
+        },
+        {
+          "slug": "encoding",
+          "label": "编码"
+        },
+        {
+          "slug": "programming",
+          "label": "编程"
+        },
+        {
+          "slug": "teruteru",
+          "label": "晴天娃娃"
+        },
+        {
+          "slug": "xiao-jian",
+          "label": "小简"
+        },
+        {
+          "slug": "code",
+          "label": "代码"
+        },
+        {
+          "slug": "life",
+          "label": "人生"
+        },
+        {
+          "slug": "choice",
+          "label": "抉择"
+        },
+        {
+          "slug": "work-in-beijing",
+          "label": "北漂"
+        },
+        {
+          "slug": "work-summary",
+          "label": "工作总结"
+        },
+        {
+          "slug": "study",
+          "label": "学习"
+        },
+        {
+          "slug": "summary",
+          "label": "总结"
+        },
+        {
+          "slug": "database",
+          "label": "数据库"
+        },
+        {
+          "slug": "storage",
+          "label": "存储"
+        },
+        {
+          "slug": "rain",
+          "label": "雨"
+        },
+        {
+          "slug": "sui-sui-nian",
+          "label": "碎碎念"
+        },
+        {
+          "slug": "workshop",
+          "label": "工作室"
+        },
+        {
+          "slug": "game",
+          "label": "游戏"
+        },
+        {
+          "slug": "firis",
+          "label": "菲莉丝"
+        },
+        {
+          "slug": "spring",
+          "label": "Spring"
+        },
+        {
+          "slug": "speech",
+          "label": "演讲"
+        },
+        {
+          "slug": "dream",
+          "label": "梦想"
+        },
+        {
+          "slug": "japanese",
+          "label": "日文"
+        },
+        {
+          "slug": "scala",
+          "label": "Scala"
+        },
+        {
+          "slug": "olympics",
+          "label": "奥运会"
+        },
+        {
+          "slug": "front-end",
+          "label": "前端"
+        },
+        {
+          "slug": "random-thoughts",
+          "label": "随笔"
+        },
+        {
+          "slug": "work",
+          "label": "工作"
+        },
+        {
+          "slug": "kong",
+          "label": "Kong"
+        },
+        {
+          "slug": "diet",
+          "label": "饮食"
+        },
+        {
+          "slug": "squandering",
+          "label": "败家"
+        },
+        {
+          "slug": "software",
+          "label": "软件"
+        },
+        {
+          "slug": "rainy-season",
+          "label": "雨季"
+        },
+        {
+          "slug": "slow-life",
+          "label": "慢生活"
+        },
+        {
+          "slug": "loveness",
+          "label": "爱情"
+        },
+        {
+          "slug": "movie-review",
+          "label": "影评"
+        },
+        {
+          "slug": "java",
+          "label": "Java"
+        },
+        {
+          "slug": "turing",
+          "label": "图灵"
+        },
+        {
+          "slug": "linux",
+          "label": "Linux"
+        },
+        {
+          "slug": "graduation",
+          "label": "毕业"
+        },
+        {
+          "slug": "shan-da",
+          "label": "山大"
+        },
+        {
+          "slug": "dark-history",
+          "label": "黑历史"
+        },
+        {
+          "slug": "nostalgia",
+          "label": "怀旧"
+        },
+        {
+          "slug": "letterhead",
+          "label": "信笺"
+        },
+        {
+          "slug": "android",
+          "label": "Android"
+        },
+        {
+          "slug": "see",
+          "label": "看见"
+        },
+        {
+          "slug": "journey-of-heart",
+          "label": "心路历程"
+        },
+        {
+          "slug": "mid-autumn",
+          "label": "中秋"
+        },
+        {
+          "slug": "homesickness",
+          "label": "思乡"
+        },
+        {
+          "slug": "death",
+          "label": "死亡"
+        },
+        {
+          "slug": "missing-is-a-poem",
+          "label": "思念是一首诗"
+        },
+        {
+          "slug": "confused",
+          "label": "迷茫"
+        },
+        {
+          "slug": "practical-training",
+          "label": "实训"
+        },
+        {
+          "slug": "youth",
+          "label": "青春"
+        },
+        {
+          "slug": "garden-of-words",
+          "label": "言叶之庭"
+        },
+        {
+          "slug": "css",
+          "label": "CSS"
+        },
+        {
+          "slug": "html",
+          "label": "HTML"
+        },
+        {
+          "slug": "ji-nan",
+          "label": "济南"
+        },
+        {
+          "slug": "springtime",
+          "label": "春天"
+        },
+        {
+          "slug": "trivial",
+          "label": "琐碎"
+        },
+        {
+          "slug": "pu-shu",
+          "label": "朴树"
+        },
+        {
+          "slug": "warmth",
+          "label": "温情"
+        },
+        {
+          "slug": "family",
+          "label": "家人"
+        },
+        {
+          "slug": "reality",
+          "label": "现实"
+        },
+        {
+          "slug": "text",
+          "label": "文字"
+        },
+        {
+          "slug": "melancholy",
+          "label": "忧郁"
+        },
+        {
+          "slug": "annual-summary",
+          "label": "年度总结"
+        },
+        {
+          "slug": "persistent-writing",
+          "label": "笔耕不辍"
+        },
+        {
+          "slug": "secret",
+          "label": "秘密"
+        },
+        {
+          "slug": "concerns",
+          "label": "心事"
+        },
+        {
+          "slug": "emotion",
+          "label": "情感"
+        },
+        {
+          "slug": "time-machine",
+          "label": "时光机"
+        },
+        {
+          "slug": "independence",
+          "label": "独立"
+        },
+        {
+          "slug": "90s-generation",
+          "label": "90后"
+        },
+        {
+          "slug": "loneliness",
+          "label": "孤独"
+        },
+        {
+          "slug": "three-years",
+          "label": "三年"
+        },
+        {
+          "slug": "anime",
+          "label": "动漫"
+        },
+        {
+          "slug": "xiao-ying",
+          "label": "小樱"
+        },
+        {
+          "slug": "memory",
+          "label": "记忆"
+        },
+        {
+          "slug": "travel",
+          "label": "旅行"
+        },
+        {
+          "slug": "fragrance",
+          "label": "香味"
+        },
+        {
+          "slug": "nature",
+          "label": "自然"
+        },
+        {
+          "slug": "love",
+          "label": "爱"
+        },
+        {
+          "slug": "tears",
+          "label": "眼泪"
+        },
+        {
+          "slug": "future",
+          "label": "未来"
+        },
+        {
+          "slug": "tomorrow",
+          "label": "明天"
+        },
+        {
+          "slug": "flowers",
+          "label": "花儿"
+        },
+        {
+          "slug": "hometown-sound",
+          "label": "乡音"
+        },
+        {
+          "slug": "hometown",
+          "label": "故乡"
+        },
+        {
+          "slug": "blog",
+          "label": "博客"
+        },
+        {
+          "slug": "writing",
+          "label": "写作"
+        },
+        {
+          "slug": "amativeness",
+          "label": "恋爱"
+        },
+        {
+          "slug": "childhood",
+          "label": "童年"
+        },
+        {
+          "slug": "eternal-wing",
+          "label": "悠久之翼"
+        },
+        {
+          "slug": "fandom",
+          "label": "同人"
+        },
+        {
+          "slug": "philosophy",
+          "label": "哲学"
+        },
+        {
+          "slug": "goodbye",
+          "label": "再见"
+        },
+        {
+          "slug": "growth",
+          "label": "成长"
+        },
+        {
+          "slug": "promise",
+          "label": "约定"
+        },
+        {
+          "slug": "father",
+          "label": "父亲"
+        },
+        {
+          "slug": "xi-yang",
+          "label": "汐阳"
+        },
+        {
+          "slug": "sunlight",
+          "label": "日光"
+        },
+        {
+          "slug": "chicken-soup-for-the-soul",
+          "label": "心灵的鸡汤"
+        },
+        {
+          "slug": "shmily",
+          "label": "SHMILY"
+        },
+        {
+          "slug": "happiness",
+          "label": "幸福"
+        },
+        {
+          "slug": "annoyed",
+          "label": "心烦"
+        },
+        {
+          "slug": "living",
+          "label": "生活"
+        },
+        {
+          "slug": "dusk",
+          "label": "黄昏"
+        },
+        {
+          "slug": "guo-jing-ming",
+          "label": "郭敬明"
+        },
+        {
+          "slug": "hour-age",
+          "label": "小时代"
+        },
+        {
+          "slug": "thoughts",
+          "label": "感想"
+        },
+        {
+          "slug": "melon",
+          "label": "呆瓜"
+        },
+        {
+          "slug": "fool",
+          "label": "笨蛋"
+        },
+        {
+          "slug": "idiot",
+          "label": "傻瓜"
+        },
+        {
+          "slug": "night",
+          "label": "夜"
+        },
+        {
+          "slug": "reprint",
+          "label": "转载"
+        },
+        {
+          "slug": "trouble",
+          "label": "烦恼"
+        },
+        {
+          "slug": "that-flower",
+          "label": "那朵花"
+        },
+        {
+          "slug": "sound-and-picture",
+          "label": "音画"
+        },
+        {
+          "slug": "summer-shadow",
+          "label": "夏影"
+        },
+        {
+          "slug": "guan-ling",
+          "label": "观铃"
+        },
+        {
+          "slug": "shanghai",
+          "label": "上海"
+        },
+        {
+          "slug": "travelogue",
+          "label": "游记"
+        },
+        {
+          "slug": "family-affection",
+          "label": "亲情"
+        },
+        {
+          "slug": "grandfather",
+          "label": "爷爷"
+        },
+        {
+          "slug": "warm-spring",
+          "label": "暖春"
+        },
+        {
+          "slug": "cherry-blossom",
+          "label": "樱花"
+        },
+        {
+          "slug": "mother-day",
+          "label": "母亲节"
+        },
+        {
+          "slug": "mother",
+          "label": "妈妈"
+        },
+        {
+          "slug": "novel",
+          "label": "小说"
+        },
+        {
+          "slug": "grandmother",
+          "label": "外婆"
+        },
+        {
+          "slug": "xi-men",
+          "label": "西门"
+        },
+        {
+          "slug": "host",
+          "label": "主机"
+        },
+        {
+          "slug": "host-style",
+          "label": "主机格调"
+        },
+        {
+          "slug": "letter",
+          "label": "书信"
+        },
+        {
+          "slug": "busy",
+          "label": "忙碌"
+        },
+        {
+          "slug": "bougainvillea",
+          "label": "三角梅"
+        },
+        {
+          "slug": "high-school",
+          "label": "高中"
+        },
+        {
+          "slug": "cycle",
+          "label": "轮回"
+        },
+        {
+          "slug": "na-lan-xing-de",
+          "label": "纳兰性德"
+        },
+        {
+          "slug": "affection",
+          "label": "情思"
+        },
+        {
+          "slug": "reflection",
+          "label": "随想"
+        },
+        {
+          "slug": "wound",
+          "label": "伤口"
+        },
+        {
+          "slug": "situation",
+          "label": "情境"
+        },
+        {
+          "slug": "stranger",
+          "label": "陌生"
+        },
+        {
+          "slug": "soul",
+          "label": "灵魂"
+        },
+        {
+          "slug": "past",
+          "label": "过去"
+        },
+        {
+          "slug": "old-house",
+          "label": "老屋"
+        },
+        {
+          "slug": "train",
+          "label": "火车"
+        },
+        {
+          "slug": "golden-family",
+          "label": "金粉世家"
+        },
+        {
+          "slug": "reader",
+          "label": "读者"
+        },
+        {
+          "slug": "miscellaneous-thoughts",
+          "label": "杂思"
+        },
+        {
+          "slug": "goal",
+          "label": "目标"
+        },
+        {
+          "slug": "time",
+          "label": "时间"
+        },
+        {
+          "slug": "image-time",
+          "label": "图片时光"
+        },
+        {
+          "slug": "blue-turkey",
+          "label": "蓝色土耳其"
+        },
+        {
+          "slug": "sadness",
+          "label": "伤感"
+        },
+        {
+          "slug": "migratory-bird",
+          "label": "候鸟"
+        },
+        {
+          "slug": "go-home",
+          "label": "回家"
+        },
+        {
+          "slug": "shi-tie-sheng",
+          "label": "史铁生"
+        },
+        {
+          "slug": "life-and-death",
+          "label": "生与死"
+        },
+        {
+          "slug": "liu-ruo-ying",
+          "label": "刘若英"
+        },
+        {
+          "slug": "listen-who-is-singing",
+          "label": "听，是谁在唱歌"
+        },
+        {
+          "slug": "old-song",
+          "label": "老歌"
+        },
+        {
+          "slug": "hundred-days",
+          "label": "百日"
+        },
+        {
+          "slug": "commemorate",
+          "label": "纪念"
+        },
+        {
+          "slug": "those-years",
+          "label": "那些年"
+        },
+        {
+          "slug": "love-sickness",
+          "label": "相思"
+        },
+        {
+          "slug": "missing",
+          "label": "思念"
+        },
+        {
+          "slug": "cold-mountain",
+          "label": "冷山"
+        },
+        {
+          "slug": "tea",
+          "label": "茶"
+        },
+        {
+          "slug": "appreciation",
+          "label": "品悟"
+        },
+        {
+          "slug": "snow",
+          "label": "雪"
+        },
+        {
+          "slug": "starting-point",
+          "label": "起点"
+        },
+        {
+          "slug": "start",
+          "label": "开始"
+        },
+        {
+          "slug": "update",
+          "label": "更新"
+        },
+        {
+          "slug": "amber",
+          "label": "琥珀"
+        },
+        {
+          "slug": "lavender",
+          "label": "薰衣草"
+        },
+        {
+          "slug": "touch",
+          "label": "感触"
+        },
+        {
+          "slug": "birthstone",
+          "label": "生日石"
+        },
+        {
+          "slug": "after-rain",
+          "label": "雨后"
+        },
+        {
+          "slug": "sunny-day",
+          "label": "晴天"
+        },
+        {
+          "slug": "culture",
+          "label": "文化"
+        },
+        {
+          "slug": "handwriting",
+          "label": "手写"
+        },
+        {
+          "slug": "keyboard",
+          "label": "键盘"
+        },
+        {
+          "slug": "network",
+          "label": "网络"
+        },
+        {
+          "slug": "tablet",
+          "label": "平板"
+        },
+        {
+          "slug": "plum-rain",
+          "label": "梅雨"
+        },
+        {
+          "slug": "calm",
+          "label": "坦然"
+        },
+        {
+          "slug": "face",
+          "label": "面对"
+        },
+        {
+          "slug": "setback",
+          "label": "挫折"
+        },
+        {
+          "slug": "plain",
+          "label": "平淡"
+        },
+        {
+          "slug": "college-entrance-exam",
+          "label": "高考"
+        },
+        {
+          "slug": "struggle",
+          "label": "拼搏"
+        },
+        {
+          "slug": "bright-sword",
+          "label": "亮剑"
+        },
+        {
+          "slug": "swordsman",
+          "label": "剑客"
+        },
+        {
+          "slug": "rivers-and-lakes",
+          "label": "江湖"
+        },
+        {
+          "slug": "wind",
+          "label": "风"
+        },
+        {
+          "slug": "street",
+          "label": "街道"
+        },
+        {
+          "slug": "love-love",
+          "label": "恋恋"
+        },
+        {
+          "slug": "notebook",
+          "label": "笔记本"
+        },
+        {
+          "slug": "preface",
+          "label": "前言"
+        },
+        {
+          "slug": "remember",
+          "label": "记事"
+        },
+        {
+          "slug": "school-anniversary",
+          "label": "校庆"
+        },
+        {
+          "slug": "bored",
+          "label": "无聊"
+        },
+        {
+          "slug": "thought",
+          "label": "思想"
+        },
+        {
+          "slug": "human-nature",
+          "label": "人性"
+        },
+        {
+          "slug": "male-female",
+          "label": "男女"
+        },
+        {
+          "slug": "gender",
+          "label": "性别"
+        },
+        {
+          "slug": "passing-years",
+          "label": "流年"
+        },
+        {
+          "slug": "flower-blooming",
+          "label": "花开"
+        },
+        {
+          "slug": "junior-high-school",
+          "label": "初中"
+        },
+        {
+          "slug": "look-back",
+          "label": "回首"
+        },
+        {
+          "slug": "instant",
+          "label": "瞬间"
+        },
+        {
+          "slug": "glorious",
+          "label": "美好"
+        },
+        {
+          "slug": "parents",
+          "label": "父母"
+        },
+        {
+          "slug": "drops-emotion",
+          "label": "点滴，情感"
+        },
+        {
+          "slug": "time-flies",
+          "label": "光阴"
+        },
+        {
+          "slug": "story",
+          "label": "故事"
+        },
+        {
+          "slug": "khalil-fong",
+          "label": "方大同"
+        },
+        {
+          "slug": "my-ten-promises-with-dogs",
+          "label": "我与狗狗的十个约定"
+        },
+        {
+          "slug": "touching",
+          "label": "感伤"
+        },
+        {
+          "slug": "ten-years",
+          "label": "十年"
+        },
+        {
+          "slug": "dream-broken",
+          "label": "梦断"
+        },
+        {
+          "slug": "countercurrent-river",
+          "label": "逆流河"
+        },
+        {
+          "slug": "li-xian-ji",
+          "label": "李献计"
+        },
+        {
+          "slug": "lost",
+          "label": "遗失"
+        },
+        {
+          "slug": "lonely",
+          "label": "寂寞"
+        },
+        {
+          "slug": "shallow",
+          "label": "浅浅"
+        },
+        {
+          "slug": "miss",
+          "label": "想念"
+        },
+        {
+          "slug": "dark-night",
+          "label": "黑夜"
+        },
+        {
+          "slug": "flower-season",
+          "label": "花季"
+        },
+        {
+          "slug": "magic",
+          "label": "魔法"
+        },
+        {
+          "slug": "harry-potter",
+          "label": "哈利波特"
+        },
+        {
+          "slug": "fin",
+          "label": "散场"
+        },
+        {
+          "slug": "broken-flower",
+          "label": "碎花"
+        },
+        {
+          "slug": "skirt",
+          "label": "布裙"
+        },
+        {
+          "slug": "years",
+          "label": "年华"
+        },
+        {
+          "slug": "ignorance",
+          "label": "懵懂"
+        },
+        {
+          "slug": "love-affair",
+          "label": "爱恋"
+        },
+        {
+          "slug": "record",
+          "label": "记录"
+        },
+        {
+          "slug": "shower",
+          "label": "洗澡"
+        },
+        {
+          "slug": "bathhouse",
+          "label": "澡堂"
+        },
+        {
+          "slug": "alternation-of-new-and-old",
+          "label": "新旧交替"
+        },
+        {
+          "slug": "outlook",
+          "label": "展望"
+        },
+        {
+          "slug": "pain",
+          "label": "疼痛"
+        },
+        {
+          "slug": "helpless",
+          "label": "无奈"
+        },
+        {
+          "slug": "quiet",
+          "label": "安静"
+        },
+        {
+          "slug": "listen-to-the-wind",
+          "label": "且听风吟"
+        },
+        {
+          "slug": "old-book",
+          "label": "旧书"
+        },
+        {
+          "slug": "association",
+          "label": "联想"
+        },
+        {
+          "slug": "fragment",
+          "label": "碎片"
+        },
+        {
+          "slug": "yu-qiu-yu",
+          "label": "余秋雨"
+        },
+        {
+          "slug": "cultural-tour-of-suffering",
+          "label": "文化苦旅"
+        },
+        {
+          "slug": "rainy-night",
+          "label": "雨夜"
+        },
+        {
+          "slug": "impression",
+          "label": "随感"
+        },
+        {
+          "slug": "drop",
+          "label": "点滴"
+        },
+        {
+          "slug": "adolescence",
+          "label": "青春期"
+        },
+        {
+          "slug": "irritability",
+          "label": "烦躁"
+        },
+        {
+          "slug": "farewell",
+          "label": "告别"
+        },
+        {
+          "slug": "platform",
+          "label": "月台"
+        },
+        {
+          "slug": "leaving",
+          "label": "离别"
+        },
+        {
+          "slug": "reunion",
+          "label": "重聚"
+        },
+        {
+          "slug": "meet",
+          "label": "相逢"
+        },
+        {
+          "slug": "xiao-si",
+          "label": "小四"
+        },
+        {
+          "slug": "flower-fall",
+          "label": "花谢"
+        },
+        {
+          "slug": "end",
+          "label": "结束"
+        },
+        {
+          "slug": "beautiful",
+          "label": "美丽"
+        },
+        {
+          "slug": "swan",
+          "label": "天鹅"
+        },
+        {
+          "slug": "amoy",
+          "label": "厦门"
+        },
+        {
+          "slug": "poinciana",
+          "label": "凤凰花"
+        },
+        {
+          "slug": "success",
+          "label": "成功"
+        },
+        {
+          "slug": "hefei",
+          "label": "合肥"
+        },
+        {
+          "slug": "algorithm",
+          "label": "算法"
+        },
+        {
+          "slug": "interview",
+          "label": "面试"
+        },
+        {
+          "slug": "reading",
+          "label": "读书"
+        },
+        {
+          "slug": "financial",
+          "label": "金融"
+        },
+        {
+          "slug": "off-plan",
+          "label": "期房"
+        },
+        {
+          "slug": "sex",
+          "label": "性"
+        },
+        {
+          "slug": "flink",
+          "label": "Flink"
+        },
+        {
+          "slug": "beijing",
+          "label": "北京"
+        },
+        {
+          "slug": "elasticsearch",
+          "label": "Elasticsearch"
+        },
+        {
+          "slug": "vectordb",
+          "label": "VectorDB"
+        },
+        {
+          "slug": "manga",
+          "label": "漫画"
+        },
+        {
+          "slug": "reading-notes",
+          "label": "读后感"
+        },
+        {
+          "slug": "analysis-lecture-i",
+          "label": "数学分析讲义（第一册）"
+        },
+        {
+          "slug": "book-review",
+          "label": "书评"
+        },
+        {
+          "slug": "autumn",
+          "label": "秋"
+        },
+        {
+          "slug": "friendship",
+          "label": "友情"
+        },
+        {
+          "slug": "textbook",
+          "label": "教材"
+        },
+        {
+          "slug": "english",
+          "label": "英语"
+        },
+        {
+          "slug": "new-concept-english",
+          "label": "新概念英语"
+        },
+        {
+          "slug": "publish",
+          "label": "出版"
+        }
       ]
     }
   ],
-
-  "bylines": [
-    {
-      "id": "byline-editorial",
-      "slug": "emdash-editorial",
-      "displayName": "EmDash Editorial"
-    },
-    {
-      "id": "byline-guest",
-      "slug": "guest-contributor",
-      "displayName": "Guest Contributor",
-      "isGuest": true
-    }
-  ],
-
   "menus": [
     {
       "name": "primary",
       "label": "Primary Navigation",
       "items": [
-        { "type": "custom", "label": "Home", "url": "/" },
-        { "type": "custom", "label": "About", "url": "/pages/about" },
-        { "type": "custom", "label": "Posts", "url": "/posts" }
-      ]
-    }
-  ],
-
-  "widgetAreas": [
-    {
-      "name": "sidebar",
-      "label": "Sidebar",
-      "description": "Widget area displayed on single post pages",
-      "widgets": [
         {
-          "type": "component",
-          "componentId": "core:search",
-          "title": "Search"
+          "type": "custom",
+          "label": "首页",
+          "url": "/"
         },
         {
-          "type": "component",
-          "componentId": "core:categories",
-          "title": "Categories"
+          "type": "custom",
+          "label": "分类",
+          "url": "/categories"
         },
         {
-          "type": "component",
-          "componentId": "core:tags",
-          "title": "Tags"
+          "type": "custom",
+          "label": "归档",
+          "url": "/archives"
         },
         {
-          "type": "component",
-          "componentId": "core:recent-posts",
-          "title": "Recent Posts",
-          "settings": {
-            "count": 5,
-            "showDate": true
-          }
+          "type": "custom",
+          "label": "关于",
+          "url": "/about"
         },
         {
-          "type": "component",
-          "componentId": "core:archives",
-          "title": "Archives",
-          "settings": {
-            "type": "monthly",
-            "limit": 6
-          }
-        }
-      ]
-    },
-    {
-      "name": "footer",
-      "label": "Footer",
-      "description": "Widget area displayed in the site footer",
-      "widgets": [
+          "type": "custom",
+          "label": "留言",
+          "url": "/guestbook"
+        },
         {
-          "type": "content",
-          "title": "About",
-          "content": [
-            {
-              "_type": "block",
-              "style": "normal",
-              "children": [
-                {
-                  "_type": "span",
-                  "text": "A blog about software, design, and the occasional stray thought."
-                }
-              ]
-            }
-          ]
+          "type": "custom",
+          "label": "友链",
+          "url": "/links"
         }
       ]
     }
   ],
-
-  "sections": [
-    {
-      "slug": "newsletter-signup",
-      "title": "Newsletter Signup",
-      "description": "A call-to-action block for newsletter subscriptions",
-      "keywords": ["newsletter", "subscribe", "email", "cta"],
-      "source": "theme",
-      "content": [
-        {
-          "_type": "block",
-          "style": "h3",
-          "children": [{ "_type": "span", "text": "Stay in the loop" }]
-        },
-        {
-          "_type": "block",
-          "style": "normal",
-          "children": [
-            {
-              "_type": "span",
-              "text": "Get notified when new posts are published. No spam, unsubscribe anytime."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "slug": "about-author",
-      "title": "About the Author",
-      "description": "Brief author bio for use in posts or pages",
-      "keywords": ["author", "bio", "about"],
-      "source": "theme",
-      "content": [
-        {
-          "_type": "block",
-          "style": "normal",
-          "children": [
-            {
-              "_type": "span",
-              "text": "A software developer who writes about building things on the web. Based somewhere with good coffee and reliable internet."
-            }
-          ]
-        }
-      ]
-    }
-  ],
-
+  "widgetAreas": [],
+  "sections": [],
+  "bylines": [],
   "content": {
-    "pages": [
+    "posts": [
       {
-        "id": "about",
-        "slug": "about",
+        "id": "post-association-of-old-books",
+        "slug": "association-of-old-books",
         "status": "published",
         "data": {
-          "title": "About",
+          "title": "旧书之联想",
+          "date": "2011-09-11 08:07:38+08:00",
+          "updated": "2019-05-18 20:08:42+08:00",
+          "comments": true,
+          "alias": [],
+          "summary": "每本书都有属于自己的思想，亦可称之为灵魂。而这灵魂的载体便是纸张和文字。时间的流逝，可以令书本原本白皙的直面发黄、生霉。就像是少男少女的洁白的双手、粉嫩的面颊，在光阴的长河的洗涤下变得暗淡、起皱。",
+          "cover": "https://cat.yufan.me/images/2019/05/2019051820064669.jpg",
+          "og": "",
+          "published": true,
+          "visible": true,
+          "toc": false,
           "content": [
             {
               "_type": "block",
@@ -249,7 +1492,7 @@
               "children": [
                 {
                   "_type": "span",
-                  "text": "A place for writing about software, design, and the occasional stray thought. No posting schedule, no newsletter funnel. Just things I wanted to write down."
+                  "text": "![昼寝 by yohan12](https://cat.yufan.me/images/2019/05/2019051820064137.jpg)"
                 }
               ]
             },
@@ -259,7 +1502,2460 @@
               "children": [
                 {
                   "_type": "span",
-                  "text": "Built with Astro and EmDash. The source is open if you want to see how it works."
+                  "text": "每本书都有属于自己的思想，亦可称之为灵魂。而这灵魂的载体便是纸张和文字。时间的流逝，可以使书本原本白皙的纸张发黄、生霉。就像少男少女的洁白双手、粉嫩面颊，在光阴的洗涤下变得暗淡、起皱。但纵使一本书再破再旧，其中的灵魂却不朽。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "儿时最喜欢在外婆家待的地方，便是那个装满旧书的小书柜。一打开柜门，扑鼻而来的是一股霉味。书架上，一列列花花绿绿的旧书排得整整齐齐。许多书的纸张已经泛黄，不少书的表面蒙上了淡淡的薄尘。而暴露在外的书脊，大多因年久而褪色，时间的久远可见一斑。随手抽出一本线装的《石头记》翻阅，早已不再使用的竖排文字、从右至左的阅读顺序、略显生硬粗糙的插图、外公和母亲在上面的批注，无一不让人联想回味那段消逝的过去。忽地想起《阿长与〈山海经〉》中的那本《山海经》，是否也是这样一本旧书呢？"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "一本旧书，或许是另一种价值的体现吧！想起那些埋藏于莫高窟内的经书，由此引发了一股延绵至今的敦煌热。《文化苦旅》中曾这样记述：众多外国学者不远千里来到此处“取经”，以极低的价格从王道士那里购买经书。而同时代的官员对此却充耳不闻，甚至加入强盗的行列，收缴经书并作为仕途的“垫脚石”。这是时代的悲哀，亦是时代的必然，民族的悲痛。我们无法评论早已化为一抔黄土的王道士，而我所痛心的是在这场野蛮人的“掠夺战争”中那些被人损毁的书籍。还未曾见天日，公诸于世，却早早零落成碎片。这些经书承载着不为人知的历史与文化，纵使它们支离破碎，文字模糊不清，它们的存在亦是永恒。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "可以说，一本旧书，同时也承载着一段过去。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "漫步于山大的校图书馆中，我最喜欢驻足的地方便是那些有着久远年代书籍的书架。随手抽出一本《梦溪笔谈》，吹去表面的灰尘，手抚泛黄的纸张与那斑驳的前人注释，心中顿生一种历史的沧桑感与虚无感。想起余秋雨在《文化苦旅》自序中提到：每个人都有极其矛盾的心理年龄。年少时的张狂、好奇与年老时的沉稳，有时可以集中于一人身上。而那厚重的文化，或许便是让人萌发苍老之感的缘由。这或许是我对旧书喜爱的另一种解释吧！"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "时间的流逝，必将带走不可计数的旧书归于尘世。就像人，纵使你是红粉骷髅，也终将化为天地间的元素。然而，人和书是不同的。有人说：“少了一位老人，便少了一座图书馆。”我说：“少了一本旧书，便少了一段可以延续的已逝过去。”"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "![耳をすませば by  saya](https://cat.yufan.me/images/2019/05/2019051820063483.jpg)"
+                }
+              ]
+            }
+          ]
+        },
+        "taxonomies": {
+          "category": ["article"],
+          "tag": [
+            "recollection",
+            "old-book",
+            "association",
+            "culture",
+            "fragment",
+            "yu-qiu-yu",
+            "cultural-tour-of-suffering",
+            "soul"
+          ]
+        }
+      },
+      {
+        "id": "post-graduation-season-farewell-season",
+        "slug": "graduation-season-farewell-season",
+        "status": "published",
+        "data": {
+          "title": "毕业季 · 离别季",
+          "date": "2012-05-26 20:04:36+08:00",
+          "updated": "2020-09-06 12:14:41+08:00",
+          "comments": true,
+          "alias": [],
+          "summary": "绿荫满地，踩着 5 月的尾巴，离意愈浓。走在傍晚通向食堂的大路上，看见身旁一排排学长卖书的身影。恍然间觉得自己也成了其中一员，扑朔如梦……",
+          "cover": "https://cat.yufan.me/images/2012/05/2012052618262000.jpg",
+          "og": "",
+          "published": true,
+          "visible": true,
+          "toc": false,
+          "content": [
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "![三月の佳き日に。 - 橘こもろ。](https://cat.yufan.me/images/2012/05/2012052618260900.jpg)"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "绿荫满地，踩着 5 月的尾巴，离意愈浓。走在傍晚通向食堂的大路上，看见身旁一排排学长卖书的身影。恍然间觉得自己也成了其中一员，扑朔如梦……"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "岁月的兰花指轻轻敲了一个拨弦，我恍若又看见，当年的桌椅、标语、还有永远写满字的黑板。记得 2 年前高考前的最后一节课，那一天起，我们毕业了。没有过多的言语，没有丝毫的喜悦，大家都是匆匆地收拾好书本准备明天的高考。只是在最后，不知是谁突然吼道：“这是我们高中的最后一天了。”就在那个瞬间，我的心竟莫名地开始疼痛……"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "高二的时候看见楼上的学长，在毕业的时候尽情地呼喊、撕书，就像是疯子一般让人无法理喻。当我真正成为其中一员时，我才能切身体会到那种压力完全释放了的舒张、那种渴望张扬青春的心愿和一股抹不开只能通过呐喊才能发泄的悲伤。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "同样是去年才上大一的时候，一样的 5 月末海棠花已经凋谢的季节，一群大四的学长在那里摆摊卖书、拍照。他们有说有笑，完全没有了昔日高中时的伤感、悲痛，就像是彼此打着平日里的招呼——再见。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "于是乎，我不由得觉得现代的大学生对于离别是何等的洒脱。“执手相看泪眼”已经成为夕阳黄昏下一道远去的记忆。匆匆离别间，倒是遇见几位学长相互戏言，他日君若发达时定莫要忘记昔日一起打 Dota、看エロ片的基友。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "是我们长大了忘记悲痛，还是习惯了分别？"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "想想自己的求学经历，由于父母工作的原因，走南闯北倒是读了 7、8 所学校，认识的人算起来也有三四百号。离别的次数多了，对于分别的愁绪也就淡了。QQ 上的同学几年不联系，有时候突然聊起，竟忘记对方音容相貌。有时候心里总会在想：生命不就是一次次的遇见和离别吗？只不过有些人还会再见，有些一旦分开就只能相忘于江湖……"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "前些日子看完雨帆推荐的《18 岁的天空》，再看看现在学长忙碌的身影，突然就觉得：其实毕业，不需要任何感伤。毕竟过去的已经过去，未来所要面对的是另一个新的开始。就像在某本杂志上看过的一句话：“毕业，就是一窗玻璃。我们得撞碎它，擦着凛冽的碎片走过去，血肉模糊之后开始一个完全不同的世界。”"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "再多的伤感，再多的不舍，再多的惜别。最后只能化作脑海中的记忆，身边的几张青春洋溢的照片，朋友间相互赠送的几件礼物，束之高阁。而那些对与错、留下的、得到的，那些零星点点的过去，蓦然间，却只在过往……"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "忘我今夏，不言夙伤。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "![卒業 - 小牧まりあ](https://cat.yufan.me/images/2012/05/2012052618260200.jpg)"
+                }
+              ]
+            }
+          ]
+        },
+        "taxonomies": {
+          "category": ["article"],
+          "tag": ["recollection", "future", "graduation"]
+        }
+      },
+      {
+        "id": "post-hello-tomorrow",
+        "slug": "hello-tomorrow",
+        "status": "published",
+        "data": {
+          "title": "明天，你好",
+          "date": "2012-09-18 12:37:11+08:00",
+          "updated": "2020-09-06 12:30:37+08:00",
+          "comments": true,
+          "alias": [],
+          "summary": "忘不了我们俩的那次奔跑。这是我记忆中的画面，炎热的午后，我和雨帆一起追着刚刚离站的 119 路公交车奔跑在城市的街角。",
+          "cover": "https://cat.yufan.me/images/2012/09/2012091821131300.jpg",
+          "og": "",
+          "published": true,
+          "visible": true,
+          "toc": false,
+          "content": [
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "![Gabrielle Pike - Late night bus ride](https://cat.yufan.me/images/2012/09/2012091821015000.jpg)"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "忘不了我们俩的那次奔跑。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "这是我记忆中的画面，炎热的午后，我和雨帆一起追着刚刚离站的 119 路公交车奔跑在城市的街角。幸亏红灯，让我们创造了从校门赶上车的惊喜。上车时我回想刚刚我们狂奔的样子——你挎着个单肩包，在人流车缝间奔向前面的 119。而我，穿着凉鞋，亦步亦随地跟在后面，手里举着相机，试图用快门记录下这极具喜感的身影……"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "想来，我俩只是为了赶赴山师的那一场毕业摄影展，好像要努力去抓住一些自己不愿失去的东西，那是大学稀少的时光印记。摄影作品中几多乖僻，几多平凡。在环形的展台边写着他们的毕业誓言——“今天，我们在这里展示我们的成果，明天我们将带着新的梦想起航。”"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "昨天和今天说着再见，奔向明天。再见，有谁会喜欢上说“再见”呢？"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "![世界第一初恋](https://cat.yufan.me/images/2012/09/2012091821082200.jpg)"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "静静地听着关于作品的阐述，我偷偷按下快门，想象着还有多久就该自己被围观，抑或也会像学姐学长那样选择宅在自己的田地里，开始无比吝啬在校园里的每一次出现……那个时候的自己又会是什么样子呢？是心怀坎坷强装着老成地给学弟学妹们分享经验，把几年的学习工作游玩经历打包作程式化的三言两语给他们增添未来道路上的曙光；是混迹在跳骚市场，粗枝大叶地清理出曾经视若珍宝的物件连同记忆一起贩卖；还是依旧想要做一个静好的女子，悠忘岁月赖群书……"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "雨帆你一直都不愿我去过多地猜想我们以后的样子。只是，我活在这个时间的维度里，无法像你一样释然地去看待我们在岁月里的痕迹。于是，我止不住地遐想，猜想着会在哪一天遇见未知的自己。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "然后在去图书馆还书的路上遇见一群可爱的中学生由老师引导着来来去去，其中不乏一些巴巴张望着路上学子的眼睛。我想，他们是不是怀揣着无数关于未来象牙塔的斑斓梦想？而旁边，是忙着毕业留影的学长。学士服里的祭奠情结即将把他们的大学时光裹挟而去，融入未知的现实社会。在憧憬进入和行着离开的交接里我看到了一座亘古的围城……"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "只是，我自己身在其中，不曾想过要抽离，因为一直相信着“生命贵在经历”的言语。在这个收获的九月里，即使受着委屈招着埋怨，细细想来却也无悔。于是就慢慢学会了受着刺激说着“不负厚望”的话，然后在这纷繁交错的人事里记着要淡定，抓紧仅有的时光际遇，以此来纪念那些流过的眼泪、受过的委屈以及被无私给予的力量。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "在命运的广场中央，我要想今天一样，笑着奔跑。说一声：“明天，你好！”"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "![Gabrielle Pike - Crescent Moon Beads](https://cat.yufan.me/images/2012/09/2012091821040800.jpg)"
+                }
+              ]
+            }
+          ]
+        },
+        "taxonomies": {
+          "category": ["article"],
+          "tag": ["future", "tomorrow"]
+        }
+      },
+      {
+        "id": "post-just-try",
+        "slug": "just-try",
+        "status": "published",
+        "data": {
+          "title": "不要总是走在准备的路上",
+          "date": "2016-04-04 12:45:43+08:00",
+          "updated": "2020-09-04 19:54:37+08:00",
+          "comments": true,
+          "alias": [],
+          "summary": "上周和一个即将毕业的大学生聊天，他很厉害，学了很多，抱怨到很多人学了很多编程语言，但最后都只是会写一个“Hello World”的程度。",
+          "cover": "https://cat.yufan.me/images/2020/09/2020090419532852.jpg",
+          "og": "",
+          "published": true,
+          "visible": true,
+          "toc": false,
+          "content": [
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "![9692 - 「中身が無い」](https://cat.yufan.me/images/2020/09/2020090419493263.jpg)"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "上周和一位即将毕业的大学生聊天。他很厉害，学了很多东西，却感叹道：“很多人学了好多编程语言，但最后也只停留在能写一个 ‘Hello World’[^1] 的程度。”\n我笑了笑，说：“那是因为他们大多一直在**准备**学习，往往刚刚开始，就放弃了。”"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "我叫雨帆。所有汉字中，我最喜欢、也最擅长写的就是“雨”和“帆”这两个字。并不是因为我字写得好，而是因为我专门练过。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "这句话，其实可以套在很多事情上。无论是技能还是兴趣，想要掌握，都不是一蹴而就的，而是反复练习、持续积累的结果。没有人能一开始就成长为参天大树，即使是天才，也有常人难以想象的汗水与努力。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "所以一直以来，我都很认同一句话：[信念永远不能达到目的地](/posts/intimate-in-mind/)。每个人都有自己的梦想，但如果只是停留在“梦想”，不去行动，那么它也仅仅是一个梦。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "记得三年前，有一位叫 [谢钦](/posts/meeting/) 的网友给我发邮件，问了很多关于独立博客的问题。那一刻我就像在茫茫大海中看见了一束光。因为长期以来，我总以为只有我一个人在做这件事，身边无人理解。而突然有人懂你、与你共鸣的感觉，真的让人感动。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "然而三年过去，他的博客主页上依然写着那句话：“未命名博客更新中……”"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "我并不是要刻意嘲讽这位朋友，而是觉得有些遗憾。因为，建立一个独立博客的准备过程真的很麻烦——尤其是在国内，还得经历繁琐的备案流程。若不是出于热爱，很多人一开始就会选择放弃。可惜的是，即便准备好了域名、服务器、系统、模板，却在最关键的一步——“开始写作”——上放弃了。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "---"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "写代码的时候，老大会经常提醒我们一句话：**不要过度设计。**所谓过度设计，就是和业务无关的东西写了一大堆，但真正关键的业务逻辑却很少。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "说到这儿，不得不提知乎上那个很火的问题：[为什么有些大公司技术弱爆了？](https://www.zhihu.com/question/32039226/answer/76059969)看到这个问题时，我就想起前老大常说的一句话——**“满足业务需求的代码，就是好代码。”**"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "对于很多还没毕业的计算机专业学生来说，这句话可能难以理解。毕竟当他们看到一些外表光鲜的项目，却发现底层代码简直糟糕透顶，甚至数据库设计都违反教科书级规范时，往往会感到震惊。但事实是，这些项目之所以存在、盈利，正是因为它们最起码做对了一件事：**满足了业务需求。**"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "当然，我并不是在为“烂代码”洗地。对于互联网公司而言，快速上线、持续迭代，才是维持竞争力的关键。尤其是智能手机用户可能最有体会——许多 APP 一周能更新好几次。那为什么不一开始就把设计定好呢？"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "从产品角度来看，**需求是不断变化的。**以输入法为例：最初用户只想打字时少选字，于是有了词库；后来又有了按词频排序的候选词；再后来，因网络聊天的普及，出现了 Emoji、字符画等功能……这些需求的出现，谁也无法在最初设计阶段预料到。如果你一开始就想面面俱到，潜心打磨几个月甚至几年，结果很可能是：要么市场早被别人抢走，要么你自己被耗死在设计阶段。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "所以，很多事情一开始不可能就做到完美。如果只是一味思考“怎么做好”，而迟迟不动手，那永远也做不出来。你必须先动手——哪怕只是写个 demo，先跑通主流程，再一点点打磨细节。如果一开始就追求完美，要么累到想放弃，要么根本等不到成果。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "---"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "上周参加 OpenResty Meetup 时，我和一位架构师聊到“架构设计”。在他看来，**架构的存在，是公司业务达到一定规模后的自然产物。**对初创公司来说，架构往往不是必需品，因为业务量还没到那个程度。套用**安迪·比尔定律**，当你的业务规模还很小，再精致的架构设计都不如一个能跑的主流程。按照业内的常见标准，只有当业务量上升到百万级，才真正需要系统性的架构与设计。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "当然，这种观点或许有些偏激，我保留意见。但如果回到“写代码”这件事上，我觉得成长路径大概是这样的："
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "> `能写出代码` → `能写出满足业务需求的代码` → `能优化满足业务需求的代码` → `能为未来的需求变化预留接口` →\\\n> `能将可变行为参数化` → `能在现有语言体系中持续演进` →\\\n> `不再为设计模式而设计模式` → `理解并践行 Clean Code 准则` → `拥抱 TDD，不断重构与测试驱动。`"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "换句话说：\n**不要为了设计模式而设计模式，不要提前优化，不要过度封装，不要一味追新技术。**"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "很多经验丰富的程序员写的代码，往往小而精，恰到好处。当年我在写公司开放平台时，整整半个月几乎毫无进展。后来带我的师兄对我说了一句让我醍醐灌顶的话："
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "> “先理解需求，构建抽象实体，打通主流程。”"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "如果我一直纠结“用什么框架”“怎么写才优雅”，那今天可能还没写出任何成果。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "完美主义是很多人的通病。我们希望一开始就把事情做到最好，于是花大量时间准备、思考、权衡。等真正动手时，却发现别人早已领先几步。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "当然，**准备**是必要的，但**行动**才是关键。只准备、不实践，再好的计划也只是纸上谈兵。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "![9692 - bleu ciel](https://cat.yufan.me/images/2020/09/2020090419530721.jpg)"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "[^1]: Hello World：基本上任何编程语言的教科书，一开始都是教大家如何写一个Hello World，久而久之成为一个梗。"
+                }
+              ]
+            }
+          ]
+        },
+        "taxonomies": {
+          "category": ["coding"],
+          "tag": ["random-thoughts"]
+        }
+      },
+      {
+        "id": "post-lets-married",
+        "slug": "lets-married",
+        "status": "published",
+        "data": {
+          "title": "纵使生活平淡，爱情仍有万千期待",
+          "date": "2015-05-09 13:29:16+08:00",
+          "updated": "2023-12-03 06:25:45+08:00",
+          "comments": true,
+          "alias": [],
+          "summary": "速度与激情7这一阵子很风靡，我却没有赶潮流看零点首映，上周末因为公司机房断电没法加班，便买了张票去看看，也算是我对保罗的致敬。",
+          "cover": "https://cat.yufan.me/images/2023/12/2023120305291357.jpg",
+          "og": "",
+          "published": true,
+          "visible": true,
+          "toc": false,
+          "content": [
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "![ライラックの花かんむり - 成瀬ちさと](https://cat.yufan.me/images/2023/12/2023120901275200.jpg)"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "速度与激情 7 这一阵子很风靡，我却没有赶潮流看零点首映。上周末因为公司机房断电没法加班，便买了张票去看看，也算是我对保罗的致敬。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "只是不知道为什么看完速 7，突然间想写些有的没的。如果你以为我写的是关于速度亦或是激情，那你就错了。今天我们聊聊时下热门的爱情喜剧《咱们结婚吧》。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "一座城，四段爱，眼前的一切就是最好的安排。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "听说暧昧和暗恋是最美好的感觉，高圆圆毫无疑问真女神。沉稳的男人应该是很多女生无法抗拒的，外加低调有才注重细节，也难怪国民女神最终沦陷。选择在女生无助的时候进攻一定不会失败，无法在一起那就是错的人。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "对的人，是不会分开的。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "若爱，请珍惜。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "有没有一种女生让你一看就觉得心疼。我不知道陈意涵红起来是不是因为痞子英雄，但我知道每次看到她无辜的大眼睛，我都想替她掉眼泪。虽不是个恨嫁的姑娘，但 29 岁了想要个婚姻的承诺也是应该的。尤其是在这种男人 40 还一枝花的社会，对女生来说最重要的就是安全感。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "这种片子一定少不了女强人＋贴心男的戏码，以前有时候会认为：女强人是不是要跟男更强人才合适么？但后来渐渐觉得如果两个人是互补，那便再好不过。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "再之后我看了杨澜的书，她说：“一个完美的女人在工作上要干练精明，下班后也要能够挽起袖子轻盈地走入家庭，角色的转换至关重要。”原话我已忘记，但是大意就是这样。所以我又改变想法，真正的女强人没有与谁更配之说，她该在工作与家庭之间找到完美平衡点。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "而片中刘涛顾了前者却忘了后者，还好她是幸运的，因为有人包容。但要是你没那么幸运，那就只能做好自己。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "在一起七年却在结婚当天发现这不是真爱，郭碧婷你特么以为你长得美就可以逗我吗？对于 7 年的感情输给 7 天呵呵即可。这段狗血出轨的剧情分分钟拉后腿，如果非要我给取个小标题，那就叫：你们离婚吧。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "算了，荧幕上的爱情，总是具有多元性。而会为了这种无聊事物喜怒哀乐的，估计只有我这种双鱼座。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "总的来说《咱们结婚吧》最大优点在于颜值较高，毫无疑问这点在这个看脸的时代极度吃香。对于这类劫财又劫色的电影，我真的是恨之入骨。但我又特么俗气到几乎每部都去支持票房。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "人总是这么矛盾，老想找个平衡点，但在尝试之后发现有点点难。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "不是影评，因为已经懒得去思考。不够深刻，因为没有犀利的视角。只感谢在此时的生活里，没有太多的不愉快。可是我一向不喜欢管人，所以我总在 YY 能出现一个人。Ta 的作为总是与我的厌恶相悖，你说难不难？"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "> Do not dwell in the past, do not dream of the future, concentrate yourself in the present."
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "PS: 速 7 不错看，歌不错听。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "![眩しくて 嫌いだった](https://cat.yufan.me/images/2023/12/2023120306243223.jpg)"
+                }
+              ]
+            }
+          ]
+        },
+        "taxonomies": {
+          "category": ["article"],
+          "tag": ["loveness", "movie-review"]
+        }
+      },
+      {
+        "id": "post-summer-training-record",
+        "slug": "summer-training-record",
+        "status": "published",
+        "data": {
+          "title": "大三暑期实训记",
+          "date": "2013-07-18 14:31:28+08:00",
+          "updated": "2020-09-06 12:54:40+08:00",
+          "comments": true,
+          "alias": [],
+          "summary": "大概是很久没有提笔的缘故，一直找不到什么可以拿出来写的话题。七月的济南打破了一如既往的干旱，这一阵子阴雨连绵，恍然间有种已经回到厦门的错乱感。",
+          "cover": "https://cat.yufan.me/images/2013/07/2013071823431400.jpg",
+          "og": "",
+          "published": true,
+          "visible": true,
+          "toc": false,
+          "content": [
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "![LUNCH TIME - wacca〇わっか](https://cat.yufan.me/images/2013/07/2013071823450900.jpg)"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "大概是很久没有提笔的缘故，一直找不到什么可以拿出来写的话题。七月的济南打破了一如既往的干旱，这一阵子阴雨连绵，恍然间有种已经回到厦门的错乱感。只是现在的我依旧坐在实验室的机房内敲着代码，窗外下着大雨，身旁来自山东中医药的张远馨同学笑着对我说：“终于全部写完了。”"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "**“哎呀？已经结束了吗？”**"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "为期四周的项目实训终于在今天落下了帷幕，算起来，也好久没有像现在这样子忙碌了，早起晚睡、忙碌的学习和测试，实训中心里埋头敲代码的背影。恍然间，如同 Back To Seventeen。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "有句话怎么说来的：纸上得来终觉浅，绝知此事要躬行。无论你学了多少，准备了多少，到了最后实施的时候总是觉得不够。只是，幸运的是我们做的只是项目实训，开学第一天和印度老师 Amit 交流时他就用英语和我们说：“这不到一个月的实训我的目的不是让你们学会多么深的技术，提高多少技术能力，主要是让你们在一种公司化的项目小组开发的气氛之下，严格按照公司开发步骤程序区完成这次的项目。”于是，公司化的管理，公司化的作息时间，公司化的小组协作开发……这一切的一切都是在之前自己的大学生活中并未体会过的。学习、设计、规划、编程、合并、测试，或许短短的流程线无法形象具体的表述出我们这二十多天的活动，但却可以隐约表示出自己在这实训期间充实的生活。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "![インターネット世界の片隅で歌う - wacca〇わっか](https://cat.yufan.me/images/2013/07/2013071823470800.jpg)"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "因为自己之前对于 Android 项目的开发也只是处于入门阶段，并不熟练。所以初期两周自己先在网上找了一些 Android 项目开发视频、资料学习。在前几天的较为系统的学习过程中，我也掌握了很多在之后的开发过程中很实用的方法、技巧。期间、自己也编写了部分小程序、范例进行熟悉。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "而其实自己在做具体功能模块实现部分时花了不少的时间，其中遇到了很多复杂的问题。怎样在界面里实现各功能的代码编写，怎样实现 SQLite 数据库的初始化、更新、增删改查，怎样在各个 Activity 间相互传递参数等等。而这些又都是比较棘手的问题，又比如：利用 Intent 传递参数时，无法直接传递已经构建好的实体类参数；利用 SimpleAdapter 时，无法在 ListView 实现 Item 按钮的添加、绑定。但是通过向老师 Amit、同学请教；通过组员的帮助和一次又一次的调试，这些问题都解决了。直到这时我才深深的体会到，团队合作的力量是多么的巨大。正是因为有了老师和同学们的帮助，我的实训任务才可以提前并且很好的完成。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "![代码片段](https://cat.yufan.me/images/2013/07/2013071822320501.jpg)"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "而代码整合中存在的问题，应该算是我的实训过程中最有意义的收获之一了。在此过程中，实际的教训使我再一次意识到评审的重要性。由于开发周期较短，需要每天进行一次评审，而我之前的评审时间有点晚，导致发现问题不够及时，因此最后拖慢了大家的进度。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "最后，要感谢 Amit 师对我们的耐心讲解和帮助，还有我们组组长和小组成员对我的热心帮助，他们都给了我前进的动力，教给了我许多知识和课本以外的东西，没有他们的帮助，我就很难完成组长分配给我的任务了，没有他们的讲解，我也不会学到那么多的东西，有那么多的收获，所以也借此文章偷偷地感谢他们（╮(╯▽╰)╭）。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "人非生而知之，虽然我现在拥有一定的知识结构，但是我知道自己需要锻炼动手能力，不仅要靠努力学习，还要靠潜心实践。没有实践，学习就是无源之水，无本之木。这次实训让我知道了不少知识：我们不可能永远呆在象牙塔中，过着一种无忧无虑的生活，我们总是要走上社会的，而社会，就是要靠我们这些年轻的一代来推动。不久后的我，面临是就业压力，我想我们都应该好好经营自己的时间，充实、完善自我，不要让自己的人生留下任何空白！相信努力就会有收获，每天努力充实自己，相信在不久的将来，可以打造一片属于自己的天地。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "“既然选择了远方，便只顾风雨兼程！”"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "写完实训报告时望着窗外，天空已然阵雨初晴。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "![忘れないで - 三月（みつき）](https://cat.yufan.me/images/2013/07/2013071823490400.jpg)"
+                }
+              ]
+            }
+          ]
+        },
+        "taxonomies": {
+          "category": ["coding"],
+          "tag": ["practical-training"]
+        }
+      },
+      {
+        "id": "post-the-first-snowing",
+        "slug": "the-first-snowing",
+        "status": "published",
+        "data": {
+          "title": "2011年的第一场雪",
+          "date": "2011-11-30 01:37:31+08:00",
+          "updated": "2020-09-04 22:46:05+08:00",
+          "comments": true,
+          "alias": [],
+          "summary": "角落里有一片暗雪/我猜它会是/一张被雨水冲着/想在那里休息的报纸/它的周身/被不大的印字布满/一天的新闻恰如历史的一粒微尘/曾经存在/却又慢慢的变得微不足道。",
+          "cover": "https://cat.yufan.me/images/2020/09/2020090422395473.jpg",
+          "og": "",
+          "published": true,
+          "visible": true,
+          "toc": false,
+          "content": [
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "![black and white, winter, snow, New York City](https://cat.yufan.me/images/2020/09/2020090422361856.jpg)"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "> 角落里有一片暗雪\\\n> 我猜它会是\\\n> 一张被雨水冲着\\\n> 想在那里休息的报纸\\\n> 它的周身\\\n> 被不大的印字布满\\\n> 一天的新闻恰如历史的一粒微尘\\\n> 曾经存在\\\n> 却又慢慢的变得微不足道。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "昨日傍晚时分，天上开始由小雨转为小雪。我坐在暖暖的自习室里看着书，却不知，外面早已下起了雪。某刻被女友云儿的推去看雪，才发现，窗外早已是银装素裹。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "外面的雪下得好欢快呀！喜欢冬天，因为自己喜欢下雪的日子，喜欢雪花洋洋洒洒的飘落。今年的雪来的比去年早了很多，还记得去年那场薄薄的小雪，只把地面刷白。而今年的上天终是不吝啬，在 11 年 11 月的最后两天给大地披上了洁白的衣装。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "大雪点亮了齐鲁大地，也用无瑕的白色刷新了我们的校园，远望去，红色的教学楼，淡黄色的宿舍楼更显得稳重和温馨。我喜欢雪却没有为什么，只是喜欢。这种白色充满光亮的白色，可以把所有的不光彩的尘埃、垃圾、枯枝烂叶一起盖在下面，而只允许人们去寻找和探索雪下的事物。大雪给本来郁闷几分沮丧的我带来了一点欢快和舒心，真是好雪。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "夜晚，雪花透过漆黑的苍穹飘落人间，它们在自习楼前的路灯照射下显现点点身影，在风中时而左摆时而右摆快活的活动着。它们很像一群有生命的洁白的小精灵，相互嬉闹着，集体飞向某方，前面的忽然停住了，后面的也跟着回转，似乎听到了前面雪花兄弟姐妹的呼声：再走就撞墙了，撤！于是乎又集体跑开了。偶尔有几个淘气的小精灵前来伏在面前的窗玻璃上，静静的，这才发现它们是那样的娇小，却很快只剩下几点晶莹的水点。想起论坛上有人贴过的雪花的容颜，放大了几十倍的，很是漂亮。简单中透着复杂，丰满和谐，六边形的骨架自然美观。不晓得大自然如何构成如此小巧的规范，更难以想象他在雪花六个枝上做的手艺……"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "雪花飘落，在世界的各个角落找到了自己的位置，有的落在水泥地上，化成了水，是哭了吗？至少为后来的雪花润湿了栖身之地；有的落在草地和松柏上，在黯淡的夜中透着洁白的靓影，想像它们在枝丫上你推我挤的闹得不亦乐乎，这时我想起了日本宫崎骏的“鹿神”，茂密的丛林中小孩样的木精们从树干的罅隙中钻出来晃动着脑袋发出的哒啦啦哒啦啦的弹性的声音，时而又将脑袋转个 360 度，也是你推我挤得，有时背着伙伴在树间走来走去，表情丰富的露出累而调皮的神情。想象着想象着，心底萌生出几分喜悦。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "想起初一时看过的一部名为[《我的兄弟姐妹》](https://movie.douban.com/subject/1316513/)的老电影，其中的情节，已经非常模糊了。却一直记得其中的一句台词：兄弟姐妹们本是天上的小雪花，落到了地上，结成了冰，化成了水，就彼此再也不分开了。瑞雪寒冬，独在异乡的我是那么孤独。就像是空气中依然在恣意飞舞的雪花，一直流浪、漂泊。但是，落叶归根、老燕识巢，迷途的游子离不开的是远方的亲人。拿出手机，拨通厦门母亲的电话问一声安好？便心安，厦门依旧温暖如春。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "再次回望窗外的雪景，月亮已经出来，照射在雪地上，伴着浓雾反射出一片银白色的辉光，似是天上的宫阙。真可谓一场好雪！"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "![monochrome snow](https://cat.yufan.me/images/2020/09/2020090422454021.jpg)"
+                }
+              ]
+            }
+          ]
+        },
+        "taxonomies": {
+          "category": ["think"],
+          "tag": ["ji-nan", "miscellaneous-thoughts", "emotion", "snow"]
+        }
+      },
+      {
+        "id": "post-the-first-week-of-accession",
+        "slug": "the-first-week-of-accession",
+        "status": "published",
+        "data": {
+          "title": "工作一周记",
+          "date": "2014-07-14 13:22:59+08:00",
+          "updated": "2023-12-03 06:39:31+08:00",
+          "comments": true,
+          "alias": [],
+          "summary": "有时候，伴着6点的闹钟声醒来，大抵会有种回到高中的感觉。习惯了大学里一觉睡到上午9点的感觉，现在突然要早起，一开始还真有点不适应。",
+          "cover": "https://cat.yufan.me/images/2023/12/2023120306382895.jpg",
+          "og": "",
+          "published": true,
+          "visible": true,
+          "toc": false,
+          "content": [
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "![朝露](https://cat.yufan.me/images/2023/12/2023120306305570.jpg)"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "## 一、适应早起"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "有时候，伴着 6 点的闹钟声醒来，大抵会有种回到高中的感觉。习惯了大学里一觉睡到上午 9 点的生活，现在突然要早起，一开始还真有点不适应。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "读高中的时候，早上都是靠着爸爸把我叫醒，有的时候还要撒娇要老爸把我抱起来。工作一周后的我闹钟一响便能自动爬起来洗漱上班，想想还真有点不可思议，看来我还是蛮适合工作的。北京的地铁无时无刻不是那么的挤，即使是早上 6 点半的地铁，如果稍微晚了那么一会，也是人头攒动。因为我工作的地方属于北京 CBD，所以我住的地方离公司很远。于是，每天的上班之旅，便是一场艰难的赛跑。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "公交 205 路——地铁 13 线——地铁 10 线——步行，每天花在上班路上的时间就有 1 个多小时。记得以前在厦门科技中学读高中的时候，上学的路程也有将近 1 个多小时，每天我都是坐在晃悠的公交车的最后一排，一边迷迷糊糊地背着单词，一边色眯眯地瞟着漂亮姑娘。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "记忆这玩意真的很奇怪，很多过去的事情，本来以为早已忘记，却又在遇到类似情境的时候回忆起来，让人捉摸不定。只是现在的我早已没有了看姑娘的心境，站在拥挤闷热的地铁车厢里，被人挤得连扶手都找不到。窗外是一成不变的黑暗，呼啸的风声让人恐惧，如同迷茫的未来……"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "## 二、消费水平"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "才来北京前同学间流传着各种关于北京的版本，无非不是什么北京消费高、环境差 7788 的。真正来到北京，开始工作才发现，很多东西，还是眼见为实的好。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "北京的地铁和公交便宜到令人惊讶。2 年前去上海玩，上海的地铁是按距离收费的，稍微远一点的地方，可能就要 10 元，北京的地铁是 2 元通票，无论你到哪个地方，无论你换乘几次，都是 2 元。而厦门的公交车就算优惠，也要 0.85 元，济南的空调车就算刷卡也要 1.6 元，而北京的公交都是 4 角，而且都有空调。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "才工作的那几天的午餐倒是被坑了好几次，后面和前辈一起吃饭，才找到了物美价廉的地方。北京的生活消费水平没有想象中的那么贵，倒是房租，真的让人无力吐槽。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "## 三、工作感受"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "不知道是因为才入职还是特例，我就职的公司易宝支付的工作没有想象中那么忙碌，好几个去了华为的小伙伴现在就开始天天加班。而我这里上班不需要刷卡考勤，工牌只有门禁的作用。工作的时间也可以自由调整申请，比如可以在 OA 上申请 10 点上班，7 点下班。工作时间也讲究诚信自觉，比如饭点是 12 点，我们往往会提前 20 分钟就在部门群里面募集小伙伴吃饭，但是会早于 1 点自觉开始工作。比起大三暑假项目实训的各种准时准点的指纹考勤，没有考勤的正式工作让人更加轻松愉快。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "公司的同事大都很年轻，即使是我的部门主管李均柠，也才 32 岁。大家的脾气都很好，相处起来也十分容易。就算是比较严肃的公司技术中心季度大会上也会直接拿主管开玩笑：“均柠你什么时候结婚啊？”更有甚者，在我们这群新员工集体介绍的时候会在下面吼道：“台上的妹子你们单身么？”（不要无视还在自我介绍的我啊！）"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "---"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "总的来说，虽然才开始工作一周，但是我已经习惯了那种和读书不一样的节奏。每天晚上惬意地坐在回家的公交车上，看着窗外的灯红酒绿，总会有诸多感触。这也许是最糟糕的时代，但也一定是最好的时代。对于我而言，新的未来大门已经开启，等待着我去探索，去创造。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "还记得高中毕业的时候班主任王晶曾[说过](/posts/when-i-was-young/)：“你不能够保证，你奔跑的方向比现在的高，但是，可以肯定的是，朝着那个方向，你在前进。”学习、工作、赚钱、成家，也许我们一直在为着梦想而奔波着，但是一直不变的是，我们一直在努力。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "![孤独な部屋](https://cat.yufan.me/images/2023/12/2023120306341521.jpg)"
+                }
+              ]
+            }
+          ]
+        },
+        "taxonomies": {
+          "category": ["article"],
+          "tag": ["graduation", "work"]
+        }
+      },
+      {
+        "id": "post-the-girl-who-leave-you",
+        "slug": "the-girl-who-leave-you",
+        "status": "published",
+        "data": {
+          "title": "那个离你而去的女孩",
+          "date": "2013-05-17 12:52:59+08:00",
+          "updated": "2020-09-06 12:59:48+08:00",
+          "comments": true,
+          "alias": [],
+          "summary": "雨，漫天漫地的雨，清澈透亮，不含一丝杂质。初看此片的第一眼，仿若置身于漫无止境的五月雨季。雨天潮湿的心情，凉亭下的不期而遇，那人似曾相识。",
+          "cover": "https://cat.yufan.me/images/2013/05/2013051722351900.jpg",
+          "og": "",
+          "published": true,
+          "visible": true,
+          "toc": false,
+          "content": [
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "![言叶之庭 01](https://cat.yufan.me/images/2013/05/2013051722363500.jpg)"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "雨，漫天漫地的雨，清澈透亮，不含一丝杂质。初看此片的第一眼，仿若置身于漫无止境的五月雨季。雨天潮湿的心情，凉亭下的不期而遇，那人似曾相识。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "“我们，是不是以前见过？”"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "小时候，天空仿若触手可及，于是慢慢喜欢上雨天，因为它带来天空的气味。雨，是贯穿《言叶之庭》的主旋律，无论是两人的相识、相知、互吐爱慕，无一不是在雨中所达成。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "![言叶之庭 02](https://cat.yufan.me/images/2013/05/2013051722381700.jpg)"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "故事的主人公秋月孝雄和雪野百香里也是在雨季中偶然相遇，离别的时候，雪野留下了一首简单的对答短歌：“隐约雷鸣，阴霾天空，但盼风雨来，能留你在此。”由此开始了两人的缘分。孝雄曾说，晴天的早晨会按部就班地乘车上学，也会让他觉得不属于学校。而雪野也因为一些事情，只能通过啤酒和巧克力刺激味觉。或许正是雪野奇怪的举动吸引了孝雄，在雨天中，两人从相识到交谈，两颗心一点点被拉近。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "在雨天清晨的再次邂逅，百香里第一次吐露心声：“我啊，无法顺利走下去了。”本来梅雨的季节被推迟，两人一次又一次地在清晨相遇，彼此却又不说话，但是心却越来越近了。每天都在期待着明天的早晨，一样的雨季，一样的邂逅。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "然而，雨季无法避免地结束了。如旁白所说：“简直像有谁切换了季节的开关一样。”没有了下雨的早晨，凉亭里只剩下雪野独坐，而两颗暂时分开的心，满怀着期望，却走得更近了。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "也许命运有时就是这么奇妙。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "短歌的下半句“隐约雷鸣，阴霾天空，即使天无雨，我亦留此地。”而当孝雄懂得下半句的含义时，已无法逃离。原来，无论雨天还是晴天，我一直都在这等着你……"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "![言叶之庭 03](https://cat.yufan.me/images/2013/05/2013051722382300.jpg)"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "再一次遇见，两人已然熟悉彼此，孝雄说出从万叶集中找到的下半句。而突如其来的大雨，将两人困在那里，心也困在了一起。在雪野的家中，在至今为止的人生里，现在，这一刻，对于两人而言，或许这就是幸福。“雪野小姐，我好像开始喜欢上你了。”孝雄忐忑地说道。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "“不是雪野小姐，你应该叫我雪野老师……”雪野委婉地拒绝了孝雄的爱意，只是在孝雄关门离去的那一瞬间，雪野的表情是那么的落寞。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "接下来的几分钟里，是全剧的高潮。当男女主互相哭泣着、咆哮着道出心意，作为观众的我也被深深触动。伴随着恰到好处的主题曲《Rain》，情不自禁地落泪。那个不嫌弃你的姑娘，那个曾经喜欢着你的大女孩，为什么没陪你走到最后？当彼此眼泪流干的时候，人却再也留不住了。离别，走上仿若平行线的生活。物理上的距离，是两人最大的鸿沟，但是心与心的依靠，是距离所无法阻断的。有时候，离去不是一个简单的转身，而是，一辈子的幸福。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "于是，在影片结束的最后，孝雄在当初相遇的凉亭中拿出了当年说要制作的女鞋，只是伊人已经回到家乡。“回望当初，那时我一定也一直在训练自己迈步，如果有一天，能够走得更稳更远了，就去见她吧……”"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "> 殷其雷，天阴霾，雨零耶，盼君留。\\\n> 殷其雷，纵不零，卿若留，吾将从。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "![言叶之庭 04](https://cat.yufan.me/images/2013/05/2013051722382500.jpg)"
+                }
+              ]
+            }
+          ]
+        },
+        "taxonomies": {
+          "category": ["article"],
+          "tag": ["garden-of-words"]
+        }
+      },
+      {
+        "id": "post-the-losted-beautiful",
+        "slug": "the-losted-beautiful",
+        "status": "published",
+        "data": {
+          "title": "遗失的美好",
+          "date": "2011-10-02 14:19:35+08:00",
+          "updated": "2019-06-05 12:10:07+08:00",
+          "comments": true,
+          "alias": [],
+          "summary": "如果海会说话/如果风爱上沙/如果有些想念/遗忘在漫长的长假/我会聆听浪花/任记忆里的爱情/在时间潮汐里喧哗，我会试着把那一年的故事/再接下去说完。",
+          "cover": "https://cat.yufan.me/images/2019/06/2019060512093940.jpg",
+          "og": "",
+          "published": true,
+          "visible": true,
+          "toc": false,
+          "content": [
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "![遗失的美好](https://cat.yufan.me/images/2019/06/2019060512012051.jpg)"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "如果海会说话/如果风爱上沙/如果有些想念/遗忘在漫长的长假/我会聆听浪花/让记忆里的爱情/在时间潮汐里喧哗，我会试着把那一年的故事/再接着说完。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "不知什么时候起，我睡着了。此刻，我猜，该是某个秋风乍起的午后。我蜷缩在外婆家门口的大藤椅上，头枕着小棉垫，身披着阳光，就这样定定地入睡了。那倾洒于身的光线已然没有了夏日的灼热，略显温和的温度辐射于这个清冷的初秋，让人不由得从心底萌发出阵阵温暖。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "在这样一个温暖而舒适的午后，我坐在外婆家的门口同外婆一起晒太阳。调皮的光线透过门前大榕树上枯黄的树叶间隙，在地上投射出斑驳的亮斑。也同时投射在窗前、门上，随着轻风的吹拂不断地跃动着、追逐着。树梢上那只不知名的鸟儿偶尔也会叽叽喳喳地叫上几声，是在自言自语？还是在述说沐浴阳光的喜悦？"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "渐渐地、渐渐地，四周开始安静起来。不断刮起的微风颓然离去，枝头那只扰人的雀儿也似入定般消了声迹。偌大的天地间仿佛只剩下了阳光和我，一切的其他都好似消散了踪迹。不知何时起，我也睡着了。四周静悄悄的，只剩下光线依旧温柔地拨动着我的眼皮，试图挑开我的双眼。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "可是我的感官却依旧清醒着，整个人似梦似醒，灵魂好似脱离了躯壳，俯视四周。远处街头马路上，一辆辆老式拖拉机哒哒而过。隔壁的黄奶奶正坐在门口，咔嚓地修剪着前些日子才摘的老南瓜藤，准备晾晒。一直四处觅食的野猫从我跟前走过，擦过我的裤管，轻声地哼着“喵”，见无人理会便又渐行渐远……"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "而这一切的美好终究似梦一般破碎，那方记忆之中的阳光此刻也离我远去。那年年末，随父母离家去厦门谋生。都市的生活永远是喧闹的，白天的车水马龙，夜晚的灯红酒绿，没有了昔日小山村中的那份宁静与安详。而一座座拔地而起的楼宇，已然将阳光挡住，仅仅留下片片阴冷。突然想起自己很久没有像儿时那样毫无心绪地安然入梦了。一次次地从梦中惊醒，想起未完成的学业、计划，我的身后总是有一根温柔的鞭子，在鞭挞着我、激励着我，要为来日的生活奔波、奋斗。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "有些故事，有些情思，终究只能发生在我们童年的时光中。那时，我们可以有大把大把的时光来坐在草地上，数天上飘过的云朵，唱着最为童稚的儿歌。困倦的午后时光，喧闹的庭前树梢，外婆在那里慢慢地讲述久远的传说。时间流逝，那些大把挥霍掉的日子，已然成为此时最为珍贵的记忆、瑰宝。飞扬的岁月、两小无猜的豆蔻年华，那些存在于头脑中的不尽故事，或属当时，或为过去。就像是那缕阳光，穿越了光与影的距离却终究只能在衣襟上留下一抹倒影。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "那方小天地，早已远去了。国庆时日的返乡，却发现昔日的院子早已拆迁。我哭诉、我追寻、我叩问，回应我的仅有天地间的那一道风声。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "童年，那段消逝的美好。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "![in the Middle of the City by Dr_Dayfly](https://cat.yufan.me/images/2019/06/2019060512074454.jpg)"
+                }
+              ]
+            }
+          ]
+        },
+        "taxonomies": {
+          "category": ["article"],
+          "tag": ["memory", "glorious", "lost", "childhood"]
+        }
+      },
+      {
+        "id": "post-three-stage-of-programming",
+        "slug": "three-stage-of-programming",
+        "status": "published",
+        "data": {
+          "title": "編碼三境界",
+          "date": "2018-01-19 09:20:12+08:00",
+          "updated": "2019-05-18 18:13:36+08:00",
+          "comments": true,
+          "alias": [],
+          "summary": "很多人停留在第一階段，也就是能寫出來，能用。但是代碼邏輯不精簡，質量一般，同時雜亂無章。典型的特點是寫之前毫無想法，隨想隨寫。",
+          "cover": "https://cat.yufan.me/images/2019/05/2019051818123745.jpg",
+          "og": "",
+          "published": true,
+          "visible": true,
+          "toc": false,
+          "content": [
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "![Working Girl](https://cat.yufan.me/images/2019/05/2019051818123745.jpg)"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "# 编码的三重境界"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "在程序员的成长过程中，写代码的能力通常会经历三个阶段："
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "### 1. 由少写多 —— 开始懂得写代码"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "这个阶段的特点是“能写出来，能用”。很多人停留在这里，写的代码逻辑不够精简，质量一般，而且往往杂乱无章。典型表现是：写之前毫无规划，想到什么就写什么。虽然功能能实现，但可读性和可维护性都很差。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "### 2. 由多写少 —— 学会优化逻辑"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "进入第二阶段，你会开始有意识地精简代码逻辑、优化思路。代码看起来更简洁，重复和冗余减少了。但是，这种刻意追求简洁的做法，容易带来新的问题："
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "- 异常情况考虑不周全\n- 可维护性下降\n- 代码虽然短，但阅读困难，逻辑复杂\n  很多程序员在这个阶段陷入“面条代码”的陷阱：为了追求短小精悍，反而让代码变得难以理解。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "### 3. 由少写多 —— 掌握抽象与设计"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "第三阶段的程序员，写代码前就有清晰的需求和思路。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "- 适度抽象，考虑未来扩展\n- 逻辑条理清晰，易于维护\n- 不一定是最简洁的代码，但一定是最优质的代码\n  好的代码，重在可读性、可维护性和扩展性，而不是极致的简洁。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "---"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "### 总结"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "我发现一个有趣的现象：优秀的代码，其编程风格往往相似。写代码的关键，不在于技巧，而在于思路——你知道自己想要什么，知道要解决什么问题。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "没有思路写出来的代码，即便再好看，也无济于事。"
+                }
+              ]
+            }
+          ]
+        },
+        "taxonomies": {
+          "category": ["coding"],
+          "tag": ["thinking", "encoding", "programming"]
+        }
+      },
+      {
+        "id": "post-visitant",
+        "slug": "visitant",
+        "status": "published",
+        "data": {
+          "title": "候鸟",
+          "date": "2012-01-25 17:08:09+08:00",
+          "updated": "2020-09-06 11:37:25+08:00",
+          "comments": true,
+          "alias": [],
+          "summary": "放假回家前收拾了一个下午的东西，现在窗外天已经黑了，我重新坐下来。回身看到放在身旁的行李箱，大大的、满满的。原本杂乱无章的书桌也有些空荡荡的",
+          "cover": "https://cat.yufan.me/images/2012/03/2012030819164800.jpg",
+          "og": "",
+          "published": true,
+          "visible": true,
+          "toc": false,
+          "content": [
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "![掠れた情景](https://cat.yufan.me/images/2012/01/2012011819343900.jpg)"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "放假回家前，我收拾了一个下午的东西，现在窗外天已经黑了，我重新坐了下来。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "回头看到放在身旁的行李箱，大大的、满满的。原本杂乱无章的书桌也显得有些空荡荡的。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "看来，时间并没有欺骗我，我真的要离开学校回家了。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "也许是天生缺乏安全感。虽然没有离开这个学习生活的城市，但我还是莫名地感到陌生和恐惧。我像一个恋旧的旅人，矛盾的心理使我尽力去保留家的气息：厚厚的日记本、小小的围巾、睡觉时抱的企鹅点点、蓝色的小熊毛巾……如果可以，我愿意是一只小小的蜗牛，时刻背负我沉重而又甜蜜的家当，不离不弃。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "到家后的第二天，为了一个急需的证明，我回了一次高中的学校。去之前我还是不情不愿的，走在熟悉的路上，心里总觉得别扭。没有怀旧的心情，更缺乏面对过去的勇气。在我看来那里存在着我的三年，三年的快乐，三年的伤害，我没法把它们放在一起去回忆。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "当我转过路口，看到那再熟悉不过的学校大门时，原本喧闹的心却突然安静了。原来，这里还是接纳我的，那些过往还是那么根植于心，无法抹去。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "我走进校门，林荫道上没有了往日的喧闹，校园安静得有些羞涩，只有一棵棵大树依旧碧绿，在风里散发着温暖而甜美的气息。眯起眼睛，仿佛可以看到许多身影向我走来。我的老师、我的同学、我的朋友，仿佛就站在路的尽头对我微笑，一如我那已逝去的美丽年华。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "![I feel serene](https://cat.yufan.me/images/2012/01/2012011819285800.jpg)"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "下午突然下起了雨，一瞬间天色阴沉。从小就喜欢下雨的我，却总是害怕打雷。走在大街上，我尽量放慢脚步去看街边神色匆忙的人群，试着作为一个异类行走在他们中间。已经几天没有见到朋友们了，偶尔想起，多是怀念，稍有不安。或许我已经习惯了没有人陪伴的日子？可是自己还是情不自禁地穿过层层雨雾向对街寻找，希望有熟悉的味道飘散过来，对我伸开双臂，给我一个拥抱。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "是找谁呢？我不知道。因为爱我的人和我爱的人都有很多。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "这些天，很多人已经回家了，还有些人正准备要走。在书上读到一句话：“你走了，我还守着一座空城。”说的好像我啊。当昔日的同学四散分开，我却留在了“原地”。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "冬天来了，这是没有候鸟的季节。我的鸟儿都飞走了，离开了熟悉的城市，离开家，去遥远的地方寻找只属于自己的温暖。我只能用心去浇灌一株植物，布满祝福的叶子，给日夜守护我的家，给我相依相伴的四季花园，给童年，给我亲爱的伙伴，给某次曾经里的某个身影，给我世界尽头的保护人，给像我的你和像你的我……"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "说实话，对未来的某些事，我一点都看不清。别人眼里的世界和我心里的世界差别太大，我无法鉴别真伪。我更不知道凭我现在的能力能不能争取到我要的未来，能不能达到家人的期望……一切都太渺茫，形势严峻得如同泰山压顶，而前途太遥远，我却太脆弱。一整个秋天琐碎的心思，自信连连受挫，日子千疮百孔。也许我真的要在大学的环境里才能远离旁人给我的压力，重拾信心，开始别样的生活。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "事实上，我也是一只盘旋在自我世界的候鸟。一边逃避寒冷，一边努力飞翔着给自己制造温暖。回家，也许是最好的选择。可以留下一份温暖，给自己，给候鸟般盘旋、起伏不定的未来。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "![雲上の駅](https://cat.yufan.me/images/2012/01/2012011519234100.jpg)"
+                }
+              ]
+            }
+          ]
+        },
+        "taxonomies": {
+          "category": ["article"],
+          "tag": ["confused", "migratory-bird", "go-home"]
+        }
+      }
+    ],
+    "pages": [
+      {
+        "id": "page-about",
+        "slug": "about",
+        "status": "published",
+        "data": {
+          "title": "关于",
+          "date": "2010-03-25 02:20:11+08:00",
+          "updated": "2024-04-08 19:27:27+08:00",
+          "comments": true,
+          "cover": "https://cat.yufan.me/images/2024/11/2024112723215500.jpg",
+          "og": "",
+          "published": true,
+          "summary": "雨帆，以及这个博客的故事。",
+          "toc": false,
+          "content": [
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "![ライブペイント by mocha@新刊委託中](https://cat.yufan.me/images/2024/11/2024112723242700.jpg)"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "2007 年，我开始写 QQ 空间。2011 年，我开始用 WordPress 写博客，使用网名“雨帆”。“雨帆”在我的字典里并没有特别的意义，它只是我的名字的缩影，是我起的网名。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "2020 年，新冠疫情席卷全球。从那一天起，我开始居家办公。一转眼便是整整三年，博客也一篇没写。这其中既有初为人父的琐碎，也有重复生活的枯燥无味。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "我累了，不再年轻。成家后的生活不再是一个人的世界，有太多事情需要操心。等到拥有真正属于自己的时间时，我只想一个人躺在那里，什么都不做。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "许巍在《那一年》中唱道：“这么多年你还在不停奔跑，眼看着明天依然虚无缥缈，在生存面前那纯洁的理想，原来是那么脆弱不堪。”"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "真是这样吗？对于我而言，情况似乎还没有那么糟糕。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "我写博客已经十几年，这些文字里既有年轻时的多愁善感，也有成长后的沉思与感悟。它记录了我生活的大半轨迹，也一直默默存在。我依然想要分享，依然热爱阅读与思考。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "2024 年，我用 Astro 重新构建了这个博客，对内容进行了全面梳理。每一次整理和回顾，都像是在与过去的自己对话，让我更清晰地看到自己的成长，也提醒自己：即便生活忙碌，内心的热爱仍然值得被珍惜和延续。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "在这个博客里，我愿意继续写下去。记录生活、分享思考、保持好奇——这是我给自己，也给未来的自己的承诺。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "![天使のはしご by mocha@新刊委託中](https://cat.yufan.me/images/2024/11/2024112723270800.jpg)"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "page-guestbook",
+        "slug": "guestbook",
+        "status": "published",
+        "data": {
+          "title": "留言",
+          "date": "2012-01-25 02:20:11+08:00",
+          "updated": "2024-04-08 12:27:27+08:00",
+          "comments": true,
+          "cover": "https://cat.yufan.me/images/2024/11/2024112723314900.jpg",
+          "og": "",
+          "published": true,
+          "summary": "匆匆的网络过客们啊，欢迎来此留下您的足迹。",
+          "toc": false,
+          "content": [
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "![春の陽 by 防人](https://cat.yufan.me/images/2024/11/2024112723303500.jpg)"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "耳机里，单曲循环着《水中花》。这首歌曾伴我甚久，每每听起，就像一条缓缓流淌的河，将往昔的光影从心头轻轻卷起。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "> “凄冷风雨中，多少繁华如梦。”"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "开篇一句歌词，便道尽了人世的无常与飘渺。淡淡愁绪，如水面上轻盈的花瓣，随波摇曳，宁静而柔软。繁华如梦，曾经的绚烂，如昨夜的幻影，随风消散，不留痕迹。那些万紫千红，早已散落在岁月的长河，宛如飞花，绚丽一瞬，却终将归于平淡。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "> “我看见水中的花朵，强要留住一抹红。奈何辗转在风尘，不再有往日颜色。”"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "水中的花，想留一抹红，却已辗转风尘，不复昔日娇艳。就像是这博客里的文字，写了，又删；删了，又写。重复咀嚼的，不过是无人问津的日常与零碎心绪。飞花想挽留逝去的时光，然而时光从不为任何花停留；就像这布满灰尘的留言板，只余丝丝惆怅，静默如水。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "飞花纷纷坠落，曾经写博客的热情也随风而逝。访客匆匆而过，谁又会驻足片刻？我凝望那些飘零的花瓣，感怀它们无处寄托的命运，任风吹雨打，却沉默无言，仿佛映照着我内心最深的孤寂。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "草木无情，风雨飘零；人生易老，岁月无声。飞花易逝，博客亦如流云，有的悄然消散，又有新的博主踏着晨光而来，续写属于自己的故事。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "人生似飞花匆匆，而每一片飞花，都曾璀璨夺目。多年以后，当你再次回首这些文字与留言，是否也能如飞花般泰然，静看流年，笑迎光阴的轮转？"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "![色なき風 by 防人](https://cat.yufan.me/images/2024/11/2024112723400500.jpg)"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "page-links",
+        "slug": "links",
+        "status": "published",
+        "data": {
+          "title": "友链",
+          "date": "2012-01-25 02:20:11+08:00",
+          "updated": "2024-04-08 12:27:27+08:00",
+          "comments": true,
+          "cover": "https://cat.yufan.me/images/2024/11/2024112723135900.jpg",
+          "og": "",
+          "published": true,
+          "summary": "这里展示了我的网上邻居们，欢迎前去串门。",
+          "toc": false,
+          "content": [
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "![新作《天空的翅膀》 by 画师JW](https://cat.yufan.me/images/2024/11/2024112723183300.jpg)"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "生活有许多面向：经历、遭遇、过去与未来；正发生的、曾经发生的，或即将发生的；感情的流转、心态的变化、容颜的成熟。这一切，都是生命的一部分。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "而在这些变化中，最频繁、最恒常发生的，却是相遇与别离。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "有些人，一生可能只见一次；有些人，看似常常遇见，却连名字都未曾知晓；有些人曾经记住彼此的名字，却最终相忘；也有些人，无法忘记对方，于是回忆中总留下淡淡的遗憾。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "其实，博友亦是如此。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "对于朋友的定义，字面上就已经清楚——两个“月”字组成“朋”，意指不必朝夕相处，却能时常挂念。朋友，是一个永远被提及的话题，因为人与人之间的相遇从未停止。我们不断遇见合适的人，并愿意与之交好。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "交换友链，也有着类似的意义。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "写博客十年多，再谈友链，感触尤深。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "我仍记得第一次去别人博客留言请求链接时的紧张心情。那时刚开始写博客，忐忑不安地四处留言求连接。记得小白姐姐很好说话，虽不熟识，却仍与我交换了链接。随着写博客的时间增长，交换的友链也渐渐丰富起来，于是便有了专门的友链页面。这里的每个链接都承载着一段与我相关的回忆，偶尔闲来无事，我都会去看看，就像是拜访许久未见的好友，满怀紧张与雀跃。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "如果要我给博客做一个形象的比喻，我想，它应该是月台。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "在古代建筑中，月台原指正房前无遮拦的平台，因视野开阔，适合凭栏赏月而得名。月，即思念；登台，则是守望。我相信，彼此交换的链接，就像网络铁轨上的一座小站，静静目送来来往往的访客，也在远方遥望着归来的博友。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "无论时光如何流转，无论白昼或夜晚，博客如同永恒的长亭，任你来来去去，悲欢离合，它始终存在。不悲，不喜。"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "我只想做博客中的守望者，陪伴诸位博友守望幸福，静候下一次的再见……"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "## 博客信息"
+                }
+              ]
+            },
+            {
+              "_type": "block",
+              "style": "normal",
+              "children": [
+                {
+                  "_type": "span",
+                  "text": "1. 博客名称：且听书吟\n2. 博客简介：诗与梦想的远方\n3. 博客网址：https://yufan.me\n4. 博客 LOGO：\n   - 浅色：<a href=\"https://yufan.me/logo.svg\" target=\"_blank\">https://yufan.me/logo.svg</a>\n   - 深色：<a href=\"https://yufan.me/logo-dark.svg\" target=\"_blank\">https://yufan.me/logo-dark.svg</a>\n5. 博客 Banner：\n   - 浅色：<a href=\"https://yufan.me/images/blog-poster.png\" target=\"_blank\">https://yufan.me/images/blog-poster.png</a>\n   - 深色：<a href=\"https://yufan.me/images/blog-poster-dark.png\" target=\"_blank\">https://yufan.me/images/blog-poster-dark.png</a>"
                 }
               ]
             }
@@ -267,507 +3963,346 @@
         }
       }
     ],
-    "posts": [
+    "friends": [
       {
-        "id": "post-1",
-        "slug": "building-for-the-long-term",
+        "id": "friend-1",
+        "slug": "80go",
         "status": "published",
         "data": {
-          "title": "Building for the Long Term",
-          "excerpt": "The frameworks will change. The databases will change. What survives is the clarity of your thinking.",
-          "featured_image": {
-            "$media": {
-              "url": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=1200&h=800&fit=crop",
-              "alt": "Code on a monitor in a dark room",
-              "filename": "building-long-term.jpg"
-            }
-          },
-          "content": [
-            {
-              "_type": "block",
-              "style": "normal",
-              "children": [
-                {
-                  "_type": "span",
-                  "text": "Every few years the industry collectively decides that everything we've been doing is wrong and there's a better way. New frameworks, new paradigms, new build tools. The churn is relentless, and if you're not careful, you spend more time migrating than building."
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "style": "normal",
-              "children": [
-                {
-                  "_type": "span",
-                  "text": "I've been writing software long enough to have seen several of these cycles. jQuery to Backbone to Angular to React to whatever comes next. Each transition felt urgent at the time. Looking back, the things that actually mattered were rarely about the framework."
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "style": "h2",
-              "children": [{ "_type": "span", "text": "What survives" }]
-            },
-            {
-              "_type": "block",
-              "style": "normal",
-              "children": [
-                {
-                  "_type": "span",
-                  "text": "Clean data models survive. Clear boundaries between systems survive. Good naming survives. The decision to keep things simple when you could have made them clever - that definitely survives."
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "style": "normal",
-              "children": [
-                {
-                  "_type": "span",
-                  "text": "What doesn't survive is code that was written to impress, abstractions built for problems that never materialized, and architectures designed around a framework's opinions rather than the domain's reality."
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "style": "normal",
-              "children": [
-                {
-                  "_type": "span",
-                  "text": "The best code I've written is boring. It reads like prose, does one thing well, and doesn't require a PhD in category theory to understand. The worst code I've written was technically impressive at the time."
-                }
-              ]
-            }
-          ]
-        },
-        "bylines": [{ "byline": "byline-editorial" }, { "byline": "byline-guest", "roleLabel": "Guest essay" }],
-        "taxonomies": {
-          "category": ["development"],
-          "tag": ["opinion"]
+          "website": "80后向前冲",
+          "description": "松鼠哥哥",
+          "homepage": "https://www.80-go.com",
+          "poster": "https://cat.yufan.me/images/links/80-go.com.jpg"
         }
       },
       {
-        "id": "post-2",
-        "slug": "the-case-for-static",
+        "id": "friend-2",
+        "slug": "cynosura",
         "status": "published",
         "data": {
-          "title": "The Case for Static",
-          "excerpt": "Static sites aren't a step backwards. They're what you get when you take performance and simplicity seriously.",
-          "featured_image": {
-            "$media": {
-              "url": "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=1200&h=800&fit=crop",
-              "alt": "Laptop and coffee on a wooden table",
-              "filename": "case-for-static.jpg"
-            }
-          },
-          "content": [
-            {
-              "_type": "block",
-              "style": "normal",
-              "children": [
-                {
-                  "_type": "span",
-                  "text": "There's a certain irony in the fact that the web started static, went dynamic, and is now swinging back toward static again. But the static sites of today aren't the hand-coded HTML pages of 1998. They're generated, optimized, and deployed to edge networks that serve them in milliseconds."
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "style": "normal",
-              "children": [
-                {
-                  "_type": "span",
-                  "text": "The pitch for server-rendered everything was compelling: dynamic content, personalization, real-time data. But most sites don't need most of that most of the time. A blog post doesn't need to be rendered on every request. A product page doesn't change every second."
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "style": "h2",
-              "children": [{ "_type": "span", "text": "The performance argument" }]
-            },
-            {
-              "_type": "block",
-              "style": "normal",
-              "children": [
-                {
-                  "_type": "span",
-                  "text": "A static file served from a CDN is as fast as the web gets. No cold starts, no database queries, no server-side rendering overhead. The Time to First Byte is essentially the network latency to your nearest edge node. You can't beat physics."
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "style": "normal",
-              "children": [
-                {
-                  "_type": "span",
-                  "text": "And when you do need dynamic behavior, you can add it surgically. An island of interactivity in a sea of static HTML. The best of both worlds, without paying the cost of either at all times."
-                }
-              ]
-            }
-          ]
-        },
-        "bylines": [{ "byline": "byline-editorial" }],
-        "taxonomies": {
-          "category": ["development"],
-          "tag": ["webdev", "opinion"]
+          "website": "Cynosura",
+          "description": "Trying to light up the dark",
+          "homepage": "https://cynosura.one",
+          "poster": "https://cat.yufan.me/images/links/cynosura.one.jpg"
         }
       },
       {
-        "id": "post-3",
-        "slug": "learning-in-public",
+        "id": "friend-3",
+        "slug": "eee",
         "status": "published",
         "data": {
-          "title": "Learning in Public",
-          "excerpt": "Writing about what you're learning is the fastest way to find out what you don't actually understand.",
-          "featured_image": {
-            "$media": {
-              "url": "https://images.unsplash.com/photo-1432821596592-e2c18b78144f?w=1200&h=800&fit=crop",
-              "alt": "Notebook and pen on a desk",
-              "filename": "learning-in-public.jpg"
-            }
-          },
-          "content": [
-            {
-              "_type": "block",
-              "style": "normal",
-              "children": [
-                {
-                  "_type": "span",
-                  "text": "I started writing about things I was learning not because I had anything original to say, but because I kept forgetting what I'd figured out. The blog posts were notes to my future self, published publicly more out of laziness than courage."
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "style": "normal",
-              "children": [
-                {
-                  "_type": "span",
-                  "text": "What I didn't expect was how much the writing itself would accelerate the learning. There's a particular kind of clarity that comes from trying to explain something to someone else. The gaps in your understanding, which you can happily ignore when the knowledge lives only in your head, become painfully obvious when you try to put it into sentences."
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "style": "h2",
-              "children": [{ "_type": "span", "text": "The fear of being wrong" }]
-            },
-            {
-              "_type": "block",
-              "style": "normal",
-              "children": [
-                {
-                  "_type": "span",
-                  "text": "The biggest barrier isn't time or writing skill. It's the fear of publishing something that turns out to be wrong. But here's the thing: being wrong publicly is one of the most efficient ways to learn. Someone will correct you, often kindly, and you'll remember that correction forever."
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "style": "normal",
-              "children": [
-                {
-                  "_type": "span",
-                  "text": "The posts that helped me most weren't written by experts. They were written by people one step ahead of me on the same path, in language that hadn't yet been polished into abstraction. There's a place for that kind of writing, and it's more valuable than most people realize."
-                }
-              ]
-            }
-          ]
-        },
-        "taxonomies": {
-          "category": ["notes"],
-          "tag": ["opinion"]
+          "website": "EEE.ME",
+          "description": "途方に暮れて",
+          "homepage": "https://eee.me",
+          "poster": "https://cat.yufan.me/images/links/eee.me.jpg"
         }
       },
       {
-        "id": "post-4",
-        "slug": "small-tools-big-impact",
+        "id": "friend-4",
+        "slug": "kn007",
         "status": "published",
         "data": {
-          "title": "Small Tools, Big Impact",
-          "excerpt": "The best developer tools do one thing well and get out of your way. A love letter to focused software.",
-          "featured_image": {
-            "$media": {
-              "url": "https://images.unsplash.com/photo-1575026615908-666710ae5e47?w=1200&h=800&fit=crop",
-              "alt": "Wrenches and hand tools hanging on a workshop wall",
-              "filename": "small-tools.jpg"
-            }
-          },
-          "content": [
-            {
-              "_type": "block",
-              "style": "normal",
-              "children": [
-                {
-                  "_type": "span",
-                  "text": "There's a class of software that doesn't get enough appreciation. Not the frameworks or the platforms or the IDEs, but the small, sharp tools that solve one problem so well you stop thinking about them. They become invisible, which is the highest compliment you can pay a tool."
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "style": "normal",
-              "children": [
-                {
-                  "_type": "span",
-                  "text": "I'm talking about things like ripgrep, which searches code so fast it changed how I think about searching. Or jq, which makes JSON feel like a first-class data format in the terminal. Or curl, which has been quietly powering the internet's plumbing for decades."
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "style": "h2",
-              "children": [{ "_type": "span", "text": "The Unix philosophy, revisited" }]
-            },
-            {
-              "_type": "block",
-              "style": "normal",
-              "children": [
-                {
-                  "_type": "span",
-                  "text": "Do one thing well. The advice is old enough to be a cliche, but the best modern tools still follow it. They don't try to be platforms. They don't have plugin ecosystems or configuration languages or startup wizards. They do their job and they compose with other tools that do theirs."
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "style": "normal",
-              "children": [
-                {
-                  "_type": "span",
-                  "text": "The temptation is always to add more. One more feature, one more option, one more integration. But every addition is a decision someone has to make, a path through the code that has to be maintained, a thing that can break. The best tools resist this. They stay small, and in staying small, they stay reliable."
-                }
-              ]
-            }
-          ]
-        },
-        "taxonomies": {
-          "category": ["development"],
-          "tag": ["tools"]
+          "website": "kn007的个人博客",
+          "description": "",
+          "homepage": "https://kn007.net",
+          "poster": "https://cat.yufan.me/images/links/kn007.net.jpg"
         }
       },
       {
-        "id": "post-5",
-        "slug": "designing-with-constraints",
+        "id": "friend-5",
+        "slug": "xinsenz",
         "status": "published",
         "data": {
-          "title": "Designing with Constraints",
-          "excerpt": "Limitations aren't obstacles to creativity. They're the structure that makes creativity possible.",
-          "featured_image": {
-            "$media": {
-              "url": "https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?w=1200&h=800&fit=crop",
-              "alt": "Pencils and design tools on a desk",
-              "filename": "designing-with-constraints.jpg"
-            }
-          },
-          "content": [
-            {
-              "_type": "block",
-              "style": "normal",
-              "children": [
-                {
-                  "_type": "span",
-                  "text": "Give a designer a blank canvas and unlimited time, and they'll often produce something mediocre. Give them a tight brief, a small screen, and a deadline, and they'll surprise you. This isn't a paradox - it's how creativity actually works."
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "style": "normal",
-              "children": [
-                {
-                  "_type": "span",
-                  "text": "Constraints force decisions. When you can't use more than two typefaces, you have to choose carefully. When the page has to load in under a second, every element earns its place. When the interface has to work on a 320px screen, you discover what's truly essential."
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "style": "h2",
-              "children": [{ "_type": "span", "text": "Embracing the box" }]
-            },
-            {
-              "_type": "block",
-              "style": "normal",
-              "children": [
-                {
-                  "_type": "span",
-                  "text": "The web itself is a constraint. HTML flows in one direction. CSS has a box model. Browsers have viewport sizes and font rendering quirks. You can fight these constraints or you can work with them, and the results are dramatically different."
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "style": "normal",
-              "children": [
-                {
-                  "_type": "span",
-                  "text": "The designs I admire most don't look like they were forced through a framework. They look like they grew naturally from the medium, respecting its grain rather than working against it. That only happens when you treat constraints as creative partners rather than enemies."
-                }
-              ]
-            }
-          ]
-        },
-        "taxonomies": {
-          "category": ["design"],
-          "tag": ["creativity"]
+          "website": "Xinsenz茶话",
+          "description": "树下呷茶，酒好花新",
+          "homepage": "https://xinsenz.com",
+          "poster": "https://cat.yufan.me/images/links/xinsenz.com.jpg"
         }
       },
       {
-        "id": "post-6",
-        "slug": "a-weekend-with-a-side-project",
+        "id": "friend-6",
+        "slug": "mboker",
         "status": "published",
         "data": {
-          "title": "A Weekend with a Side Project",
-          "excerpt": "No stakeholders, no deadlines, no Jira tickets. Just you and a dumb idea that might turn into something.",
-          "featured_image": {
-            "$media": {
-              "url": "https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=1200&h=800&fit=crop",
-              "alt": "Code on a screen with a dark theme",
-              "filename": "weekend-side-project.jpg"
-            }
-          },
-          "content": [
-            {
-              "_type": "block",
-              "style": "normal",
-              "children": [
-                {
-                  "_type": "span",
-                  "text": "Saturday morning. Coffee's made, the house is quiet, and I've got an idea that's been nagging at me all week. Not a good idea, necessarily - just a persistent one. A small tool that does a thing I keep doing manually. How hard could it be?"
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "style": "normal",
-              "children": [
-                {
-                  "_type": "span",
-                  "text": "This is the best kind of programming. No requirements document, no sprint planning, no pull request reviews. Just a text editor and a problem. The freedom to make terrible architectural decisions, rewrite everything twice, and follow tangents that turn out to be dead ends."
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "style": "h2",
-              "children": [{ "_type": "span", "text": "Why side projects matter" }]
-            },
-            {
-              "_type": "block",
-              "style": "normal",
-              "children": [
-                {
-                  "_type": "span",
-                  "text": "Side projects are where you learn things your day job would never teach you. Not because the problems are harder, but because you're free to take risks. Try a language you've never used. Build something without a framework. Deploy to a platform you've only read about. The stakes are zero, which makes the learning maximum."
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "style": "normal",
-              "children": [
-                {
-                  "_type": "span",
-                  "text": "By Sunday evening, the thing sort of works. It's rough, the error handling is nonexistent, and the README is a single sentence. But it solves the problem I set out to solve, and I learned three things I didn't know on Friday. Not a bad weekend."
-                }
-              ]
-            }
-          ]
-        },
-        "taxonomies": {
-          "category": ["development"],
-          "tag": ["creativity"]
+          "website": "刀客",
+          "description": "这世界需要更多英雄",
+          "homepage": "https://blog.mboker.cn",
+          "poster": "https://cat.yufan.me/images/links/mboker.cn.jpg"
         }
       },
       {
-        "id": "post-7",
-        "slug": "notes-on-simplicity",
+        "id": "friend-7",
+        "slug": "pwsz",
         "status": "published",
         "data": {
-          "title": "Notes on Simplicity",
-          "excerpt": "Simplicity isn't the absence of complexity. It's the result of understanding a problem well enough to solve it cleanly.",
-          "featured_image": {
-            "$media": {
-              "url": "https://images.unsplash.com/photo-1559051668-e1fa58f25786?w=1200&h=800&fit=crop",
-              "alt": "Geometric pattern carved into white paper",
-              "filename": "notes-on-simplicity.jpg"
-            }
-          },
-          "content": [
-            {
-              "_type": "block",
-              "style": "normal",
-              "children": [
-                {
-                  "_type": "span",
-                  "text": "Every piece of software starts simple. A few files, a clear purpose, a small surface area. Then features get added, edge cases get handled, and before long you're looking at something that requires a diagram to understand. This isn't inevitable, but it takes discipline to prevent."
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "style": "normal",
-              "children": [
-                {
-                  "_type": "span",
-                  "text": "The hard part of simplicity isn't the initial design. It's the ongoing resistance to complication. Every feature request, every bug fix, every refactor is an opportunity to add complexity. Saying no is the most important design skill, and the least celebrated."
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "style": "h2",
-              "children": [{ "_type": "span", "text": "Removing as a feature" }]
-            },
-            {
-              "_type": "block",
-              "style": "normal",
-              "children": [
-                {
-                  "_type": "span",
-                  "text": "The best version of a product often has fewer features than the previous one. Not because features were missing, but because someone had the courage to remove things that weren't earning their keep. Every feature has a cost - in maintenance, in cognitive load, in the weight of the interface."
-                }
-              ]
-            },
-            {
-              "_type": "block",
-              "style": "normal",
-              "children": [
-                {
-                  "_type": "span",
-                  "text": "Simplicity is a practice, not a destination. You never arrive at simple. You just keep asking: is this necessary? Could this be clearer? Is there a way to solve this problem by removing something instead of adding something? The answer is yes more often than you'd expect."
-                }
-              ]
-            }
-          ]
-        },
-        "taxonomies": {
-          "category": ["notes"],
-          "tag": ["opinion"]
+          "website": "品味苏州",
+          "description": "吴侬软语、小桥流水的生活点滴",
+          "homepage": "https://pwsz.com",
+          "poster": "https://cat.yufan.me/images/links/pwsz.com.jpg"
         }
       },
       {
-        "id": "post-draft",
-        "slug": "work-in-progress",
-        "status": "draft",
+        "id": "friend-8",
+        "slug": "yefengs",
+        "status": "published",
         "data": {
-          "title": "Work in Progress",
-          "excerpt": "This post is still being written.",
-          "content": [
-            {
-              "_type": "block",
-              "style": "normal",
-              "children": [
-                {
-                  "_type": "span",
-                  "text": "This is a draft post that won't appear in the public listing."
-                }
-              ]
-            }
-          ]
+          "website": "夜枫",
+          "description": "",
+          "homepage": "https://yefengs.com",
+          "poster": "https://cat.yufan.me/images/links/yefengs.com.jpg"
+        }
+      },
+      {
+        "id": "friend-9",
+        "slug": "laojieli",
+        "status": "published",
+        "data": {
+          "website": "老街里",
+          "description": "一名风光摄影者兼文艺叙述人，以镜头捕捉瞬间，用文字绘织故事",
+          "homepage": "https://laojieli.cn",
+          "poster": "https://cat.yufan.me/images/links/laojieli.cn.jpg"
+        }
+      },
+      {
+        "id": "friend-10",
+        "slug": "yyjn",
+        "status": "published",
+        "data": {
+          "website": "呢喃",
+          "description": "喜于情，爱于心，言于表",
+          "homepage": "https://ninan.me",
+          "poster": "https://cat.yufan.me/images/links/yyjn.org.jpg"
+        }
+      },
+      {
+        "id": "friend-11",
+        "slug": "alexinea",
+        "status": "published",
+        "data": {
+          "website": "行者自若",
+          "description": "茶盐观瑟丶行者自若",
+          "homepage": "https://alexinea.com",
+          "poster": "https://cat.yufan.me/images/links/alexinea.com.jpg"
+        }
+      },
+      {
+        "id": "friend-12",
+        "slug": "jiasm",
+        "status": "published",
+        "data": {
+          "website": "贾顺名",
+          "description": "全沾码农的一些笔记",
+          "homepage": "https://jiasm.github.io",
+          "poster": "https://cat.yufan.me/images/links/jiasm.github.io.jpg"
+        }
+      },
+      {
+        "id": "friend-13",
+        "slug": "fmoran",
+        "status": "published",
+        "data": {
+          "website": "白丁轶事",
+          "description": "Everything should be hurry",
+          "homepage": "https://moranfong.com",
+          "poster": "https://cat.yufan.me/images/links/fmoran.me.jpg"
+        }
+      },
+      {
+        "id": "friend-14",
+        "slug": "captainofphb",
+        "status": "published",
+        "data": {
+          "website": "船长の部落格",
+          "description": "船长の部落格，记录有趣的事，分享技术经验",
+          "homepage": "https://captainofphb.me",
+          "poster": "https://cat.yufan.me/images/links/captainofphb.me.jpg"
+        }
+      },
+      {
+        "id": "friend-15",
+        "slug": "luoli",
+        "status": "published",
+        "data": {
+          "website": "小萌博客",
+          "description": "互联网分享笔记",
+          "homepage": "https://blog.luoli.net",
+          "poster": "https://cat.yufan.me/images/links/luoli.net.jpg"
+        }
+      },
+      {
+        "id": "friend-16",
+        "slug": "longluo",
+        "status": "published",
+        "data": {
+          "website": "LongLuo's Life Notes",
+          "description": "每一天都是奇迹",
+          "homepage": "https://www.longluo.me",
+          "poster": "https://cat.yufan.me/images/links/longluo.me.jpg"
+        }
+      },
+      {
+        "id": "friend-17",
+        "slug": "bxaw",
+        "status": "published",
+        "data": {
+          "website": "白熊阿丸的小屋",
+          "description": "在这里可以看到一个真实的我，我会在这里书写我的一切",
+          "homepage": "https://bxaw.name",
+          "poster": "https://cat.yufan.me/images/links/blog.bxaw.name.jpg"
+        }
+      },
+      {
+        "id": "friend-18",
+        "slug": "jiangcl",
+        "status": "published",
+        "data": {
+          "website": "蒙需",
+          "description": "我的朋友圈",
+          "homepage": "https://jiangcl.com",
+          "poster": "https://cat.yufan.me/images/links/jiangcl.com.jpg"
+        }
+      },
+      {
+        "id": "friend-19",
+        "slug": "twofei",
+        "status": "published",
+        "data": {
+          "website": "陪她去流浪",
+          "description": "桃子，疯疯癫癫的男孩子",
+          "homepage": "https://blog.twofei.com",
+          "poster": "https://cat.yufan.me/images/links/blog.twofei.com.jpg"
+        }
+      },
+      {
+        "id": "friend-20",
+        "slug": "suus",
+        "status": "published",
+        "data": {
+          "website": "蘇 SU",
+          "description": "在数字的海洋中，寻找属于自己的星辰",
+          "homepage": "https://suus.me",
+          "poster": "https://cat.yufan.me/images/links/suus.me.jpg"
+        }
+      },
+      {
+        "id": "friend-21",
+        "slug": "liruifengv",
+        "status": "published",
+        "data": {
+          "website": "liruifengv",
+          "description": "Web 开发者，Astro 项目成员，开源爱好者",
+          "homepage": "https://liruifengv.com",
+          "poster": "https://cat.yufan.me/images/links/liruifengv.com.jpg"
+        }
+      },
+      {
+        "id": "friend-22",
+        "slug": "nihaha",
+        "status": "published",
+        "data": {
+          "website": "东东博客",
+          "description": "城市与信仰",
+          "homepage": "https://nihaha.com",
+          "poster": "https://cat.yufan.me/images/links/nihaha.com.jpg"
+        }
+      },
+      {
+        "id": "friend-23",
+        "slug": "wangdaodao",
+        "status": "published",
+        "data": {
+          "website": "王叨叨",
+          "description": "无叨叨，不博客！不懂用户体验的前端不是好爸爸……",
+          "homepage": "https://wangdaodao.com",
+          "poster": "https://cat.yufan.me/images/links/wangdaodao.com.jpg"
+        }
+      },
+      {
+        "id": "friend-24",
+        "slug": "godruoyi",
+        "status": "published",
+        "data": {
+          "website": "连波的闲谈杂鱼",
+          "description": "我大部分的快乐，都是来自于生活的夹缝",
+          "homepage": "https://godruoyi.com",
+          "poster": "https://cat.yufan.me/images/links/godruoyi.com.jpg"
+        }
+      },
+      {
+        "id": "friend-25",
+        "slug": "xiju",
+        "status": "published",
+        "data": {
+          "website": "西橘日志",
+          "description": "喂马 劈柴 周游世界",
+          "homepage": "https://xiju.me",
+          "poster": "https://cat.yufan.me/images/links/xiju.me.jpg"
+        }
+      },
+      {
+        "id": "friend-26",
+        "slug": "zishu",
+        "status": "published",
+        "data": {
+          "website": "子舒的博客",
+          "description": "想留下点什么，证明我来过，一个热爱生活的程序员",
+          "homepage": "https://zishu.me",
+          "poster": "https://cat.yufan.me/images/links/zishu.me.jpg"
+        }
+      },
+      {
+        "id": "friend-27",
+        "slug": "miantiao",
+        "status": "published",
+        "data": {
+          "website": "面条",
+          "description": "前端切图仔🧑🏻‍💻，后端三脚猫🤷🏻‍♂️，运维挖坑人🤦🏻‍♂️，AI 门外汉🧐",
+          "homepage": "https://miantiao.me",
+          "poster": "https://cat.yufan.me/images/links/miantiao.me.png"
+        }
+      },
+      {
+        "id": "friend-28",
+        "slug": "xiaoten",
+        "status": "published",
+        "data": {
+          "website": "小十的个人博客",
+          "description": "十分之十的小十",
+          "homepage": "https://www.xiaoten.com",
+          "poster": "https://cat.yufan.me/images/links/xiaoten.com.jpg"
+        }
+      },
+      {
+        "id": "friend-29",
+        "slug": "iseeklife",
+        "status": "published",
+        "data": {
+          "website": "iSeekLife",
+          "description": "文旅探寻者的诗意栖居地",
+          "homepage": "https://www.iseeklife.com",
+          "poster": "https://cat.yufan.me/images/links/iseeklife.com.jpg"
+        }
+      },
+      {
+        "id": "friend-30",
+        "slug": "zindex",
+        "status": "published",
+        "data": {
+          "website": "Z-INDEX",
+          "description": "hi，今日饮点咩呀",
+          "homepage": "https://z-index.me",
+          "poster": "https://cat.yufan.me/images/links/z-index.me.jpg"
+        }
+      },
+      {
+        "id": "friend-31",
+        "slug": "iliuqi",
+        "status": "published",
+        "data": {
+          "website": "云栖梦泽",
+          "description": "须知少时凌云志·曾许人间第一流",
+          "homepage": "https://www.iliuqi.com",
+          "poster": "https://cat.yufan.me/images/links/iliuqi.com.jpg"
         }
       }
     ]

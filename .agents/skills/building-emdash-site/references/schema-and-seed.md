@@ -6,21 +6,21 @@ The seed file (`seed/seed.json`) defines the site's entire schema and optional d
 
 ```json
 {
-	"$schema": "https://emdashcms.com/seed.schema.json",
-	"version": "1",
-	"meta": {
-		"name": "My Site",
-		"description": "A description of this site",
-		"author": "Author Name"
-	},
-	"settings": { ... },
-	"collections": [ ... ],
-	"taxonomies": [ ... ],
-	"menus": [ ... ],
-	"widgetAreas": [ ... ],
-	"sections": [ ... ],
-	"bylines": [ ... ],
-	"content": { ... }
+    "$schema": "https://emdashcms.com/seed.schema.json",
+    "version": "1",
+    "meta": {
+        "name": "My Site",
+        "description": "A description of this site",
+        "author": "Author Name"
+    },
+    "settings": { ... },
+    "collections": [ ... ],
+    "taxonomies": [ ... ],
+    "menus": [ ... ],
+    "widgetAreas": [ ... ],
+    "sections": [ ... ],
+    "bylines": [ ... ],
+    "content": { ... }
 }
 ```
 
@@ -30,12 +30,12 @@ Collections define content types. Each collection becomes a database table (`ec_
 
 ```json
 {
-	"slug": "posts",
-	"label": "Posts",
-	"labelSingular": "Post",
-	"supports": ["drafts", "revisions", "search", "seo"],
-	"commentsEnabled": true,
-	"fields": [ ... ]
+    "slug": "posts",
+    "label": "Posts",
+    "labelSingular": "Post",
+    "supports": ["drafts", "revisions", "search", "seo"],
+    "commentsEnabled": true,
+    "fields": [ ... ]
 }
 ```
 
@@ -95,10 +95,10 @@ Fields can have:
 
 ```json
 "fields": [
-	{ "slug": "title", "label": "Title", "type": "string", "required": true, "searchable": true },
-	{ "slug": "featured_image", "label": "Featured Image", "type": "image" },
-	{ "slug": "content", "label": "Content", "type": "portableText", "searchable": true },
-	{ "slug": "excerpt", "label": "Excerpt", "type": "text" }
+    { "slug": "title", "label": "Title", "type": "string", "required": true, "searchable": true },
+    { "slug": "featured_image", "label": "Featured Image", "type": "image" },
+    { "slug": "content", "label": "Content", "type": "portableText", "searchable": true },
+    { "slug": "excerpt", "label": "Excerpt", "type": "text" }
 ]
 ```
 
@@ -106,14 +106,14 @@ Fields can have:
 
 ```json
 "fields": [
-	{ "slug": "title", "label": "Title", "type": "string", "required": true, "searchable": true },
-	{ "slug": "featured_image", "label": "Featured Image", "type": "image", "required": true },
-	{ "slug": "client", "label": "Client", "type": "string" },
-	{ "slug": "year", "label": "Year", "type": "string" },
-	{ "slug": "summary", "label": "Summary", "type": "text", "searchable": true },
-	{ "slug": "content", "label": "Content", "type": "portableText", "searchable": true },
-	{ "slug": "gallery", "label": "Gallery", "type": "json" },
-	{ "slug": "url", "label": "Project URL", "type": "string" }
+    { "slug": "title", "label": "Title", "type": "string", "required": true, "searchable": true },
+    { "slug": "featured_image", "label": "Featured Image", "type": "image", "required": true },
+    { "slug": "client", "label": "Client", "type": "string" },
+    { "slug": "year", "label": "Year", "type": "string" },
+    { "slug": "summary", "label": "Summary", "type": "text", "searchable": true },
+    { "slug": "content", "label": "Content", "type": "portableText", "searchable": true },
+    { "slug": "gallery", "label": "Gallery", "type": "json" },
+    { "slug": "url", "label": "Project URL", "type": "string" }
 ]
 ```
 
@@ -121,8 +121,8 @@ Fields can have:
 
 ```json
 "fields": [
-	{ "slug": "title", "label": "Title", "type": "string", "required": true, "searchable": true },
-	{ "slug": "content", "label": "Content", "type": "portableText", "searchable": true }
+    { "slug": "title", "label": "Title", "type": "string", "required": true, "searchable": true },
+    { "slug": "content", "label": "Content", "type": "portableText", "searchable": true }
 ]
 ```
 
@@ -293,8 +293,8 @@ Site-wide settings:
 
 ```json
 "settings": {
-	"title": "My Blog",
-	"tagline": "Thoughts on building for the web"
+    "title": "My Blog",
+    "tagline": "Thoughts on building for the web"
 }
 ```
 
@@ -306,55 +306,55 @@ Sample content organized by collection slug:
 
 ```json
 "content": {
-	"posts": [
-		{
-			"id": "post-1",
-			"slug": "hello-world",
-			"status": "published",
-			"data": {
-				"title": "Hello World",
-				"excerpt": "My first post.",
-				"featured_image": {
-					"$media": {
-						"url": "https://images.unsplash.com/photo-xxx?w=1200&h=800&fit=crop",
-						"alt": "Description of image",
-						"filename": "hello-world.jpg"
-					}
-				},
-				"content": [
-					{
-						"_type": "block",
-						"style": "normal",
-						"children": [{ "_type": "span", "text": "This is the body text." }]
-					}
-				]
-			},
-			"bylines": [
-				{ "byline": "byline-editorial" }
-			],
-			"taxonomies": {
-				"category": ["development"],
-				"tag": ["webdev", "opinion"]
-			}
-		}
-	],
-	"pages": [
-		{
-			"id": "about",
-			"slug": "about",
-			"status": "published",
-			"data": {
-				"title": "About",
-				"content": [
-					{
-						"_type": "block",
-						"style": "normal",
-						"children": [{ "_type": "span", "text": "About this site." }]
-					}
-				]
-			}
-		}
-	]
+    "posts": [
+        {
+            "id": "post-1",
+            "slug": "hello-world",
+            "status": "published",
+            "data": {
+                "title": "Hello World",
+                "excerpt": "My first post.",
+                "featured_image": {
+                    "$media": {
+                        "url": "https://images.unsplash.com/photo-xxx?w=1200&h=800&fit=crop",
+                        "alt": "Description of image",
+                        "filename": "hello-world.jpg"
+                    }
+                },
+                "content": [
+                    {
+                        "_type": "block",
+                        "style": "normal",
+                        "children": [{ "_type": "span", "text": "This is the body text." }]
+                    }
+                ]
+            },
+            "bylines": [
+                { "byline": "byline-editorial" }
+            ],
+            "taxonomies": {
+                "category": ["development"],
+                "tag": ["webdev", "opinion"]
+            }
+        }
+    ],
+    "pages": [
+        {
+            "id": "about",
+            "slug": "about",
+            "status": "published",
+            "data": {
+                "title": "About",
+                "content": [
+                    {
+                        "_type": "block",
+                        "style": "normal",
+                        "children": [{ "_type": "span", "text": "About this site." }]
+                    }
+                ]
+            }
+        }
+    ]
 }
 ```
 
@@ -364,11 +364,11 @@ Use `$media` for image fields -- EmDash downloads and stores the image:
 
 ```json
 "featured_image": {
-	"$media": {
-		"url": "https://images.unsplash.com/photo-xxx?w=1200&h=800&fit=crop",
-		"alt": "Description",
-		"filename": "my-image.jpg"
-	}
+    "$media": {
+        "url": "https://images.unsplash.com/photo-xxx?w=1200&h=800&fit=crop",
+        "alt": "Description",
+        "filename": "my-image.jpg"
+    }
 }
 ```
 
@@ -433,10 +433,10 @@ Set `"status": "draft"` to create unpublished content:
 
 ```json
 {
-	"id": "post-draft",
-	"slug": "work-in-progress",
-	"status": "draft",
-	"data": { ... }
+    "id": "post-draft",
+    "slug": "work-in-progress",
+    "status": "draft",
+    "data": { ... }
 }
 ```
 

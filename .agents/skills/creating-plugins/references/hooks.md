@@ -15,22 +15,22 @@ Simple handler or full config:
 ```typescript
 // Simple
 hooks: {
-	"content:afterSave": async (event, ctx) => {
-		ctx.log.info("Saved");
-	}
+    "content:afterSave": async (event, ctx) => {
+        ctx.log.info("Saved");
+    }
 }
 
 // Full config
 hooks: {
-	"content:afterSave": {
-		priority: 100,      // Lower runs first (default: 100)
-		timeout: 5000,      // Max execution time ms (default: 5000)
-		dependencies: [],   // Plugin IDs that must run first
-		errorPolicy: "abort", // "abort" | "continue"
-		handler: async (event, ctx) => {
-			ctx.log.info("Saved");
-		}
-	}
+    "content:afterSave": {
+        priority: 100,      // Lower runs first (default: 100)
+        timeout: 5000,      // Max execution time ms (default: 5000)
+        dependencies: [],   // Plugin IDs that must run first
+        errorPolicy: "abort", // "abort" | "continue"
+        handler: async (event, ctx) => {
+            ctx.log.info("Saved");
+        }
+    }
 }
 ```
 
@@ -42,8 +42,8 @@ Runs once on first install. Use to seed defaults.
 
 ```typescript
 "plugin:install": async (_event, ctx) => {
-	await ctx.kv.set("settings:enabled", true);
-	await ctx.storage.items!.put("default", { name: "Default" });
+    await ctx.kv.set("settings:enabled", true);
+    await ctx.storage.items!.put("default", { name: "Default" });
 }
 ```
 
@@ -56,7 +56,7 @@ Runs when plugin is enabled (after install or re-enable).
 
 ```typescript
 "plugin:activate": async (_event, ctx) => {
-	ctx.log.info("Activated");
+    ctx.log.info("Activated");
 }
 ```
 
@@ -69,7 +69,7 @@ Runs when plugin is disabled (not removed).
 
 ```typescript
 "plugin:deactivate": async (_event, ctx) => {
-	ctx.log.info("Deactivated");
+    ctx.log.info("Deactivated");
 }
 ```
 
@@ -82,10 +82,10 @@ Runs when plugin is removed. Only delete data if `event.deleteData` is true.
 
 ```typescript
 "plugin:uninstall": async (event, ctx) => {
-	if (event.deleteData) {
-		const result = await ctx.storage.items!.query({ limit: 1000 });
-		await ctx.storage.items!.deleteMany(result.items.map(i => i.id));
-	}
+    if (event.deleteData) {
+        const result = await ctx.storage.items!.query({ limit: 1000 });
+        await ctx.storage.items!.deleteMany(result.items.map(i => i.id));
+    }
 }
 ```
 
@@ -100,18 +100,18 @@ Runs before save. Return modified content, void to keep unchanged, or throw to c
 
 ```typescript
 "content:beforeSave": async (event, ctx) => {
-	const { content, collection, isNew } = event;
+    const { content, collection, isNew } = event;
 
-	if (collection === "posts" && !content.title) {
-		throw new Error("Posts require a title");
-	}
+    if (collection === "posts" && !content.title) {
+        throw new Error("Posts require a title");
+    }
 
-	// Transform
-	if (content.slug) {
-		content.slug = content.slug.toLowerCase().replace(/\s+/g, "-");
-	}
+    // Transform
+    if (content.slug) {
+        content.slug = content.slug.toLowerCase().replace(/\s+/g, "-");
+    }
 
-	return content;
+    return content;
 }
 ```
 
@@ -124,8 +124,8 @@ Runs after successful save. Side effects only — logging, notifications, syncin
 
 ```typescript
 "content:afterSave": async (event, ctx) => {
-	const { content, collection, isNew } = event;
-	ctx.log.info(`${isNew ? "Created" : "Updated"} ${collection}/${content.id}`);
+    const { content, collection, isNew } = event;
+    ctx.log.info(`${isNew ? "Created" : "Updated"} ${collection}/${content.id}`);
 }
 ```
 
@@ -138,11 +138,11 @@ Runs before delete. Return `false` to cancel, `true` or void to allow.
 
 ```typescript
 "content:beforeDelete": async (event, ctx) => {
-	if (event.collection === "pages" && event.id === "home") {
-		ctx.log.warn("Cannot delete home page");
-		return false;
-	}
-	return true;
+    if (event.collection === "pages" && event.id === "home") {
+        ctx.log.warn("Cannot delete home page");
+        return false;
+    }
+    return true;
 }
 ```
 
@@ -155,8 +155,8 @@ Runs after successful delete.
 
 ```typescript
 "content:afterDelete": async (event, ctx) => {
-	ctx.log.info(`Deleted ${event.collection}/${event.id}`);
-	await ctx.storage.cache!.delete(`${event.collection}:${event.id}`);
+    ctx.log.info(`Deleted ${event.collection}/${event.id}`);
+    await ctx.storage.cache!.delete(`${event.collection}:${event.id}`);
 }
 ```
 
@@ -171,17 +171,17 @@ Runs before upload. Return modified file info, void to keep, or throw to cancel.
 
 ```typescript
 "media:beforeUpload": async (event, ctx) => {
-	const { file } = event;
+    const { file } = event;
 
-	if (!file.type.startsWith("image/")) {
-		throw new Error("Only images allowed");
-	}
+    if (!file.type.startsWith("image/")) {
+        throw new Error("Only images allowed");
+    }
 
-	if (file.size > 10 * 1024 * 1024) {
-		throw new Error("Max 10MB");
-	}
+    if (file.size > 10 * 1024 * 1024) {
+        throw new Error("Max 10MB");
+    }
 
-	return { ...file, name: `${Date.now()}-${file.name}` };
+    return { ...file, name: `${Date.now()}-${file.name}` };
 }
 ```
 
@@ -194,7 +194,7 @@ Runs after successful upload.
 
 ```typescript
 "media:afterUpload": async (event, ctx) => {
-	ctx.log.info(`Uploaded ${event.media.filename}`, { id: event.media.id });
+    ctx.log.info(`Uploaded ${event.media.filename}`, { id: event.media.id });
 }
 ```
 
@@ -314,21 +314,21 @@ Returns structured contributions that core validates, dedupes (first-wins), and 
 
 ```typescript
 "page:metadata": async (event, ctx) => {
-	if (event.page.kind !== "content") return null;
+    if (event.page.kind !== "content") return null;
 
-	return [
-		{ kind: "meta", name: "author", content: "My Blog" },
-		{
-			kind: "jsonld",
-			id: `schema:${event.page.content?.collection}:${event.page.content?.id}`,
-			graph: {
-				"@context": "https://schema.org",
-				"@type": "BlogPosting",
-				headline: event.page.title,
-				description: event.page.description,
-			},
-		},
-	];
+    return [
+        { kind: "meta", name: "author", content: "My Blog" },
+        {
+            kind: "jsonld",
+            id: `schema:${event.page.content?.collection}:${event.page.content?.id}`,
+            graph: {
+                "@context": "https://schema.org",
+                "@type": "BlogPosting",
+                headline: event.page.title,
+                description: event.page.description,
+            },
+        },
+    ];
 }
 ```
 
@@ -350,19 +350,19 @@ Contributes raw HTML, scripts, or markup to `head`, `body:start`, or `body:end`.
 
 ```typescript
 "page:fragments": async (event, ctx) => {
-	return [
-		{
-			kind: "external-script",
-			placement: "head",
-			src: "https://www.googletagmanager.com/gtm.js?id=GTM-XXXXX",
-			async: true,
-		},
-		{
-			kind: "html",
-			placement: "body:start",
-			html: '<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>',
-		},
-	];
+    return [
+        {
+            kind: "external-script",
+            placement: "head",
+            src: "https://www.googletagmanager.com/gtm.js?id=GTM-XXXXX",
+            async: true,
+        },
+        {
+            kind: "html",
+            placement: "body:start",
+            html: '<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>',
+        },
+    ];
 }
 ```
 
