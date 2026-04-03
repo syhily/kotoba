@@ -22,7 +22,7 @@ Zeabur API reference: [REST API Reference](https://zeabur.com/docs/en-US/email/r
 This example follows the same style as `apps/demo/astro.config.ts`.
 
 ```diff
- import { emailPlugin } from "emdash-theme-kotoba-plugin-email";
++ import { emailPlugin } from "emdash-theme-kotoba-plugin-email";
 
  export default defineConfig({
    integrations: [
